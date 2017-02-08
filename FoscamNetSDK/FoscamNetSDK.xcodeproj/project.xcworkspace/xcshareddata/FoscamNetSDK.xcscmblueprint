@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "93544c91-7fca-a946-9c8d-29ab29363c2f++1981",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "93544c91-7fca-a946-9c8d-29ab29363c2f++1981" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "93544c91-7fca-a946-9c8d-29ab29363c2f++1981" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "47DD3659-D5F3-45F1-A28C-6D7C928218A9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "93544c91-7fca-a946-9c8d-29ab29363c2f++1981" : "mac(branch%20connection)\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FoscamNetSDK",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FoscamNetSDK\/FoscamNetSDK.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.15.104:58443\/svn\/vms",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93544c91-7fca-a946-9c8d-29ab29363c2f++1981"
+    }
+  ]
+}

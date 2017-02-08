@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F60053711DAA2912001EC757 /* libmacp2p.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F635CCF31CAE2686002EE96F /* libmacp2p.a */; };
+		F605FB361CE30CAB00914B69 /* commons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F605FB341CE30CAB00914B69 /* commons.cpp */; };
+		F605FB371CE30CAB00914B69 /* commons.h in Headers */ = {isa = PBXBuildFile; fileRef = F605FB351CE30CAB00914B69 /* commons.h */; };
+		F612CF841B99851B00BF8323 /* PublicDef.h in Headers */ = {isa = PBXBuildFile; fileRef = F612CF831B99851B00BF8323 /* PublicDef.h */; };
+		F635CCF61CAE2686002EE96F /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F635CCEE1CAE2686002EE96F /* libavcodec.a */; };
+		F635CCF71CAE2686002EE96F /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F635CCEF1CAE2686002EE96F /* libavutil.a */; };
+		F635CCF81CAE2686002EE96F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F635CCF01CAE2686002EE96F /* libcrypto.a */; };
+		F635CCF91CAE2686002EE96F /* libFosMacSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F635CCF11CAE2686002EE96F /* libFosMacSdk.a */; };
+		F635CCFA1CAE2686002EE96F /* libIOTCAPIs_ALL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F635CCF21CAE2686002EE96F /* libIOTCAPIs_ALL.a */; };
+		F635CCFC1CAE2686002EE96F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F635CCF41CAE2686002EE96F /* libssl.a */; };
+		F635CCFD1CAE2686002EE96F /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F635CCF51CAE2686002EE96F /* libswscale.a */; };
+		F63CDF141B6F639C007C2810 /* RecordDef.h in Headers */ = {isa = PBXBuildFile; fileRef = F63CDF131B6F639C007C2810 /* RecordDef.h */; };
+		F64756051B5353DE005C54DA /* pthread_auto_lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F64756031B5353DE005C54DA /* pthread_auto_lock.cpp */; };
+		F64756061B5353DE005C54DA /* pthread_auto_lock.h in Headers */ = {isa = PBXBuildFile; fileRef = F64756041B5353DE005C54DA /* pthread_auto_lock.h */; };
+		F647566D1B53A0B4005C54DA /* FosDef.h in Headers */ = {isa = PBXBuildFile; fileRef = F647566B1B53A0B4005C54DA /* FosDef.h */; };
+		F647566E1B53A0B4005C54DA /* fossdk.h in Headers */ = {isa = PBXBuildFile; fileRef = F647566C1B53A0B4005C54DA /* fossdk.h */; };
+		F67510EB1CCE278000936050 /* FosCom.h in Headers */ = {isa = PBXBuildFile; fileRef = F67510E81CCE278000936050 /* FosCom.h */; };
+		F67510EC1CCE278000936050 /* FosNvrDef.h in Headers */ = {isa = PBXBuildFile; fileRef = F67510E91CCE278000936050 /* FosNvrDef.h */; };
+		F67510ED1CCE278000936050 /* fosnvrsdk.h in Headers */ = {isa = PBXBuildFile; fileRef = F67510EA1CCE278000936050 /* fosnvrsdk.h */; };
+		F67511651CE2CB9C00936050 /* FoscamIPCClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F675115F1CE2CB9C00936050 /* FoscamIPCClient.cpp */; };
+		F67511661CE2CB9C00936050 /* FoscamIPCClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F67511601CE2CB9C00936050 /* FoscamIPCClient.h */; };
+		F67511671CE2CB9C00936050 /* FoscamNetSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F67511611CE2CB9C00936050 /* FoscamNetSDK.cpp */; };
+		F67511681CE2CB9C00936050 /* FoscamNetSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F67511621CE2CB9C00936050 /* FoscamNetSDK.h */; };
+		F67511691CE2CB9C00936050 /* FoscamNetWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F67511631CE2CB9C00936050 /* FoscamNetWrapper.cpp */; };
+		F675116A1CE2CB9C00936050 /* FoscamNetWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F67511641CE2CB9C00936050 /* FoscamNetWrapper.h */; };
+		F67511931CE2D09100936050 /* FoscamNvrClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F675118B1CE2D09100936050 /* FoscamNvrClient.cpp */; };
+		F67511941CE2D09100936050 /* FoscamNvrClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F675118C1CE2D09100936050 /* FoscamNvrClient.h */; };
+		F67511951CE2D09100936050 /* FoscamNvrNetSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F675118D1CE2D09100936050 /* FoscamNvrNetSDK.cpp */; };
+		F67511961CE2D09100936050 /* FoscamNvrNetSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F675118E1CE2D09100936050 /* FoscamNvrNetSDK.h */; };
+		F67511971CE2D09100936050 /* FoscamNvrWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F675118F1CE2D09100936050 /* FoscamNvrWrapper.cpp */; };
+		F67511981CE2D09100936050 /* FoscamNvrWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F67511901CE2D09100936050 /* FoscamNvrWrapper.h */; };
+		F67511991CE2D09100936050 /* Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F67511911CE2D09100936050 /* Stream.cpp */; };
+		F675119A1CE2D09100936050 /* Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = F67511921CE2D09100936050 /* Stream.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F69FFD161BCF5ADC00ECA4FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F605FB341CE30CAB00914B69 /* commons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = commons.cpp; sourceTree = "<group>"; };
+		F605FB351CE30CAB00914B69 /* commons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commons.h; sourceTree = "<group>"; };
+		F612CF831B99851B00BF8323 /* PublicDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicDef.h; sourceTree = "<group>"; };
+		F635CCEE1CAE2686002EE96F /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = IPCSDK_for_mac150629/lib/libavcodec.a; sourceTree = "<group>"; };
+		F635CCEF1CAE2686002EE96F /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = IPCSDK_for_mac150629/lib/libavutil.a; sourceTree = "<group>"; };
+		F635CCF01CAE2686002EE96F /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = IPCSDK_for_mac150629/lib/libcrypto.a; sourceTree = "<group>"; };
+		F635CCF11CAE2686002EE96F /* libFosMacSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFosMacSdk.a; path = IPCSDK_for_mac150629/lib/libFosMacSdk.a; sourceTree = "<group>"; };
+		F635CCF21CAE2686002EE96F /* libIOTCAPIs_ALL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOTCAPIs_ALL.a; path = IPCSDK_for_mac150629/lib/libIOTCAPIs_ALL.a; sourceTree = "<group>"; };
+		F635CCF31CAE2686002EE96F /* libmacp2p.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmacp2p.a; path = IPCSDK_for_mac150629/lib/libmacp2p.a; sourceTree = "<group>"; };
+		F635CCF41CAE2686002EE96F /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = IPCSDK_for_mac150629/lib/libssl.a; sourceTree = "<group>"; };
+		F635CCF51CAE2686002EE96F /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = IPCSDK_for_mac150629/lib/libswscale.a; sourceTree = "<group>"; };
+		F63CDF131B6F639C007C2810 /* RecordDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordDef.h; sourceTree = "<group>"; };
+		F64755EB1B5352A5005C54DA /* libFoscamNetSDK.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFoscamNetSDK.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64756031B5353DE005C54DA /* pthread_auto_lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pthread_auto_lock.cpp; sourceTree = "<group>"; };
+		F64756041B5353DE005C54DA /* pthread_auto_lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pthread_auto_lock.h; sourceTree = "<group>"; };
+		F647566B1B53A0B4005C54DA /* FosDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FosDef.h; path = IPCSDK_for_mac150629/include/FosDef.h; sourceTree = "<group>"; };
+		F647566C1B53A0B4005C54DA /* fossdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fossdk.h; path = IPCSDK_for_mac150629/include/fossdk.h; sourceTree = "<group>"; };
+		F67510E81CCE278000936050 /* FosCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FosCom.h; path = IPCSDK_for_mac150629/include/FosCom.h; sourceTree = "<group>"; };
+		F67510E91CCE278000936050 /* FosNvrDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FosNvrDef.h; path = IPCSDK_for_mac150629/include/FosNvrDef.h; sourceTree = "<group>"; };
+		F67510EA1CCE278000936050 /* fosnvrsdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fosnvrsdk.h; path = IPCSDK_for_mac150629/include/fosnvrsdk.h; sourceTree = "<group>"; };
+		F675115F1CE2CB9C00936050 /* FoscamIPCClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoscamIPCClient.cpp; path = IPC/FoscamIPCClient.cpp; sourceTree = "<group>"; };
+		F67511601CE2CB9C00936050 /* FoscamIPCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoscamIPCClient.h; path = IPC/FoscamIPCClient.h; sourceTree = "<group>"; };
+		F67511611CE2CB9C00936050 /* FoscamNetSDK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoscamNetSDK.cpp; path = IPC/FoscamNetSDK.cpp; sourceTree = "<group>"; };
+		F67511621CE2CB9C00936050 /* FoscamNetSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoscamNetSDK.h; path = IPC/FoscamNetSDK.h; sourceTree = "<group>"; };
+		F67511631CE2CB9C00936050 /* FoscamNetWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoscamNetWrapper.cpp; path = IPC/FoscamNetWrapper.cpp; sourceTree = "<group>"; };
+		F67511641CE2CB9C00936050 /* FoscamNetWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoscamNetWrapper.h; path = IPC/FoscamNetWrapper.h; sourceTree = "<group>"; };
+		F675118B1CE2D09100936050 /* FoscamNvrClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoscamNvrClient.cpp; path = NVR/FoscamNvrClient.cpp; sourceTree = "<group>"; };
+		F675118C1CE2D09100936050 /* FoscamNvrClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoscamNvrClient.h; path = NVR/FoscamNvrClient.h; sourceTree = "<group>"; };
+		F675118D1CE2D09100936050 /* FoscamNvrNetSDK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoscamNvrNetSDK.cpp; path = NVR/FoscamNvrNetSDK.cpp; sourceTree = "<group>"; };
+		F675118E1CE2D09100936050 /* FoscamNvrNetSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoscamNvrNetSDK.h; path = NVR/FoscamNvrNetSDK.h; sourceTree = "<group>"; };
+		F675118F1CE2D09100936050 /* FoscamNvrWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoscamNvrWrapper.cpp; path = NVR/FoscamNvrWrapper.cpp; sourceTree = "<group>"; };
+		F67511901CE2D09100936050 /* FoscamNvrWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoscamNvrWrapper.h; path = NVR/FoscamNvrWrapper.h; sourceTree = "<group>"; };
+		F67511911CE2D09100936050 /* Stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Stream.cpp; path = NVR/Stream.cpp; sourceTree = "<group>"; };
+		F67511921CE2D09100936050 /* Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stream.h; path = NVR/Stream.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F64755E81B5352A5005C54DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60053711DAA2912001EC757 /* libmacp2p.a in Frameworks */,
+				F635CCFA1CAE2686002EE96F /* libIOTCAPIs_ALL.a in Frameworks */,
+				F635CCF71CAE2686002EE96F /* libavutil.a in Frameworks */,
+				F635CCFC1CAE2686002EE96F /* libssl.a in Frameworks */,
+				F635CCFD1CAE2686002EE96F /* libswscale.a in Frameworks */,
+				F635CCF61CAE2686002EE96F /* libavcodec.a in Frameworks */,
+				F635CCF81CAE2686002EE96F /* libcrypto.a in Frameworks */,
+				F635CCF91CAE2686002EE96F /* libFosMacSdk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F61638AF1CAE254200BB4CF9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F635CCEE1CAE2686002EE96F /* libavcodec.a */,
+				F635CCEF1CAE2686002EE96F /* libavutil.a */,
+				F635CCF01CAE2686002EE96F /* libcrypto.a */,
+				F635CCF11CAE2686002EE96F /* libFosMacSdk.a */,
+				F635CCF21CAE2686002EE96F /* libIOTCAPIs_ALL.a */,
+				F635CCF31CAE2686002EE96F /* libmacp2p.a */,
+				F635CCF41CAE2686002EE96F /* libssl.a */,
+				F635CCF51CAE2686002EE96F /* libswscale.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		F64755E21B5352A5005C54DA = {
+			isa = PBXGroup;
+			children = (
+				F605FB341CE30CAB00914B69 /* commons.cpp */,
+				F605FB351CE30CAB00914B69 /* commons.h */,
+				F63CDF131B6F639C007C2810 /* RecordDef.h */,
+				F612CF831B99851B00BF8323 /* PublicDef.h */,
+				F64756031B5353DE005C54DA /* pthread_auto_lock.cpp */,
+				F64756041B5353DE005C54DA /* pthread_auto_lock.h */,
+				F675115E1CE2CB8C00936050 /* NVR */,
+				F675115D1CE2CB8500936050 /* IPC */,
+				F64756681B53A076005C54DA /* IPCSDK_for_mac150629 */,
+				F64755EC1B5352A5005C54DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F64755EC1B5352A5005C54DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F64755EB1B5352A5005C54DA /* libFoscamNetSDK.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F64756681B53A076005C54DA /* IPCSDK_for_mac150629 */ = {
+			isa = PBXGroup;
+			children = (
+				F61638AF1CAE254200BB4CF9 /* lib */,
+				F647566A1B53A0A6005C54DA /* include */,
+			);
+			name = IPCSDK_for_mac150629;
+			sourceTree = "<group>";
+		};
+		F647566A1B53A0A6005C54DA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F67510E81CCE278000936050 /* FosCom.h */,
+				F67510E91CCE278000936050 /* FosNvrDef.h */,
+				F67510EA1CCE278000936050 /* fosnvrsdk.h */,
+				F647566B1B53A0B4005C54DA /* FosDef.h */,
+				F647566C1B53A0B4005C54DA /* fossdk.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		F675115D1CE2CB8500936050 /* IPC */ = {
+			isa = PBXGroup;
+			children = (
+				F675115F1CE2CB9C00936050 /* FoscamIPCClient.cpp */,
+				F67511601CE2CB9C00936050 /* FoscamIPCClient.h */,
+				F67511611CE2CB9C00936050 /* FoscamNetSDK.cpp */,
+				F67511621CE2CB9C00936050 /* FoscamNetSDK.h */,
+				F67511631CE2CB9C00936050 /* FoscamNetWrapper.cpp */,
+				F67511641CE2CB9C00936050 /* FoscamNetWrapper.h */,
+			);
+			name = IPC;
+			sourceTree = "<group>";
+		};
+		F675115E1CE2CB8C00936050 /* NVR */ = {
+			isa = PBXGroup;
+			children = (
+				F675118B1CE2D09100936050 /* FoscamNvrClient.cpp */,
+				F675118C1CE2D09100936050 /* FoscamNvrClient.h */,
+				F675118D1CE2D09100936050 /* FoscamNvrNetSDK.cpp */,
+				F675118E1CE2D09100936050 /* FoscamNvrNetSDK.h */,
+				F675118F1CE2D09100936050 /* FoscamNvrWrapper.cpp */,
+				F67511901CE2D09100936050 /* FoscamNvrWrapper.h */,
+				F67511911CE2D09100936050 /* Stream.cpp */,
+				F67511921CE2D09100936050 /* Stream.h */,
+			);
+			name = NVR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F64755E91B5352A5005C54DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F675116A1CE2CB9C00936050 /* FoscamNetWrapper.h in Headers */,
+				F67510ED1CCE278000936050 /* fosnvrsdk.h in Headers */,
+				F67511981CE2D09100936050 /* FoscamNvrWrapper.h in Headers */,
+				F67510EC1CCE278000936050 /* FosNvrDef.h in Headers */,
+				F67511661CE2CB9C00936050 /* FoscamIPCClient.h in Headers */,
+				F63CDF141B6F639C007C2810 /* RecordDef.h in Headers */,
+				F67511961CE2D09100936050 /* FoscamNvrNetSDK.h in Headers */,
+				F64756061B5353DE005C54DA /* pthread_auto_lock.h in Headers */,
+				F647566E1B53A0B4005C54DA /* fossdk.h in Headers */,
+				F647566D1B53A0B4005C54DA /* FosDef.h in Headers */,
+				F675119A1CE2D09100936050 /* Stream.h in Headers */,
+				F612CF841B99851B00BF8323 /* PublicDef.h in Headers */,
+				F605FB371CE30CAB00914B69 /* commons.h in Headers */,
+				F67511941CE2D09100936050 /* FoscamNvrClient.h in Headers */,
+				F67511681CE2CB9C00936050 /* FoscamNetSDK.h in Headers */,
+				F67510EB1CCE278000936050 /* FosCom.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F64755EA1B5352A5005C54DA /* FoscamNetSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64755EF1B5352A5005C54DA /* Build configuration list for PBXNativeTarget "FoscamNetSDK" */;
+			buildPhases = (
+				F64755E71B5352A5005C54DA /* Sources */,
+				F64755E81B5352A5005C54DA /* Frameworks */,
+				F64755E91B5352A5005C54DA /* Headers */,
+				F69FFD161BCF5ADC00ECA4FA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoscamNetSDK;
+			productName = FoscamNetSDK;
+			productReference = F64755EB1B5352A5005C54DA /* libFoscamNetSDK.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F64755E31B5352A5005C54DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = mac_dev;
+				TargetAttributes = {
+					F64755EA1B5352A5005C54DA = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F64755E61B5352A5005C54DA /* Build configuration list for PBXProject "FoscamNetSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F64755E21B5352A5005C54DA;
+			productRefGroup = F64755EC1B5352A5005C54DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F64755EA1B5352A5005C54DA /* FoscamNetSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F64755E71B5352A5005C54DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67511671CE2CB9C00936050 /* FoscamNetSDK.cpp in Sources */,
+				F67511971CE2D09100936050 /* FoscamNvrWrapper.cpp in Sources */,
+				F67511651CE2CB9C00936050 /* FoscamIPCClient.cpp in Sources */,
+				F67511951CE2D09100936050 /* FoscamNvrNetSDK.cpp in Sources */,
+				F605FB361CE30CAB00914B69 /* commons.cpp in Sources */,
+				F67511691CE2CB9C00936050 /* FoscamNetWrapper.cpp in Sources */,
+				F67511931CE2D09100936050 /* FoscamNvrClient.cpp in Sources */,
+				F64756051B5353DE005C54DA /* pthread_auto_lock.cpp in Sources */,
+				F67511991CE2D09100936050 /* Stream.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F64755ED1B5352A5005C54DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F64755EE1B5352A5005C54DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F64755F01B5352A5005C54DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/IPCSDK_for_mac150629/include",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/IPCSDK_for_mac150629/lib",
+					"$(SRCROOT)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F64755F11B5352A5005C54DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/IPCSDK_for_mac150629/include",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/IPCSDK_for_mac150629/lib",
+					"$(SRCROOT)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F64755E61B5352A5005C54DA /* Build configuration list for PBXProject "FoscamNetSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64755ED1B5352A5005C54DA /* Debug */,
+				F64755EE1B5352A5005C54DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64755EF1B5352A5005C54DA /* Build configuration list for PBXNativeTarget "FoscamNetSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64755F01B5352A5005C54DA /* Debug */,
+				F64755F11B5352A5005C54DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F64755E31B5352A5005C54DA /* Project object */;
+}
