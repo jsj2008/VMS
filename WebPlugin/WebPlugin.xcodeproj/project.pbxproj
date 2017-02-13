@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F611604A1BFA1A490091B20F /* PluginXml.h in Headers */ = {isa = PBXBuildFile; fileRef = F61160491BFA1A490091B20F /* PluginXml.h */; };
+		F611605D1BFA1AE40091B20F /* NPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F611605B1BFA1AE40091B20F /* NPString.cpp */; };
+		F611605E1BFA1AE40091B20F /* NPString.h in Headers */ = {isa = PBXBuildFile; fileRef = F611605C1BFA1AE40091B20F /* NPString.h */; };
+		F61168851BEDAD87008CC764 /* back_xml_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F61168791BEDAD87008CC764 /* back_xml_parser.cpp */; };
+		F61168861BEDAD87008CC764 /* back_xml_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = F611687A1BEDAD87008CC764 /* back_xml_parser.h */; };
+		F61168871BEDAD87008CC764 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F611687B1BEDAD87008CC764 /* md5.cpp */; };
+		F61168881BEDAD87008CC764 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = F611687C1BEDAD87008CC764 /* md5.h */; };
+		F61168891BEDAD87008CC764 /* net_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = F611687D1BEDAD87008CC764 /* net_socket.h */; };
+		F611688A1BEDAD87008CC764 /* ptz_xml_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F611687E1BEDAD87008CC764 /* ptz_xml_parser.cpp */; };
+		F611688B1BEDAD87008CC764 /* ptz_xml_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = F611687F1BEDAD87008CC764 /* ptz_xml_parser.h */; };
+		F611688C1BEDAD87008CC764 /* RecordDef.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168801BEDAD87008CC764 /* RecordDef.h */; };
+		F611688D1BEDAD87008CC764 /* vms_command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F61168811BEDAD87008CC764 /* vms_command.cpp */; };
+		F611688E1BEDAD87008CC764 /* vms_command.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168821BEDAD87008CC764 /* vms_command.h */; };
+		F611688F1BEDAD87008CC764 /* vms_error.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168831BEDAD87008CC764 /* vms_error.h */; };
+		F61168901BEDAD87008CC764 /* vms_log.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168841BEDAD87008CC764 /* vms_log.h */; };
+		F61168921BEDAD9B008CC764 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168911BEDAD9B008CC764 /* config.h */; };
+		F611689E1BEDAEAD008CC764 /* AvView.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168941BEDAEAD008CC764 /* AvView.h */; };
+		F611689F1BEDAEAD008CC764 /* AvView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F61168951BEDAEAD008CC764 /* AvView.mm */; };
+		F61168A01BEDAEAD008CC764 /* AvViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168961BEDAEAD008CC764 /* AvViewLayout.h */; };
+		F61168A11BEDAEAD008CC764 /* AvViewLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = F61168971BEDAEAD008CC764 /* AvViewLayout.mm */; };
+		F61168A21BEDAEAD008CC764 /* net_io.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168981BEDAEAD008CC764 /* net_io.h */; };
+		F61168A31BEDAEAD008CC764 /* net_io.mm in Sources */ = {isa = PBXBuildFile; fileRef = F61168991BEDAEAD008CC764 /* net_io.mm */; };
+		F61168A41BEDAEAD008CC764 /* vms_net_client.h in Headers */ = {isa = PBXBuildFile; fileRef = F611689A1BEDAEAD008CC764 /* vms_net_client.h */; };
+		F61168A51BEDAEAD008CC764 /* vms_net_client.mm in Sources */ = {isa = PBXBuildFile; fileRef = F611689B1BEDAEAD008CC764 /* vms_net_client.mm */; };
+		F61168A61BEDAEAD008CC764 /* VMSLivePluginImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F611689C1BEDAEAD008CC764 /* VMSLivePluginImpl.h */; };
+		F61168A71BEDAEAD008CC764 /* VMSLivePluginImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = F611689D1BEDAEAD008CC764 /* VMSLivePluginImpl.mm */; };
+		F61168E61BEE1F02008CC764 /* LivePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168E41BEE1F02008CC764 /* LivePlugin.h */; };
+		F61168E71BEE1F02008CC764 /* LivePlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = F61168E51BEE1F02008CC764 /* LivePlugin.mm */; };
+		F61168EA1BEE1F0B008CC764 /* ScriptablePluginObjectBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F61168E81BEE1F0B008CC764 /* ScriptablePluginObjectBase.cpp */; };
+		F61168EB1BEE1F0B008CC764 /* ScriptablePluginObjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168E91BEE1F0B008CC764 /* ScriptablePluginObjectBase.h */; };
+		F61168FF1BF0979A008CC764 /* VMSBackPluginImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = F61168FD1BF0979A008CC764 /* VMSBackPluginImpl.mm */; };
+		F61169001BF0979A008CC764 /* VMSBackPluginImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F61168FE1BF0979A008CC764 /* VMSBackPluginImpl.h */; };
+		F61169091BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F61169071BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.h */; };
+		F611690A1BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = F61169081BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.mm */; };
+		F611690C1BF0A313008CC764 /* PluginCallbackFuncs.h in Headers */ = {isa = PBXBuildFile; fileRef = F611690B1BF0A313008CC764 /* PluginCallbackFuncs.h */; };
+		F611691A1BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F61169181BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.h */; };
+		F611691B1BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = F61169191BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.mm */; };
+		F61169291BF0BC3D008CC764 /* BackPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = F61169271BF0BC3D008CC764 /* BackPlugin.mm */; };
+		F611692A1BF0BC3D008CC764 /* BackPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = F61169281BF0BC3D008CC764 /* BackPlugin.h */; };
+		F622945D1BF43C32003513B9 /* NSWindow+FullScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = F622945B1BF43C32003513B9 /* NSWindow+FullScreen.h */; };
+		F622945E1BF43C32003513B9 /* NSWindow+FullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F622945C1BF43C32003513B9 /* NSWindow+FullScreen.m */; };
+		F62294AC1BF4415F003513B9 /* net_module.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F62294AA1BF4415F003513B9 /* net_module.cpp */; };
+		F62294AD1BF4415F003513B9 /* net_module.h in Headers */ = {isa = PBXBuildFile; fileRef = F62294AB1BF4415F003513B9 /* net_module.h */; };
+		F62294B01BF4418A003513B9 /* net_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F62294AE1BF4418A003513B9 /* net_server.cpp */; };
+		F62294B11BF4418A003513B9 /* net_server.h in Headers */ = {isa = PBXBuildFile; fileRef = F62294AF1BF4418A003513B9 /* net_server.h */; };
+		F62294C01BF46E37003513B9 /* vms_client_business.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F62294BE1BF46E37003513B9 /* vms_client_business.cpp */; };
+		F62294C11BF46E37003513B9 /* vms_client_business.h in Headers */ = {isa = PBXBuildFile; fileRef = F62294BF1BF46E37003513B9 /* vms_client_business.h */; };
+		F62294C61BF46E6D003513B9 /* back_video_manager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F62294C21BF46E6D003513B9 /* back_video_manager.mm */; };
+		F62294C71BF46E6D003513B9 /* back_video_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = F62294C31BF46E6D003513B9 /* back_video_manager.h */; };
+		F62294C81BF46E6D003513B9 /* live_video_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F62294C41BF46E6D003513B9 /* live_video_manager.cpp */; };
+		F62294C91BF46E6D003513B9 /* live_video_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = F62294C51BF46E6D003513B9 /* live_video_manager.h */; };
+		F62294CC1BF4720F003513B9 /* vms_client_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F62294CA1BF4720F003513B9 /* vms_client_manager.cpp */; };
+		F62294CD1BF4720F003513B9 /* vms_client_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = F62294CB1BF4720F003513B9 /* vms_client_manager.h */; };
+		F62294D01BF47283003513B9 /* AvSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = F62294CE1BF47283003513B9 /* AvSource.mm */; };
+		F62294D11BF47283003513B9 /* AvSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F62294CF1BF47283003513B9 /* AvSource.h */; };
+		F622951F1BF5CCBC003513B9 /* net_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F622951D1BF5CCBC003513B9 /* net_client.cpp */; };
+		F62295201BF5CCBC003513B9 /* net_client.h in Headers */ = {isa = PBXBuildFile; fileRef = F622951E1BF5CCBC003513B9 /* net_client.h */; };
+		F673FFBD1BF31BFC000A24CC /* PluginFullScreenWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F673FFBB1BF31BFC000A24CC /* PluginFullScreenWindowController.h */; };
+		F673FFBE1BF31BFC000A24CC /* PluginFullScreenWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F673FFBC1BF31BFC000A24CC /* PluginFullScreenWindowController.m */; };
+		F6F2630E1C1EE5BD00AE0488 /* NSImage+Flip.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F2630A1C1EE5BD00AE0488 /* NSImage+Flip.h */; };
+		F6F2630F1C1EE5BD00AE0488 /* NSImage+Flip.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6F2630B1C1EE5BD00AE0488 /* NSImage+Flip.mm */; };
+		F6F263631C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F263611C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.h */; };
+		F6F263641C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F263621C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F61160491BFA1A490091B20F /* PluginXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginXml.h; sourceTree = "<group>"; };
+		F611605B1BFA1AE40091B20F /* NPString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NPString.cpp; sourceTree = "<group>"; };
+		F611605C1BFA1AE40091B20F /* NPString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPString.h; sourceTree = "<group>"; };
+		F61160701BFA1B750091B20F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F61160D01BFAFA510091B20F /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../boost_1_50_0/lib/libboost_system.a; sourceTree = "<group>"; };
+		F61160D21BFAFA530091B20F /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = ../boost_1_50_0/lib/libboost_thread.a; sourceTree = "<group>"; };
+		F611685E1BEDAC6C008CC764 /* libWebPlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebPlugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61168791BEDAD87008CC764 /* back_xml_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = back_xml_parser.cpp; path = common/back_xml_parser.cpp; sourceTree = "<group>"; };
+		F611687A1BEDAD87008CC764 /* back_xml_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = back_xml_parser.h; path = common/back_xml_parser.h; sourceTree = "<group>"; };
+		F611687B1BEDAD87008CC764 /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = md5.cpp; path = common/md5.cpp; sourceTree = "<group>"; };
+		F611687C1BEDAD87008CC764 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = common/md5.h; sourceTree = "<group>"; };
+		F611687D1BEDAD87008CC764 /* net_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net_socket.h; path = common/net_socket.h; sourceTree = "<group>"; };
+		F611687E1BEDAD87008CC764 /* ptz_xml_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ptz_xml_parser.cpp; path = common/ptz_xml_parser.cpp; sourceTree = "<group>"; };
+		F611687F1BEDAD87008CC764 /* ptz_xml_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ptz_xml_parser.h; path = common/ptz_xml_parser.h; sourceTree = "<group>"; };
+		F61168801BEDAD87008CC764 /* RecordDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordDef.h; path = common/RecordDef.h; sourceTree = "<group>"; };
+		F61168811BEDAD87008CC764 /* vms_command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vms_command.cpp; path = common/vms_command.cpp; sourceTree = "<group>"; };
+		F61168821BEDAD87008CC764 /* vms_command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vms_command.h; path = common/vms_command.h; sourceTree = "<group>"; };
+		F61168831BEDAD87008CC764 /* vms_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vms_error.h; path = common/vms_error.h; sourceTree = "<group>"; };
+		F61168841BEDAD87008CC764 /* vms_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vms_log.h; path = common/vms_log.h; sourceTree = "<group>"; };
+		F61168911BEDAD9B008CC764 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = WebPlugin/config.h; sourceTree = "<group>"; };
+		F61168941BEDAEAD008CC764 /* AvView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvView.h; sourceTree = "<group>"; };
+		F61168951BEDAEAD008CC764 /* AvView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AvView.mm; sourceTree = "<group>"; };
+		F61168961BEDAEAD008CC764 /* AvViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvViewLayout.h; sourceTree = "<group>"; };
+		F61168971BEDAEAD008CC764 /* AvViewLayout.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AvViewLayout.mm; sourceTree = "<group>"; };
+		F61168981BEDAEAD008CC764 /* net_io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_io.h; sourceTree = "<group>"; };
+		F61168991BEDAEAD008CC764 /* net_io.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = net_io.mm; sourceTree = "<group>"; };
+		F611689A1BEDAEAD008CC764 /* vms_net_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vms_net_client.h; sourceTree = "<group>"; };
+		F611689B1BEDAEAD008CC764 /* vms_net_client.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = vms_net_client.mm; sourceTree = "<group>"; };
+		F611689C1BEDAEAD008CC764 /* VMSLivePluginImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMSLivePluginImpl.h; sourceTree = "<group>"; };
+		F611689D1BEDAEAD008CC764 /* VMSLivePluginImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMSLivePluginImpl.mm; sourceTree = "<group>"; };
+		F61168E41BEE1F02008CC764 /* LivePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LivePlugin.h; path = WebPlugin/LivePlugin.h; sourceTree = "<group>"; };
+		F61168E51BEE1F02008CC764 /* LivePlugin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LivePlugin.mm; path = WebPlugin/LivePlugin.mm; sourceTree = "<group>"; };
+		F61168E81BEE1F0B008CC764 /* ScriptablePluginObjectBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScriptablePluginObjectBase.cpp; path = WebPlugin/ScriptablePluginObjectBase.cpp; sourceTree = "<group>"; };
+		F61168E91BEE1F0B008CC764 /* ScriptablePluginObjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScriptablePluginObjectBase.h; path = WebPlugin/ScriptablePluginObjectBase.h; sourceTree = "<group>"; };
+		F61168FD1BF0979A008CC764 /* VMSBackPluginImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMSBackPluginImpl.mm; sourceTree = "<group>"; };
+		F61168FE1BF0979A008CC764 /* VMSBackPluginImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMSBackPluginImpl.h; sourceTree = "<group>"; };
+		F61169071BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cocoa_VMSLivePluginImpl.h; sourceTree = "<group>"; };
+		F61169081BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Cocoa_VMSLivePluginImpl.mm; sourceTree = "<group>"; };
+		F611690B1BF0A313008CC764 /* PluginCallbackFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginCallbackFuncs.h; sourceTree = "<group>"; };
+		F61169181BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cocoa_VMSBackPluginImpl.h; sourceTree = "<group>"; };
+		F61169191BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Cocoa_VMSBackPluginImpl.mm; sourceTree = "<group>"; };
+		F61169271BF0BC3D008CC764 /* BackPlugin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BackPlugin.mm; path = WebPlugin/BackPlugin.mm; sourceTree = "<group>"; };
+		F61169281BF0BC3D008CC764 /* BackPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackPlugin.h; path = WebPlugin/BackPlugin.h; sourceTree = "<group>"; };
+		F622945B1BF43C32003513B9 /* NSWindow+FullScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+FullScreen.h"; path = "WebPlugin/NSWindow+FullScreen.h"; sourceTree = "<group>"; };
+		F622945C1BF43C32003513B9 /* NSWindow+FullScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+FullScreen.m"; path = "WebPlugin/NSWindow+FullScreen.m"; sourceTree = "<group>"; };
+		F62294AA1BF4415F003513B9 /* net_module.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = net_module.cpp; path = WebPlugin/TransferSvr/net_module.cpp; sourceTree = "<group>"; };
+		F62294AB1BF4415F003513B9 /* net_module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net_module.h; path = WebPlugin/TransferSvr/net_module.h; sourceTree = "<group>"; };
+		F62294AE1BF4418A003513B9 /* net_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = net_server.cpp; path = WebPlugin/TransferSvr/net_server.cpp; sourceTree = "<group>"; };
+		F62294AF1BF4418A003513B9 /* net_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net_server.h; path = WebPlugin/TransferSvr/net_server.h; sourceTree = "<group>"; };
+		F62294BE1BF46E37003513B9 /* vms_client_business.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vms_client_business.cpp; path = WebPlugin/TransferSvr/vms_client_business.cpp; sourceTree = "<group>"; };
+		F62294BF1BF46E37003513B9 /* vms_client_business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vms_client_business.h; path = WebPlugin/TransferSvr/vms_client_business.h; sourceTree = "<group>"; };
+		F62294C21BF46E6D003513B9 /* back_video_manager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = back_video_manager.mm; path = WebPlugin/TransferSvr/back_video_manager.mm; sourceTree = "<group>"; };
+		F62294C31BF46E6D003513B9 /* back_video_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = back_video_manager.h; path = WebPlugin/TransferSvr/back_video_manager.h; sourceTree = "<group>"; };
+		F62294C41BF46E6D003513B9 /* live_video_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = live_video_manager.cpp; path = WebPlugin/TransferSvr/live_video_manager.cpp; sourceTree = "<group>"; };
+		F62294C51BF46E6D003513B9 /* live_video_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = live_video_manager.h; path = WebPlugin/TransferSvr/live_video_manager.h; sourceTree = "<group>"; };
+		F62294CA1BF4720F003513B9 /* vms_client_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vms_client_manager.cpp; path = WebPlugin/TransferSvr/vms_client_manager.cpp; sourceTree = "<group>"; };
+		F62294CB1BF4720F003513B9 /* vms_client_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vms_client_manager.h; path = WebPlugin/TransferSvr/vms_client_manager.h; sourceTree = "<group>"; };
+		F62294CE1BF47283003513B9 /* AvSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AvSource.mm; path = WebPlugin/TransferSvr/AvSource.mm; sourceTree = "<group>"; };
+		F62294CF1BF47283003513B9 /* AvSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvSource.h; path = WebPlugin/TransferSvr/AvSource.h; sourceTree = "<group>"; };
+		F622951D1BF5CCBC003513B9 /* net_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = net_client.cpp; path = WebPlugin/TransferSvr/net_client.cpp; sourceTree = "<group>"; };
+		F622951E1BF5CCBC003513B9 /* net_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net_client.h; path = WebPlugin/TransferSvr/net_client.h; sourceTree = "<group>"; };
+		F673FFBB1BF31BFC000A24CC /* PluginFullScreenWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginFullScreenWindowController.h; sourceTree = "<group>"; };
+		F673FFBC1BF31BFC000A24CC /* PluginFullScreenWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginFullScreenWindowController.m; sourceTree = "<group>"; };
+		F673FFBF1BF31EFC000A24CC /* PluginNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginNotification.h; sourceTree = "<group>"; };
+		F6F2630A1C1EE5BD00AE0488 /* NSImage+Flip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+Flip.h"; path = "WebPlugin/NSImage+Flip.h"; sourceTree = "<group>"; };
+		F6F2630B1C1EE5BD00AE0488 /* NSImage+Flip.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSImage+Flip.mm"; path = "WebPlugin/NSImage+Flip.mm"; sourceTree = "<group>"; };
+		F6F263611C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cocoa_VMSPluginImpl.h; sourceTree = "<group>"; };
+		F6F263621C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cocoa_VMSPluginImpl.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F611685B1BEDAC6C008CC764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F611606F1BFA1B750091B20F /* WebPluginTests */ = {
+			isa = PBXGroup;
+			children = (
+				F61160701BFA1B750091B20F /* Info.plist */,
+			);
+			path = WebPluginTests;
+			sourceTree = "<group>";
+		};
+		F61168551BEDAC6C008CC764 = {
+			isa = PBXGroup;
+			children = (
+				F61160D21BFAFA530091B20F /* libboost_thread.a */,
+				F61160D01BFAFA510091B20F /* libboost_system.a */,
+				F611606F1BFA1B750091B20F /* WebPluginTests */,
+				F61168931BEDAE64008CC764 /* Source */,
+				F611685F1BEDAC6C008CC764 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F611685F1BEDAC6C008CC764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F611685E1BEDAC6C008CC764 /* libWebPlugin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F61168601BEDAC6C008CC764 /* webPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				F611605B1BFA1AE40091B20F /* NPString.cpp */,
+				F611605C1BFA1AE40091B20F /* NPString.h */,
+				F61160491BFA1A490091B20F /* PluginXml.h */,
+				F6F263611C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.h */,
+				F6F263621C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.m */,
+				F61169181BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.h */,
+				F61169191BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.mm */,
+				F61169071BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.h */,
+				F61169081BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.mm */,
+				F611690B1BF0A313008CC764 /* PluginCallbackFuncs.h */,
+				F61168941BEDAEAD008CC764 /* AvView.h */,
+				F61168951BEDAEAD008CC764 /* AvView.mm */,
+				F61168961BEDAEAD008CC764 /* AvViewLayout.h */,
+				F61168971BEDAEAD008CC764 /* AvViewLayout.mm */,
+				F61168981BEDAEAD008CC764 /* net_io.h */,
+				F61168991BEDAEAD008CC764 /* net_io.mm */,
+				F611689A1BEDAEAD008CC764 /* vms_net_client.h */,
+				F611689B1BEDAEAD008CC764 /* vms_net_client.mm */,
+				F61168FE1BF0979A008CC764 /* VMSBackPluginImpl.h */,
+				F61168FD1BF0979A008CC764 /* VMSBackPluginImpl.mm */,
+				F611689C1BEDAEAD008CC764 /* VMSLivePluginImpl.h */,
+				F611689D1BEDAEAD008CC764 /* VMSLivePluginImpl.mm */,
+				F673FFBB1BF31BFC000A24CC /* PluginFullScreenWindowController.h */,
+				F673FFBC1BF31BFC000A24CC /* PluginFullScreenWindowController.m */,
+				F673FFBF1BF31EFC000A24CC /* PluginNotification.h */,
+			);
+			name = webPlugin;
+			path = WebPlugin;
+			sourceTree = "<group>";
+		};
+		F61168781BEDAD24008CC764 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F61168791BEDAD87008CC764 /* back_xml_parser.cpp */,
+				F611687A1BEDAD87008CC764 /* back_xml_parser.h */,
+				F611687B1BEDAD87008CC764 /* md5.cpp */,
+				F611687C1BEDAD87008CC764 /* md5.h */,
+				F611687D1BEDAD87008CC764 /* net_socket.h */,
+				F611687E1BEDAD87008CC764 /* ptz_xml_parser.cpp */,
+				F611687F1BEDAD87008CC764 /* ptz_xml_parser.h */,
+				F61168801BEDAD87008CC764 /* RecordDef.h */,
+				F61168811BEDAD87008CC764 /* vms_command.cpp */,
+				F61168821BEDAD87008CC764 /* vms_command.h */,
+				F61168831BEDAD87008CC764 /* vms_error.h */,
+				F61168841BEDAD87008CC764 /* vms_log.h */,
+			);
+			name = common;
+			path = WebPlugin;
+			sourceTree = "<group>";
+		};
+		F61168931BEDAE64008CC764 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F61168911BEDAD9B008CC764 /* config.h */,
+				F62294A91BF44096003513B9 /* TransferSvr */,
+				F673FFB61BF31105000A24CC /* Category */,
+				F61168E31BEE1EE6008CC764 /* npWebPluginForWin32 */,
+				F61168781BEDAD24008CC764 /* common */,
+				F61168601BEDAC6C008CC764 /* webPlugin */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		F61168E31BEE1EE6008CC764 /* npWebPluginForWin32 */ = {
+			isa = PBXGroup;
+			children = (
+				F61169271BF0BC3D008CC764 /* BackPlugin.mm */,
+				F61169281BF0BC3D008CC764 /* BackPlugin.h */,
+				F61168E81BEE1F0B008CC764 /* ScriptablePluginObjectBase.cpp */,
+				F61168E91BEE1F0B008CC764 /* ScriptablePluginObjectBase.h */,
+				F61168E41BEE1F02008CC764 /* LivePlugin.h */,
+				F61168E51BEE1F02008CC764 /* LivePlugin.mm */,
+			);
+			name = npWebPluginForWin32;
+			sourceTree = "<group>";
+		};
+		F62294A91BF44096003513B9 /* TransferSvr */ = {
+			isa = PBXGroup;
+			children = (
+				F622951D1BF5CCBC003513B9 /* net_client.cpp */,
+				F622951E1BF5CCBC003513B9 /* net_client.h */,
+				F62294CE1BF47283003513B9 /* AvSource.mm */,
+				F62294CF1BF47283003513B9 /* AvSource.h */,
+				F62294CA1BF4720F003513B9 /* vms_client_manager.cpp */,
+				F62294CB1BF4720F003513B9 /* vms_client_manager.h */,
+				F62294C21BF46E6D003513B9 /* back_video_manager.mm */,
+				F62294C31BF46E6D003513B9 /* back_video_manager.h */,
+				F62294C41BF46E6D003513B9 /* live_video_manager.cpp */,
+				F62294C51BF46E6D003513B9 /* live_video_manager.h */,
+				F62294BE1BF46E37003513B9 /* vms_client_business.cpp */,
+				F62294BF1BF46E37003513B9 /* vms_client_business.h */,
+				F62294AE1BF4418A003513B9 /* net_server.cpp */,
+				F62294AF1BF4418A003513B9 /* net_server.h */,
+				F62294AA1BF4415F003513B9 /* net_module.cpp */,
+				F62294AB1BF4415F003513B9 /* net_module.h */,
+			);
+			name = TransferSvr;
+			sourceTree = "<group>";
+		};
+		F673FFB61BF31105000A24CC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F6F2630A1C1EE5BD00AE0488 /* NSImage+Flip.h */,
+				F6F2630B1C1EE5BD00AE0488 /* NSImage+Flip.mm */,
+				F622945B1BF43C32003513B9 /* NSWindow+FullScreen.h */,
+				F622945C1BF43C32003513B9 /* NSWindow+FullScreen.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F611685C1BEDAC6C008CC764 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F611692A1BF0BC3D008CC764 /* BackPlugin.h in Headers */,
+				F611604A1BFA1A490091B20F /* PluginXml.h in Headers */,
+				F61168A21BEDAEAD008CC764 /* net_io.h in Headers */,
+				F62294C71BF46E6D003513B9 /* back_video_manager.h in Headers */,
+				F61169001BF0979A008CC764 /* VMSBackPluginImpl.h in Headers */,
+				F611688B1BEDAD87008CC764 /* ptz_xml_parser.h in Headers */,
+				F61168891BEDAD87008CC764 /* net_socket.h in Headers */,
+				F62294D11BF47283003513B9 /* AvSource.h in Headers */,
+				F62294C91BF46E6D003513B9 /* live_video_manager.h in Headers */,
+				F61169091BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.h in Headers */,
+				F6F2630E1C1EE5BD00AE0488 /* NSImage+Flip.h in Headers */,
+				F61168921BEDAD9B008CC764 /* config.h in Headers */,
+				F61168861BEDAD87008CC764 /* back_xml_parser.h in Headers */,
+				F611691A1BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.h in Headers */,
+				F611689E1BEDAEAD008CC764 /* AvView.h in Headers */,
+				F611690C1BF0A313008CC764 /* PluginCallbackFuncs.h in Headers */,
+				F673FFBD1BF31BFC000A24CC /* PluginFullScreenWindowController.h in Headers */,
+				F622945D1BF43C32003513B9 /* NSWindow+FullScreen.h in Headers */,
+				F61168A01BEDAEAD008CC764 /* AvViewLayout.h in Headers */,
+				F62294B11BF4418A003513B9 /* net_server.h in Headers */,
+				F611605E1BFA1AE40091B20F /* NPString.h in Headers */,
+				F62294AD1BF4415F003513B9 /* net_module.h in Headers */,
+				F611688F1BEDAD87008CC764 /* vms_error.h in Headers */,
+				F611688C1BEDAD87008CC764 /* RecordDef.h in Headers */,
+				F61168881BEDAD87008CC764 /* md5.h in Headers */,
+				F6F263631C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.h in Headers */,
+				F61168901BEDAD87008CC764 /* vms_log.h in Headers */,
+				F61168E61BEE1F02008CC764 /* LivePlugin.h in Headers */,
+				F61168EB1BEE1F0B008CC764 /* ScriptablePluginObjectBase.h in Headers */,
+				F61168A41BEDAEAD008CC764 /* vms_net_client.h in Headers */,
+				F61168A61BEDAEAD008CC764 /* VMSLivePluginImpl.h in Headers */,
+				F62294C11BF46E37003513B9 /* vms_client_business.h in Headers */,
+				F611688E1BEDAD87008CC764 /* vms_command.h in Headers */,
+				F62295201BF5CCBC003513B9 /* net_client.h in Headers */,
+				F62294CD1BF4720F003513B9 /* vms_client_manager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F611685D1BEDAC6C008CC764 /* WebPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F61168721BEDAC6C008CC764 /* Build configuration list for PBXNativeTarget "WebPlugin" */;
+			buildPhases = (
+				F611685A1BEDAC6C008CC764 /* Sources */,
+				F611685B1BEDAC6C008CC764 /* Frameworks */,
+				F611685C1BEDAC6C008CC764 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebPlugin;
+			productName = WebPlugin;
+			productReference = F611685E1BEDAC6C008CC764 /* libWebPlugin.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F61168561BEDAC6C008CC764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = mac_dev;
+				TargetAttributes = {
+					F611685D1BEDAC6C008CC764 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F61168591BEDAC6C008CC764 /* Build configuration list for PBXProject "WebPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F61168551BEDAC6C008CC764;
+			productRefGroup = F611685F1BEDAC6C008CC764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F611685D1BEDAC6C008CC764 /* WebPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F611685A1BEDAC6C008CC764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F611688D1BEDAD87008CC764 /* vms_command.cpp in Sources */,
+				F61168EA1BEE1F0B008CC764 /* ScriptablePluginObjectBase.cpp in Sources */,
+				F61168FF1BF0979A008CC764 /* VMSBackPluginImpl.mm in Sources */,
+				F62294C81BF46E6D003513B9 /* live_video_manager.cpp in Sources */,
+				F611688A1BEDAD87008CC764 /* ptz_xml_parser.cpp in Sources */,
+				F61168871BEDAD87008CC764 /* md5.cpp in Sources */,
+				F61168A51BEDAEAD008CC764 /* vms_net_client.mm in Sources */,
+				F61168A71BEDAEAD008CC764 /* VMSLivePluginImpl.mm in Sources */,
+				F673FFBE1BF31BFC000A24CC /* PluginFullScreenWindowController.m in Sources */,
+				F6F263641C1FE7AB00AE0488 /* Cocoa_VMSPluginImpl.m in Sources */,
+				F61168A11BEDAEAD008CC764 /* AvViewLayout.mm in Sources */,
+				F62294AC1BF4415F003513B9 /* net_module.cpp in Sources */,
+				F62294B01BF4418A003513B9 /* net_server.cpp in Sources */,
+				F611605D1BFA1AE40091B20F /* NPString.cpp in Sources */,
+				F62294C01BF46E37003513B9 /* vms_client_business.cpp in Sources */,
+				F62294D01BF47283003513B9 /* AvSource.mm in Sources */,
+				F611690A1BF0A20D008CC764 /* Cocoa_VMSLivePluginImpl.mm in Sources */,
+				F61168A31BEDAEAD008CC764 /* net_io.mm in Sources */,
+				F611691B1BF0A654008CC764 /* Cocoa_VMSBackPluginImpl.mm in Sources */,
+				F62294C61BF46E6D003513B9 /* back_video_manager.mm in Sources */,
+				F62294CC1BF4720F003513B9 /* vms_client_manager.cpp in Sources */,
+				F6F2630F1C1EE5BD00AE0488 /* NSImage+Flip.mm in Sources */,
+				F611689F1BEDAEAD008CC764 /* AvView.mm in Sources */,
+				F61169291BF0BC3D008CC764 /* BackPlugin.mm in Sources */,
+				F622945E1BF43C32003513B9 /* NSWindow+FullScreen.m in Sources */,
+				F61168E71BEE1F02008CC764 /* LivePlugin.mm in Sources */,
+				F61168851BEDAD87008CC764 /* back_xml_parser.cpp in Sources */,
+				F622951F1BF5CCBC003513B9 /* net_client.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F61168701BEDAC6C008CC764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_EXTENSION = a;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F61168711BEDAC6C008CC764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_EXTENSION = a;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F61168731BEDAC6C008CC764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../boost_1_50_0/include,
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F61168741BEDAC6C008CC764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../boost_1_50_0/include,
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F61168591BEDAC6C008CC764 /* Build configuration list for PBXProject "WebPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F61168701BEDAC6C008CC764 /* Debug */,
+				F61168711BEDAC6C008CC764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F61168721BEDAC6C008CC764 /* Build configuration list for PBXNativeTarget "WebPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F61168731BEDAC6C008CC764 /* Debug */,
+				F61168741BEDAC6C008CC764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F61168561BEDAC6C008CC764 /* Project object */;
+}
