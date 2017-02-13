@@ -1,0 +1,17 @@
+Title VMS For Mac Installer
+Version 0.1.7
+Description 
+DefaultLocation /
+DeleteWarning 
+
+### Package Flags
+
+NeedsAuthorization YES
+Required YES
+Relocatable NO
+RequiresReboot NO
+UseUserMask NO
+OverwritePermissions NO
+AllowBackRev YES
+RootVolumeOnly NO
+OnlyUpdateInstalledLanguages NO
