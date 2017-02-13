@@ -1,0 +1,39 @@
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "3yc-FH-CBN"; */
+"3yc-FH-CBN.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; placeholderString = "请填写备注"; ObjectID = "75I-NB-gRQ"; */
+"75I-NB-gRQ.placeholderString" = "Please fill in the remarks";
+
+/* Class = "NSTextFieldCell"; title = "备注："; ObjectID = "7xe-ha-mBK"; */
+"7xe-ha-mBK.title" = "Remark：";
+
+/* Class = "NSWindow"; title = "User"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "User";
+
+/* Class = "NSTextFieldCell"; title = "密码："; ObjectID = "GMj-BM-d4v"; */
+"GMj-BM-d4v.title" = "Password：";
+
+/* Class = "NSTextFieldCell"; placeholderString = "请输入用户名"; ObjectID = "Mbk-CH-ldT"; */
+"Mbk-CH-ldT.placeholderString" = "please enter user name";
+
+/* Class = "NSTextFieldCell"; title = "用户名："; ObjectID = "PRb-ZT-h8b"; */
+"PRb-ZT-h8b.title" = "Username：";
+
+/* Class = "NSButtonCell"; title = "完成"; ObjectID = "PkU-fH-FU3"; */
+"PkU-fH-FU3.title" = "Done";
+
+/* Class = "NSTextFieldCell"; title = "用户组："; ObjectID = "Rpq-Q6-Z5U"; */
+"Rpq-Q6-Z5U.title" = "UserGroup：";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "请输入密码"; ObjectID = "YlK-Nk-DV2"; */
+"YlK-Nk-DV2.placeholderString" = "Please enter a password";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "as5-ps-jkV"; */
+"as5-ps-jkV.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "cHH-0J-MQa"; */
+"cHH-0J-MQa.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "g3w-Wk-1Wg"; */
+"g3w-Wk-1Wg.title" = "Cancel";

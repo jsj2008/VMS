@@ -1,0 +1,162 @@
+
+/* Class = "NSButtonCell"; title = "添加"; ObjectID = "3Dz-9p-Vx5"; */
+"3Dz-9p-Vx5.title" = "Add";
+
+/* Class = "NSMenuItem"; title = "添加组"; ObjectID = "3TQ-Qn-lcX"; */
+"3TQ-Qn-lcX.title" = "Add Group";
+
+/* Class = "NSMenuItem"; title = "全部停止"; ObjectID = "3Yf-yQ-Mgy"; */
+"3Yf-yQ-Mgy.title" = "Stop All";
+
+/* Class = "NSButtonCell"; title = "设备列表"; ObjectID = "3q8-4O-XQr"; */
+"3q8-4O-XQr.title" = "Device List";
+
+/* Class = "NSButton"; ibShadowedToolTip = "全部关闭"; ObjectID = "40L-tu-InO"; */
+"40L-tu-InO.ibShadowedToolTip" = "Stop All";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "44w-Hk-c9u"; */
+"44w-Hk-c9u.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "设备连接设置"; ObjectID = "4t9-VN-TGL"; */
+"4t9-VN-TGL.title" = "Connection Settings";
+
+/* Class = "NSTextFieldCell"; title = "远近"; ObjectID = "7cm-ne-DpE"; */
+"7cm-ne-DpE.title" = "Zoom";
+
+/* Class = "NSButtonCell"; title = "停止"; ObjectID = "7uQ-0M-RHX"; */
+"7uQ-0M-RHX.title" = "Stop";
+
+/* Class = "NSButton"; ibShadowedToolTip = "36分屏"; ObjectID = "949-3e-BGC"; */
+"949-3e-BGC.ibShadowedToolTip" = "36 view";
+
+/* Class = "NSMenuItem"; title = "取消轮巡组"; ObjectID = "Be4-5l-Lkn"; */
+"Be4-5l-Lkn.title" = "Cancel Patrol Group";
+
+/* Class = "NSButton"; ibShadowedToolTip = "64分屏"; ObjectID = "Bpo-Dc-u2e"; */
+"Bpo-Dc-u2e.ibShadowedToolTip" = "64 view";
+
+/* Class = "NSMenuItem"; title = "隐藏工具栏"; ObjectID = "D6t-lF-Ff9"; */
+"D6t-lF-Ff9.title" = "Hide Toolbar";
+
+/* Class = "NSButtonCell"; title = "运行"; ObjectID = "E9l-st-cHa"; */
+"E9l-st-cHa.title" = "Run";
+
+/* Class = "NSMenuItem"; title = "切换全屏模式"; ObjectID = "GZ9-Yg-fU6"; */
+"GZ9-Yg-fU6.title" = "Toggle fullscreen mode";
+
+/* Class = "NSMenuItem"; title = "全部开始"; ObjectID = "HfT-1R-b9F"; */
+"HfT-1R-b9F.title" = "Start all";
+
+/* Class = "NSMenuItem"; title = "取消分组"; ObjectID = "INe-A4-n6U"; */
+"INe-A4-n6U.title" = "Cancel group";
+
+/* Class = "NSMenuItem"; title = "移除所有"; ObjectID = "KM7-F5-xiq"; */
+"KM7-F5-xiq.title" = "Remove all";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "Kbt-lh-d3f"; */
+"Kbt-lh-d3f.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "巡航"; ObjectID = "KtJ-ad-5aV"; */
+"KtJ-ad-5aV.title" = "Cruise";
+
+/* Class = "NSButton"; ibShadowedToolTip = "窗口轮巡"; ObjectID = "M0d-mc-bZy"; */
+"M0d-mc-bZy.ibShadowedToolTip" = "Window Patrol";
+
+/* Class = "NSButton"; ibShadowedToolTip = "下一页"; ObjectID = "MEc-7C-XyI"; */
+"MEc-7C-XyI.ibShadowedToolTip" = "Next page";
+
+/* Class = "NSMenuItem"; title = "添加轮巡组"; ObjectID = "NIH-Oh-8Ih"; */
+"NIH-Oh-8Ih.title" = "Add Patrol Group";
+
+/* Class = "NSButtonCell"; title = "开始"; ObjectID = "NZ7-KB-g3R"; */
+"NZ7-KB-g3R.title" = "Start";
+
+/* Class = "NSButton"; ibShadowedToolTip = "6分屏"; ObjectID = "Qh0-cA-TNj"; */
+"Qh0-cA-TNj.ibShadowedToolTip" = "6 view";
+
+/* Class = "NSMenuItem"; title = "移除设备"; ObjectID = "Qxo-Zh-Q7G"; */
+"Qxo-Zh-Q7G.title" = "Remove Device";
+
+/* Class = "NSMenuItem"; title = "轮巡设置"; ObjectID = "RIJ-xE-7oU"; */
+"RIJ-xE-7oU.title" = "Patrol Group Settings";
+
+/* Class = "NSButtonCell"; title = "删除"; ObjectID = "SbA-cl-sQP"; */
+"SbA-cl-sQP.title" = "Delete";
+
+/* Class = "NSButton"; ibShadowedToolTip = "25分屏"; ObjectID = "Srh-t4-XEf"; */
+"Srh-t4-XEf.ibShadowedToolTip" = "25 view";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "UV7-Tm-cTO"; */
+"UV7-Tm-cTO.title" = "Item 1";
+
+/* Class = "NSButton"; ibShadowedToolTip = "上一页"; ObjectID = "UfN-vE-B3e"; */
+"UfN-vE-B3e.ibShadowedToolTip" = "Previous page";
+
+/* Class = "NSButton"; ibShadowedToolTip = "16分屏"; ObjectID = "V6c-92-27T"; */
+"V6c-92-27T.ibShadowedToolTip" = "16 view";
+
+/* Class = "NSButtonCell"; title = "云台控制"; ObjectID = "Z8Y-A9-SZJ"; */
+"Z8Y-A9-SZJ.title" = "PTZ Control";
+
+/* Class = "NSButton"; ibShadowedToolTip = "8分屏"; ObjectID = "aJY-Mz-h8J"; */
+"aJY-Mz-h8J.ibShadowedToolTip" = "8 view";
+
+/* Class = "NSTextFieldCell"; title = "光圈"; ObjectID = "apt-AC-mcg"; */
+"apt-AC-mcg.title" = "Exposure";
+
+/* Class = "NSMenuItem"; title = "组设置"; ObjectID = "eMa-pT-nMM"; */
+"eMa-pT-nMM.title" = "Group Settings";
+
+/* Class = "NSTextFieldCell"; title = "焦距"; ObjectID = "gUf-ET-2AU"; */
+"gUf-ET-2AU.title" = "Focus";
+
+/* Class = "NSButton"; ibShadowedToolTip = "4分屏"; ObjectID = "h6x-nQ-53T"; */
+"h6x-nQ-53T.ibShadowedToolTip" = "4 view";
+
+/* Class = "NSMenuItem"; title = "预览"; ObjectID = "hdj-p8-bYW"; */
+"hdj-p8-bYW.title" = "Preview";
+
+/* Class = "NSButton"; ibShadowedToolTip = "全屏"; ObjectID = "iXe-a1-kHA"; */
+"iXe-a1-kHA.ibShadowedToolTip" = "Full Screen";
+
+/* Class = "NSMenuItem"; title = "轮巡"; ObjectID = "kCA-7F-dtu"; */
+"kCA-7F-dtu.title" = "Patrol";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "lmH-He-TU8"; */
+"lmH-He-TU8.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "mO3-Zr-J0e"; */
+"mO3-Zr-J0e.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "nQ8-Wo-gdZ"; */
+"nQ8-Wo-gdZ.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "nY3-SM-Y52"; */
+"nY3-SM-Y52.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "设备参数设置"; ObjectID = "oAQ-8c-efO"; */
+"oAQ-8c-efO.title" = "Device Settings";
+
+/* Class = "NSMenuItem"; title = "设备参数设置"; ObjectID = "oeP-lv-vvY"; */
+"oeP-lv-vvY.title" = "Device Settings";
+
+/* Class = "NSButton"; ibShadowedToolTip = "49分屏"; ObjectID = "tV8-6P-j4q"; */
+"tV8-6P-j4q.ibShadowedToolTip" = "49 view";
+
+/* Class = "NSMenuItem"; title = "添加设备"; ObjectID = "tdx-qT-4sZ"; */
+"tdx-qT-4sZ.title" = "Add Device";
+
+/* Class = "NSButton"; ibShadowedToolTip = "9分屏"; ObjectID = "tqt-lc-xbM"; */
+"tqt-lc-xbM.ibShadowedToolTip" = "9 view";
+
+/* Class = "NSButton"; ibShadowedToolTip = "1分屏"; ObjectID = "uGA-2G-7cK"; */
+"uGA-2G-7cK.ibShadowedToolTip" = "1 view";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "xbY-lp-Taa"; */
+"xbY-lp-Taa.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "预置位"; ObjectID = "xjH-Df-fzm"; */
+"xjH-Df-fzm.title" = "Preset";
+
+/* Class = "NSMenuItem"; title = "关闭视频"; ObjectID = "zcI-0k-qLo"; */
+"zcI-0k-qLo.title" = "Stop";

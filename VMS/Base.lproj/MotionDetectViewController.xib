@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MotionDetectViewController">
+            <connections>
+                <outlet property="audioAlarmBtn" destination="sLp-rG-ume" id="uLj-LI-Yhd"/>
+                <outlet property="chnBtn" destination="pda-Lc-4c9" id="YCo-cM-2oc"/>
+                <outlet property="chnLabel" destination="p0w-Vt-EcJ" id="PXK-zS-TMN"/>
+                <outlet property="linkageView" destination="PlT-PV-8yZ" id="Z6w-Pf-HXS"/>
+                <outlet property="motionSchedulesPicker" destination="5e4-aq-yed" id="FpW-Gs-bJF"/>
+                <outlet property="motionSensitivityBtn" destination="1WC-Yf-qGX" id="JIm-Kx-AvV"/>
+                <outlet property="motionTriggerIntervalBtn" destination="dvA-Rp-xZl" id="ubp-3H-iX7"/>
+                <outlet property="recordTimeBtn" destination="fZt-PH-23C" id="4S8-dI-SA8"/>
+                <outlet property="snapIntervalBtn" destination="hVb-ft-Z6C" id="aTN-8f-EBx"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="zone1" destination="UQi-3l-qs5" id="Cod-Je-ZwZ"/>
+                <outlet property="zone2" destination="5e1-Nd-jlr" id="sCG-vO-0M5"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="804" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqx-nc-kFH">
+                    <rect key="frame" x="0.0" y="-376" width="800" height="752"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Yet-S4-xIf">
+                        <rect key="frame" x="0.0" y="0.0" width="785" height="752"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view translatesAutoresizingMaskIntoConstraints="NO" id="FCY-gn-ytU">
+                                <rect key="frame" x="0.0" y="-298" width="1525" height="1050"/>
+                                <subviews>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="6pw-Oe-Ldz">
+                                        <rect key="frame" x="18" y="984" width="164" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="tZ6-ej-Ezh"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="check" title="是否启用移动侦测报警" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="RO4-gu-mmD">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <binding destination="-2" name="value" keyPath="self.isEnableMotionDetect" id="yvs-fa-qZz"/>
+                                        </connections>
+                                    </button>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="UQi-3l-qs5" userLabel="Zone1">
+                                        <rect key="frame" x="32" y="945" width="743" height="41"/>
+                                        <subviews>
+                                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1WC-Yf-qGX">
+                                                <rect key="frame" x="125" y="4" width="261" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="256" id="fhI-JG-Awr"/>
+                                                </constraints>
+                                                <popUpButtonCell key="cell" type="push" title="高" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="2" imageScaling="proportionallyDown" inset="2" selectedItem="5nB-sW-9IY" id="oH7-LZ-qfP">
+                                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="menu"/>
+                                                    <menu key="menu" id="OMh-G0-Q9H">
+                                                        <items>
+                                                            <menuItem title="很低" tag="4" id="Pzz-qH-oa0">
+                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                            </menuItem>
+                                                            <menuItem title="较低" tag="3" id="amr-ih-Nrv">
+                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                            </menuItem>
+                                                            <menuItem title="低" id="5Mo-Qk-vWl">
+                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                            </menuItem>
+                                                            <menuItem title="中" tag="1" id="tpU-Ku-OKV">
+                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                            </menuItem>
+                                                            <menuItem title="高" state="on" tag="2" id="5nB-sW-9IY">
+                                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                            </menuItem>
+                                                        </items>
+                                                    </menu>
+                                                </popUpButtonCell>
+                                                <connections>
+                                                    <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="EdI-eb-v4T"/>
+                                                </connections>
+                                            </popUpButton>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E0m-fd-gyQ">
+                                                <rect key="frame" x="-2" y="8" width="124" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="R62-BP-jHO"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="灵敏度：" id="Q9c-CO-T2E">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="E0m-fd-gyQ" firstAttribute="leading" secondItem="UQi-3l-qs5" secondAttribute="leading" id="3Lu-Rn-DF8"/>
+                                            <constraint firstItem="E0m-fd-gyQ" firstAttribute="top" secondItem="UQi-3l-qs5" secondAttribute="top" constant="16" id="5XZ-a5-a5L"/>
+                                            <constraint firstItem="1WC-Yf-qGX" firstAttribute="leading" secondItem="E0m-fd-gyQ" secondAttribute="trailing" constant="7" id="ZgC-hE-b6D"/>
+                                            <constraint firstAttribute="bottom" secondItem="1WC-Yf-qGX" secondAttribute="bottom" constant="7" id="bXc-XK-iej"/>
+                                            <constraint firstItem="1WC-Yf-qGX" firstAttribute="top" secondItem="UQi-3l-qs5" secondAttribute="top" constant="13" id="zHW-bq-eGp"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="5e1-Nd-jlr" userLabel="Zone2">
+                                        <rect key="frame" x="32" y="417" width="743" height="528"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vxs-Se-5dV">
+                                                <rect key="frame" x="-2" y="495" width="124" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="IkS-E7-im9"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="报警触发间隔：" id="Rve-9c-T41">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4UR-Xq-GlO">
+                                                <rect key="frame" x="-2" y="456" width="124" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="报警联动策略：" id="EQx-cc-66G">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oUy-Df-ZUQ">
+                                                <rect key="frame" x="121" y="295" width="172" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="GKg-Is-H3x"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="push" title="侦测区域编辑" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NBC-LP-Yic">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="editDetectionArea:" target="-2" id="pms-KL-eyy"/>
+                                                    <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="H37-MK-NRr"/>
+                                                </connections>
+                                            </button>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JCP-dV-Q7Z">
+                                                <rect key="frame" x="6" y="15" width="451" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="Npr-hV-xiM"/>
+                                                    <constraint firstAttribute="width" constant="447" id="OC6-u4-pEM"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="当报警录像启用时计划录像将停止，报警录像结束后计划录像自动启用" id="SAx-bv-Nim">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <customView identifier="motion schedules" translatesAutoresizingMaskIntoConstraints="NO" id="5e4-aq-yed" customClass="TimePickerView">
+                                                <rect key="frame" x="6" y="40" width="688" height="237"/>
+                                                <connections>
+                                                    <binding destination="-2" name="hidden" keyPath="self.isEnableMotionDetect" id="9pH-g6-bKP">
+                                                        <dictionary key="options">
+                                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                        </dictionary>
+                                                    </binding>
+                                                </connections>
+                                            </customView>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RAw-fk-esm">
+                                                <rect key="frame" x="339" y="284" width="64" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="oe6-3K-g2A"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="时间编辑" id="Nye-Hu-BHl">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dvA-Rp-xZl">
+                                                <rect key="frame" x="125" y="489" width="261" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="256" id="ahb-nY-4Jy"/>
+                                                </constraints>
+                                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="z7U-zS-I68">
+                                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="menu"/>
+                                                    <menu key="menu" id="xcq-Vi-JzQ">
+                                                        <items>
+                                                            <menuItem title="Item 1" id="Gd2-Ah-GeI"/>
+                                                            <menuItem title="Item 2" id="6c5-83-u0Q"/>
+                                                            <menuItem title="Item 3" id="KmO-3O-iBy"/>
+                                                        </items>
+                                                    </menu>
+                                                </popUpButtonCell>
+                                                <connections>
+                                                    <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="opa-jJ-Iip"/>
+                                                </connections>
+                                            </popUpButton>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="PlT-PV-8yZ">
+                                                <rect key="frame" x="127" y="359" width="160" height="113"/>
+                                                <subviews>
+                                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="cO8-Fv-n1X">
+                                                        <rect key="frame" x="0.0" y="92" width="44" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="Bit0" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="p1R-oU-9FV">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="0Fe-CK-0ny"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kk7-Zp-Tif">
+                                                        <rect key="frame" x="0.0" y="70" width="44" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="Bit1" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="eB5-JY-UyC">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="ciZ-e1-mMn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="lLy-KC-Cc4">
+                                                        <rect key="frame" x="0.0" y="48" width="44" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="Bit2" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="1s6-na-jXB">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="VQV-By-oC5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="3us-Ul-eeN">
+                                                        <rect key="frame" x="0.0" y="26" width="44" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="Bit3" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cKg-qu-23U">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="5FJ-tx-hgS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="h43-Dy-KBz">
+                                                        <rect key="frame" x="0.0" y="4" width="44" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="Bit4" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="k1m-lI-dh9">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="IsZ-bn-xzo"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="3us-Ul-eeN" firstAttribute="top" secondItem="lLy-KC-Cc4" secondAttribute="bottom" constant="8" id="1pn-3X-DPb"/>
+                                                    <constraint firstItem="Kk7-Zp-Tif" firstAttribute="leading" secondItem="cO8-Fv-n1X" secondAttribute="leading" id="1vg-tY-Ccg"/>
+                                                    <constraint firstItem="Kk7-Zp-Tif" firstAttribute="top" secondItem="cO8-Fv-n1X" secondAttribute="bottom" constant="8" id="495-7m-UjD"/>
+                                                    <constraint firstItem="3us-Ul-eeN" firstAttribute="leading" secondItem="h43-Dy-KBz" secondAttribute="leading" id="C1e-ck-bY7"/>
+                                                    <constraint firstItem="3us-Ul-eeN" firstAttribute="trailing" secondItem="lLy-KC-Cc4" secondAttribute="trailing" id="EIF-OT-p3F"/>
+                                                    <constraint firstItem="3us-Ul-eeN" firstAttribute="trailing" secondItem="h43-Dy-KBz" secondAttribute="trailing" id="EeM-uw-7Eq"/>
+                                                    <constraint firstItem="lLy-KC-Cc4" firstAttribute="top" secondItem="Kk7-Zp-Tif" secondAttribute="bottom" constant="8" id="JM5-aG-HdM"/>
+                                                    <constraint firstItem="3us-Ul-eeN" firstAttribute="leading" secondItem="lLy-KC-Cc4" secondAttribute="leading" id="MWt-wW-hAJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="h43-Dy-KBz" secondAttribute="bottom" constant="6" id="Mg4-73-ce0"/>
+                                                    <constraint firstItem="cO8-Fv-n1X" firstAttribute="top" secondItem="PlT-PV-8yZ" secondAttribute="top" constant="5" id="UbR-4B-Az3"/>
+                                                    <constraint firstAttribute="width" constant="160" id="hPn-oc-dSy"/>
+                                                    <constraint firstItem="lLy-KC-Cc4" firstAttribute="trailing" secondItem="Kk7-Zp-Tif" secondAttribute="trailing" id="kgG-re-YAD"/>
+                                                    <constraint firstItem="cO8-Fv-n1X" firstAttribute="trailing" secondItem="Kk7-Zp-Tif" secondAttribute="trailing" id="ldf-ny-3TU"/>
+                                                    <constraint firstItem="cO8-Fv-n1X" firstAttribute="leading" secondItem="PlT-PV-8yZ" secondAttribute="leading" constant="2" id="txd-rT-deJ"/>
+                                                    <constraint firstItem="h43-Dy-KBz" firstAttribute="top" secondItem="3us-Ul-eeN" secondAttribute="bottom" constant="8" id="vSx-Pi-Ero"/>
+                                                    <constraint firstItem="lLy-KC-Cc4" firstAttribute="leading" secondItem="Kk7-Zp-Tif" secondAttribute="leading" id="zxx-ux-fJn"/>
+                                                </constraints>
+                                            </customView>
+                                            <button tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="sLp-rG-ume">
+                                                <rect key="frame" x="128" y="334" width="100" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="96" id="eSI-VB-K0q"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="check" title="AudioAlarm" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Vgg-i4-JCH">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="yON-Y8-JD0"/>
+                                                    <binding destination="-2" name="value" keyPath="self.isEnablePCAudioAlarm" id="xXI-Br-pwE"/>
+                                                </connections>
+                                            </button>
+                                            <textField identifier="option" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="45z-3j-IFg" userLabel="interval name">
+                                                <rect key="frame" x="293" y="386" width="97" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="93" id="mxv-Ox-Rtb"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="抓拍时间间隔" id="vEG-HN-GMB">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <binding destination="-2" name="hidden" keyPath="self.isEnableSnap" id="vzl-bd-hs2">
+                                                        <dictionary key="options">
+                                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                        </dictionary>
+                                                    </binding>
+                                                </connections>
+                                            </textField>
+                                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hVb-ft-Z6C" userLabel="interval value">
+                                                <rect key="frame" x="394" y="381" width="60" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="qjt-t9-KVb"/>
+                                                </constraints>
+                                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="MAi-bU-FhS" id="g7x-yw-7s9">
+                                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="menu"/>
+                                                    <menu key="menu" id="apH-1a-SXZ">
+                                                        <items>
+                                                            <menuItem title="Item 1" state="on" id="MAi-bU-FhS"/>
+                                                            <menuItem title="Item 2" id="2xb-mc-MUn"/>
+                                                            <menuItem title="Item 3" id="OE6-Ca-2wK"/>
+                                                        </items>
+                                                    </menu>
+                                                </popUpButtonCell>
+                                                <connections>
+                                                    <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="P1t-so-g7J"/>
+                                                    <binding destination="-2" name="hidden" keyPath="self.isEnableSnap" previousBinding="P1t-so-g7J" id="7fb-AA-hME">
+                                                        <dictionary key="options">
+                                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                        </dictionary>
+                                                    </binding>
+                                                </connections>
+                                            </popUpButton>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1O8-TX-ybI">
+                                                <rect key="frame" x="303" y="413" width="83" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="录像时间" id="tJN-Jg-eRT">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <binding destination="-2" name="hidden" keyPath="self.isEnableRecord" id="AKt-v5-pSc">
+                                                        <dictionary key="options">
+                                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                        </dictionary>
+                                                    </binding>
+                                                </connections>
+                                            </textField>
+                                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fZt-PH-23C">
+                                                <rect key="frame" x="390" y="408" width="60" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="K55-zR-Yna" id="Sta-C1-7eE">
+                                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="menu"/>
+                                                    <menu key="menu" id="PJH-sl-3t7">
+                                                        <items>
+                                                            <menuItem title="Item 1" state="on" id="K55-zR-Yna"/>
+                                                            <menuItem title="Item 2" id="KEc-3B-wgG"/>
+                                                            <menuItem title="Item 3" id="zw4-v8-2yn"/>
+                                                        </items>
+                                                    </menu>
+                                                </popUpButtonCell>
+                                                <connections>
+                                                    <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="rfd-zJ-bgg"/>
+                                                    <binding destination="-2" name="hidden" keyPath="self.isEnableRecord" previousBinding="rfd-zJ-bgg" id="dQw-yZ-MdE">
+                                                        <dictionary key="options">
+                                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                        </dictionary>
+                                                    </binding>
+                                                </connections>
+                                            </popUpButton>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="hVb-ft-Z6C" firstAttribute="leading" secondItem="45z-3j-IFg" secondAttribute="trailing" constant="8" symbolic="YES" id="1wz-c3-GNd"/>
+                                            <constraint firstItem="5e4-aq-yed" firstAttribute="top" secondItem="RAw-fk-esm" secondAttribute="bottom" constant="7" id="5Hi-Fp-qd7"/>
+                                            <constraint firstItem="4UR-Xq-GlO" firstAttribute="leading" secondItem="Vxs-Se-5dV" secondAttribute="leading" id="6i1-EC-hUJ"/>
+                                            <constraint firstItem="dvA-Rp-xZl" firstAttribute="leading" secondItem="Vxs-Se-5dV" secondAttribute="trailing" constant="7" id="A4W-XB-kPU"/>
+                                            <constraint firstItem="45z-3j-IFg" firstAttribute="leading" secondItem="PlT-PV-8yZ" secondAttribute="trailing" constant="8" symbolic="YES" id="HVx-yd-QJj"/>
+                                            <constraint firstItem="dvA-Rp-xZl" firstAttribute="leading" secondItem="PlT-PV-8yZ" secondAttribute="leading" id="Lyi-En-iDm"/>
+                                            <constraint firstAttribute="trailing" secondItem="5e4-aq-yed" secondAttribute="trailing" constant="49" id="MeD-Px-ZgI"/>
+                                            <constraint firstItem="sLp-rG-ume" firstAttribute="top" secondItem="PlT-PV-8yZ" secondAttribute="bottom" constant="9" id="Plr-i2-qEF"/>
+                                            <constraint firstItem="5e4-aq-yed" firstAttribute="leading" secondItem="5e1-Nd-jlr" secondAttribute="leading" constant="6" id="QSY-WE-5fx"/>
+                                            <constraint firstItem="4UR-Xq-GlO" firstAttribute="top" secondItem="Vxs-Se-5dV" secondAttribute="bottom" constant="22" id="QkR-ED-IB7"/>
+                                            <constraint firstItem="hVb-ft-Z6C" firstAttribute="centerY" secondItem="45z-3j-IFg" secondAttribute="centerY" id="RdK-H6-C82"/>
+                                            <constraint firstAttribute="bottom" secondItem="JCP-dV-Q7Z" secondAttribute="bottom" constant="15" id="TQk-83-ToL"/>
+                                            <constraint firstItem="Vxs-Se-5dV" firstAttribute="top" secondItem="5e1-Nd-jlr" secondAttribute="top" constant="16" id="XQN-WD-gD1"/>
+                                            <constraint firstItem="JCP-dV-Q7Z" firstAttribute="top" secondItem="5e4-aq-yed" secondAttribute="bottom" constant="8" symbolic="YES" id="Zg4-PY-hyy"/>
+                                            <constraint firstItem="JCP-dV-Q7Z" firstAttribute="leading" secondItem="5e1-Nd-jlr" secondAttribute="leading" constant="8" id="ab5-kc-6mi"/>
+                                            <constraint firstItem="PlT-PV-8yZ" firstAttribute="top" secondItem="dvA-Rp-xZl" secondAttribute="bottom" constant="20" id="crG-CV-rYm"/>
+                                            <constraint firstItem="RAw-fk-esm" firstAttribute="centerX" secondItem="5e1-Nd-jlr" secondAttribute="centerX" id="g2P-2P-f8N"/>
+                                            <constraint firstItem="sLp-rG-ume" firstAttribute="leading" secondItem="5e1-Nd-jlr" secondAttribute="leading" constant="130" id="g6i-0F-Rog"/>
+                                            <constraint firstItem="dvA-Rp-xZl" firstAttribute="top" secondItem="5e1-Nd-jlr" secondAttribute="top" constant="15" id="i4A-zh-g4l"/>
+                                            <constraint firstItem="Vxs-Se-5dV" firstAttribute="trailing" secondItem="4UR-Xq-GlO" secondAttribute="trailing" id="iDc-LM-a9E"/>
+                                            <constraint firstItem="5e4-aq-yed" firstAttribute="top" secondItem="oUy-Df-ZUQ" secondAttribute="bottom" constant="25" id="lhI-oK-wu5"/>
+                                            <constraint firstItem="PlT-PV-8yZ" firstAttribute="leading" secondItem="oUy-Df-ZUQ" secondAttribute="leading" id="p5v-2o-gaJ"/>
+                                            <constraint firstItem="oUy-Df-ZUQ" firstAttribute="top" secondItem="sLp-rG-ume" secondAttribute="bottom" constant="13" id="sHj-zs-6f3"/>
+                                            <constraint firstItem="Vxs-Se-5dV" firstAttribute="leading" secondItem="5e1-Nd-jlr" secondAttribute="leading" id="uLb-Qy-5lY"/>
+                                            <constraint firstItem="RAw-fk-esm" firstAttribute="top" secondItem="hVb-ft-Z6C" secondAttribute="bottom" constant="83" id="zQJ-K3-Fxz"/>
+                                        </constraints>
+                                    </customView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="p0w-Vt-EcJ">
+                                        <rect key="frame" x="28" y="1013" width="124" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="RIr-3d-Bnm"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="通道：" id="nQz-de-yJN">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pda-Lc-4c9">
+                                        <rect key="frame" x="156" y="1007" width="261" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="256" id="fw5-CE-i8e"/>
+                                        </constraints>
+                                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="dvL-TB-a6u" id="lP3-rZ-kXZ">
+                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="menu"/>
+                                            <menu key="menu" id="20D-cv-ujY">
+                                                <items>
+                                                    <menuItem title="Item 1" state="on" id="dvL-TB-a6u"/>
+                                                    <menuItem title="Item 2" id="ebd-Fi-iGg"/>
+                                                    <menuItem title="Item 3" id="h0M-oc-phN"/>
+                                                </items>
+                                            </menu>
+                                        </popUpButtonCell>
+                                        <connections>
+                                            <action selector="chnOption:" target="-2" id="oDd-yO-mHv"/>
+                                            <binding destination="-2" name="selectedIndex" keyPath="self.chn" id="B1s-8Z-MfN"/>
+                                        </connections>
+                                    </popUpButton>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6pw-Oe-Ldz" firstAttribute="top" secondItem="pda-Lc-4c9" secondAttribute="bottom" constant="10" id="2u0-Ag-IJs"/>
+                                    <constraint firstItem="p0w-Vt-EcJ" firstAttribute="top" secondItem="FCY-gn-ytU" secondAttribute="top" constant="20" symbolic="YES" id="8ih-Cf-Imx"/>
+                                    <constraint firstAttribute="bottom" secondItem="5e1-Nd-jlr" secondAttribute="bottom" constant="417" id="TCa-xT-KnQ"/>
+                                    <constraint firstItem="UQi-3l-qs5" firstAttribute="leading" secondItem="FCY-gn-ytU" secondAttribute="leading" constant="32" id="cBC-we-5pb"/>
+                                    <constraint firstItem="6pw-Oe-Ldz" firstAttribute="leading" secondItem="FCY-gn-ytU" secondAttribute="leading" constant="20" symbolic="YES" id="dgh-2l-nQI"/>
+                                    <constraint firstItem="5e1-Nd-jlr" firstAttribute="top" secondItem="UQi-3l-qs5" secondAttribute="bottom" id="erY-Q0-mRF"/>
+                                    <constraint firstItem="p0w-Vt-EcJ" firstAttribute="leading" secondItem="FCY-gn-ytU" secondAttribute="leading" constant="30" id="fyD-nW-AJ5"/>
+                                    <constraint firstItem="5e1-Nd-jlr" firstAttribute="leading" secondItem="UQi-3l-qs5" secondAttribute="leading" id="hSo-ja-dEC"/>
+                                    <constraint firstItem="UQi-3l-qs5" firstAttribute="top" secondItem="6pw-Oe-Ldz" secondAttribute="bottom" id="iQ0-Kp-ayB"/>
+                                    <constraint firstAttribute="trailing" secondItem="UQi-3l-qs5" secondAttribute="trailing" constant="750" id="qZM-Wt-5ma"/>
+                                    <constraint firstItem="p0w-Vt-EcJ" firstAttribute="baseline" secondItem="pda-Lc-4c9" secondAttribute="baseline" id="t9o-b3-Ya7"/>
+                                    <constraint firstItem="pda-Lc-4c9" firstAttribute="leading" secondItem="p0w-Vt-EcJ" secondAttribute="trailing" constant="8" symbolic="YES" id="u8f-Ke-kLc"/>
+                                    <constraint firstItem="UQi-3l-qs5" firstAttribute="trailing" secondItem="5e1-Nd-jlr" secondAttribute="trailing" id="xIq-s0-shV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FCY-gn-ytU" secondAttribute="bottom" constant="-298" id="FrF-OP-Tht"/>
+                            <constraint firstItem="FCY-gn-ytU" firstAttribute="top" secondItem="Yet-S4-xIf" secondAttribute="top" id="Hmt-DZ-UEX"/>
+                            <constraint firstItem="FCY-gn-ytU" firstAttribute="leading" secondItem="Yet-S4-xIf" secondAttribute="leading" id="Mcd-rj-ez4"/>
+                            <constraint firstAttribute="trailing" secondItem="FCY-gn-ytU" secondAttribute="trailing" constant="-740" id="Y49-rT-7LP"/>
+                        </constraints>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="05B-PC-Opf">
+                        <rect key="frame" x="1" y="80" width="166" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="9u9-oo-cvw">
+                        <rect key="frame" x="785" y="0.0" width="15" height="752"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dqx-nc-kFH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="15" id="2zZ-K3-b7G"/>
+                <constraint firstAttribute="trailing" secondItem="dqx-nc-kFH" secondAttribute="trailing" constant="4" id="3xG-dE-hiC"/>
+                <constraint firstAttribute="bottom" secondItem="dqx-nc-kFH" secondAttribute="bottom" constant="-376" id="JPt-Yz-Gnf"/>
+                <constraint firstItem="dqx-nc-kFH" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="dBt-7s-d2D"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="168.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="4st-3D-tbh"/>
+    </objects>
+</document>

@@ -1,0 +1,45 @@
+
+/* Class = "NSTextFieldCell"; title = "是否显示设备名:"; ObjectID = "1Rk-K8-Kz8"; */
+"1Rk-K8-Kz8.title" = "Display Device Name:";
+
+/* Class = "NSTextFieldCell"; title = "通道名称:"; ObjectID = "5NN-us-dki"; */
+"5NN-us-dki.title" = "Channel name:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "5S0-Ka-5Kc"; */
+"5S0-Ka-5Kc.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "否"; ObjectID = "8Um-cE-2Ph"; */
+"8Um-cE-2Ph.title" = "No";
+
+/* Class = "NSMenuItem"; title = "否"; ObjectID = "Ajr-UP-tgS"; */
+"Ajr-UP-tgS.title" = "No";
+
+/* Class = "NSMenuItem"; title = "是"; ObjectID = "D8T-FA-NYG"; */
+"D8T-FA-NYG.title" = "Yes";
+
+/* Class = "NSButtonCell"; title = "隐私遮盖区域编辑"; ObjectID = "R7N-uu-0SE"; */
+"R7N-uu-0SE.title" = "Set Privacy Zone";
+
+/* Class = "NSTextFieldCell"; title = "是否允许隐私遮盖:"; ObjectID = "RuN-z6-AQa"; */
+"RuN-z6-AQa.title" = "Enable Privacy:";
+
+/* Class = "NSMenuItem"; title = "否"; ObjectID = "U8Q-pK-OaH"; */
+"U8Q-pK-OaH.title" = "No";
+
+/* Class = "NSTextFieldCell"; title = "通道:"; ObjectID = "dMt-ZK-1LX"; */
+"dMt-ZK-1LX.title" = "Channel:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "hOH-P4-QGa"; */
+"hOH-P4-QGa.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "ht7-hu-pKy"; */
+"ht7-hu-pKy.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "是否显示时间戳:"; ObjectID = "i27-qI-CY2"; */
+"i27-qI-CY2.title" = "Display Timestamp";
+
+/* Class = "NSMenuItem"; title = "是"; ObjectID = "u9y-q3-ZmD"; */
+"u9y-q3-ZmD.title" = "Yes";
+
+/* Class = "NSMenuItem"; title = "是"; ObjectID = "veC-lg-yLd"; */
+"veC-lg-yLd.title" = "Yes";

@@ -1,0 +1,12 @@
+
+/* Class = "NSButtonCell"; title = "确定"; ObjectID = "1XW-Cv-gQU"; */
+"1XW-Cv-gQU.title" = "OK";
+
+/* Class = "NSWindow"; title = "增加预置点"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Add Preset Point";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "fNe-sV-xZw"; */
+"fNe-sV-xZw.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "请输入预置点名称:"; ObjectID = "zko-kX-ecl"; */
+"zko-kX-ecl.title" = "Please enter a preset name:";

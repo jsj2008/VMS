@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VideoMonitoringController">
+            <connections>
+                <outlet property="cloudConsoleView" destination="XPR-n1-sMh" id="1Ti-rw-khL"/>
+                <outlet property="contextMenu" destination="jXJ-oN-d9n" id="pIl-MO-OLU"/>
+                <outlet property="cruiseMapListBtn" destination="lbh-gg-iLf" id="KJB-eG-hJG"/>
+                <outlet property="cruiseStartBT" destination="FdA-ke-Qim" id="jOi-oW-9Ua"/>
+                <outlet property="cruiseStopBT" destination="IIo-VK-kZs" id="1dt-42-SGZ"/>
+                <outlet property="cruiseZone" destination="nHc-OX-pO0" id="69f-Ud-JFg"/>
+                <outlet property="outlineView" destination="2Av-Gg-8ZB" id="T4x-Jm-NRO"/>
+                <outlet property="placeHolder1" destination="ahJ-4q-QPN" id="3qj-Z9-Dgq"/>
+                <outlet property="presetAddBT" destination="aNV-yz-Prg" id="4eX-qZ-Snd"/>
+                <outlet property="presetDelete" destination="Pez-UY-cWB" id="3vu-7z-DF8"/>
+                <outlet property="presetPointListBtn" destination="hp7-YR-Ev4" id="qTa-zF-Wbt"/>
+                <outlet property="presetRun" destination="xdl-Ew-wcl" id="Wjk-dz-Dhu"/>
+                <outlet property="ptzBkView" destination="DMr-Z7-56E" id="2WV-0b-ebY"/>
+                <outlet property="ptzToggle" destination="Y9x-Mj-vdq" id="2xr-ky-wAd"/>
+                <outlet property="ptzZone" destination="ay5-tE-Fsw" id="B4X-37-E6c"/>
+                <outlet property="splitview" destination="Jqi-5Y-HOc" id="4fD-N1-zlv"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="zoomZone" destination="55m-Ku-vmj" id="Za2-4V-0hd"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="VMSTabView">
+            <rect key="frame" x="0.0" y="0.0" width="1254" height="716"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <splitView identifier="ptz and device list split view" dividerStyle="thin" translatesAutoresizingMaskIntoConstraints="NO" id="Jqi-5Y-HOc" userLabel="PTZ_DEVICELIST_SPLIT" customClass="DMSplitView">
+                    <rect key="frame" x="1054" y="0.0" width="200" height="716"/>
+                    <subviews>
+                        <customView id="N5O-UU-q5L" userLabel="DEVICELIST">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="249"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Th2-t8-Ujc" userLabel="DeviceListButton" customClass="AMShapedButton">
+                                    <rect key="frame" x="0.0" y="207" width="200" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="9yg-iu-Lbv"/>
+                                        <constraint firstAttribute="height" constant="42" id="xlA-MZ-1RA"/>
+                                    </constraints>
+                                    <buttonCell key="cell" type="smallSquare" title="设备列表" bezelStyle="smallSquare" image="PTZ_BLANK" imagePosition="overlaps" alignment="center" alternateImage="PTZ_BLANK" state="on" imageScaling="axesIndependently" inset="2" id="3q8-4O-XQr">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system" size="16"/>
+                                    </buttonCell>
+                                </button>
+                                <scrollView focusRingType="exterior" autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="CrZ-fX-G0S">
+                                    <rect key="frame" x="0.0" y="42" width="200" height="165"/>
+                                    <clipView key="contentView" drawsBackground="NO" id="TMW-Lt-YDY">
+                                        <rect key="frame" x="1" y="1" width="198" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="20" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="14" outlineTableColumn="MxL-XI-XcF" id="2Av-Gg-8ZB">
+                                                <rect key="frame" x="0.0" y="0.0" width="198" height="163"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <size key="intercellSpacing" width="3" height="0.0"/>
+                                                <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                                <tableColumns>
+                                                    <tableColumn identifier="video devices column" width="195" minWidth="40" maxWidth="1000" id="MxL-XI-XcF">
+                                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                        </tableHeaderCell>
+                                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="44w-Hk-c9u">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                        <prototypeCellViews>
+                                                            <tableCellView identifier="Main Cell View" id="tht-VM-daL">
+                                                                <rect key="frame" x="1" y="0.0" width="195" height="20"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <subviews>
+                                                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPL-Hy-wLW">
+                                                                        <rect key="frame" x="3" y="2" width="16" height="16"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="ih0-Jk-9qs"/>
+                                                                    </imageView>
+                                                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y8A-VY-4kB">
+                                                                        <rect key="frame" x="25" y="2" width="105" height="17"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Kbt-lh-d3f">
+                                                                            <font key="font" metaFont="system"/>
+                                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                        </textFieldCell>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <connections>
+                                                                    <outlet property="imageView" destination="uPL-Hy-wLW" id="c9W-hV-qs1"/>
+                                                                    <outlet property="textField" destination="y8A-VY-4kB" id="ctH-f4-AOJ"/>
+                                                                </connections>
+                                                            </tableCellView>
+                                                        </prototypeCellViews>
+                                                    </tableColumn>
+                                                </tableColumns>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="-2" id="LeQ-Kk-iBp"/>
+                                                    <outlet property="delegate" destination="-2" id="acX-eH-hZp"/>
+                                                    <outlet property="menu" destination="uBW-UJ-RGJ" id="UEn-ql-38d"/>
+                                                </connections>
+                                            </outlineView>
+                                        </subviews>
+                                        <nil key="backgroundColor"/>
+                                    </clipView>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="G4o-TT-BHt"/>
+                                    </constraints>
+                                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Eh0-db-aAv">
+                                        <rect key="frame" x="1" y="119" width="223" height="15"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="C9g-4F-ebi">
+                                        <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                </scrollView>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y9x-Mj-vdq" userLabel="PTZ Control" customClass="JFButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="wcO-27-XzI"/>
+                                        <constraint firstAttribute="width" constant="200" id="x9S-6F-lwO"/>
+                                    </constraints>
+                                    <buttonCell key="cell" type="smallSquare" title="云台控制" bezelStyle="smallSquare" image="PTZ_UP" imagePosition="overlaps" alignment="center" alternateImage="PTZ_DOWN" state="on" imageScaling="axesIndependently" inset="2" id="Z8Y-A9-SZJ">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system" size="16"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="togglePTZ:" target="-2" id="d7Y-GO-egQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="CrZ-fX-G0S" firstAttribute="top" secondItem="Th2-t8-Ujc" secondAttribute="bottom" id="6ta-bs-a9B"/>
+                                <constraint firstItem="Y9x-Mj-vdq" firstAttribute="top" secondItem="CrZ-fX-G0S" secondAttribute="bottom" id="JJw-9u-WyD"/>
+                                <constraint firstAttribute="trailing" secondItem="Y9x-Mj-vdq" secondAttribute="trailing" id="KFz-Ar-UeB"/>
+                                <constraint firstAttribute="trailing" secondItem="CrZ-fX-G0S" secondAttribute="trailing" id="P9k-X7-z7z"/>
+                                <constraint firstAttribute="bottom" secondItem="Y9x-Mj-vdq" secondAttribute="bottom" id="Pfk-cd-u3P"/>
+                                <constraint firstItem="Th2-t8-Ujc" firstAttribute="top" secondItem="N5O-UU-q5L" secondAttribute="top" id="dOE-7i-xNf"/>
+                                <constraint firstAttribute="trailing" secondItem="Th2-t8-Ujc" secondAttribute="trailing" id="zt8-r8-GHW"/>
+                            </constraints>
+                        </customView>
+                        <customView fixedFrame="YES" id="XPR-n1-sMh" userLabel="PTZ" customClass="JFBackground">
+                            <rect key="frame" x="0.0" y="250" width="200" height="466"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMr-Z7-56E" userLabel="PAN_PTZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="466"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="PTZ" id="IQV-pe-Qxh"/>
+                                </imageView>
+                                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55m-Ku-vmj" userLabel="Zoom zone">
+                                    <rect key="frame" x="0.0" y="176" width="200" height="125"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <subviews>
+                                        <button fixedFrame="YES" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="0gj-2D-Cte" userLabel="PAN_DISTANCE_ADD" customClass="PTZButton">
+                                            <rect key="frame" x="38" y="87" width="36" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Add Off" imagePosition="overlaps" alignment="center" alternateImage="Add On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="hVm-Sd-FVo">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="d0m-6I-Lpa"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-y6-3iU" userLabel="PAN_DISTANCE_SUBTRACT" customClass="PTZButton">
+                                            <rect key="frame" x="126" y="87" width="36" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Subtract Off" imagePosition="overlaps" alignment="center" alternateImage="Subtract On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="0h8-oD-9Kt">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="2Dz-sj-shr"/>
+                                            </connections>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yad-3Q-gRO" userLabel="LABEL_DISTANCE">
+                                            <rect key="frame" x="69" y="94" width="61" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="远近" id="7cm-ne-DpE">
+                                                <font key="font" metaFont="system" size="14"/>
+                                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.36078431372549019" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button hidden="YES" fixedFrame="YES" tag="13" translatesAutoresizingMaskIntoConstraints="NO" id="bX6-hb-Lsa" userLabel="PAN_APERTURE_ADD" customClass="PTZButton">
+                                            <rect key="frame" x="38" y="8" width="36" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Add Off" imagePosition="overlaps" alignment="center" alternateImage="Add On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="dIy-fh-Ok5">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="pf9-1B-Lyy"/>
+                                            </connections>
+                                        </button>
+                                        <button hidden="YES" fixedFrame="YES" tag="14" translatesAutoresizingMaskIntoConstraints="NO" id="N1C-zj-9hf" userLabel="PAN_APERTURE_SUBTRACT" customClass="PTZButton">
+                                            <rect key="frame" x="126" y="6" width="36" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Subtract Off" imagePosition="overlaps" alignment="center" alternateImage="Subtract On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="79S-1J-OzZ">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="6If-xK-XUN"/>
+                                            </connections>
+                                        </button>
+                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJ5-wM-FNk" userLabel="LABEL_APERTURE">
+                                            <rect key="frame" x="69" y="14" width="61" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="光圈" id="apt-AC-mcg">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.36078431370000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button hidden="YES" fixedFrame="YES" tag="11" translatesAutoresizingMaskIntoConstraints="NO" id="7Mx-gL-ArC" userLabel="PAN_LEN_ADD" customClass="PTZButton">
+                                            <rect key="frame" x="38" y="46" width="36" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Add Off" imagePosition="overlaps" alignment="center" alternateImage="Add On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="bje-S9-dW5">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="iWP-if-csp"/>
+                                            </connections>
+                                        </button>
+                                        <button hidden="YES" fixedFrame="YES" tag="12" translatesAutoresizingMaskIntoConstraints="NO" id="NTS-QK-EA9" userLabel="PAN_LEN_SUBTRACT" customClass="PTZButton">
+                                            <rect key="frame" x="126" y="46" width="36" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Subtract Off" imagePosition="overlaps" alignment="center" alternateImage="Subtract On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="xPG-cM-Tig">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="jHL-hV-BTA"/>
+                                            </connections>
+                                        </button>
+                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vp3-QV-Ui2" userLabel="LABEL_LEN">
+                                            <rect key="frame" x="69" y="53" width="61" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="焦距" id="gUf-ET-2AU">
+                                                <font key="font" metaFont="system" size="14"/>
+                                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.36078431370000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </customView>
+                                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ay5-tE-Fsw">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="466"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <subviews>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WZb-Sz-HZm" userLabel="PAN_PT_UP" customClass="PTZButton">
+                                            <rect key="frame" x="72" y="408" width="51" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Up Off" imagePosition="overlaps" alignment="center" alternateImage="Up On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="7ES-XK-1ca" customClass="JFButtonCell">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="LNl-0X-bnQ"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="auT-yN-QGv" userLabel="PAN_PT_LEFT" customClass="PTZButton">
+                                            <rect key="frame" x="35" y="360" width="44" height="51"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Left Off" imagePosition="overlaps" alignment="center" alternateImage="Left On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="kw7-7o-4xe" customClass="JFButtonCell">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="fEz-4J-pnV"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="emd-rr-WKv" userLabel="PAN_PT_RIGHT" customClass="PTZButton">
+                                            <rect key="frame" x="123" y="363" width="43" height="51"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Right Off" imagePosition="overlaps" alignment="center" alternateImage="Right On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="ORZ-ev-I4m">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="Iej-8A-2Y5"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="KfQ-cy-jdQ" userLabel="PAN_PT_DOWN" customClass="PTZButton">
+                                            <rect key="frame" x="78" y="320" width="52" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Down Off" imagePosition="overlaps" alignment="center" alternateImage="Down On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="q2L-Wh-e4R">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="ClC-E2-Wfd"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="NWh-z6-SM7" userLabel="PAN_PT_LEFTUP" customClass="PTZButton">
+                                            <rect key="frame" x="40" y="394" width="51" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="LeftUp Off" imagePosition="overlaps" alignment="center" alternateImage="LeftUp On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="T52-xn-1YT">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="7yY-bV-Lko"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="9mF-Ui-bQP" userLabel="PAN_PT_LEFTDOWN" customClass="PTZButton">
+                                            <rect key="frame" x="41" y="325" width="52" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="LeftDown Off" imagePosition="overlaps" alignment="center" alternateImage="LeftDown On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="B3W-Nb-mr2">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="Iuc-DV-RbW"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="LOW-31-g8J" userLabel="PAN_PT_RIGHTDOWN" customClass="PTZButton">
+                                            <rect key="frame" x="111" y="327" width="51" height="51"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="RightDown Off" imagePosition="overlaps" alignment="center" alternateImage="RightDown On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="AnZ-kg-6Mf">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="bX7-hB-rU5"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-yT-w67" userLabel="PAN_PT_AUTO" customClass="PTZButton">
+                                            <rect key="frame" x="80" y="366" width="42" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Auto Off" imagePosition="overlaps" alignment="center" alternateImage="Auto On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="2Ns-8Q-baG">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="0GE-mE-WBq"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="HVe-ec-jY6" userLabel="PAN_PT_RIGHTUP" customClass="PTZButton">
+                                            <rect key="frame" x="108" y="397" width="52" height="51"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="RightUp Off" imagePosition="overlaps" alignment="center" alternateImage="RightUp On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="OwS-TV-NmS">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="-2" id="oAr-Wy-aAp"/>
+                                            </connections>
+                                        </button>
+                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHc-OX-pO0" userLabel="Cruise Zone">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="176"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58o-zR-Cg9" userLabel="LABEL_INSPECTION">
+                                                    <rect key="frame" x="8" y="54" width="48" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="巡航" id="KtJ-ad-5aV">
+                                                        <font key="font" size="14" name="STHeitiSC-Light"/>
+                                                        <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.36078431370000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEN-Fo-G7F" userLabel="PAN_CRUISE_EMPTY">
+                                                    <rect key="frame" x="75" y="19" width="41" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Set Off" imagePosition="overlaps" alignment="center" alternateImage="Set On Aqua" state="on" imageScaling="axesIndependently" inset="2" id="f5t-Ly-Zd1">
+                                                        <behavior key="behavior" lightByContents="YES"/>
+                                                        <font key="font" metaFont="cellTitle"/>
+                                                    </buttonCell>
+                                                </button>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="IIo-VK-kZs" userLabel="PAN_CRUISE_STOP">
+                                                    <rect key="frame" x="139" y="19" width="41" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Stop" imagePosition="overlaps" alignment="center" alternateImage="Stop Aqua" state="on" imageScaling="axesIndependently" inset="2" id="7uQ-0M-RHX">
+                                                        <behavior key="behavior" lightByContents="YES"/>
+                                                        <font key="font" metaFont="cellTitle"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="cruiseAction:" target="-2" id="Xjz-hO-qOf"/>
+                                                    </connections>
+                                                </button>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FdA-ke-Qim" userLabel="PAN_CRUISE_START">
+                                                    <rect key="frame" x="10" y="19" width="41" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Start" imagePosition="overlaps" alignment="center" alternateImage="Start Aqua" state="on" imageScaling="axesIndependently" inset="2" id="NZ7-KB-g3R">
+                                                        <behavior key="behavior" lightByContents="YES"/>
+                                                        <font key="font" metaFont="cellTitle"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="cruiseAction:" target="-2" id="WXv-vg-zBX"/>
+                                                    </connections>
+                                                </button>
+                                                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbh-gg-iLf">
+                                                    <rect key="frame" x="60" y="50" width="124" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="UV7-Tm-cTO" id="y53-yh-ouz">
+                                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="menu"/>
+                                                        <menu key="menu" id="8el-b7-Pda">
+                                                            <items>
+                                                                <menuItem title="Item 1" state="on" id="UV7-Tm-cTO"/>
+                                                                <menuItem title="Item 2" id="mO3-Zr-J0e"/>
+                                                                <menuItem title="Item 3" id="nQ8-Wo-gdZ"/>
+                                                            </items>
+                                                        </menu>
+                                                    </popUpButtonCell>
+                                                </popUpButton>
+                                                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hp7-YR-Ev4">
+                                                    <rect key="frame" x="60" y="141" width="124" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="lmH-He-TU8" id="6IY-Ny-npX">
+                                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="menu"/>
+                                                        <menu key="menu" id="Ygb-HR-MO4">
+                                                            <items>
+                                                                <menuItem title="Item 1" state="on" id="lmH-He-TU8"/>
+                                                                <menuItem title="Item 2" id="nY3-SM-Y52"/>
+                                                                <menuItem title="Item 3" id="xbY-lp-Taa"/>
+                                                            </items>
+                                                        </menu>
+                                                    </popUpButtonCell>
+                                                </popUpButton>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="xdl-Ew-wcl" userLabel="PAN_PRESET_RUN">
+                                                    <rect key="frame" x="139" y="108" width="41" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Go" imagePosition="overlaps" alignment="center" alternateImage="Go Aqua" state="on" imageScaling="axesIndependently" inset="2" id="E9l-st-cHa">
+                                                        <behavior key="behavior" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="presetAction:" target="-2" id="5vj-Kr-MqG"/>
+                                                    </connections>
+                                                </button>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pez-UY-cWB" userLabel="PAN_PRESET_DEL">
+                                                    <rect key="frame" x="75" y="108" width="41" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Delete" imagePosition="overlaps" alignment="center" alternateImage="Delete Aqua" state="on" imageScaling="axesIndependently" inset="2" id="SbA-cl-sQP">
+                                                        <behavior key="behavior" lightByContents="YES"/>
+                                                        <font key="font" metaFont="cellTitle"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="presetAction:" target="-2" id="W3j-Xi-ytR"/>
+                                                    </connections>
+                                                </button>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNV-yz-Prg" userLabel="PAN_PRESET_ADD">
+                                                    <rect key="frame" x="10" y="109" width="41" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Add" imagePosition="overlaps" alignment="center" alternateImage="Add Aqua" state="on" imageScaling="axesIndependently" inset="2" id="3Dz-9p-Vx5">
+                                                        <behavior key="behavior" lightByContents="YES"/>
+                                                        <font key="font" size="12" name="STHeitiSC-Light"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="presetAction:" target="-2" id="elB-1Q-aeL"/>
+                                                    </connections>
+                                                </button>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6h-mD-iPn" userLabel="LABEL_PRESET">
+                                                    <rect key="frame" x="8" y="145" width="48" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="预置位" id="xjH-Df-fzm">
+                                                        <font key="font" metaFont="system" size="14"/>
+                                                        <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.36078431370000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                        </customView>
+                                    </subviews>
+                                </customView>
+                            </subviews>
+                        </customView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="tkU-Ht-AGP"/>
+                    </constraints>
+                    <holdingPriorities>
+                        <real value="250"/>
+                        <real value="250"/>
+                    </holdingPriorities>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="coP-ef-YLt"/>
+                    </connections>
+                </splitView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="ahJ-4q-QPN" userLabel="Place holder">
+                    <rect key="frame" x="0.0" y="44" width="1054" height="672"/>
+                </customView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FTR-RM-fmO" userLabel="BottomBar">
+                    <rect key="frame" x="0.0" y="0.0" width="1054" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ton-hg-hyN"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="BB_BG" id="R2q-We-svG"/>
+                </imageView>
+                <button toolTip="上一页" translatesAutoresizingMaskIntoConstraints="NO" id="UfN-vE-B3e" userLabel="Last page">
+                    <rect key="frame" x="39" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="ENO-Lo-LbG"/>
+                        <constraint firstAttribute="width" constant="32" id="u66-8Q-cLx"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="LastPage Off" imagePosition="overlaps" alignment="center" alternateImage="LastPage On" state="on" imageScaling="proportionallyDown" inset="2" id="UnU-UV-Abz">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="turnPage:" target="-2" id="sy3-ik-7hP"/>
+                    </connections>
+                </button>
+                <button toolTip="下一页" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="MEc-7C-XyI" userLabel="Next page">
+                    <rect key="frame" x="90" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="7Mo-5q-0m8"/>
+                        <constraint firstAttribute="width" constant="32" id="JVV-Y2-3mz"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NextPage Off" imagePosition="overlaps" alignment="center" alternateImage="NextPage On" state="on" imageScaling="proportionallyDown" inset="2" id="tm6-YC-Ksv">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="turnPage:" target="-2" id="WQE-Rt-JgV"/>
+                    </connections>
+                </button>
+                <button toolTip="全屏" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="iXe-a1-kHA" userLabel="Full screen">
+                    <rect key="frame" x="141" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="VQA-dQ-NbQ"/>
+                        <constraint firstAttribute="width" constant="32" id="wW9-Cv-Oec"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="FullScreen Off" imagePosition="overlaps" alignment="center" alternateImage="FullScreen On" state="on" imageScaling="proportionallyDown" inset="2" id="aB1-fP-KVW">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleFullScreenMode:" target="-2" id="EsO-7O-H51"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Hd-Cz-lPd" userLabel="RoundRect">
+                    <rect key="frame" x="320" y="3" width="430" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="PAQ-NJ-Sm2"/>
+                        <constraint firstAttribute="width" constant="430" id="aGM-Ha-5OI"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="圆角矩形-7" id="KS9-LR-ocH"/>
+                </imageView>
+                <button toolTip="1分屏" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="uGA-2G-7cK" userLabel="1">
+                    <rect key="frame" x="330" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="9Sn-R5-R27"/>
+                        <constraint firstAttribute="width" constant="32" id="uvi-cT-VWR"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="1" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="zZC-mt-DMT">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="paS-UF-Qav"/>
+                    </connections>
+                </button>
+                <button toolTip="4分屏" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="h6x-nQ-53T" userLabel="4">
+                    <rect key="frame" x="372" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="8pb-TH-MEy"/>
+                        <constraint firstAttribute="height" constant="32" id="S8y-9O-hP5"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="4" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Sem-5k-FHw">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="g4W-nD-4NQ"/>
+                    </connections>
+                </button>
+                <button toolTip="6分屏" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="Qh0-cA-TNj" userLabel="6">
+                    <rect key="frame" x="414" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="Cx8-pt-WtB"/>
+                        <constraint firstAttribute="height" constant="32" id="e2p-qZ-d3n"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="6" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="TBi-iI-fQT">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="WjK-Fw-hQ8"/>
+                    </connections>
+                </button>
+                <button toolTip="8分屏" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="aJY-Mz-h8J" userLabel="8">
+                    <rect key="frame" x="456" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="nEN-YB-PEU"/>
+                        <constraint firstAttribute="height" constant="32" id="sGb-i6-3fg"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="8" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="qQP-6d-mmO">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="eFD-Il-qVt"/>
+                    </connections>
+                </button>
+                <button toolTip="9分屏" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="tqt-lc-xbM" userLabel="9">
+                    <rect key="frame" x="498" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="kdI-iM-5RO"/>
+                        <constraint firstAttribute="width" constant="32" id="wNY-d6-ZCB"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="9" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="5b0-C7-5CS">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="Vcp-IF-7lH"/>
+                    </connections>
+                </button>
+                <button toolTip="16分屏" tag="16" translatesAutoresizingMaskIntoConstraints="NO" id="V6c-92-27T" userLabel="16">
+                    <rect key="frame" x="540" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Oqv-5k-VXX"/>
+                        <constraint firstAttribute="width" constant="32" id="SV9-xc-oqm"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="16" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="cbP-Av-PfO">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="cfW-UQ-evj"/>
+                    </connections>
+                </button>
+                <button toolTip="25分屏" tag="25" translatesAutoresizingMaskIntoConstraints="NO" id="Srh-t4-XEf" userLabel="25">
+                    <rect key="frame" x="582" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="Zk4-SW-wrF"/>
+                        <constraint firstAttribute="height" constant="32" id="hMG-Ln-atH"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="25" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Y7a-ka-UJg">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="KJn-DB-PXd"/>
+                    </connections>
+                </button>
+                <button toolTip="36分屏" tag="36" translatesAutoresizingMaskIntoConstraints="NO" id="949-3e-BGC" userLabel="36">
+                    <rect key="frame" x="624" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="aCr-x2-44I"/>
+                        <constraint firstAttribute="height" constant="32" id="eyA-UX-ao1"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="36" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="HMg-8d-cyX">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="mG9-Tp-xuD"/>
+                    </connections>
+                </button>
+                <button toolTip="49分屏" tag="49" translatesAutoresizingMaskIntoConstraints="NO" id="tV8-6P-j4q" userLabel="49">
+                    <rect key="frame" x="666" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="3AP-oS-4DJ"/>
+                        <constraint firstAttribute="height" constant="32" id="eA8-Nn-Enb"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="49" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="TYl-7v-zVg">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="KEq-4D-Qbo"/>
+                    </connections>
+                </button>
+                <button toolTip="64分屏" tag="64" translatesAutoresizingMaskIntoConstraints="NO" id="Bpo-Dc-u2e" userLabel="64">
+                    <rect key="frame" x="708" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="57k-D9-9qJ"/>
+                        <constraint firstAttribute="height" constant="32" id="FLH-rz-kdb"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="64" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="UUU-WN-fxM">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="togglePageSize:" target="-2" id="2cr-xQ-IIy"/>
+                    </connections>
+                </button>
+                <button toolTip="窗口轮巡" translatesAutoresizingMaskIntoConstraints="NO" id="M0d-mc-bZy" userLabel="Polling">
+                    <rect key="frame" x="192" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="8Ez-cT-bIE"/>
+                        <constraint firstAttribute="width" constant="32" id="dcI-xM-w1b"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Polling Off" imagePosition="overlaps" alignment="center" alternateImage="Polling On" imageScaling="proportionallyDown" inset="2" id="UvR-WH-i8Y">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="pagePolling:" target="-2" id="V3D-p2-qU2"/>
+                    </connections>
+                </button>
+                <button toolTip="全部关闭" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="40L-tu-InO">
+                    <rect key="frame" x="243" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="Jb6-Kj-eOL"/>
+                        <constraint firstAttribute="height" constant="32" id="iNh-hM-1p6"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Close On" imagePosition="overlaps" alignment="center" alternateImage="Close Off" state="on" imageScaling="proportionallyDown" inset="2" id="NSR-bk-T2M">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeAll:" target="-2" id="Uv1-J3-34s"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Jqi-5Y-HOc" firstAttribute="leading" secondItem="FTR-RM-fmO" secondAttribute="trailing" id="1Kf-aR-hCX"/>
+                <constraint firstItem="ahJ-4q-QPN" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="1Rg-I2-cMu"/>
+                <constraint firstAttribute="bottom" secondItem="Bpo-Dc-u2e" secondAttribute="bottom" constant="6" id="7EK-D5-F9x"/>
+                <constraint firstItem="V6c-92-27T" firstAttribute="leading" secondItem="tqt-lc-xbM" secondAttribute="trailing" constant="10" id="92t-kT-TP5"/>
+                <constraint firstItem="MEc-7C-XyI" firstAttribute="leading" secondItem="UfN-vE-B3e" secondAttribute="trailing" constant="19" id="9kz-wE-76T"/>
+                <constraint firstAttribute="bottom" secondItem="aJY-Mz-h8J" secondAttribute="bottom" constant="6" id="9yn-kt-Hl3"/>
+                <constraint firstAttribute="bottom" secondItem="Qh0-cA-TNj" secondAttribute="bottom" constant="6" id="AYy-an-225"/>
+                <constraint firstAttribute="bottom" secondItem="iXe-a1-kHA" secondAttribute="bottom" constant="6" id="Bxj-o1-0pG"/>
+                <constraint firstAttribute="bottom" secondItem="M0d-mc-bZy" secondAttribute="bottom" constant="6" id="CDK-ew-uBM"/>
+                <constraint firstItem="FTR-RM-fmO" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Cg1-5U-los"/>
+                <constraint firstItem="h6x-nQ-53T" firstAttribute="leading" secondItem="uGA-2G-7cK" secondAttribute="trailing" constant="10" id="EaI-pc-FHb"/>
+                <constraint firstItem="iXe-a1-kHA" firstAttribute="leading" secondItem="MEc-7C-XyI" secondAttribute="trailing" constant="19" id="FJR-iE-JNj"/>
+                <constraint firstAttribute="bottom" secondItem="h6x-nQ-53T" secondAttribute="bottom" constant="6" id="G0s-bk-ucY"/>
+                <constraint firstAttribute="bottom" secondItem="949-3e-BGC" secondAttribute="bottom" constant="6" id="HUh-qX-8Br"/>
+                <constraint firstAttribute="bottom" secondItem="tqt-lc-xbM" secondAttribute="bottom" constant="6" id="Hqc-8H-JNX"/>
+                <constraint firstAttribute="bottom" secondItem="1Hd-Cz-lPd" secondAttribute="bottom" constant="3" id="RGv-sa-aC4"/>
+                <constraint firstItem="40L-tu-InO" firstAttribute="leading" secondItem="M0d-mc-bZy" secondAttribute="trailing" constant="19" id="RHr-tH-RKc"/>
+                <constraint firstItem="ahJ-4q-QPN" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="TO4-uQ-F4P"/>
+                <constraint firstAttribute="bottom" secondItem="MEc-7C-XyI" secondAttribute="bottom" constant="6" id="V3p-94-WUg"/>
+                <constraint firstItem="1Hd-Cz-lPd" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="320" id="YHz-sA-Kpa"/>
+                <constraint firstAttribute="bottom" secondItem="tV8-6P-j4q" secondAttribute="bottom" constant="6" id="Yf2-nG-bQn"/>
+                <constraint firstAttribute="bottom" secondItem="V6c-92-27T" secondAttribute="bottom" constant="6" id="abv-WP-teP"/>
+                <constraint firstItem="Jqi-5Y-HOc" firstAttribute="leading" secondItem="ahJ-4q-QPN" secondAttribute="trailing" id="cSC-0q-qQO"/>
+                <constraint firstItem="uGA-2G-7cK" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="330" id="dWY-ts-eu8"/>
+                <constraint firstItem="949-3e-BGC" firstAttribute="leading" secondItem="Srh-t4-XEf" secondAttribute="trailing" constant="10" id="e8r-R7-VMF"/>
+                <constraint firstAttribute="bottom" secondItem="40L-tu-InO" secondAttribute="bottom" constant="6" id="f3i-Pi-VlX"/>
+                <constraint firstItem="tV8-6P-j4q" firstAttribute="leading" secondItem="949-3e-BGC" secondAttribute="trailing" constant="10" id="hMb-Zq-b5p"/>
+                <constraint firstAttribute="bottom" secondItem="Srh-t4-XEf" secondAttribute="bottom" constant="6" id="hcT-WM-kgY"/>
+                <constraint firstAttribute="bottom" secondItem="UfN-vE-B3e" secondAttribute="bottom" constant="6" id="hcj-bi-Yon"/>
+                <constraint firstItem="Bpo-Dc-u2e" firstAttribute="leading" secondItem="tV8-6P-j4q" secondAttribute="trailing" constant="10" id="i00-2n-a4R"/>
+                <constraint firstItem="Srh-t4-XEf" firstAttribute="leading" secondItem="V6c-92-27T" secondAttribute="trailing" constant="10" id="ipX-iK-cGG"/>
+                <constraint firstItem="tqt-lc-xbM" firstAttribute="leading" secondItem="aJY-Mz-h8J" secondAttribute="trailing" constant="10" id="j8O-9f-0pc"/>
+                <constraint firstAttribute="bottom" secondItem="FTR-RM-fmO" secondAttribute="bottom" id="jYd-DZ-5Al"/>
+                <constraint firstAttribute="bottom" secondItem="uGA-2G-7cK" secondAttribute="bottom" constant="6" id="jd3-56-nfx"/>
+                <constraint firstItem="M0d-mc-bZy" firstAttribute="leading" secondItem="iXe-a1-kHA" secondAttribute="trailing" constant="19" id="kqS-nX-9Hj"/>
+                <constraint firstItem="FTR-RM-fmO" firstAttribute="top" secondItem="ahJ-4q-QPN" secondAttribute="bottom" id="rZN-Na-8Vh"/>
+                <constraint firstItem="Jqi-5Y-HOc" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="sAI-PX-VXa"/>
+                <constraint firstItem="aJY-Mz-h8J" firstAttribute="leading" secondItem="Qh0-cA-TNj" secondAttribute="trailing" constant="10" id="u2W-xg-nb6"/>
+                <constraint firstAttribute="trailing" secondItem="Jqi-5Y-HOc" secondAttribute="trailing" id="uqX-wn-GUr"/>
+                <constraint firstAttribute="bottom" secondItem="Jqi-5Y-HOc" secondAttribute="bottom" id="vX0-jt-VLd"/>
+                <constraint firstItem="UfN-vE-B3e" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="39" id="zMh-wz-NJN"/>
+                <constraint firstItem="Qh0-cA-TNj" firstAttribute="leading" secondItem="h6x-nQ-53T" secondAttribute="trailing" constant="10" id="zcr-k0-cok"/>
+            </constraints>
+            <connections>
+                <outlet property="delegate" destination="-2" id="O7q-TO-9jU"/>
+            </connections>
+            <point key="canvasLocation" x="-735" y="228"/>
+        </customView>
+        <menu autoenablesItems="NO" id="uBW-UJ-RGJ" userLabel="OutlineViewContextMenu">
+            <items>
+                <menuItem title="添加设备" id="tdx-qT-4sZ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="m0z-Fj-IJ6"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="添加组" tag="1" id="3TQ-Qn-lcX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="dkb-pa-Fxj"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="添加轮巡组" tag="2" id="NIH-Oh-8Ih">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="eNo-XQ-Oqm"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="全部开始" tag="3" id="HfT-1R-b9F">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="hOm-2l-qqj"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="全部停止" tag="4" id="3Yf-yQ-Mgy">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="0HL-QX-QD7"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="移除所有" tag="5" id="KM7-F5-xiq">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="PUy-Kv-M7R"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="a6m-Pf-lIb"/>
+                <menuItem title="组设置" tag="6" id="eMa-pT-nMM">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="YQq-jS-GiU"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="取消分组" tag="7" id="INe-A4-n6U">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="GbV-bO-AFW"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="fQZ-Ae-xas"/>
+                <menuItem title="轮巡" tag="8" id="kCA-7F-dtu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="RBm-zL-3HF"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="轮巡设置" tag="9" id="RIJ-xE-7oU">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="b4Q-0t-bG9"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="取消轮巡组" tag="10" id="Be4-5l-Lkn">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="ry0-DJ-9eo"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="SQm-od-Yto"/>
+                <menuItem title="预览" tag="11" id="hdj-p8-bYW">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="Zbi-2J-vHs"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="设备参数设置" tag="12" id="oAQ-8c-efO">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="sbH-Bi-dKa"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="设备连接设置" tag="13" id="4t9-VN-TGL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="dci-ao-iIR"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="移除设备" tag="14" id="Qxo-Zh-Q7G">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="outlineViewContextMenuAction:" target="-2" id="0GP-bt-HYC"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="zOq-qj-HNb"/>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="-2" id="BsS-7B-RLf"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="424.5"/>
+        </menu>
+        <userDefaultsController representsSharedInstance="YES" id="6bn-4w-9Zh"/>
+        <menu autoenablesItems="NO" id="jXJ-oN-d9n" userLabel="VideoWndContextMenu">
+            <items>
+                <menuItem title="关闭视频" tag="3" id="zcI-0k-qLo">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="videoViewContextMenuAction:" target="-2" id="WL6-GY-d8V"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="设备参数设置" tag="4" id="oeP-lv-vvY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="videoViewContextMenuAction:" target="-2" id="qVO-C5-Jhb"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" tag="1" id="nqo-Z5-0sc"/>
+                <menuItem title="切换全屏模式" tag="2" id="GZ9-Yg-fU6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="videoViewContextMenuAction:" target="-2" id="QwL-q5-Q6w"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="隐藏工具栏" id="D6t-lF-Ff9">
+                    <attributedString key="attributedTitle"/>
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="videoViewContextMenuAction:" target="-2" id="dAY-wF-6cD"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="-2" id="sqE-Mu-pKW"/>
+            </connections>
+            <point key="canvasLocation" x="-1015.5" y="517.5"/>
+        </menu>
+    </objects>
+    <resources>
+        <image name="1" width="28" height="28"/>
+        <image name="16" width="28" height="28"/>
+        <image name="25" width="28" height="28"/>
+        <image name="36" width="28" height="28"/>
+        <image name="4" width="28" height="28"/>
+        <image name="49" width="28" height="28"/>
+        <image name="6" width="28" height="28"/>
+        <image name="64" width="28" height="28"/>
+        <image name="8" width="28" height="28"/>
+        <image name="9" width="28" height="28"/>
+        <image name="Add" width="41" height="26"/>
+        <image name="Add Aqua" width="37" height="23"/>
+        <image name="Add Off" width="38" height="30"/>
+        <image name="Add On Aqua" width="34" height="27"/>
+        <image name="Auto Off" width="44" height="44"/>
+        <image name="Auto On Aqua" width="40" height="41"/>
+        <image name="BB_BG" width="100" height="44"/>
+        <image name="Close Off" width="32" height="32"/>
+        <image name="Close On" width="32" height="32"/>
+        <image name="Delete" width="41" height="26"/>
+        <image name="Delete Aqua" width="37" height="23"/>
+        <image name="Down Off" width="52" height="45"/>
+        <image name="Down On Aqua" width="49" height="42"/>
+        <image name="FullScreen Off" width="32" height="32"/>
+        <image name="FullScreen On" width="32" height="32"/>
+        <image name="Go" width="41" height="26"/>
+        <image name="Go Aqua" width="37" height="23"/>
+        <image name="LastPage Off" width="32" height="32"/>
+        <image name="LastPage On" width="32" height="32"/>
+        <image name="Left Off" width="45" height="51"/>
+        <image name="Left On Aqua" width="42" height="50"/>
+        <image name="LeftDown Off" width="53" height="52"/>
+        <image name="LeftDown On Aqua" width="50" height="50"/>
+        <image name="LeftUp Off" width="53" height="52"/>
+        <image name="LeftUp On Aqua" width="50" height="50"/>
+        <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="NextPage Off" width="32" height="32"/>
+        <image name="NextPage On" width="32" height="32"/>
+        <image name="PTZ" width="200" height="466"/>
+        <image name="PTZ_BLANK" width="200" height="42"/>
+        <image name="PTZ_DOWN" width="200" height="42"/>
+        <image name="PTZ_UP" width="200" height="42"/>
+        <image name="Polling Off" width="32" height="32"/>
+        <image name="Polling On" width="32" height="32"/>
+        <image name="Right Off" width="45" height="51"/>
+        <image name="Right On Aqua" width="41" height="50"/>
+        <image name="RightDown Off" width="53" height="52"/>
+        <image name="RightDown On Aqua" width="49" height="50"/>
+        <image name="RightUp Off" width="52" height="52"/>
+        <image name="RightUp On Aqua" width="50" height="50"/>
+        <image name="Set Off" width="41" height="26"/>
+        <image name="Set On Aqua" width="37" height="23"/>
+        <image name="Start" width="41" height="26"/>
+        <image name="Start Aqua" width="37" height="23"/>
+        <image name="Stop" width="41" height="26"/>
+        <image name="Stop Aqua" width="37" height="23"/>
+        <image name="Subtract Off" width="38" height="30"/>
+        <image name="Subtract On Aqua" width="34" height="27"/>
+        <image name="Up Off" width="52" height="45"/>
+        <image name="Up On Aqua" width="49" height="42"/>
+        <image name="圆角矩形-7" width="392" height="38"/>
+    </resources>
+</document>

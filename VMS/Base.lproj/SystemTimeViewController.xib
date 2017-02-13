@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SystemTimeViewController">
+            <connections>
+                <outlet property="ampmBtn" destination="O5G-0V-2i1" id="Jv3-Hf-Uur"/>
+                <outlet property="date" destination="fDg-mb-7Up" id="iWP-02-vEl"/>
+                <outlet property="dateFormatBtn" destination="bs3-pu-AAy" id="K86-9o-GAv"/>
+                <outlet property="dstBtn" destination="Zcl-Sn-W7X" id="WRv-sg-WCd"/>
+                <outlet property="hourBtn" destination="0Ra-wj-xIg" id="0gg-Ta-6Y3"/>
+                <outlet property="minutesBtn" destination="VDR-hA-UPb" id="ne6-YL-wtI"/>
+                <outlet property="ntpServerBtn" destination="gS1-Ji-s6O" id="mpX-k2-0N4"/>
+                <outlet property="secondBtn" destination="0qg-5r-fFh" id="xSn-rk-qTj"/>
+                <outlet property="syncIPCTimeBtn" destination="6xs-5A-hDZ" id="rQ3-nY-jQi"/>
+                <outlet property="timeFormatBtn" destination="ogO-uw-qMo" id="WNN-xH-bev"/>
+                <outlet property="timeZoneBtn" destination="mlt-Bt-Z7X" id="0tp-PY-KkE"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="804" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="glX-KD-8Vd" userLabel="Label">
+                    <rect key="frame" x="18" y="335" width="132" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="时区:" id="aA0-nU-qme">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOV-60-7Aq">
+                    <rect key="frame" x="18" y="301" width="214" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="从时间服务器同步" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="fKp-Gx-ZqA">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="self.ntpEnable" id="ffe-7i-fua">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gva-US-VYd" userLabel="Label">
+                    <rect key="frame" x="18" y="278" width="132" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="时间服务器:" id="AKH-lQ-jgN">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahw-W2-XgB" userLabel="Label">
+                    <rect key="frame" x="18" y="237" width="132" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="设备时间:" id="Hjy-sq-Bdw">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dsG-ZN-Vg7" userLabel="Label">
+                    <rect key="frame" x="18" y="169" width="132" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="时间格式选择:" id="na8-6a-HDa">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PIi-dz-N12" userLabel="Label">
+                    <rect key="frame" x="18" y="129" width="132" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="日期格式选择:" id="Oea-EK-L4g">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KtH-a0-NMs">
+                    <rect key="frame" x="18" y="60" width="113" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="是否使用夏令时" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="E6s-mF-BDI">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="dstChange:" target="-2" id="RzN-s3-sRJ"/>
+                        <binding destination="-2" name="value" keyPath="self.dstEnable" id="qlp-eR-iz5"/>
+                    </connections>
+                </button>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ws-rY-3hc" userLabel="Label">
+                    <rect key="frame" x="37" y="27" width="113" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="提前时间:" id="ev1-pp-Tax">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDg-mb-7Up">
+                    <rect key="frame" x="159" y="232" width="163" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="roundTextured" title="Round Textured" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="seU-IK-hSB">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectDate:" target="-2" id="0ft-FQ-NBQ"/>
+                        <binding destination="-2" name="enabled" keyPath="self.ntpEnable" id="IP3-PD-vNI"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KrI-Bi-2K0">
+                    <rect key="frame" x="387" y="238" width="8" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title=":" id="t4V-b1-9G9">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cnw-xn-Ovr">
+                    <rect key="frame" x="464" y="238" width="8" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title=":" id="Q3P-df-e4i">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYH-x5-Vw1">
+                    <rect key="frame" x="265" y="200" width="228" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="同步PC/终端时间" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o3v-3H-Fe5">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="syncPCTerminalTime:" target="-2" id="R8G-Fm-j5r"/>
+                        <binding destination="-2" name="enabled" keyPath="self.ntpEnable" id="lkW-pb-qoo"/>
+                    </connections>
+                </button>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlt-Bt-Z7X">
+                    <rect key="frame" x="154" y="329" width="376" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="FLS-U6-ZzQ" id="tYs-Vb-bkP">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="KWe-II-cUT">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="FLS-U6-ZzQ"/>
+                                <menuItem title="Item 2" id="kVy-0E-ZWk"/>
+                                <menuItem title="Item 3" id="05u-WU-cLq"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="updateClockTimeAction:" target="-2" id="Ea9-EB-DWS"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="bs3-pu-AAy">
+                    <rect key="frame" x="154" y="123" width="376" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="年-月-日" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="DTj-a5-bcZ" id="oDI-RR-a1q">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="DNv-R2-lAp">
+                            <items>
+                                <menuItem title="年-月-日" state="on" id="DTj-a5-bcZ">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="日/月/年" tag="1" id="l7Q-Bv-1c0">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="月/日/年" tag="2" id="7hJ-mq-Tre">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="updateClockTimeAction:" target="-2" id="vcm-et-yED"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gS1-Ji-s6O">
+                    <rect key="frame" x="154" y="271" width="376" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="eyV-LH-K2J" id="1Yc-W4-YnG">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="w4x-7a-ADo">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="eyV-LH-K2J"/>
+                                <menuItem title="Item 2" id="B4b-Yq-lm9"/>
+                                <menuItem title="Item 3" id="WVV-P2-1ds"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="-2" name="enabled" keyPath="self.ntpEnable" id="gb7-MB-DZw">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Ra-wj-xIg">
+                    <rect key="frame" x="328" y="232" width="53" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="re2-rd-Oj1" id="7v9-qG-xqq">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="0Je-Qk-xlf">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="re2-rd-Oj1"/>
+                                <menuItem title="Item 2" id="F0Z-EF-NYe"/>
+                                <menuItem title="Item 3" id="GMQ-n8-PST"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="updateClockTimeAction:" target="-2" id="e6r-oD-pqI"/>
+                        <binding destination="-2" name="enabled" keyPath="self.ntpEnable" id="aAQ-28-SZj"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="VDR-hA-UPb">
+                    <rect key="frame" x="404" y="232" width="53" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="fEN-1l-eXL" id="zF1-WO-25A">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="eZN-gQ-XiE">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="fEN-1l-eXL"/>
+                                <menuItem title="Item 2" id="mUT-PD-Jy2"/>
+                                <menuItem title="Item 3" id="os0-09-HaZ"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="updateClockTimeAction:" target="-2" id="KAM-iG-jZs"/>
+                        <binding destination="-2" name="enabled" keyPath="self.ntpEnable" id="SrA-K6-eT3"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="0qg-5r-fFh">
+                    <rect key="frame" x="476" y="232" width="53" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="n7g-M7-bji" id="DXz-39-3Xa">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="pG0-hl-gxr">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="n7g-M7-bji"/>
+                                <menuItem title="Item 2" id="JXx-a8-lNY"/>
+                                <menuItem title="Item 3" id="LRX-Ky-eTs"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="updateClockTimeAction:" target="-2" id="Qmj-ZS-H3u"/>
+                        <binding destination="-2" name="enabled" keyPath="self.ntpEnable" id="OD0-pR-d3C"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="O5G-0V-2i1">
+                    <rect key="frame" x="549" y="233" width="53" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Lzy-Nf-UKC">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="pSt-X6-YdR">
+                            <items>
+                                <menuItem title="AM" id="B9d-vW-jVo" userLabel="AM">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="PM" tag="1" id="vKe-Z9-fPX" userLabel="PM">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="updateClockTimeAction:" target="-2" id="hCE-1W-sJL"/>
+                        <binding destination="-2" name="enabled" keyPath="self.ntpEnable" id="hYD-rM-Ltd"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zcl-Sn-W7X">
+                    <rect key="frame" x="154" y="22" width="376" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="0" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="hQ1-yd-XaW" id="pTC-T4-8H5">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="c6S-cQ-hfX">
+                            <items>
+                                <menuItem title="0" state="on" id="hQ1-yd-XaW">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="30" tag="30" id="H5R-Ao-STs">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="60" tag="60" id="pBU-l7-XOI">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="90" tag="90" id="vJk-7a-adn">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="120" tag="120" id="igD-Xp-df7">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="dstChange:" target="-2" id="jH2-2D-XX6"/>
+                        <binding destination="-2" name="enabled" keyPath="self.dstEnable" id="oEh-vm-vVi"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="ogO-uw-qMo">
+                    <rect key="frame" x="154" y="163" width="376" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="12小时制" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="iSL-XC-Sob" id="RuY-Zs-UWH">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="OyP-w2-nBS">
+                            <items>
+                                <menuItem title="12小时制" state="on" id="iSL-XC-Sob">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="24小时制" tag="1" id="9BU-PA-5LI">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="updateClockTimeAction:" target="-2" id="EpO-pQ-IrR"/>
+                    </connections>
+                </popUpButton>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6xs-5A-hDZ">
+                    <rect key="frame" x="18" y="358" width="214" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="同步时间到IPC" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="hk6-0P-9gy">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMe-2H-Gsg">
+                    <rect key="frame" x="533" y="27" width="37" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="分钟" id="mfW-7V-ijd">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="132" y="161.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="nOd-Ay-pcg"/>
+    </objects>
+</document>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BASIC_SETTING</key>
+	<dict>
+		<key>CAPTURE_PATHNAME</key>
+		<string></string>
+		<key>NET_TYPE</key>
+		<integer>0</integer>
+		<key>WND_STREAM_TYPE</key>
+		<integer>0</integer>
+		<key>SAVE_LAYOUT</key>
+		<false/>
+		<key>AUTO_LOGIN</key>
+		<false/>
+		<key>AUTO_SEARCH</key>
+		<false/>
+		<key>POLL_TIME</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

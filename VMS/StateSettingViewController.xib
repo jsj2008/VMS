@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="StateSettingViewController">
+            <connections>
+                <outlet property="ddnsState" destination="6dC-hd-zYt" id="PDk-KY-wY7"/>
+                <outlet property="devName" destination="Jyv-JK-vPi" id="P3Y-pL-6Gm"/>
+                <outlet property="deviceTime" destination="ZJ6-8A-gmH" id="dkV-UR-PrW"/>
+                <outlet property="firmwareVer" destination="2rV-R0-JdM" id="h80-oE-IOr"/>
+                <outlet property="hardwareVer" destination="nRa-8y-6Pb" id="Um5-pX-Hpd"/>
+                <outlet property="infraLedState" destination="1cJ-hD-UlZ" id="MFv-CV-rVC"/>
+                <outlet property="mac" destination="bIb-3O-Qz5" id="HJ8-6z-Oxp"/>
+                <outlet property="motionDetectAlarm" destination="an3-IY-ZLl" id="bNB-el-orL"/>
+                <outlet property="ntpState" destination="Rk9-pY-EQz" id="7LM-5s-1li"/>
+                <outlet property="productName" destination="5Iw-jh-XT4" id="bwa-Yk-bZo"/>
+                <outlet property="record" destination="52f-So-Sss" id="Mq6-2J-AeQ"/>
+                <outlet property="sdFreeSpace" destination="i13-UN-bO2" id="GlW-lP-jEc"/>
+                <outlet property="sdState" destination="EA6-tW-7X1" id="tr8-E0-LP8"/>
+                <outlet property="sdTotalSpace" destination="oa9-m3-Bq3" id="fIb-pH-Fnn"/>
+                <outlet property="tabView" destination="rcI-7m-OZX" id="VvS-gn-jcu"/>
+                <outlet property="upnpState" destination="zQ4-yB-vur" id="lhf-2T-e2l"/>
+                <outlet property="view" destination="XmF-DF-4eT" id="Dts-8s-GW2"/>
+                <outlet property="wifiConnectedAP" destination="PFD-NW-PO6" id="jOt-N2-IIb"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="XmF-DF-4eT">
+            <rect key="frame" x="0.0" y="0.0" width="860" height="474"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rcI-7m-OZX">
+                    <rect key="frame" x="13" y="10" width="834" height="422"/>
+                    <animations/>
+                    <font key="font" metaFont="system"/>
+                    <tabViewItems>
+                        <tabViewItem label="设备信息" identifier="1" id="lC3-zI-L35">
+                            <view key="view" id="7Dq-kd-16e">
+                                <rect key="frame" x="10" y="33" width="814" height="376"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ue5-f1-haF">
+                                        <rect key="frame" x="18" y="329" width="132" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="ffe-50-Gth"/>
+                                        </constraints>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="机种名称:" id="CRT-hG-fq9">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bWI-EQ-QTu">
+                                        <rect key="frame" x="18" y="292" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="设备名称:" id="tx6-Hu-yHP">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OJD-Tn-S4N">
+                                        <rect key="frame" x="18" y="255" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Mac地址:" id="nSL-kI-v01">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7zf-Ct-cbV">
+                                        <rect key="frame" x="18" y="218" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="设备时间:" id="7s2-kM-1r2">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KVz-Tj-VuG">
+                                        <rect key="frame" x="420" y="324" width="132" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="Lzi-tU-NNc"/>
+                                        </constraints>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="系统固件版本:" id="eh4-jO-Cnf">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HEK-BI-bbF">
+                                        <rect key="frame" x="420" y="283" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="应用固件版本:" id="lz5-t7-160">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xfu-gC-pJH">
+                                        <rect key="frame" x="420" y="242" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="插件版本:" id="AxW-c3-89Q">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jyv-JK-vPi">
+                                        <rect key="frame" x="154" y="292" width="256" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="Ifq-z2-74E">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-3O-Qz5">
+                                        <rect key="frame" x="154" y="255" width="256" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="pbs-7m-SPf">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ6-8A-gmH">
+                                        <rect key="frame" x="154" y="218" width="256" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="oIQ-45-0wl">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2rV-R0-JdM">
+                                        <rect key="frame" x="556" y="324" width="55" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="0VG-jz-ALL">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nRa-8y-6Pb">
+                                        <rect key="frame" x="556" y="283" width="55" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="bnw-Q6-Zpi">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ieq-Xv-I2x">
+                                        <rect key="frame" x="556" y="242" width="55" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="T5D-oi-i1V">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Iw-jh-XT4">
+                                        <rect key="frame" x="156" y="329" width="248" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="244" id="n96-O3-2Hy"/>
+                                        </constraints>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="pop-WR-xA3">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OJD-Tn-S4N" firstAttribute="leading" secondItem="7zf-Ct-cbV" secondAttribute="leading" id="314-64-6Ed"/>
+                                    <constraint firstItem="Jyv-JK-vPi" firstAttribute="trailing" secondItem="bIb-3O-Qz5" secondAttribute="trailing" id="3Yj-lt-nA4"/>
+                                    <constraint firstItem="bIb-3O-Qz5" firstAttribute="leading" secondItem="ZJ6-8A-gmH" secondAttribute="leading" id="5BN-rn-bik"/>
+                                    <constraint firstItem="Jyv-JK-vPi" firstAttribute="leading" secondItem="bIb-3O-Qz5" secondAttribute="leading" id="5xU-pX-wxN"/>
+                                    <constraint firstItem="bIb-3O-Qz5" firstAttribute="baseline" secondItem="OJD-Tn-S4N" secondAttribute="baseline" id="6Co-h5-5Ac"/>
+                                    <constraint firstItem="bIb-3O-Qz5" firstAttribute="leading" secondItem="OJD-Tn-S4N" secondAttribute="trailing" constant="8" symbolic="YES" id="6OP-Ss-6pd"/>
+                                    <constraint firstItem="Xfu-gC-pJH" firstAttribute="baseline" secondItem="ieq-Xv-I2x" secondAttribute="baseline" id="7vx-aK-evw"/>
+                                    <constraint firstItem="OJD-Tn-S4N" firstAttribute="leading" secondItem="bWI-EQ-QTu" secondAttribute="leading" id="AgK-wO-5kb"/>
+                                    <constraint firstItem="5Iw-jh-XT4" firstAttribute="leading" secondItem="Ue5-f1-haF" secondAttribute="trailing" constant="10" id="Ali-R5-vwB"/>
+                                    <constraint firstItem="HEK-BI-bbF" firstAttribute="top" secondItem="KVz-Tj-VuG" secondAttribute="bottom" constant="24" id="BMr-SD-tfr"/>
+                                    <constraint firstItem="Ue5-f1-haF" firstAttribute="leading" secondItem="bWI-EQ-QTu" secondAttribute="leading" id="ClU-pW-ZAC"/>
+                                    <constraint firstItem="HEK-BI-bbF" firstAttribute="leading" secondItem="KVz-Tj-VuG" secondAttribute="leading" id="DK6-EZ-nQm"/>
+                                    <constraint firstItem="KVz-Tj-VuG" firstAttribute="baseline" secondItem="2rV-R0-JdM" secondAttribute="baseline" id="Ddq-L3-Ftj"/>
+                                    <constraint firstItem="Ue5-f1-haF" firstAttribute="trailing" secondItem="bWI-EQ-QTu" secondAttribute="trailing" id="EnQ-rq-VQC"/>
+                                    <constraint firstItem="KVz-Tj-VuG" firstAttribute="top" secondItem="7Dq-kd-16e" secondAttribute="top" constant="35" id="NKk-mr-Saj"/>
+                                    <constraint firstItem="ieq-Xv-I2x" firstAttribute="trailing" secondItem="nRa-8y-6Pb" secondAttribute="trailing" id="OYh-VI-acs"/>
+                                    <constraint firstItem="Jyv-JK-vPi" firstAttribute="leading" secondItem="bWI-EQ-QTu" secondAttribute="trailing" constant="8" symbolic="YES" id="Od6-kh-ojw"/>
+                                    <constraint firstItem="nRa-8y-6Pb" firstAttribute="leading" secondItem="2rV-R0-JdM" secondAttribute="leading" id="Quk-mC-XeX"/>
+                                    <constraint firstAttribute="trailing" secondItem="2rV-R0-JdM" secondAttribute="trailing" constant="4" id="RCO-3U-BJf"/>
+                                    <constraint firstItem="HEK-BI-bbF" firstAttribute="leading" secondItem="Jyv-JK-vPi" secondAttribute="trailing" constant="14" id="RHS-h6-07b"/>
+                                    <constraint firstItem="nRa-8y-6Pb" firstAttribute="trailing" secondItem="2rV-R0-JdM" secondAttribute="trailing" id="RY0-DL-bkG"/>
+                                    <constraint firstItem="KVz-Tj-VuG" firstAttribute="leading" secondItem="5Iw-jh-XT4" secondAttribute="trailing" constant="20" id="Zr6-fl-6Ge"/>
+                                    <constraint firstItem="Xfu-gC-pJH" firstAttribute="top" secondItem="HEK-BI-bbF" secondAttribute="bottom" constant="24" id="Zwo-Hv-JNi"/>
+                                    <constraint firstItem="bIb-3O-Qz5" firstAttribute="trailing" secondItem="ZJ6-8A-gmH" secondAttribute="trailing" id="bGr-0N-2Go"/>
+                                    <constraint firstItem="nRa-8y-6Pb" firstAttribute="baseline" secondItem="HEK-BI-bbF" secondAttribute="baseline" id="ba1-ci-Hym"/>
+                                    <constraint firstItem="Xfu-gC-pJH" firstAttribute="leading" secondItem="HEK-BI-bbF" secondAttribute="leading" id="fEd-wz-f18"/>
+                                    <constraint firstItem="2rV-R0-JdM" firstAttribute="leading" secondItem="KVz-Tj-VuG" secondAttribute="trailing" constant="8" symbolic="YES" id="hFO-s9-od6"/>
+                                    <constraint firstItem="ZJ6-8A-gmH" firstAttribute="leading" secondItem="7zf-Ct-cbV" secondAttribute="trailing" constant="8" symbolic="YES" id="myn-3U-dTE"/>
+                                    <constraint firstItem="Ue5-f1-haF" firstAttribute="top" secondItem="7Dq-kd-16e" secondAttribute="top" constant="30" id="nWu-m3-2ul"/>
+                                    <constraint firstItem="OJD-Tn-S4N" firstAttribute="top" secondItem="bWI-EQ-QTu" secondAttribute="bottom" constant="20" id="o3A-um-hKG"/>
+                                    <constraint firstItem="nRa-8y-6Pb" firstAttribute="leading" secondItem="HEK-BI-bbF" secondAttribute="trailing" constant="8" symbolic="YES" id="oXY-uW-Z7p"/>
+                                    <constraint firstItem="ieq-Xv-I2x" firstAttribute="leading" secondItem="nRa-8y-6Pb" secondAttribute="leading" id="q7x-nV-xHn"/>
+                                    <constraint firstItem="bWI-EQ-QTu" firstAttribute="top" secondItem="Ue5-f1-haF" secondAttribute="bottom" constant="20" id="q82-tR-pDD"/>
+                                    <constraint firstItem="Jyv-JK-vPi" firstAttribute="baseline" secondItem="bWI-EQ-QTu" secondAttribute="baseline" id="rai-2n-83E"/>
+                                    <constraint firstItem="ZJ6-8A-gmH" firstAttribute="baseline" secondItem="7zf-Ct-cbV" secondAttribute="baseline" id="uJb-x1-Zo3"/>
+                                    <constraint firstItem="ieq-Xv-I2x" firstAttribute="leading" secondItem="Xfu-gC-pJH" secondAttribute="trailing" constant="8" symbolic="YES" id="vJq-Ss-yt3"/>
+                                    <constraint firstItem="Ue5-f1-haF" firstAttribute="baseline" secondItem="5Iw-jh-XT4" secondAttribute="baseline" id="wF8-U6-2Uc"/>
+                                    <constraint firstItem="7zf-Ct-cbV" firstAttribute="top" secondItem="OJD-Tn-S4N" secondAttribute="bottom" constant="20" id="wFC-Kb-UXE"/>
+                                    <constraint firstItem="Ue5-f1-haF" firstAttribute="leading" secondItem="7Dq-kd-16e" secondAttribute="leading" constant="20" id="z6u-bU-ylk"/>
+                                </constraints>
+                                <animations/>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="设备状态" identifier="2" id="SBQ-un-8RA">
+                            <view key="view" id="rkb-Rg-9im">
+                                <rect key="frame" x="10" y="33" width="814" height="376"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uB-3n-1HN" userLabel="Label">
+                                        <rect key="frame" x="18" y="339" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="移动报警状态:" id="Mea-Tc-T29">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-hJ-LfR" userLabel="Label">
+                                        <rect key="frame" x="426" y="339" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="NTP状态:" id="2yS-kw-3iZ">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4n-hW-wgO" userLabel="Label">
+                                        <rect key="frame" x="426" y="302" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="DDNS状态:" id="Tn1-ty-r7B">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Uc-m7-sRt" userLabel="Label">
+                                        <rect key="frame" x="426" y="265" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="UpnP状态:" id="0cS-S3-cQp">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7JG-ro-JSo" userLabel="Label">
+                                        <rect key="frame" x="426" y="228" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Wi-Fi状态:" id="rOc-dh-BZj">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C2e-61-yRN" userLabel="Label">
+                                        <rect key="frame" x="426" y="191" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="红外灯状态:" id="aSx-uy-Uu7">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="an3-IY-ZLl" userLabel="移动报警状态">
+                                        <rect key="frame" x="154" y="339" width="256" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="xad-uM-qgh">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rk9-pY-EQz" userLabel="NTP状态">
+                                        <rect key="frame" x="562" y="339" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="UNv-QS-1pb">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6dC-hd-zYt" userLabel="DDNS状态">
+                                        <rect key="frame" x="562" y="302" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="1d5-Y6-kTj">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQ4-yB-vur" userLabel="UpnP状态">
+                                        <rect key="frame" x="562" y="265" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="kz3-wM-dPz">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFD-NW-PO6" userLabel="Wi-Fi状态">
+                                        <rect key="frame" x="562" y="228" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="Tsw-hb-8l5">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1cJ-hD-UlZ" userLabel="红外灯状态">
+                                        <rect key="frame" x="562" y="191" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="37C-Xr-1Yh">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sP-GB-wvx" userLabel="Label">
+                                        <rect key="frame" x="18" y="302" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="录像状态:" id="76X-Jd-RTJ">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MaC-yQ-wOp" userLabel="Label">
+                                        <rect key="frame" x="18" y="265" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SD卡状态:" id="qGI-Rp-xiL">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ObF-v9-BbA" userLabel="Label">
+                                        <rect key="frame" x="18" y="228" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SD卡可用空间:" id="be4-Wz-yii">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0L-53-ccB" userLabel="Label">
+                                        <rect key="frame" x="18" y="191" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SD卡总空间:" id="L4S-t3-bM7">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52f-So-Sss" userLabel="录像状态">
+                                        <rect key="frame" x="154" y="302" width="256" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="YBx-L6-s6p">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EA6-tW-7X1" userLabel="SD卡状态">
+                                        <rect key="frame" x="154" y="265" width="256" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="I2N-YQ-07q">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i13-UN-bO2" userLabel="SD卡可用空间">
+                                        <rect key="frame" x="154" y="228" width="256" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="umV-4l-Mh1">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oa9-m3-Bq3" userLabel="SD卡总空间">
+                                        <rect key="frame" x="154" y="191" width="256" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加载中..." id="blm-iW-RZi">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                            </view>
+                        </tabViewItem>
+                    </tabViewItems>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="rcv-Rh-1Go"/>
+                    </connections>
+                </tabView>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L6T-Jp-Wxc">
+                    <rect key="frame" x="764" y="419" width="66" height="32"/>
+                    <animations/>
+                    <buttonCell key="cell" type="push" title="刷新" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lia-pq-GP7">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="refresh:" target="-2" id="dor-Rg-kEX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <point key="canvasLocation" x="589" y="550"/>
+        </customView>
+    </objects>
+</document>

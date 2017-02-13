@@ -1,0 +1,36 @@
+
+/* Class = "NSButtonCell"; title = "是否启用DDNS"; ObjectID = "Cfc-pq-CQT"; */
+"Cfc-pq-CQT.title" = "Enable DDNS";
+
+/* Class = "NSButtonCell"; title = "恢复到出厂设置"; ObjectID = "NKR-Jb-Mcu"; */
+"NKR-Jb-Mcu.title" = "Restore DDNS to factory";
+
+/* Class = "NSTextFieldCell"; title = "DDNS密码:"; ObjectID = "Pk0-8I-aXV"; */
+"Pk0-8I-aXV.title" = "DDNS Password:";
+
+/* Class = "NSTextFieldCell"; title = "DDNS服务器:"; ObjectID = "Yab-0f-ECe"; */
+"Yab-0f-ECe.title" = "DDNS Server:";
+
+/* Class = "NSTextFieldCell"; title = "密码的最大长度为12，支持数字、字母及符号~!@#$%^&*()_+{}<>?`-;'\\,./"; ObjectID = "boX-BJ-J9e"; */
+"boX-BJ-J9e.title" = "The maximum password length is 12,including numbers,letters and symbols ~!@#$%^&*()_+{}<>?`-;'\\,./";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "h7H-pd-poN"; */
+"h7H-pd-poN.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "DDNS用户名:"; ObjectID = "oad-dd-CCi"; */
+"oad-dd-CCi.title" = "DDNS Username:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "pvm-zy-Neb"; */
+"pvm-zy-Neb.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "rcE-aA-1dA"; */
+"rcE-aA-1dA.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "域名:"; ObjectID = "s8z-3z-fzL"; */
+"s8z-3z-fzL.title" = "Domain:";
+
+/* Class = "NSTextFieldCell"; title = "用户名的最大长度为20,支持数字、字母及符号@.$*-_"; ObjectID = "txh-GC-U3d"; */
+"txh-GC-U3d.title" = "The maximum length of the user name is 20,support numbers,letters and symbols @.$*-_";
+
+/* Class = "NSTextFieldCell"; title = "制造商的DDNS:"; ObjectID = "xkL-Rd-Pme"; */
+"xkL-Rd-Pme.title" = "Manufacturer's DDNS:";

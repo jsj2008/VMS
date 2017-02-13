@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PTZCruiseViewController">
+            <connections>
+                <outlet property="chnBtn" destination="8YH-Dk-pUT" id="95g-iB-yUG"/>
+                <outlet property="chnLabel" destination="gel-wq-okv" id="Qfj-kz-NBO"/>
+                <outlet property="cruiseLoopCntTF" destination="UX2-ZL-t3A" id="i9K-Ll-v6U"/>
+                <outlet property="cruiseMapInfoTV" destination="Iz3-aY-Guc" id="g4k-C5-Kfs"/>
+                <outlet property="cruiseMapListEditView" destination="RXZ-T9-3kE" id="eXm-hD-2aL"/>
+                <outlet property="cruiseMapNameEditView" destination="lBS-7C-mIj" id="dnW-My-iQa"/>
+                <outlet property="cruiseModeBtn" destination="tdP-1C-nel" id="cKi-yb-RjM"/>
+                <outlet property="cruiseNameTF" destination="aIm-tH-dxx" id="IWl-Fb-YS1"/>
+                <outlet property="cruiseTimeBtn" destination="yaU-ZB-AWs" id="4yu-q1-tR9"/>
+                <outlet property="cruiseTimeCustomedTF" destination="jxr-uE-e8a" id="Shn-Co-VaL"/>
+                <outlet property="cruiseTracksBtn" destination="N3D-cz-DR4" id="53V-DN-r0V"/>
+                <outlet property="doneBtn" destination="xEc-RY-ivG" id="DxF-Ji-iwW"/>
+                <outlet property="moveInBtn" destination="qES-zM-gOq" id="RXH-27-2rQ"/>
+                <outlet property="moveOutBtn" destination="poD-Ee-4in" id="alO-sU-pXD"/>
+                <outlet property="placeHolder" destination="Fyc-75-qKh" id="uOB-Na-7j3"/>
+                <outlet property="presetPointListTV" destination="veq-wm-dWX" id="Xx7-2S-vcc"/>
+                <outlet property="saveBT" destination="5uz-hR-3X5" id="BfW-bp-mn6"/>
+                <outlet property="timeLabel" destination="2KG-UJ-FUK" id="nSo-t7-5V9"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="zone1" destination="vHR-Ed-Br3" id="FtX-yM-iLh"/>
+                <outlet property="zone2" destination="0lq-tD-HpE" id="ZN7-T5-7AU"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="804" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHR-Ed-Br3" userLabel="Zone1">
+                    <rect key="frame" x="0.0" y="256" width="804" height="88"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csd-0U-vHd">
+                            <rect key="frame" x="11" y="67" width="92" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="巡航模式：" id="tif-yR-0tr">
+                                <font key="font" size="13" name="STHeitiSC-Light"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3F3-yv-z6M">
+                            <rect key="frame" x="11" y="38" width="92" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="巡航时间：" id="air-B4-T5F">
+                                <font key="font" size="13" name="STHeitiSC-Light"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdP-1C-nel">
+                            <rect key="frame" x="106" y="62" width="224" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="6hK-dY-NGU" id="ucy-mh-ot7">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="menu"/>
+                                <menu key="menu" id="Z01-TG-7nQ">
+                                    <items>
+                                        <menuItem title="Item 1" state="on" id="6hK-dY-NGU"/>
+                                        <menuItem title="Item 2" id="0Es-Un-ea8"/>
+                                        <menuItem title="Item 3" id="okR-25-kfb"/>
+                                    </items>
+                                </menu>
+                            </popUpButtonCell>
+                            <connections>
+                                <action selector="cruiseButtonAction:" target="-2" id="ADd-AK-tfz"/>
+                            </connections>
+                        </popUpButton>
+                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="yaU-ZB-AWs">
+                            <rect key="frame" x="106" y="33" width="224" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="BWN-Ti-msa">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="menu"/>
+                                <menu key="menu" id="WdG-72-7bf">
+                                    <items>
+                                        <menuItem title="Item 1" id="4Ff-eV-8dx"/>
+                                        <menuItem title="Item 2" id="OQa-b8-8wf"/>
+                                        <menuItem title="Item 3" id="190-hC-QXT"/>
+                                    </items>
+                                </menu>
+                            </popUpButtonCell>
+                            <connections>
+                                <action selector="cruiseButtonAction:" target="-2" id="hem-2Y-EBp"/>
+                                <binding destination="-2" name="enabled" keyPath="self.cruiseTimeMode" id="XKR-TY-8pU">
+                                    <dictionary key="options">
+                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                    </dictionary>
+                                </binding>
+                            </connections>
+                        </popUpButton>
+                        <textField identifier="custom cruise time" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jxr-uE-e8a">
+                            <rect key="frame" x="108" y="5" width="156" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Czy-TM-JpQ">
+                                <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="ODk-ex-eVh" customClass="OnlyNumberFormatter"/>
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <binding destination="-2" name="enabled" keyPath="self.cruiseTimeMode" id="Vcc-TN-L81">
+                                    <dictionary key="options">
+                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                    </dictionary>
+                                </binding>
+                                <binding destination="-2" name="hidden" keyPath="self.customedCruiseTime" previousBinding="Vcc-TN-L81" id="PvC-AM-J7V">
+                                    <dictionary key="options">
+                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                    </dictionary>
+                                </binding>
+                                <outlet property="delegate" destination="-2" id="GFv-V2-aZq"/>
+                            </connections>
+                        </textField>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sJ-a4-Bxn">
+                            <rect key="frame" x="267" y="-1" width="66" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" title="保存" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vax-Le-4Ek">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="13" name="STHeitiSC-Light"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="saveCruiseConfig:" target="-2" id="Tet-h8-aeg"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GK2-bo-DTM">
+                            <rect key="frame" x="375" y="38" width="110" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="巡航圈数：" id="NSh-gT-5pb">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField identifier="loop cnt" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UX2-ZL-t3A">
+                            <rect key="frame" x="491" y="35" width="96" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="xMz-Ey-Atj">
+                                <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="Zf9-xM-tut" customClass="OnlyNumberFormatter"/>
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <binding destination="-2" name="enabled" keyPath="self.cruiseTimeMode" id="ser-Qd-arR"/>
+                                <outlet property="delegate" destination="-2" id="kvT-QY-VuA"/>
+                            </connections>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jas-5S-no0">
+                            <rect key="frame" x="598" y="38" width="88" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="圈" id="BTr-jY-xRD">
+                                <font key="font" size="13" name="STHeitiSC-Light"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2KG-UJ-FUK">
+                            <rect key="frame" x="344" y="8" width="258" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="yyI-KI-egH">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" red="0.0" green="0.45979485544217685" blue="0.0" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <binding destination="-2" name="hidden" keyPath="self.customedCruiseTime" id="T1X-DZ-WEw">
+                                    <dictionary key="options">
+                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                    </dictionary>
+                                </binding>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </customView>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0lq-tD-HpE" userLabel="Zone2">
+                    <rect key="frame" x="0.0" y="0.0" width="804" height="256"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8p8-4l-ZFn">
+                            <rect key="frame" x="405" y="181" width="80" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="巡航路径：" id="NNa-kv-Y62">
+                                <font key="font" size="13" name="STHeitiSC-Light"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rB-KR-2tl" userLabel="Cruise Map Infos">
+                            <rect key="frame" x="405" y="24" width="379" height="149"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <clipView key="contentView" ambiguous="YES" id="5lP-6U-eqy">
+                                <rect key="frame" x="1" y="0.0" width="377" height="148"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView identifier="cruise map info" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="BHX-J0-Q6W" id="Iz3-aY-Guc">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <size key="intercellSpacing" width="3" height="2"/>
+                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                        <tableColumns>
+                                            <tableColumn identifier="name" width="115.8359375" minWidth="40" maxWidth="1000" id="uyh-v2-yge">
+                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="预制点">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                </tableHeaderCell>
+                                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" alignment="center" title="Text Cell" id="GS0-g5-U3T">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            </tableColumn>
+                                            <tableColumn identifier="time" width="255" minWidth="10" maxWidth="3.4028234663852886e+38" id="blE-lh-tcC">
+                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="停留时间(s)">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                </tableHeaderCell>
+                                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" identifier="tinger time" title="Text Cell" id="zS4-XH-2dZ">
+                                                    <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="fbK-8q-3R8" customClass="OnlyNumberFormatter"/>
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            </tableColumn>
+                                        </tableColumns>
+                                        <connections>
+                                            <outlet property="dataSource" destination="-2" id="qjA-7a-XEN"/>
+                                            <outlet property="delegate" destination="-2" id="7Kp-cn-pIu"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </clipView>
+                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="nGC-Ce-btc">
+                                <rect key="frame" x="-7" y="8" width="0.0" height="15"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="1az-Mh-vxZ">
+                                <rect key="frame" x="-14" y="16" width="15" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <tableHeaderView key="headerView" id="BHX-J0-Q6W">
+                                <rect key="frame" x="0.0" y="0.0" width="377" height="23"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </tableHeaderView>
+                        </scrollView>
+                        <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poD-Ee-4in">
+                            <rect key="frame" x="405" y="3" width="379" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" enabled="NO" borderStyle="border" alignment="left" style="smallSquare" trackingMode="momentary" id="YWG-AQ-l9o">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSRemoveTemplate">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment width="349" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <action selector="delete:" target="-2" id="010-Ib-oQ0"/>
+                            </connections>
+                        </segmentedControl>
+                        <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfu-Np-kfI" userLabel="Preset Points">
+                            <rect key="frame" x="29" y="24" width="270" height="149"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <clipView key="contentView" ambiguous="YES" id="BwJ-g0-7yf">
+                                <rect key="frame" x="1" y="0.0" width="268" height="148"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView identifier="preset point list" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="Oln-6z-3ef" id="veq-wm-dWX">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <size key="intercellSpacing" width="3" height="2"/>
+                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                        <tableColumns>
+                                            <tableColumn identifier="name" width="265" minWidth="40" maxWidth="1000" id="Upa-HN-09m">
+                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="名称">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                </tableHeaderCell>
+                                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" alignment="center" title="Text Cell" id="fuj-au-6mS">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            </tableColumn>
+                                        </tableColumns>
+                                        <connections>
+                                            <outlet property="dataSource" destination="-2" id="K0A-gK-vfr"/>
+                                            <outlet property="delegate" destination="-2" id="pf9-Wd-Pfb"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </clipView>
+                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="0ZF-ZB-nle">
+                                <rect key="frame" x="-7" y="8" width="0.0" height="15"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="CcY-Gg-ZH6">
+                                <rect key="frame" x="-14" y="16" width="15" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <tableHeaderView key="headerView" id="Oln-6z-3ef">
+                                <rect key="frame" x="0.0" y="0.0" width="268" height="23"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </tableHeaderView>
+                        </scrollView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-RV-rvV">
+                            <rect key="frame" x="15" y="181" width="80" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="预设点：" id="3Mi-ha-gh8">
+                                <font key="font" size="13" name="STHeitiSC-Light"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ejf-op-zPD">
+                            <rect key="frame" x="3" y="234" width="100" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="巡航路径：" id="wNx-SI-EzI">
+                                <font key="font" size="13" name="STHeitiSC-Light"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fyc-75-qKh" userLabel="Place Holder">
+                            <rect key="frame" x="106" y="199" width="412" height="54"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </customView>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qES-zM-gOq">
+                            <rect key="frame" x="322" y="81" width="57" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" title="&gt;&gt;" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QIs-as-dqa">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="add:" target="-2" id="XuE-3c-hK1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gel-wq-okv">
+                    <rect key="frame" x="23" y="354" width="80" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="通道：" id="YMM-bq-gJk">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8YH-Dk-pUT">
+                    <rect key="frame" x="106" y="349" width="224" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="lZD-zh-hnT" id="cbh-Ca-pLv">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="ytl-GU-AZJ">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="lZD-zh-hnT"/>
+                                <menuItem title="Item 2" id="JZR-BP-NKo"/>
+                                <menuItem title="Item 3" id="E2O-fn-QH0"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="chnOption:" target="-2" id="VFt-5V-fmR"/>
+                        <binding destination="-2" name="selectedIndex" keyPath="self.chn" id="Bhb-Uo-Eqp"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <point key="canvasLocation" x="132" y="168.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="Cw6-fQ-FSE"/>
+        <customView id="lBS-7C-mIj" userLabel="CruiseMapNameEditView">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField identifier="cruise map name" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIm-tH-dxx">
+                    <rect key="frame" x="0.0" y="35" width="221" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="87b-UF-HYu">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="H39-C5-xvC"/>
+                    </connections>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEc-RY-ivG">
+                    <rect key="frame" x="221" y="29" width="80" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="确定" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4lJ-fo-1WJ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addCruiseMap:" target="-2" id="qkA-VM-sCK"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="6cN-kN-G6C">
+                    <rect key="frame" x="292" y="29" width="80" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zIn-RH-mfk">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addCruiseMap:" target="-2" id="YwX-xm-SCU"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Py-A6-JiI">
+                    <rect key="frame" x="-2" y="0.0" width="315" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="名字最大长度为20,支持英文、数字、字母及符号_-" id="kMx-Fm-3yR">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="32" y="450.5"/>
+        </customView>
+        <customView id="RXZ-T9-3kE" userLabel="CruiseMapListEditView">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="N3D-cz-DR4">
+                    <rect key="frame" x="0.0" y="17" width="224" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="GhA-xk-2SC" id="xdF-G5-1i5">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="R7S-1I-c2C">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="GhA-xk-2SC"/>
+                                <menuItem title="Item 2" id="pmg-Ha-wDt"/>
+                                <menuItem title="Item 3" id="TG0-zj-Lau"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="cruiseButtonAction:" target="-2" id="DDd-We-Coo"/>
+                    </connections>
+                </popUpButton>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5uz-hR-3X5">
+                    <rect key="frame" x="366" y="13" width="80" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="保存" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3ox-d6-ww5">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="saveCruiseMap:" target="-2" id="s2Y-QF-qFD"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGl-bb-vIb">
+                    <rect key="frame" x="221" y="13" width="80" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="增加" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="t2E-no-Kg1">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="editCruiseMap:" target="-2" id="bjS-Rm-1aC"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3L-uX-NqM">
+                    <rect key="frame" x="293" y="13" width="80" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="删除" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hYs-J1-otr">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="removeCruiseMap:" target="-2" id="fuQ-XC-CEE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="31" y="574.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSRemoveTemplate" width="11" height="11"/>
+    </resources>
+</document>

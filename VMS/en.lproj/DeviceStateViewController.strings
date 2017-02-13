@@ -1,0 +1,60 @@
+
+/* Class = "NSTextFieldCell"; title = "红外灯状态:"; ObjectID = "0Jn-ax-gEd"; */
+"0Jn-ax-gEd.title" = "IR LED Status:";
+
+/* Class = "NSTextFieldCell"; title = "NTP状态:"; ObjectID = "3H2-HY-FEX"; */
+"3H2-HY-FEX.title" = "NTP Status:";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "54m-8f-EfL"; */
+"54m-8f-EfL.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "6pK-Yi-b3u"; */
+"6pK-Yi-b3u.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "7Di-Wt-jPO"; */
+"7Di-Wt-jPO.title" = "";
+
+/* Class = "NSTextFieldCell"; title = "SD卡总空间:"; ObjectID = "9Ax-vM-hov"; */
+"9Ax-vM-hov.title" = "SD Card Total Space:";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "F5d-C9-IMQ"; */
+"F5d-C9-IMQ.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "MGc-Zt-UfU"; */
+"MGc-Zt-UfU.title" = "";
+
+/* Class = "NSTextFieldCell"; title = "DDNS状态:"; ObjectID = "Nn9-Cw-fkK"; */
+"Nn9-Cw-fkK.title" = "DDNS Status:";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "Rfh-e2-j0z"; */
+"Rfh-e2-j0z.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "TfE-Nd-2Qu"; */
+"TfE-Nd-2Qu.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "Zs3-0r-eI7"; */
+"Zs3-0r-eI7.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "ci5-Yz-qFE"; */
+"ci5-Yz-qFE.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "hKr-MW-o0T"; */
+"hKr-MW-o0T.title" = "";
+
+/* Class = "NSTextFieldCell"; title = "SD卡可用空间:"; ObjectID = "j1G-Bp-iT4"; */
+"j1G-Bp-iT4.title" = "SD Card Free Space:";
+
+/* Class = "NSTextFieldCell"; title = "UpnP状态:"; ObjectID = "wA1-Uh-jG4"; */
+"wA1-Uh-jG4.title" = "UPnP Status:";
+
+/* Class = "NSTextFieldCell"; title = "Wi-Fi状态:"; ObjectID = "xWq-aP-vFx"; */
+"xWq-aP-vFx.title" = "WiFi Status:";
+
+/* Class = "NSTextFieldCell"; title = "移动报警状态:"; ObjectID = "xYx-fe-tDI"; */
+"xYx-fe-tDI.title" = "Action alarm Status:";
+
+/* Class = "NSTextFieldCell"; title = "录像状态:"; ObjectID = "yEi-uv-WgS"; */
+"yEi-uv-WgS.title" = "Recording Status:";
+
+/* Class = "NSTextFieldCell"; title = "SD卡状态:"; ObjectID = "z7T-8E-1cK"; */
+"z7T-8E-1cK.title" = "SD Card Status:";

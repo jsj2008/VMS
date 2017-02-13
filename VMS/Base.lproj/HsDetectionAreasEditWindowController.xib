@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="HsDetectionAreaEditWindowController">
+            <connections>
+                <outlet property="renderView" destination="h1O-kj-qFp" id="vNV-bg-HT1"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="nXI-KM-AJd"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="769" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="769" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h1O-kj-qFp" userLabel="Opengl View">
+                        <rect key="frame" x="20" y="34" width="730" height="420"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Oe-l7-PRC" userLabel="Area Edit View" customClass="AreaEditView">
+                                <rect key="frame" x="0.0" y="0.0" width="730" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-2" id="LQc-sb-8Mq"/>
+                                </connections>
+                            </customView>
+                        </subviews>
+                    </customView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="olY-Mf-BRK">
+                        <rect key="frame" x="689" y="0.0" width="66" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="完成" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="faK-nr-SjZ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="done:" target="-2" id="dH6-r9-MiT"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xcc-zd-B6w">
+                        <rect key="frame" x="298" y="458" width="74" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="框外侦测" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="9AO-Ll-Hab">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="self.outsideDetectEnable" id="vkf-GH-7IB"/>
+                        </connections>
+                    </button>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l5H-KG-hHj">
+                        <rect key="frame" x="391" y="458" width="114" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AreaEditFlag" id="D16-b9-vvi"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzM-Bz-wuL">
+                        <rect key="frame" x="623" y="0.0" width="66" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1P6-K0-Q4Z">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancel:" target="-2" id="vjw-bo-w4f"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="414.5" y="380"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="AreaEditFlag" width="114" height="16"/>
+    </resources>
+</document>

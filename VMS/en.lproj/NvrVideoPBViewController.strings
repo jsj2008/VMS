@@ -1,0 +1,66 @@
+
+/* Class = "NSButton"; ibShadowedToolTip = "停止"; ObjectID = "4sG-NE-BE3"; */
+"4sG-NE-BE3.ibShadowedToolTip" = "Stop";
+
+/* Class = "NSTextFieldCell"; title = "录像日期"; ObjectID = "66k-Xr-T1b"; */
+"66k-Xr-T1b.title" = "Date";
+
+/* Class = "NSButton"; ibShadowedToolTip = "暂停"; ObjectID = "7wI-Ac-HXk"; */
+"7wI-Ac-HXk.ibShadowedToolTip" = "Pause";
+
+/* Class = "NSButton"; ibShadowedToolTip = "倒播"; ObjectID = "Aje-sP-X7v"; */
+"Aje-sP-X7v.ibShadowedToolTip" = "Play Back";
+
+/* Class = "NSButton"; ibShadowedToolTip = "下载"; ObjectID = "AnL-of-gGS"; */
+"AnL-of-gGS.ibShadowedToolTip" = "Download";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "FyV-S3-sx8"; */
+"FyV-S3-sx8.title" = "Label";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "GvB-X7-VOO"; */
+"GvB-X7-VOO.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "选中所有"; ObjectID = "Hwr-Mh-2rT"; */
+"Hwr-Mh-2rT.title" = "Check All";
+
+/* Class = "NSButton"; ibShadowedToolTip = "播放／暂停"; ObjectID = "IFK-Rf-p5K"; */
+"IFK-Rf-p5K.ibShadowedToolTip" = "Play／Pause";
+
+/* Class = "NSButton"; ibShadowedToolTip = "慢播"; ObjectID = "NSd-Xa-LYT"; */
+"NSd-Xa-LYT.ibShadowedToolTip" = "Slow Play";
+
+/* Class = "NSTextFieldCell"; title = "定位时间"; ObjectID = "OAs-ud-1p0"; */
+"OAs-ud-1p0.title" = "Time";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "PFf-m3-GWR"; */
+"PFf-m3-GWR.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "报警录像"; ObjectID = "PXU-h3-8LI"; */
+"PXU-h3-8LI.title" = "Alarm";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "VPM-3l-Jpm"; */
+"VPM-3l-Jpm.title" = "Table View Cell";
+
+/* Class = "NSButtonCell"; title = "计划录像"; ObjectID = "XMi-0X-YNK"; */
+"XMi-0X-YNK.title" = "Schedule";
+
+/* Class = "NSButtonCell"; title = "移动侦测录像"; ObjectID = "ctP-kr-ps1"; */
+"ctP-kr-ps1.title" = "移动侦测录像";
+
+/* Class = "NSButtonCell"; title = "查找录像"; ObjectID = "eVh-HD-7Qo"; */
+"eVh-HD-7Qo.title" = "Search";
+
+/* Class = "NSButtonCell"; title = "手工录像"; ObjectID = "ei2-k2-FlM"; */
+"ei2-k2-FlM.title" = "Manual";
+
+/* Class = "NSButtonCell"; title = "定位时间"; ObjectID = "kvD-Zf-Ycu"; */
+"kvD-Zf-Ycu.title" = "Seek";
+
+/* Class = "NSMenuItem"; title = "取消所有"; ObjectID = "tvp-Do-v40"; */
+"tvp-Do-v40.title" = "Uncheck All";
+
+/* Class = "NSTextFieldCell"; title = "录像类型"; ObjectID = "yzm-Mg-TK6"; */
+"yzm-Mg-TK6.title" = "Type";
+
+/* Class = "NSButton"; ibShadowedToolTip = "快播"; ObjectID = "zmV-t2-0EN"; */
+"zmV-t2-0EN.ibShadowedToolTip" = "Quick Play";

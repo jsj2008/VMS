@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PrivacyCoverEditWindowController">
+            <connections>
+                <outlet property="openglView" destination="kji-vy-VJt" id="D5C-mp-ivc"/>
+                <outlet property="privacyCoverEditView" destination="0uA-2B-ca3" id="7PC-y5-ZYD"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="742" height="502"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="-1" width="742" height="502"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SWg-R9-8zz">
+                        <rect key="frame" x="564" y="4" width="82" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="OpR-Kh-nrk"/>
+                        </constraints>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="删除" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xyl-iA-jX3">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="delete:" target="-2" id="PcO-cf-qiN"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M8E-fr-h1g">
+                        <rect key="frame" x="646" y="4" width="82" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="eB8-Zq-pAV"/>
+                        </constraints>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="完成" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gXV-81-i0y">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="done:" target="-2" id="R7L-fq-8o1"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AWo-EC-SHz">
+                        <rect key="frame" x="6" y="11" width="408" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="404" id="nt6-xc-9fZ"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="可以编辑4个遮蔽区域" id="Vy4-E1-4Se">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="kji-vy-VJt" userLabel="Opengl View">
+                        <rect key="frame" x="0.0" y="41" width="742" height="461"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="0uA-2B-ca3" userLabel="Privacy Cover Edit View" customClass="PrivacyCoverEditView">
+                                <rect key="frame" x="0.0" y="0.0" width="742" height="461"/>
+                                <animations/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0uA-2B-ca3" secondAttribute="trailing" id="BYl-WC-E78"/>
+                            <constraint firstItem="0uA-2B-ca3" firstAttribute="top" secondItem="kji-vy-VJt" secondAttribute="top" id="Xag-rR-IcO"/>
+                            <constraint firstItem="0uA-2B-ca3" firstAttribute="leading" secondItem="kji-vy-VJt" secondAttribute="leading" id="tc3-MD-Xjq"/>
+                            <constraint firstAttribute="bottom" secondItem="0uA-2B-ca3" secondAttribute="bottom" id="xKq-Wn-TXL"/>
+                        </constraints>
+                        <animations/>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AWo-EC-SHz" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="8" id="0lo-4T-EQZ"/>
+                    <constraint firstItem="AWo-EC-SHz" firstAttribute="bottom" secondItem="SWg-R9-8zz" secondAttribute="bottom" id="5nu-IJ-kke"/>
+                    <constraint firstItem="SWg-R9-8zz" firstAttribute="baseline" secondItem="M8E-fr-h1g" secondAttribute="baseline" id="ANV-7U-JWJ"/>
+                    <constraint firstItem="SWg-R9-8zz" firstAttribute="top" secondItem="kji-vy-VJt" secondAttribute="bottom" constant="9" id="Mbm-gN-748"/>
+                    <constraint firstItem="SWg-R9-8zz" firstAttribute="top" secondItem="M8E-fr-h1g" secondAttribute="top" id="RQy-vG-BNu"/>
+                    <constraint firstAttribute="bottom" secondItem="AWo-EC-SHz" secondAttribute="bottom" constant="11" id="SXD-43-VQq"/>
+                    <constraint firstItem="kji-vy-VJt" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="XvE-9q-w0a"/>
+                    <constraint firstAttribute="trailing" secondItem="M8E-fr-h1g" secondAttribute="trailing" constant="20" symbolic="YES" id="f1w-Cv-Y1e"/>
+                    <constraint firstItem="AWo-EC-SHz" firstAttribute="top" secondItem="kji-vy-VJt" secondAttribute="bottom" constant="13" id="f4S-LN-ihv"/>
+                    <constraint firstItem="kji-vy-VJt" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="kWZ-34-PoP"/>
+                    <constraint firstItem="M8E-fr-h1g" firstAttribute="leading" secondItem="SWg-R9-8zz" secondAttribute="trailing" constant="12" symbolic="YES" id="p4Z-NG-UeC"/>
+                    <constraint firstAttribute="trailing" secondItem="kji-vy-VJt" secondAttribute="trailing" id="vUS-I6-9ex"/>
+                </constraints>
+                <animations/>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="414" y="335"/>
+        </window>
+    </objects>
+</document>

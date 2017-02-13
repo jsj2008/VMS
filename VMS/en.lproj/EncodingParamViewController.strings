@@ -1,0 +1,216 @@
+
+/* Class = "NSMenuItem"; title = "20K"; ObjectID = "1K7-ED-5nh"; */
+"1K7-ED-5nh.title" = "20K";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "1bl-Ue-xop"; */
+"1bl-Ue-xop.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "QVGA(320*180)"; ObjectID = "6ta-eb-f68"; */
+"6ta-eb-f68.title" = "QVGA(320*180)";
+
+/* Class = "NSMenuItem"; title = "VGA(640*360)"; ObjectID = "7CH-7b-aII"; */
+"7CH-7b-aII.title" = "VGA(640*360)";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "9Bc-V2-1js"; */
+"9Bc-V2-1js.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "9JQ-f5-T8l"; */
+"9JQ-f5-T8l.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "是"; ObjectID = "AaS-ea-gvt"; */
+"AaS-ea-gvt.title" = "Yes";
+
+/* Class = "NSTextFieldCell"; title = "是否可变码率:"; ObjectID = "Avc-qU-sV4"; */
+"Avc-qU-sV4.title" = "Variable bitrate:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Ayr-bU-jOm"; */
+"Ayr-bU-jOm.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "50K"; ObjectID = "BMW-Hm-CJV"; */
+"BMW-Hm-CJV.title" = "50K";
+
+/* Class = "NSMenuItem"; title = "512K"; ObjectID = "Br7-Kk-XV3"; */
+"Br7-Kk-XV3.title" = "512K";
+
+/* Class = "NSMenuItem"; title = "流畅模式"; ObjectID = "Ddu-Rx-fob"; */
+"Ddu-Rx-fob.title" = "Smooth Mode";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "DzS-PN-7qm"; */
+"DzS-PN-7qm.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "256K"; ObjectID = "EvQ-FA-5co"; */
+"EvQ-FA-5co.title" = "256K";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "GE1-iI-zIe"; */
+"GE1-iI-zIe.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "50"; ObjectID = "HQ0-18-OEp"; */
+"HQ0-18-OEp.title" = "50";
+
+/* Class = "NSTextFieldCell"; title = "主帧间隔:"; ObjectID = "Hqr-3e-eIF"; */
+"Hqr-3e-eIF.title" = "Key Frame Interval:";
+
+/* Class = "NSTextFieldCell"; title = "主帧间隔:"; ObjectID = "IBL-ey-plS"; */
+"IBL-ey-plS.title" = "Key Frame Interval:";
+
+/* Class = "NSMenuItem"; title = "50K"; ObjectID = "JRZ-3U-qzc"; */
+"JRZ-3U-qzc.title" = "50K";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "JvT-a5-WSe"; */
+"JvT-a5-WSe.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "20K"; ObjectID = "L8i-wl-BEA"; */
+"L8i-wl-BEA.title" = "20K";
+
+/* Class = "NSMenuItem"; title = "2M"; ObjectID = "OPZ-3S-DVE"; */
+"OPZ-3S-DVE.title" = "2M";
+
+/* Class = "NSMenuItem"; title = "均衡模式"; ObjectID = "Opp-vE-4ZT"; */
+"Opp-vE-4ZT.title" = "Equilibrium Mode";
+
+/* Class = "NSTextFieldCell"; title = "分辨率:"; ObjectID = "OsI-aV-Wk2"; */
+"OsI-aV-Wk2.title" = "Resolution:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "PLl-AF-LIc"; */
+"PLl-AF-LIc.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Pkn-E9-pz7"; */
+"Pkn-E9-pz7.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "128K"; ObjectID = "Pwq-sw-bve"; */
+"Pwq-sw-bve.title" = "128K";
+
+/* Class = "NSMenuItem"; title = "4M"; ObjectID = "Qoq-dA-8oM"; */
+"Qoq-dA-8oM.title" = "4M";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "RXr-fK-PWa"; */
+"RXr-fK-PWa.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "QVGA(320*180)"; ObjectID = "ReR-Gf-0sn"; */
+"ReR-Gf-0sn.title" = "QVGA(320*180)";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "SKp-Rf-5eT"; */
+"SKp-Rf-5eT.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "SL2-Ys-aHP"; */
+"SL2-Ys-aHP.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "清晰模式"; ObjectID = "So7-q6-ZXf"; */
+"So7-q6-ZXf.title" = "HD Mode";
+
+/* Class = "NSTextFieldCell"; title = "是否可变码率:"; ObjectID = "Sxc-E0-U6i"; */
+"Sxc-E0-U6i.title" = "Variable bitrate:";
+
+/* Class = "NSTextFieldCell"; title = "%"; ObjectID = "Tyx-Jd-KSU"; */
+"Tyx-Jd-KSU.title" = "%";
+
+/* Class = "NSTextFieldCell"; title = "视频流种类:"; ObjectID = "UyR-aO-8Lb"; */
+"UyR-aO-8Lb.title" = "Stream Type:";
+
+/* Class = "NSMenuItem"; title = "720P"; ObjectID = "VVl-yN-yti"; */
+"VVl-yN-yti.title" = "720P";
+
+/* Class = "NSTextFieldCell"; title = "通道:"; ObjectID = "VZ0-TB-MYM"; */
+"VZ0-TB-MYM.title" = "Channel:";
+
+/* Class = "NSMenuItem"; title = "128K"; ObjectID = "Vfn-8Y-ctx"; */
+"Vfn-8Y-ctx.title" = "128K";
+
+/* Class = "NSMenuItem"; title = "流畅模式"; ObjectID = "aeQ-7Z-aIp"; */
+"aeQ-7Z-aIp.title" = "Smooth Mode";
+
+/* Class = "NSMenuItem"; title = "VGA(640*480)"; ObjectID = "ane-oA-dDl"; */
+"ane-oA-dDl.title" = "VGA(640*480)";
+
+/* Class = "NSTextFieldCell"; title = "视频流种类:"; ObjectID = "as7-y2-YeC"; */
+"as7-y2-YeC.title" = "Stream Type:";
+
+/* Class = "NSTextFieldCell"; title = "%"; ObjectID = "cfV-wN-3XC"; */
+"cfV-wN-3XC.title" = "%";
+
+/* Class = "NSMenuItem"; title = "清晰模式"; ObjectID = "cnd-XQ-KBQ"; */
+"cnd-XQ-KBQ.title" = "HD Mode";
+
+/* Class = "NSMenuItem"; title = "100K"; ObjectID = "d09-Ng-FlW"; */
+"d09-Ng-FlW.title" = "100K";
+
+/* Class = "NSMenuItem"; title = "自定义"; ObjectID = "d6d-Bp-hDw"; */
+"d6d-Bp-hDw.title" = "User-defined";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "dTj-yn-8y7"; */
+"dTj-yn-8y7.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "di7-AM-esg"; */
+"di7-AM-esg.title" = "Item 1";
+
+/* Class = "NSBox"; title = "子码流编码参数"; ObjectID = "e29-80-brf"; */
+"e29-80-brf.title" = "Sub stream video settings";
+
+/* Class = "NSMenuItem"; title = "否"; ObjectID = "e2v-GQ-B76"; */
+"e2v-GQ-B76.title" = "No";
+
+/* Class = "NSMenuItem"; title = "QVGA(320*240)"; ObjectID = "euY-nN-yC7"; */
+"euY-nN-yC7.title" = "QVGA(320*240)";
+
+/* Class = "NSMenuItem"; title = "200K"; ObjectID = "fLz-DX-Y0v"; */
+"fLz-DX-Y0v.title" = "200K";
+
+/* Class = "NSTextFieldCell"; title = "帧率:"; ObjectID = "gbH-ET-nrU"; */
+"gbH-ET-nrU.title" = "Frame Rate:";
+
+/* Class = "NSTextFieldCell"; title = "码率:"; ObjectID = "gpW-WI-AKk"; */
+"gpW-WI-AKk.title" = "Bit Rate:";
+
+/* Class = "NSMenuItem"; title = "均衡模式"; ObjectID = "gxs-yn-yGG"; */
+"gxs-yn-yGG.title" = "Equilibrium Mode";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "juC-k0-gti"; */
+"juC-k0-gti.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "256K"; ObjectID = "kuj-57-V7w"; */
+"kuj-57-V7w.title" = "256K";
+
+/* Class = "NSMenuItem"; title = "VGA(640*360)"; ObjectID = "l5T-GO-rJK"; */
+"l5T-GO-rJK.title" = "VGA(640*360)";
+
+/* Class = "NSTextFieldCell"; title = "分辨率:"; ObjectID = "m2D-6J-A7c"; */
+"m2D-6J-A7c.title" = "Resolution:";
+
+/* Class = "NSMenuItem"; title = "1M"; ObjectID = "nk6-RI-kIz"; */
+"nk6-RI-kIz.title" = "1M";
+
+/* Class = "NSMenuItem"; title = "VGA(640*480)"; ObjectID = "osO-8J-Qqd"; */
+"osO-8J-Qqd.title" = "VGA(640*480)";
+
+/* Class = "NSTextFieldCell"; title = "码率:"; ObjectID = "qaw-g6-rfb"; */
+"qaw-g6-rfb.title" = "Bit Rate:";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "qoC-l0-uaM"; */
+"qoC-l0-uaM.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "帧率:"; ObjectID = "scw-NY-kTY"; */
+"scw-NY-kTY.title" = "Frame Rate:";
+
+/* Class = "NSBox"; title = "主码流编码参数"; ObjectID = "uYM-CM-ydb"; */
+"uYM-CM-ydb.title" = "Main stream video settings";
+
+/* Class = "NSMenuItem"; title = "QVGA(320*240)"; ObjectID = "uka-kF-HXv"; */
+"uka-kF-HXv.title" = "QVGA(320*240)";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "vxv-YL-C88"; */
+"vxv-YL-C88.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "50"; ObjectID = "wBs-LB-tUa"; */
+"wBs-LB-tUa.title" = "50";
+
+/* Class = "NSMenuItem"; title = "100K"; ObjectID = "wlE-lu-WNe"; */
+"wlE-lu-WNe.title" = "100K";
+
+/* Class = "NSMenuItem"; title = "自定义"; ObjectID = "wlJ-sc-j09"; */
+"wlJ-sc-j09.title" = "User-defined";
+
+/* Class = "NSMenuItem"; title = "512K"; ObjectID = "yHa-cl-E3s"; */
+"yHa-cl-E3s.title" = "512K";
+
+/* Class = "NSMenuItem"; title = "200K"; ObjectID = "zR5-VC-nL1"; */
+"zR5-VC-nL1.title" = "200K";

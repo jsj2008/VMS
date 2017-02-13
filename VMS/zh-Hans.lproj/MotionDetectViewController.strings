@@ -1,0 +1,99 @@
+
+/* Class = "NSButtonCell"; title = "Bit2"; ObjectID = "1s6-na-jXB"; */
+"1s6-na-jXB.title" = "Bit2";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "2xb-mc-MUn"; */
+"2xb-mc-MUn.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "低"; ObjectID = "5Mo-Qk-vWl"; */
+"5Mo-Qk-vWl.title" = "低";
+
+/* Class = "NSMenuItem"; title = "高"; ObjectID = "5nB-sW-9IY"; */
+"5nB-sW-9IY.title" = "高";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "6c5-83-u0Q"; */
+"6c5-83-u0Q.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "报警联动策略："; ObjectID = "EQx-cc-66G"; */
+"EQx-cc-66G.title" = "报警联动策略：";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "Gd2-Ah-GeI"; */
+"Gd2-Ah-GeI.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "K55-zR-Yna"; */
+"K55-zR-Yna.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "KEc-3B-wgG"; */
+"KEc-3B-wgG.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "KmO-3O-iBy"; */
+"KmO-3O-iBy.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "MAi-bU-FhS"; */
+"MAi-bU-FhS.title" = "Item 1";
+
+/* Class = "NSButtonCell"; title = "侦测区域编辑"; ObjectID = "NBC-LP-Yic"; */
+"NBC-LP-Yic.title" = "侦测区域编辑";
+
+/* Class = "NSTextFieldCell"; title = "时间编辑"; ObjectID = "Nye-Hu-BHl"; */
+"Nye-Hu-BHl.title" = "时间编辑";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "OE6-Ca-2wK"; */
+"OE6-Ca-2wK.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "很低"; ObjectID = "Pzz-qH-oa0"; */
+"Pzz-qH-oa0.title" = "很低";
+
+/* Class = "NSTextFieldCell"; title = "灵敏度："; ObjectID = "Q9c-CO-T2E"; */
+"Q9c-CO-T2E.title" = "灵敏度：";
+
+/* Class = "NSButtonCell"; title = "是否启用移动侦测报警"; ObjectID = "RO4-gu-mmD"; */
+"RO4-gu-mmD.title" = "是否启用移动侦测报警";
+
+/* Class = "NSTextFieldCell"; title = "报警触发间隔："; ObjectID = "Rve-9c-T41"; */
+"Rve-9c-T41.title" = "报警触发间隔：";
+
+/* Class = "NSTextFieldCell"; title = "当报警录像启用时计划录像将停止，报警录像结束后计划录像自动启用"; ObjectID = "SAx-bv-Nim"; */
+"SAx-bv-Nim.title" = "当报警录像启用时计划录像将停止，报警录像结束后计划录像自动启用";
+
+/* Class = "NSButtonCell"; title = "AudioAlarm"; ObjectID = "Vgg-i4-JCH"; */
+"Vgg-i4-JCH.title" = "AudioAlarm";
+
+/* Class = "NSMenuItem"; title = "较低"; ObjectID = "amr-ih-Nrv"; */
+"amr-ih-Nrv.title" = "较低";
+
+/* Class = "NSButtonCell"; title = "Bit3"; ObjectID = "cKg-qu-23U"; */
+"cKg-qu-23U.title" = "Bit3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "dvL-TB-a6u"; */
+"dvL-TB-a6u.title" = "Item 1";
+
+/* Class = "NSButtonCell"; title = "Bit1"; ObjectID = "eB5-JY-UyC"; */
+"eB5-JY-UyC.title" = "Bit1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "ebd-Fi-iGg"; */
+"ebd-Fi-iGg.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "h0M-oc-phN"; */
+"h0M-oc-phN.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "Bit4"; ObjectID = "k1m-lI-dh9"; */
+"k1m-lI-dh9.title" = "Bit4";
+
+/* Class = "NSTextFieldCell"; title = "通道："; ObjectID = "nQz-de-yJN"; */
+"nQz-de-yJN.title" = "通道：";
+
+/* Class = "NSButtonCell"; title = "Bit0"; ObjectID = "p1R-oU-9FV"; */
+"p1R-oU-9FV.title" = "Bit0";
+
+/* Class = "NSTextFieldCell"; title = "录像时间"; ObjectID = "tJN-Jg-eRT"; */
+"tJN-Jg-eRT.title" = "录像时间";
+
+/* Class = "NSMenuItem"; title = "中"; ObjectID = "tpU-Ku-OKV"; */
+"tpU-Ku-OKV.title" = "中";
+
+/* Class = "NSTextFieldCell"; title = "抓拍时间间隔"; ObjectID = "vEG-HN-GMB"; */
+"vEG-HN-GMB.title" = "抓拍时间间隔";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "zw4-v8-2yn"; */
+"zw4-v8-2yn.title" = "Item 3";

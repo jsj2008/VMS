@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DetectSettingViewController">
+            <connections>
+                <outlet property="motionSchedulesPicker" destination="bko-cz-B9W" id="Apa-Ys-Pps"/>
+                <outlet property="motionSensitivityBtn" destination="MCs-1L-9oa" id="8tr-rO-w3V"/>
+                <outlet property="motionSnapIntervalBtn" destination="Yb6-RR-eeL" id="SmZ-iE-Mwi"/>
+                <outlet property="motionTriggerIntervalBtn" destination="Sqf-RF-FFe" id="84m-fH-eDF"/>
+                <outlet property="tabView" destination="lbd-p6-REo" id="Fqm-Y6-9hu"/>
+                <outlet property="view" destination="fzj-A6-NmQ" id="kW7-LS-Fqa"/>
+                <outlet property="zone1" destination="N2E-Rb-lV9" id="Y8U-Zf-Uau"/>
+                <outlet property="zone2" destination="gBA-0Q-A21" id="Cd9-xZ-fhB"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="fzj-A6-NmQ" userLabel="Detection">
+            <rect key="frame" x="0.0" y="0.0" width="860" height="474"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <tabView translatesAutoresizingMaskIntoConstraints="NO" id="lbd-p6-REo">
+                    <rect key="frame" x="13" y="10" width="834" height="422"/>
+                    <animations/>
+                    <font key="font" metaFont="system"/>
+                    <tabViewItems>
+                        <tabViewItem label="移动侦测" identifier="1" id="g6b-9H-Bt4">
+                            <view key="view" id="fk3-Se-u5g">
+                                <rect key="frame" x="10" y="33" width="88" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4v-cd-EhN">
+                                        <rect key="frame" x="0.0" y="-376" width="814" height="752"/>
+                                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="ggW-rU-DAX">
+                                            <rect key="frame" x="0.0" y="0.0" width="760" height="509"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <view translatesAutoresizingMaskIntoConstraints="NO" id="NLj-hP-38u">
+                                                    <rect key="frame" x="0.0" y="-233" width="1525" height="997"/>
+                                                    <subviews>
+                                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="ad7-gv-hsl">
+                                                            <rect key="frame" x="18" y="961" width="164" height="18"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="160" id="OMx-a2-fBM"/>
+                                                            </constraints>
+                                                            <animations/>
+                                                            <buttonCell key="cell" type="check" title="是否启用移动侦测报警" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="CdM-BO-ggj">
+                                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                <font key="font" metaFont="system"/>
+                                                            </buttonCell>
+                                                            <connections>
+                                                                <binding destination="-2" name="value" keyPath="self.isEnableMotionDetect" id="QY0-c7-t0Y"/>
+                                                            </connections>
+                                                        </button>
+                                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N2E-Rb-lV9" userLabel="Zone1">
+                                                            <rect key="frame" x="32" y="922" width="743" height="41"/>
+                                                            <subviews>
+                                                                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCs-1L-9oa">
+                                                                    <rect key="frame" x="121" y="4" width="261" height="26"/>
+                                                                    <animations/>
+                                                                    <popUpButtonCell key="cell" type="push" title="高" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="jTA-yL-0LS" id="Dei-rH-u9t">
+                                                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                                        <font key="font" metaFont="menu"/>
+                                                                        <menu key="menu" id="4aK-J1-EBJ">
+                                                                            <items>
+                                                                                <menuItem title="很低" id="dky-hR-YzF">
+                                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                </menuItem>
+                                                                                <menuItem title="较低" id="JDh-yz-lkn">
+                                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                </menuItem>
+                                                                                <menuItem title="低" id="7XG-mo-sVd">
+                                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                </menuItem>
+                                                                                <menuItem title="中" id="ses-Ew-1uJ">
+                                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                </menuItem>
+                                                                                <menuItem title="高" state="on" id="jTA-yL-0LS">
+                                                                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                                                                </menuItem>
+                                                                            </items>
+                                                                        </menu>
+                                                                    </popUpButtonCell>
+                                                                </popUpButton>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I1d-iL-DxS">
+                                                                    <rect key="frame" x="8" y="8" width="110" height="17"/>
+                                                                    <animations/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="灵敏度：" id="Di9-dB-hk3">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                            </subviews>
+                                                            <animations/>
+                                                        </customView>
+                                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gBA-0Q-A21" userLabel="Zone2">
+                                                            <rect key="frame" x="32" y="394" width="743" height="528"/>
+                                                            <subviews>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQK-sa-EgX">
+                                                                    <rect key="frame" x="8" y="495" width="110" height="17"/>
+                                                                    <animations/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="报警触发间隔：" id="Tb5-xE-FaN">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NXf-Bb-WOX">
+                                                                    <rect key="frame" x="8" y="456" width="110" height="17"/>
+                                                                    <animations/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="报警联动策略：" id="aqi-me-LZi">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9He-HX-PrC">
+                                                                    <rect key="frame" x="237" y="415" width="97" height="17"/>
+                                                                    <animations/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="抓拍时间间隔：" id="M7Z-KE-Fqd">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LuY-9f-rui">
+                                                                    <rect key="frame" x="123" y="348" width="411" height="34"/>
+                                                                    <animations/>
+                                                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="请提前设置好抓拍存放位置（视频-&gt;抓拍） 请提前设置好录像存放位置（录像-&gt;录像存放路径）" id="xNc-42-nTT">
+                                                                        <font key="font" metaFont="smallSystem"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-5C-T1t">
+                                                                    <rect key="frame" x="123" y="454" width="74" height="18"/>
+                                                                    <animations/>
+                                                                    <buttonCell key="cell" type="check" title="铃声报警" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="JJn-uf-qCO">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                                    </buttonCell>
+                                                                    <connections>
+                                                                        <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="cJK-Qo-GYJ"/>
+                                                                        <binding destination="-2" name="value" keyPath="self.isEnableMotionRing" id="L7j-0o-FwV"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vv4-hi-7eJ">
+                                                                    <rect key="frame" x="123" y="434" width="74" height="18"/>
+                                                                    <animations/>
+                                                                    <buttonCell key="cell" type="check" title="发送邮件" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="EGt-5t-NsF">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                                    </buttonCell>
+                                                                    <connections>
+                                                                        <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="IZq-9g-OLi"/>
+                                                                        <binding destination="-2" name="value" keyPath="self.isEnableMotionMail" id="pi9-1j-orL"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzf-WU-U42">
+                                                                    <rect key="frame" x="123" y="414" width="74" height="18"/>
+                                                                    <animations/>
+                                                                    <buttonCell key="cell" type="check" title="抓拍图片" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="A3w-HJ-s3b">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                                    </buttonCell>
+                                                                    <connections>
+                                                                        <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="iZ5-VY-VUZ"/>
+                                                                        <binding destination="-2" name="value" keyPath="self.isEnableMotionSnap" id="JEp-Sf-OIY"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ylq-vh-Avj">
+                                                                    <rect key="frame" x="123" y="388" width="61" height="24"/>
+                                                                    <animations/>
+                                                                    <buttonCell key="cell" type="check" title="录像" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="jrb-xa-7dk">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                                    </buttonCell>
+                                                                    <connections>
+                                                                        <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="ys0-1b-BCX"/>
+                                                                        <binding destination="-2" name="value" keyPath="self.isEnableMotionRecord" id="JB8-jU-K6U"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qew-MM-wcB">
+                                                                    <rect key="frame" x="124" y="324" width="113" height="18"/>
+                                                                    <animations/>
+                                                                    <buttonCell key="cell" type="check" title="推送消息至手机" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="8I3-wS-7XV">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                                                                    </buttonCell>
+                                                                    <connections>
+                                                                        <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="3bC-iD-sTx"/>
+                                                                        <binding destination="-2" name="value" keyPath="self.isEnableMotionPushPhone" id="VKQ-4f-wGa"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GXZ-2w-Jg9">
+                                                                    <rect key="frame" x="237" y="454" width="93" height="18"/>
+                                                                    <animations/>
+                                                                    <buttonCell key="cell" type="check" title="PC声音报警" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="eNE-9Y-UOf">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                        <font key="font" metaFont="system"/>
+                                                                    </buttonCell>
+                                                                    <connections>
+                                                                        <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="aqv-XP-mo8"/>
+                                                                        <binding destination="-2" name="value" keyPath="self.isEnablePCAudioAlarm" id="eLU-u9-cKM"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yb6-RR-eeL">
+                                                                    <rect key="frame" x="338" y="409" width="45" height="26"/>
+                                                                    <animations/>
+                                                                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Kcf-NE-0rn" id="IoT-3c-qzk">
+                                                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                                        <font key="font" metaFont="menu"/>
+                                                                        <menu key="menu" id="HET-Y8-0rg">
+                                                                            <items>
+                                                                                <menuItem title="Item 1" state="on" id="Kcf-NE-0rn"/>
+                                                                                <menuItem title="Item 2" id="fcY-dK-g3I"/>
+                                                                                <menuItem title="Item 3" id="haZ-Y3-6wB"/>
+                                                                            </items>
+                                                                        </menu>
+                                                                    </popUpButtonCell>
+                                                                </popUpButton>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zn-jx-ukt">
+                                                                    <rect key="frame" x="394" y="415" width="11" height="17"/>
+                                                                    <animations/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="s" id="w9u-93-y5j">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-40-Mh4">
+                                                                    <rect key="frame" x="117" y="289" width="136" height="32"/>
+                                                                    <animations/>
+                                                                    <buttonCell key="cell" type="push" title="侦测区域编辑" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yur-vG-PGO">
+                                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                        <font key="font" metaFont="system"/>
+                                                                    </buttonCell>
+                                                                    <connections>
+                                                                        <action selector="editDetectionArea:" target="-2" id="iFK-Od-tY7"/>
+                                                                        <binding destination="-2" name="enabled" keyPath="self.isEnableMotionDetect" id="JlJ-G7-TFU"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bR-nq-4F9">
+                                                                    <rect key="frame" x="6" y="15" width="451" height="17"/>
+                                                                    <animations/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="当报警录像启用时计划录像将停止，报警录像结束后计划录像自动启用" id="g2m-3g-4GW">
+                                                                        <font key="font" metaFont="smallSystem"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <customView identifier="motion schedules" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bko-cz-B9W" customClass="TimePickerView">
+                                                                    <rect key="frame" x="6" y="40" width="688" height="231"/>
+                                                                    <animations/>
+                                                                    <connections>
+                                                                        <binding destination="-2" name="hidden" keyPath="self.isEnableMotionDetect" id="fS0-B9-cFY">
+                                                                            <dictionary key="options">
+                                                                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                                            </dictionary>
+                                                                        </binding>
+                                                                        <outlet property="delegate" destination="-2" id="yC4-Rc-uGg"/>
+                                                                    </connections>
+                                                                </customView>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Js2-eP-N90">
+                                                                    <rect key="frame" x="339" y="278" width="64" height="17"/>
+                                                                    <animations/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="时间编辑" id="9fm-LM-LGh">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sqf-RF-FFe">
+                                                                    <rect key="frame" x="121" y="489" width="261" height="26"/>
+                                                                    <animations/>
+                                                                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="pmD-ne-qTS" id="3id-dB-8kZ">
+                                                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                                        <font key="font" metaFont="menu"/>
+                                                                        <menu key="menu" id="kSI-Bz-Xvl">
+                                                                            <items>
+                                                                                <menuItem title="Item 1" state="on" id="pmD-ne-qTS"/>
+                                                                                <menuItem title="Item 2" id="PTE-M5-BiL"/>
+                                                                                <menuItem title="Item 3" id="evQ-Q6-ekM"/>
+                                                                            </items>
+                                                                        </menu>
+                                                                    </popUpButtonCell>
+                                                                </popUpButton>
+                                                            </subviews>
+                                                            <animations/>
+                                                        </customView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ad7-gv-hsl" firstAttribute="leading" secondItem="NLj-hP-38u" secondAttribute="leading" constant="20" symbolic="YES" id="BCA-YR-og9"/>
+                                                        <constraint firstItem="ad7-gv-hsl" firstAttribute="top" secondItem="NLj-hP-38u" secondAttribute="top" constant="20" symbolic="YES" id="QH5-fT-f4u"/>
+                                                    </constraints>
+                                                    <animations/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NLj-hP-38u" firstAttribute="leading" secondItem="ggW-rU-DAX" secondAttribute="leading" id="IMk-99-ysx"/>
+                                                <constraint firstAttribute="trailing" secondItem="NLj-hP-38u" secondAttribute="trailing" constant="-726" id="REh-lr-zt6"/>
+                                                <constraint firstAttribute="bottom" secondItem="NLj-hP-38u" secondAttribute="bottom" constant="-225" id="sWL-tV-4iF"/>
+                                                <constraint firstItem="NLj-hP-38u" firstAttribute="top" secondItem="ggW-rU-DAX" secondAttribute="top" constant="-20" id="zgA-Xa-2bm"/>
+                                            </constraints>
+                                            <animations/>
+                                        </clipView>
+                                        <animations/>
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="61q-6g-IRM">
+                                            <rect key="frame" x="1" y="80" width="166" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="0.04081632653061229" horizontal="NO" id="x5T-D4-Yjr">
+                                            <rect key="frame" x="167" y="1" width="15" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="e4v-cd-EhN" secondAttribute="bottom" constant="-376" id="Mdl-YY-p8h"/>
+                                    <constraint firstItem="e4v-cd-EhN" firstAttribute="top" secondItem="fk3-Se-u5g" secondAttribute="top" id="ilp-ig-Qz6"/>
+                                    <constraint firstItem="e4v-cd-EhN" firstAttribute="centerX" secondItem="fk3-Se-u5g" secondAttribute="centerX" id="lTC-Q7-Xz5"/>
+                                    <constraint firstItem="e4v-cd-EhN" firstAttribute="leading" secondItem="fk3-Se-u5g" secondAttribute="leading" id="zcr-uJ-riU"/>
+                                </constraints>
+                                <animations/>
+                            </view>
+                        </tabViewItem>
+                    </tabViewItems>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="Mzq-Dc-TB3"/>
+                    </connections>
+                </tabView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Bg-RS-ZGW">
+                    <rect key="frame" x="773" y="420" width="73" height="32"/>
+                    <animations/>
+                    <buttonCell key="cell" type="push" title=" 刷新 " bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b2q-XC-K1f">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="refresh:" target="-2" id="tQs-cD-Wnd"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bG3-T6-MMB">
+                    <rect key="frame" x="707" y="420" width="66" height="32"/>
+                    <animations/>
+                    <buttonCell key="cell" type="push" title="保存" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wkk-ZJ-fOn">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="save:" target="-2" id="2Zu-BN-Eew"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bG3-T6-MMB" firstAttribute="baseline" secondItem="3Bg-RS-ZGW" secondAttribute="baseline" id="2Vw-L1-5wL"/>
+                <constraint firstItem="lbd-p6-REo" firstAttribute="top" secondItem="bG3-T6-MMB" secondAttribute="bottom" constant="1" id="76w-nF-QIu"/>
+                <constraint firstAttribute="trailing" secondItem="3Bg-RS-ZGW" secondAttribute="trailing" constant="20" symbolic="YES" id="Nj7-xz-CTU"/>
+                <constraint firstItem="3Bg-RS-ZGW" firstAttribute="trailing" secondItem="lbd-p6-REo" secondAttribute="trailing" id="P0A-zs-hum"/>
+                <constraint firstItem="bG3-T6-MMB" firstAttribute="top" secondItem="fzj-A6-NmQ" secondAttribute="top" constant="26" id="hJw-jp-Lc3"/>
+                <constraint firstAttribute="bottom" secondItem="lbd-p6-REo" secondAttribute="bottom" constant="20" symbolic="YES" id="i35-cn-MET"/>
+                <constraint firstItem="3Bg-RS-ZGW" firstAttribute="leading" secondItem="bG3-T6-MMB" secondAttribute="trailing" constant="12" symbolic="YES" id="ihY-BB-ui7"/>
+                <constraint firstItem="lbd-p6-REo" firstAttribute="leading" secondItem="fzj-A6-NmQ" secondAttribute="leading" constant="20" symbolic="YES" id="jvP-4U-Si3"/>
+            </constraints>
+            <animations/>
+            <point key="canvasLocation" x="-331" y="1825"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="aGW-GZ-tdV"/>
+    </objects>
+</document>

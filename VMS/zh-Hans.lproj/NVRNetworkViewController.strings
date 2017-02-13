@@ -1,0 +1,45 @@
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "62h-cQ-ybP"; */
+"62h-cQ-ybP.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "6gy-nD-gDi"; */
+"6gy-nD-gDi.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Cer-oW-A2d"; */
+"Cer-oW-A2d.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Feo-F7-8es"; */
+"Feo-F7-8es.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "HTTP端口:"; ObjectID = "Mdl-Ax-9vh"; */
+"Mdl-Ax-9vh.title" = "HTTP端口:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "MiL-Ad-TjT"; */
+"MiL-Ad-TjT.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "UPNP:"; ObjectID = "NaZ-zK-g0V"; */
+"NaZ-zK-g0V.title" = "UPNP:";
+
+/* Class = "NSTextFieldCell"; title = "HTTPS端口:"; ObjectID = "Rgo-c5-fmu"; */
+"Rgo-c5-fmu.title" = "HTTPS端口:";
+
+/* Class = "NSTextFieldCell"; title = "IP地址/URL:"; ObjectID = "StM-dS-eUm"; */
+"StM-dS-eUm.title" = "IP地址/URL:";
+
+/* Class = "NSTextFieldCell"; title = "网络类型:"; ObjectID = "VM9-gL-Qoo"; */
+"VM9-gL-Qoo.title" = "网络类型:";
+
+/* Class = "NSTextFieldCell"; title = "子网掩码:"; ObjectID = "XuU-0M-ZrF"; */
+"XuU-0M-ZrF.title" = "子网掩码:";
+
+/* Class = "NSTextFieldCell"; title = "备用DNS:"; ObjectID = "b1J-SJ-WEf"; */
+"b1J-SJ-WEf.title" = "备用DNS:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "e08-D4-EX8"; */
+"e08-D4-EX8.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "默认网关:"; ObjectID = "sgx-uR-5pI"; */
+"sgx-uR-5pI.title" = "默认网关:";
+
+/* Class = "NSTextFieldCell"; title = "首选DNS:"; ObjectID = "v0d-pj-gKp"; */
+"v0d-pj-gKp.title" = "首选DNS:";

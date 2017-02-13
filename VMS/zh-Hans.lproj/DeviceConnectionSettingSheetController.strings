@@ -1,0 +1,39 @@
+
+/* Class = "NSTextFieldCell"; title = "密码:"; ObjectID = "1cq-DY-nfk"; */
+"1cq-DY-nfk.title" = "密码:";
+
+/* Class = "NSTextFieldCell"; title = "端口号:"; ObjectID = "5Vb-3Q-sz5"; */
+"5Vb-3Q-sz5.title" = "端口号:";
+
+/* Class = "NSTextFieldCell"; title = "用户名:"; ObjectID = "7BI-C0-8Rp"; */
+"7BI-C0-8Rp.title" = "用户名:";
+
+/* Class = "NSButtonCell"; title = "完成"; ObjectID = "86A-5F-eqb"; */
+"86A-5F-eqb.title" = "完成";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "H7k-Bj-pvd"; */
+"H7k-Bj-pvd.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Mac地址:"; ObjectID = "LQl-6Q-E2d"; */
+"LQl-6Q-E2d.title" = "Mac地址:";
+
+/* Class = "NSTextFieldCell"; title = "设备类型:"; ObjectID = "Oc9-fb-4dZ"; */
+"Oc9-fb-4dZ.title" = "设备类型:";
+
+/* Class = "NSButtonCell"; title = "测试"; ObjectID = "SEY-ZU-Hc2"; */
+"SEY-ZU-Hc2.title" = "测试";
+
+/* Class = "NSTextFieldCell"; title = "名称:"; ObjectID = "dCf-7U-yTA"; */
+"dCf-7U-yTA.title" = "名称:";
+
+/* Class = "NSComboBoxCell"; j9f-Ix-Djv.ibShadowedObjectValues[0] = "FOSCAM IPC"; ObjectID = "j9f-Ix-Djv"; */
+"j9f-Ix-Djv.ibShadowedObjectValues[0]" = "FOSCAM IPC";
+
+/* Class = "NSComboBoxCell"; j9f-Ix-Djv.ibShadowedObjectValues[1] = "FOSCAM NVR"; ObjectID = "j9f-Ix-Djv"; */
+"j9f-Ix-Djv.ibShadowedObjectValues[1]" = "FOSCAM NVR";
+
+/* Class = "NSTextFieldCell"; title = "通道数:"; ObjectID = "sXp-sH-QMf"; */
+"sXp-sH-QMf.title" = "通道数:";

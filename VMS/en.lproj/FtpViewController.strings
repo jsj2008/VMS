@@ -1,0 +1,38 @@
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "212-aP-bpK"; */
+"212-aP-bpK.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "密码的最大长度为63，支持数字及符号 ～！@＃$%^*()_+{}:\"|<>?`-;'\\,./"; ObjectID = "BKp-it-ULT"; */
+"BKp-it-ULT.title" = "The maximum password length is 63,including numbers,letters and symbols ～！@＃$%^*()_+{}:\"|<>?`-;'\\,./";
+
+/* Class = "NSTextFieldCell"; title = "FTP模式:"; ObjectID = "JJe-XK-PWR"; */
+"JJe-XK-PWR.title" = "FTP Mode:";
+
+/* Class = "NSTextFieldCell"; title = "FTP密码:"; ObjectID = "K6H-kh-l3d"; */
+"K6H-kh-l3d.title" = "Password:";
+
+/* Class = "NSTextFieldCell"; title = "示例:ftp://192.168.1.103/dir
+地址的组大长度为127，不支持符号&="; ObjectID = "LX0-g2-oZ9"; */
+"LX0-g2-oZ9.title" = "Example:ftp://192.168.1.103/dir \
+The maximum length of the address is 127,does not support the character &=";
+
+/* Class = "NSTextFieldCell"; title = "用户的最大长度为63，支持数字、字母及符号_@$*-,.#!"; ObjectID = "bAh-zI-3gL"; */
+"bAh-zI-3gL.title" = "The maximum length of the user name is 63,support numbers,letters and symbols _@$*-,.#!";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "lYl-y2-8dI"; */
+"lYl-y2-8dI.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "FTP用户名:"; ObjectID = "mts-a4-Mvd"; */
+"mts-a4-Mvd.title" = "Username:";
+
+/* Class = "NSTextFieldCell"; title = "FTP地址:"; ObjectID = "pIE-XT-1eM"; */
+"pIE-XT-1eM.title" = "FTP Server:";
+
+/* Class = "NSButtonCell"; title = "测试"; ObjectID = "uti-tU-7Ir"; */
+"uti-tU-7Ir.title" = "Test";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "v2V-wo-keI"; */
+"v2V-wo-keI.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "端口:"; ObjectID = "y7s-Qh-nIn"; */
+"y7s-Qh-nIn.title" = "Port:";

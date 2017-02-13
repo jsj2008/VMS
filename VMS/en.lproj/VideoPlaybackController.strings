@@ -1,0 +1,63 @@
+
+/* Class = "NSButton"; ibShadowedToolTip = "停止"; ObjectID = "9Zl-7A-hGe"; */
+"9Zl-7A-hGe.ibShadowedToolTip" = "Stop";
+
+/* Class = "NSButton"; ibShadowedToolTip = "打开文件"; ObjectID = "AEU-ZP-2Pj"; */
+"AEU-ZP-2Pj.ibShadowedToolTip" = "File";
+
+/* Class = "NSButtonCell"; title = "报警录像"; ObjectID = "HZj-gn-9uM"; */
+"HZj-gn-9uM.title" = "Alarm";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "JVu-yM-46N"; */
+"JVu-yM-46N.title" = "Label";
+
+/* Class = "NSTableColumn"; headerCell.title = "设备"; ObjectID = "JeW-L3-nZj"; */
+"JeW-L3-nZj.headerCell.title" = "Device";
+
+/* Class = "NSButton"; ibShadowedToolTip = "慢放"; ObjectID = "LJZ-n4-SlU"; */
+"LJZ-n4-SlU.ibShadowedToolTip" = "Slow Play";
+
+/* Class = "NSButtonCell"; title = "查找录像"; ObjectID = "Meq-Yf-Hh8"; */
+"Meq-Yf-Hh8.title" = "Search";
+
+/* Class = "NSTextFieldCell"; title = "录像类型"; ObjectID = "Ng6-xd-9eb"; */
+"Ng6-xd-9eb.title" = "Type";
+
+/* Class = "NSTextFieldCell"; title = "定位时间"; ObjectID = "Se3-Py-dxN"; */
+"Se3-Py-dxN.title" = "Time";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "Sws-gE-P1x"; */
+"Sws-gE-P1x.headerCell.title" = "No";
+
+/* Class = "NSButton"; ibShadowedToolTip = "播放／暂停"; ObjectID = "XLw-WG-7Gs"; */
+"XLw-WG-7Gs.ibShadowedToolTip" = "Play／Pause";
+
+/* Class = "NSButton"; ibShadowedToolTip = "暂停"; ObjectID = "Xl1-uD-tOR"; */
+"Xl1-uD-tOR.ibShadowedToolTip" = "Pause";
+
+/* Class = "NSButton"; ibShadowedToolTip = "快放"; ObjectID = "ZnX-DD-xES"; */
+"ZnX-DD-xES.ibShadowedToolTip" = "Quick Play";
+
+/* Class = "NSButton"; ibShadowedToolTip = "下一帧"; ObjectID = "e4N-xM-0pa"; */
+"e4N-xM-0pa.ibShadowedToolTip" = "Next Frame";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "evJ-zQ-r82"; */
+"evJ-zQ-r82.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ez7-ZA-2L5"; */
+"ez7-ZA-2L5.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "计划录像"; ObjectID = "gIV-3B-v6m"; */
+"gIV-3B-v6m.title" = "Schedule";
+
+/* Class = "NSTextFieldCell"; title = "录像日期"; ObjectID = "jdY-Kh-w4O"; */
+"jdY-Kh-w4O.title" = "Date";
+
+/* Class = "NSButtonCell"; title = "手工录像"; ObjectID = "n4c-ot-Kqg"; */
+"n4c-ot-Kqg.title" = "Manual";
+
+/* Class = "NSButtonCell"; title = "移动侦测录像"; ObjectID = "xQY-y8-G6t"; */
+"xQY-y8-G6t.title" = "Motion Detect Record";
+
+/* Class = "NSButtonCell"; title = "定位时间"; ObjectID = "zcs-om-sII"; */
+"zcs-om-sII.title" = "Seek";

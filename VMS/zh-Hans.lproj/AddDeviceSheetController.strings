@@ -1,0 +1,93 @@
+
+/* Class = "NSButtonCell"; title = "p2p connection"; ObjectID = "0jD-H3-WZf"; */
+"0jD-H3-WZf.title" = "p2p 连接";
+
+/* Class = "NSButtonCell"; title = "添加"; ObjectID = "1H1-EY-79g"; */
+"1H1-EY-79g.title" = "添加";
+
+/* Class = "NSTextFieldCell"; title = "Mac:"; ObjectID = "2hg-6i-0UE"; */
+"2hg-6i-0UE.title" = "Mac:";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "4Je-3d-i2C"; */
+"4Je-3d-i2C.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "8sd-od-TcV"; */
+"8sd-od-TcV.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "9F9-mm-fCz"; */
+"9F9-mm-fCz.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "IP:"; ObjectID = "AIH-ht-ATi"; */
+"AIH-ht-ATi.title" = "IP:";
+
+/* Class = "NSTextFieldCell"; title = "设备类型:"; ObjectID = "Ag0-Bg-Fen"; */
+"Ag0-Bg-Fen.title" = "设备类型:";
+
+/* Class = "NSTextFieldCell"; title = "设备搜索列表"; ObjectID = "BEs-V3-JTM"; */
+"BEs-V3-JTM.title" = "设备搜索列表";
+
+/* Class = "NSMenuItem"; title = "FOSCAM IPC"; ObjectID = "Bea-6F-u5y"; */
+"Bea-6F-u5y.title" = "FOSCAM IPC";
+
+/* Class = "NSTextFieldCell"; title = "密码:"; ObjectID = "Bp8-o6-tqR"; */
+"Bp8-o6-tqR.title" = "密码:";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "UID:"; ObjectID = "Jug-EN-F4m"; */
+"Jug-EN-F4m.title" = "UID:";
+
+/* Class = "NSButtonCell"; title = "搜索"; ObjectID = "K9X-iL-qp8"; */
+"K9X-iL-qp8.title" = "搜索";
+
+/* Class = "NSTableColumn"; headerCell.title = "Port"; ObjectID = "Kmy-6G-VPX"; */
+"Kmy-6G-VPX.headerCell.title" = "Port";
+
+/* Class = "NSTextFieldCell"; title = "名称:"; ObjectID = "Lph-9I-bu2"; */
+"Lph-9I-bu2.title" = "名称:";
+
+/* Class = "NSTableColumn"; headerCell.title = "类型"; ObjectID = "MHI-GB-Vqx"; */
+"MHI-GB-Vqx.headerCell.title" = "类型";
+
+/* Class = "NSMenuItem"; title = "显示IPC"; ObjectID = "O1L-cy-ZyY"; */
+"O1L-cy-ZyY.title" = "显示IPC";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "U5h-Wp-Weu"; */
+"U5h-Wp-Weu.title" = "取消";
+
+/* Class = "NSTableColumn"; headerCell.title = "Mac"; ObjectID = "ZaS-4M-2ab"; */
+"ZaS-4M-2ab.headerCell.title" = "Mac";
+
+/* Class = "NSTextFieldCell"; title = "搜索到0台设备"; ObjectID = "cGe-BE-6ut"; */
+"cGe-BE-6ut.title" = "搜索到0台设备";
+
+/* Class = "NSTableColumn"; headerCell.title = "名称"; ObjectID = "dsi-vZ-4Fe"; */
+"dsi-vZ-4Fe.headerCell.title" = "名称";
+
+/* Class = "NSMenuItem"; title = "显示NVR"; ObjectID = "kmT-SH-QdY"; */
+"kmT-SH-QdY.title" = "显示NVR";
+
+/* Class = "NSTableColumn"; headerCell.title = "IP"; ObjectID = "pMW-dg-dYr"; */
+"pMW-dg-dYr.headerCell.title" = "IP";
+
+/* Class = "NSTextFieldCell"; title = "端口:"; ObjectID = "prH-cU-ALP"; */
+"prH-cU-ALP.title" = "端口:";
+
+/* Class = "NSMenuItem"; title = "显示所有"; ObjectID = "rVB-8x-gWK"; */
+"rVB-8x-gWK.title" = "显示所有";
+
+/* Class = "NSTextFieldCell"; title = "用户名:"; ObjectID = "rbe-Cn-RGG"; */
+"rbe-Cn-RGG.title" = "用户名:";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "rg7-lT-AA5"; */
+"rg7-lT-AA5.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "shU-TX-nda"; */
+"shU-TX-nda.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "FOSCAM NVR"; ObjectID = "sq7-ci-8DU"; */
+"sq7-ci-8DU.title" = "FOSCAM NVR";
+
+/* Class = "NSTextFieldCell"; title = "过滤:"; ObjectID = "vbS-W6-1P7"; */
+"vbS-W6-1P7.title" = "过滤:";

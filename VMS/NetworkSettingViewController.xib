@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NetworkSettingViewController">
+            <connections>
+                <outlet property="ddnsServer" destination="Tft-wl-kH0" id="Zv8-Ws-9Na"/>
+                <outlet property="dns1" destination="gdK-WS-sYN" id="UW3-3c-GLS"/>
+                <outlet property="dns2" destination="GHt-w7-v6O" id="4Is-g8-Lfl"/>
+                <outlet property="factoryDDNS" destination="Bqn-HK-GVE" id="WWa-cF-9jb"/>
+                <outlet property="ftpAddr" destination="Np9-EJ-crf" id="CwV-uV-GIQ"/>
+                <outlet property="ftpMode" destination="Rqw-ff-GS1" id="OuB-VF-1tu"/>
+                <outlet property="ftpPassword" destination="yFd-uC-WOr" id="edM-NG-FU3"/>
+                <outlet property="ftpPort" destination="IBe-bY-BdD" id="THQ-Ad-Ne4"/>
+                <outlet property="ftpTestResult" destination="fK7-w1-7x2" id="AVH-gX-hKF"/>
+                <outlet property="ftpTip" destination="ZU7-IX-GJc" id="do4-vX-PmS"/>
+                <outlet property="ftpUserName" destination="KYy-f7-fWx" id="uOf-lT-Yqd"/>
+                <outlet property="gate" destination="qbl-is-ewH" id="mrV-EU-LFC"/>
+                <outlet property="hostName" destination="c7R-GK-vuE" id="8mt-o2-rl8"/>
+                <outlet property="httpsPort" destination="9xd-Jf-t3d" id="zZq-nH-mQU"/>
+                <outlet property="ip" destination="eHF-K4-iLz" id="Rab-eR-7RF"/>
+                <outlet property="mask" destination="2Ni-kI-Ifz" id="o6r-SE-qcN"/>
+                <outlet property="onvifPort" destination="LTV-fU-yXC" id="kJW-jP-jGh"/>
+                <outlet property="p2pPort" destination="pEe-c7-wlU" id="pHB-YG-QtS"/>
+                <outlet property="pppoePassword" destination="cAa-fn-Eyy" id="Nma-iU-cOO"/>
+                <outlet property="pppoeUserName" destination="7KE-6q-gNv" id="Yzq-rM-QQv"/>
+                <outlet property="psk" destination="zWf-mt-VDG" id="Jiw-se-wHC"/>
+                <outlet property="pskFomatter" destination="QlI-lU-kow" id="uBX-5K-r2c"/>
+                <outlet property="smptTip" destination="K6V-CB-Y6f" id="Le4-71-dJM"/>
+                <outlet property="smtpAddrFomatter" destination="JcG-cx-5wW" id="E2B-gv-tmu"/>
+                <outlet property="smtpNeedAuth" destination="PPX-qd-ri5" id="fDL-c5-SoT"/>
+                <outlet property="smtpPassword" destination="vdD-Aq-gNx" id="o9c-FI-G28"/>
+                <outlet property="smtpPasswordFormatter" destination="73a-nW-Lnc" id="r1B-zM-FSG"/>
+                <outlet property="smtpPort" destination="xHI-zW-htW" id="Y0e-6c-eJY"/>
+                <outlet property="smtpReciever1" destination="aPU-lC-W6Y" id="ojt-IN-gHu"/>
+                <outlet property="smtpReciever2" destination="Wwr-xP-m1Q" id="yh0-KO-ODQ"/>
+                <outlet property="smtpReciever3" destination="pS0-P6-wMA" id="HoV-DQ-3me"/>
+                <outlet property="smtpReciever4" destination="t0P-8V-E7e" id="1vA-jK-hgI"/>
+                <outlet property="smtpSender" destination="7Q0-KE-IKx" id="WyI-qG-YtP"/>
+                <outlet property="smtpServerAddr" destination="rEK-Cv-YGt" id="kdG-32-S1k"/>
+                <outlet property="smtpTestResult" destination="wWX-zY-Cj5" id="Zqp-nT-SBl"/>
+                <outlet property="smtpTls" destination="lxc-tQ-XD6" id="o9c-Kd-CWD"/>
+                <outlet property="smtpUserName" destination="2ME-Le-Cfl" id="YSh-jH-4B8"/>
+                <outlet property="smtpUserNameFormatter" destination="Wpf-h4-oYC" id="Yf8-dG-N1o"/>
+                <outlet property="ssId" destination="YvW-6F-5Nz" id="8oC-Us-wJ3"/>
+                <outlet property="tabView" destination="xYV-KG-90g" id="IIS-ho-zod"/>
+                <outlet property="uid" destination="Umq-eG-54h" id="Aun-YB-cgB"/>
+                <outlet property="upnpEnable" destination="WTU-c9-lZJ" id="d8y-wm-gJ2"/>
+                <outlet property="view" destination="lmb-Gh-6MK" id="QE1-B8-ahE"/>
+                <outlet property="webPort" destination="wAM-rV-b55" id="S3D-bB-W5D"/>
+                <outlet property="wifiAuthMode" destination="eXd-ad-KU4" id="cJg-wJ-Q2p"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="lmb-Gh-6MK" userLabel="Network">
+            <rect key="frame" x="0.0" y="0.0" width="860" height="462"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ylh-76-tqg">
+                    <rect key="frame" x="780" y="414" width="66" height="32"/>
+                    <animations/>
+                    <buttonCell key="cell" type="push" title="刷新" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kTS-jo-my5">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="refresh:" target="-2" id="V1k-2F-D1l"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YNJ-Po-Vud">
+                    <rect key="frame" x="714" y="414" width="66" height="32"/>
+                    <animations/>
+                    <buttonCell key="cell" type="push" title="保存" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IBe-xk-xXl">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="save:" target="-2" id="h4g-oF-Ae3"/>
+                    </connections>
+                </button>
+                <tabView translatesAutoresizingMaskIntoConstraints="NO" id="xYV-KG-90g">
+                    <rect key="frame" x="13" y="10" width="834" height="410"/>
+                    <animations/>
+                    <font key="font" metaFont="system"/>
+                    <tabViewItems>
+                        <tabViewItem label="IP" identifier="1" id="2WR-yY-9py">
+                            <view key="view" id="uro-xT-dNE">
+                                <rect key="frame" x="10" y="33" width="497" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="87W-0G-sL2">
+                                        <rect key="frame" x="18" y="328" width="132" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="JGN-pn-3LQ"/>
+                                        </constraints>
+                                        <animations/>
+                                        <buttonCell key="cell" type="check" title="自动获取IP" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Q35-uj-Gdq">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <binding destination="-2" name="value" keyPath="self.isDHCP" id="5tW-Cq-Hll"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Ed-Qr-OdX" userLabel="Label">
+                                        <rect key="frame" x="18" y="305" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="ip地址:" id="rBY-hq-VsU">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mRT-uw-2Tu" userLabel="Label">
+                                        <rect key="frame" x="18" y="263" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="子网掩码:" id="EUa-2K-lc5">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="neV-5O-Ffa" userLabel="Label">
+                                        <rect key="frame" x="18" y="221" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="网关:" id="bvU-fK-RX6">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3gX-G4-Q6I" userLabel="Label">
+                                        <rect key="frame" x="18" y="179" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="主要DNS服务器:" id="UYk-kr-Q60">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k6X-9d-ihz" userLabel="Label">
+                                        <rect key="frame" x="18" y="137" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="次要DNS服务器:" id="Ecd-Yb-bkC">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Ni-kI-Ifz" userLabel="子网掩码">
+                                        <rect key="frame" x="156" y="261" width="256" height="22"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="cHO-i1-4F9">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="-2" name="enabled" keyPath="self.isDHCP" id="eRd-Z0-JIA">
+                                                <dictionary key="options">
+                                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-is-ewH" userLabel="网关">
+                                        <rect key="frame" x="156" y="219" width="256" height="22"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="xuk-TQ-mJ9">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="-2" name="enabled" keyPath="self.isDHCP" id="lPe-Yr-oxZ">
+                                                <dictionary key="options">
+                                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gdK-WS-sYN" userLabel="主要DNS服务器">
+                                        <rect key="frame" x="156" y="177" width="256" height="22"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="E7o-1Z-v1M">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="-2" name="enabled" keyPath="self.isDHCP" id="wGO-KT-Mym">
+                                                <dictionary key="options">
+                                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GHt-w7-v6O" userLabel="次要DNS服务器">
+                                        <rect key="frame" x="156" y="135" width="256" height="22"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="p5Y-Yw-qDH">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="-2" name="enabled" keyPath="self.isDHCP" id="k3S-r2-A4o">
+                                                <dictionary key="options">
+                                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eHF-K4-iLz" userLabel="ip地址">
+                                        <rect key="frame" x="156" y="303" width="256" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="256" id="HhS-xn-ehb"/>
+                                        </constraints>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="CGI-qQ-OxK">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="-2" name="enabled" keyPath="self.isDHCP" id="Ved-7e-HtH">
+                                                <dictionary key="options">
+                                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Ed-Qr-OdX" firstAttribute="baseline" secondItem="eHF-K4-iLz" secondAttribute="baseline" id="18Q-Yd-QR8"/>
+                                    <constraint firstItem="gdK-WS-sYN" firstAttribute="trailing" secondItem="qbl-is-ewH" secondAttribute="trailing" id="1ny-mM-Aag"/>
+                                    <constraint firstItem="k6X-9d-ihz" firstAttribute="baseline" secondItem="GHt-w7-v6O" secondAttribute="baseline" id="27i-DP-E91"/>
+                                    <constraint firstItem="87W-0G-sL2" firstAttribute="leading" secondItem="uro-xT-dNE" secondAttribute="leading" constant="20" id="3oh-Yn-93F"/>
+                                    <constraint firstItem="2Ni-kI-Ifz" firstAttribute="leading" secondItem="mRT-uw-2Tu" secondAttribute="trailing" constant="8" symbolic="YES" id="3rQ-3B-UpX"/>
+                                    <constraint firstItem="gdK-WS-sYN" firstAttribute="leading" secondItem="3gX-G4-Q6I" secondAttribute="trailing" constant="8" symbolic="YES" id="6G7-rP-PQJ"/>
+                                    <constraint firstItem="neV-5O-Ffa" firstAttribute="baseline" secondItem="qbl-is-ewH" secondAttribute="baseline" id="7tj-4u-yN2"/>
+                                    <constraint firstItem="2Ni-kI-Ifz" firstAttribute="trailing" secondItem="qbl-is-ewH" secondAttribute="trailing" id="8WJ-JN-QRK"/>
+                                    <constraint firstItem="87W-0G-sL2" firstAttribute="top" secondItem="uro-xT-dNE" secondAttribute="top" constant="20" id="AIN-Es-eI9"/>
+                                    <constraint firstItem="5Ed-Qr-OdX" firstAttribute="top" secondItem="87W-0G-sL2" secondAttribute="bottom" constant="8" id="Dbe-Io-sOk"/>
+                                    <constraint firstItem="GHt-w7-v6O" firstAttribute="top" secondItem="gdK-WS-sYN" secondAttribute="bottom" constant="20" id="F4e-nt-EEP"/>
+                                    <constraint firstItem="GHt-w7-v6O" firstAttribute="leading" secondItem="k6X-9d-ihz" secondAttribute="trailing" constant="8" symbolic="YES" id="JUN-4c-e3q"/>
+                                    <constraint firstItem="87W-0G-sL2" firstAttribute="trailing" secondItem="5Ed-Qr-OdX" secondAttribute="trailing" id="K5Z-WP-hBV"/>
+                                    <constraint firstItem="3gX-G4-Q6I" firstAttribute="leading" secondItem="neV-5O-Ffa" secondAttribute="leading" id="KRS-EC-ohy"/>
+                                    <constraint firstItem="qbl-is-ewH" firstAttribute="top" secondItem="2Ni-kI-Ifz" secondAttribute="bottom" constant="20" id="Kry-z2-bWh"/>
+                                    <constraint firstItem="gdK-WS-sYN" firstAttribute="baseline" secondItem="3gX-G4-Q6I" secondAttribute="baseline" id="Lty-yE-Q4a"/>
+                                    <constraint firstItem="5Ed-Qr-OdX" firstAttribute="leading" secondItem="mRT-uw-2Tu" secondAttribute="leading" id="OyP-7y-SKU"/>
+                                    <constraint firstItem="87W-0G-sL2" firstAttribute="leading" secondItem="5Ed-Qr-OdX" secondAttribute="leading" id="P3X-4c-eUN"/>
+                                    <constraint firstItem="mRT-uw-2Tu" firstAttribute="baseline" secondItem="2Ni-kI-Ifz" secondAttribute="baseline" id="Rac-pJ-Mdt"/>
+                                    <constraint firstItem="qbl-is-ewH" firstAttribute="leading" secondItem="neV-5O-Ffa" secondAttribute="trailing" constant="8" symbolic="YES" id="Sf4-AE-TWQ"/>
+                                    <constraint firstItem="2Ni-kI-Ifz" firstAttribute="top" secondItem="eHF-K4-iLz" secondAttribute="bottom" constant="20" id="VQX-vC-D4H"/>
+                                    <constraint firstItem="2Ni-kI-Ifz" firstAttribute="trailing" secondItem="eHF-K4-iLz" secondAttribute="trailing" id="dny-c2-baY"/>
+                                    <constraint firstItem="k6X-9d-ihz" firstAttribute="leading" secondItem="3gX-G4-Q6I" secondAttribute="leading" id="hOP-t1-wWy"/>
+                                    <constraint firstItem="eHF-K4-iLz" firstAttribute="leading" secondItem="2Ni-kI-Ifz" secondAttribute="leading" id="jlX-Nj-WOr"/>
+                                    <constraint firstItem="neV-5O-Ffa" firstAttribute="leading" secondItem="mRT-uw-2Tu" secondAttribute="leading" id="joL-xE-SDM"/>
+                                    <constraint firstItem="gdK-WS-sYN" firstAttribute="top" secondItem="qbl-is-ewH" secondAttribute="bottom" constant="20" id="lG0-XA-AV6"/>
+                                    <constraint firstItem="gdK-WS-sYN" firstAttribute="leading" secondItem="qbl-is-ewH" secondAttribute="leading" id="o93-1b-5bT"/>
+                                    <constraint firstItem="gdK-WS-sYN" firstAttribute="trailing" secondItem="GHt-w7-v6O" secondAttribute="trailing" id="p1R-ih-sUO"/>
+                                    <constraint firstItem="eHF-K4-iLz" firstAttribute="leading" secondItem="5Ed-Qr-OdX" secondAttribute="trailing" constant="8" symbolic="YES" id="qRc-MC-WEF"/>
+                                    <constraint firstItem="gdK-WS-sYN" firstAttribute="leading" secondItem="GHt-w7-v6O" secondAttribute="leading" id="tgk-Fs-sVH"/>
+                                    <constraint firstItem="qbl-is-ewH" firstAttribute="leading" secondItem="2Ni-kI-Ifz" secondAttribute="leading" id="viX-cn-7os"/>
+                                </constraints>
+                                <animations/>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="端口" identifier="" id="AcU-e3-W9i">
+                            <view key="view" id="xOW-yA-85O">
+                                <rect key="frame" x="10" y="33" width="814" height="364"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="t5G-Wl-mEn" userLabel="Label">
+                                        <rect key="frame" x="18" y="324" width="132" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="L47-0c-Vbo"/>
+                                        </constraints>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="HTTP 端口:" id="BjD-3C-6y6">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QSF-gS-Ne4" userLabel="Label">
+                                        <rect key="frame" x="18" y="282" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="HTTPS端口:" id="zot-B0-RaY">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MOe-wQ-5OK" userLabel="Label">
+                                        <rect key="frame" x="18" y="240" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="ONVIF端口:" id="phh-2x-LJ8">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wAM-rV-b55" userLabel="HTTP 端口">
+                                        <rect key="frame" x="156" y="322" width="256" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="256" id="y2X-3F-Mmg"/>
+                                        </constraints>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="xvI-mN-Me4">
+                                            <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="BqG-4R-Bu0" customClass="OnlyNumberFormatter"/>
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9xd-Jf-t3d" userLabel="HTTPS端口">
+                                        <rect key="frame" x="156" y="280" width="256" height="22"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="TiR-hf-qJO">
+                                            <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="TZZ-79-vUa" customClass="OnlyNumberFormatter"/>
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LTV-fU-yXC" userLabel="ONVIF端口">
+                                        <rect key="frame" x="156" y="238" width="256" height="22"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="b0G-AN-EtD">
+                                            <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="USB-jf-WrJ" customClass="OnlyNumberFormatter"/>
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Irx-cq-XTG">
+                                        <rect key="frame" x="154" y="213" width="260" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="合法的端口号为1-65535" id="r3T-dY-X8D">
+                                            <font key="font" size="12" name="STHeitiSC-Light"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="t5G-Wl-mEn" firstAttribute="leading" secondItem="xOW-yA-85O" secondAttribute="leading" constant="20" id="2kw-k9-j9l"/>
+                                    <constraint firstItem="t5G-Wl-mEn" firstAttribute="baseline" secondItem="wAM-rV-b55" secondAttribute="baseline" id="5Eo-7i-wb1"/>
+                                    <constraint firstItem="9xd-Jf-t3d" firstAttribute="leading" secondItem="QSF-gS-Ne4" secondAttribute="trailing" constant="8" symbolic="YES" id="6cA-NQ-0wU"/>
+                                    <constraint firstItem="9xd-Jf-t3d" firstAttribute="trailing" secondItem="LTV-fU-yXC" secondAttribute="trailing" id="Kgz-aN-1HY"/>
+                                    <constraint firstItem="LTV-fU-yXC" firstAttribute="top" secondItem="9xd-Jf-t3d" secondAttribute="bottom" constant="20" id="TcN-Wo-oSK"/>
+                                    <constraint firstItem="LTV-fU-yXC" firstAttribute="baseline" secondItem="MOe-wQ-5OK" secondAttribute="baseline" id="Tov-QV-YRj"/>
+                                    <constraint firstItem="wAM-rV-b55" firstAttribute="leading" secondItem="t5G-Wl-mEn" secondAttribute="trailing" constant="8" symbolic="YES" id="V2b-Ha-jjA"/>
+                                    <constraint firstItem="QSF-gS-Ne4" firstAttribute="baseline" secondItem="9xd-Jf-t3d" secondAttribute="baseline" id="VhN-2d-8sH"/>
+                                    <constraint firstItem="9xd-Jf-t3d" firstAttribute="top" secondItem="wAM-rV-b55" secondAttribute="bottom" constant="20" id="Xtg-wH-QWd"/>
+                                    <constraint firstItem="QSF-gS-Ne4" firstAttribute="leading" secondItem="MOe-wQ-5OK" secondAttribute="leading" id="b20-Ux-ZNb"/>
+                                    <constraint firstItem="t5G-Wl-mEn" firstAttribute="leading" secondItem="QSF-gS-Ne4" secondAttribute="leading" id="bZl-81-Zgl"/>
+                                    <constraint firstItem="9xd-Jf-t3d" firstAttribute="leading" secondItem="wAM-rV-b55" secondAttribute="leading" id="bnY-SI-yQQ"/>
+                                    <constraint firstItem="9xd-Jf-t3d" firstAttribute="leading" secondItem="LTV-fU-yXC" secondAttribute="leading" id="cUp-hP-lip"/>
+                                    <constraint firstItem="wAM-rV-b55" firstAttribute="top" secondItem="xOW-yA-85O" secondAttribute="top" constant="20" id="dNj-Ev-HTk"/>
+                                    <constraint firstItem="9xd-Jf-t3d" firstAttribute="trailing" secondItem="wAM-rV-b55" secondAttribute="trailing" id="oqg-Ta-zvu"/>
+                                    <constraint firstItem="LTV-fU-yXC" firstAttribute="leading" secondItem="MOe-wQ-5OK" secondAttribute="trailing" constant="8" symbolic="YES" id="y2j-cg-qNI"/>
+                                </constraints>
+                                <animations/>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="P2P" identifier="" id="oAV-JU-eSd">
+                            <view key="view" id="XgK-Be-ogw">
+                                <rect key="frame" x="10" y="33" width="814" height="364"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="foZ-QH-pUy" userLabel="Label">
+                                        <rect key="frame" x="18" y="324" width="132" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="G8d-bF-sYp"/>
+                                        </constraints>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="UID:" id="1p7-Tf-TUR">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Umq-eG-54h" userLabel="UID">
+                                        <rect key="frame" x="156" y="322" width="256" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="256" id="dgX-D7-SEs"/>
+                                        </constraints>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="RnV-hU-5XN">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="ysX-P5-Tsu">
+                                        <rect key="frame" x="18" y="288" width="132" height="18"/>
+                                        <animations/>
+                                        <buttonCell key="cell" type="check" title="是否启用P2P端口" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="hvb-lj-I7x">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <binding destination="-2" name="value" keyPath="self.p2pEnable" id="9BI-s8-5mi"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kJb-7B-RBX" userLabel="Label">
+                                        <rect key="frame" x="18" y="265" width="132" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="P2P端口:" id="UJU-Tj-jKa">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pEe-c7-wlU" userLabel="P2P端口">
+                                        <rect key="frame" x="156" y="263" width="256" height="22"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="L9i-fp-poX">
+                                            <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="Yhg-Y5-7aI" customClass="OnlyNumberFormatter"/>
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="-2" name="enabled" keyPath="self.p2pEnable" id="sEN-i3-ucS"/>
+                                        </connections>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="md3-Fu-krZ">
+                                        <rect key="frame" x="154" y="238" width="260" height="17"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="合法的端口号为1-65535" id="Yq6-Vp-GJo">
+                                            <font key="font" size="12" name="STHeitiSC-Light"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kJb-7B-RBX" firstAttribute="top" secondItem="ysX-P5-Tsu" secondAttribute="bottom" constant="8" symbolic="YES" id="0wc-mV-THb"/>
+                                    <constraint firstItem="Umq-eG-54h" firstAttribute="leading" secondItem="pEe-c7-wlU" secondAttribute="leading" id="2oj-vE-foj"/>
+                                    <constraint firstItem="Umq-eG-54h" firstAttribute="baseline" secondItem="foZ-QH-pUy" secondAttribute="baseline" id="4vh-bZ-YOb"/>
+                                    <constraint firstItem="kJb-7B-RBX" firstAttribute="leading" secondItem="ysX-P5-Tsu" secondAttribute="leading" id="9CG-Hp-wfN"/>
+                                    <constraint firstItem="foZ-QH-pUy" firstAttribute="leading" secondItem="XgK-Be-ogw" secondAttribute="leading" constant="20" id="Jwk-tr-gyJ"/>
+                                    <constraint firstItem="ysX-P5-Tsu" firstAttribute="top" secondItem="foZ-QH-pUy" secondAttribute="bottom" constant="20" id="MEr-5V-HFC"/>
+                                    <constraint firstItem="pEe-c7-wlU" firstAttribute="trailing" secondItem="Umq-eG-54h" secondAttribute="trailing" id="WXr-ia-Z5d"/>
+                                    <constraint firstItem="foZ-QH-pUy" firstAttribute="leading" secondItem="ysX-P5-Tsu" secondAttribute="leading" id="bUe-UQ-ftR"/>
+                                    <constraint firstItem="Umq-eG-54h" firstAttribute="top" secondItem="XgK-Be-ogw" secondAttribute="top" constant="20" id="d4U-8y-Zo7"/>
+                                    <constraint firstItem="ysX-P5-Tsu" firstAttribute="trailing" secondItem="kJb-7B-RBX" secondAttribute="trailing" id="d4r-Kg-xSP"/>
+                                    <constraint firstItem="Umq-eG-54h" firstAttribute="leading" secondItem="foZ-QH-pUy" secondAttribute="trailing" constant="8" symbolic="YES" id="dc5-fi-dh0"/>
+                                    <constraint firstItem="pEe-c7-wlU" firstAttribute="leading" secondItem="kJb-7B-RBX" secondAttribute="trailing" constant="8" symbolic="YES" id="kNN-sj-AJN"/>
+                                    <constraint firstItem="pEe-c7-wlU" firstAttribute="baseline" secondItem="kJb-7B-RBX" secondAttribute="baseline" id="rjE-Mi-UUf"/>
+                                </constraints>
+                                <animations/>
+                            </view>
+                        </tabViewItem>
+                    </tabViewItems>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="Vcg-5x-nKa"/>
+                    </connections>
+                </tabView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YNJ-Po-Vud" firstAttribute="baseline" secondItem="Ylh-76-tqg" secondAttribute="baseline" id="92I-Ix-U2l"/>
+                <constraint firstItem="xYV-KG-90g" firstAttribute="trailing" secondItem="Ylh-76-tqg" secondAttribute="trailing" id="ObH-NE-0RS"/>
+                <constraint firstAttribute="trailing" secondItem="Ylh-76-tqg" secondAttribute="trailing" constant="20" symbolic="YES" id="RLY-mW-pLO"/>
+                <constraint firstItem="xYV-KG-90g" firstAttribute="leading" secondItem="lmb-Gh-6MK" secondAttribute="leading" constant="20" symbolic="YES" id="SLN-DN-DSl"/>
+                <constraint firstAttribute="bottom" secondItem="xYV-KG-90g" secondAttribute="bottom" constant="20" symbolic="YES" id="Y38-cK-w1E"/>
+                <constraint firstItem="YNJ-Po-Vud" firstAttribute="top" secondItem="lmb-Gh-6MK" secondAttribute="top" constant="20" symbolic="YES" id="bm4-sg-3D6"/>
+                <constraint firstItem="xYV-KG-90g" firstAttribute="top" secondItem="YNJ-Po-Vud" secondAttribute="bottom" constant="7" id="wdH-fX-GGh"/>
+                <constraint firstItem="Ylh-76-tqg" firstAttribute="leading" secondItem="YNJ-Po-Vud" secondAttribute="trailing" constant="12" symbolic="YES" id="x2h-oj-NyH"/>
+            </constraints>
+            <animations/>
+            <point key="canvasLocation" x="-343" y="1289"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="ayb-f2-wYT"/>
+        <tabViewItem label="无线网络" identifier="2" id="cRM-bw-KGz">
+            <view key="view" id="6Tf-kW-k7e">
+                <rect key="frame" x="10" y="33" width="814" height="364"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrG-8t-BeO">
+                        <rect key="frame" x="20" y="25" width="340" height="306"/>
+                        <clipView key="contentView" misplaced="YES" id="mWY-3y-2hk">
+                            <rect key="frame" x="1" y="17" width="238" height="117"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView identifier="Wifi List" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="1ag-jW-cnc" id="OQt-GR-nqx">
+                                    <rect key="frame" x="0.0" y="0.0" width="338" height="19"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <tableViewGridLines key="gridStyleMask" vertical="YES"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn identifier="SSID" width="116" minWidth="40" maxWidth="1000" id="l6J-dA-lXt" userLabel="SSID(网络名称)">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="SSID（网络名称） ">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="Fq3-Y6-eDc">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        </tableColumn>
+                                        <tableColumn identifier="Auth Mode" width="110" minWidth="40" maxWidth="1000" id="orM-XN-YQO" userLabel="加密类型">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="加密类型">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="GDO-R9-A3q">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        </tableColumn>
+                                        <tableColumn width="103" minWidth="10" maxWidth="3.4028234663852886e+38" id="QZN-3U-vdY" userLabel="信号强度">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="信号强度">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="bWj-bl-FvK">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        </tableColumn>
+                                    </tableColumns>
+                                </tableView>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </clipView>
+                        <animations/>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="9DB-Hd-FPZ">
+                            <rect key="frame" x="1" y="118.42150437831879" width="237" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="pXg-8Q-ujV">
+                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                        <tableHeaderView key="headerView" id="1ag-jW-cnc">
+                            <rect key="frame" x="0.0" y="0.0" width="238" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </tableHeaderView>
+                    </scrollView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eWO-Gc-9rk">
+                        <rect key="frame" x="370" y="314" width="38" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SSID" id="MsX-ta-hoN">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dYY-XW-OH0">
+                        <rect key="frame" x="370" y="277" width="56" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加密方式" id="snf-Va-RTv">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-KM-YX4">
+                        <rect key="frame" x="370" y="235" width="56" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="共享密钥" id="PjH-p6-SPw">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YvW-6F-5Nz">
+                        <rect key="frame" x="430" y="309" width="256" height="22"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="Ukx-2i-aMc">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ylh-Sj-7fa">
+                        <rect key="frame" x="370" y="195" width="225" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="221" id="IJy-Fm-KvX"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="密码的最大长度为63，支持数字、字母及符号" id="xni-Mg-aAr">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ok4-I6-Kn9">
+                        <rect key="frame" x="154" y="339" width="73" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="DqI-U8-2db"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="wi-fi列表" id="X2K-zE-Yzh">
+                            <font key="font" metaFont="systemBold" size="14"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <comboBox identifier="Wifi Auth Mode" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eXd-ad-KU4">
+                        <rect key="frame" x="431" y="271" width="258" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="255" id="Z34-w4-02R"/>
+                        </constraints>
+                        <animations/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="qP9-Tx-SVl">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </comboBoxCell>
+                        <connections>
+                            <outlet property="dataSource" destination="-2" id="hC5-4o-X39"/>
+                            <outlet property="delegate" destination="-2" id="NM8-h7-kut"/>
+                        </connections>
+                    </comboBox>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lhS-g1-bU8">
+                        <rect key="frame" x="300" y="328" width="66" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="扫描" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rI7-r9-5gf">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="scanWifi:" target="-2" id="XOW-NQ-LFz"/>
+                        </connections>
+                    </button>
+                    <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zWf-mt-VDG">
+                        <rect key="frame" x="430" y="232" width="256" height="22"/>
+                        <animations/>
+                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="gZ1-6J-mnK">
+                            <customFormatter key="formatter" id="QlI-lU-kow" customClass="XStringFomatter"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <allowedInputSourceLocales>
+                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                            </allowedInputSourceLocales>
+                        </secureTextFieldCell>
+                    </secureTextField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dYY-XW-OH0" firstAttribute="centerY" secondItem="eXd-ad-KU4" secondAttribute="centerY" id="2Gl-JT-SHh"/>
+                    <constraint firstItem="eXd-ad-KU4" firstAttribute="trailing" secondItem="YvW-6F-5Nz" secondAttribute="trailing" id="3jp-2Z-WQ1"/>
+                    <constraint firstItem="zWf-mt-VDG" firstAttribute="leading" secondItem="Ato-KM-YX4" secondAttribute="trailing" constant="6" id="9Bc-lt-W4B"/>
+                    <constraint firstItem="ylh-Sj-7fa" firstAttribute="top" secondItem="zWf-mt-VDG" secondAttribute="bottom" constant="20" id="9wC-kt-5oY"/>
+                    <constraint firstItem="Ato-KM-YX4" firstAttribute="leading" secondItem="ylh-Sj-7fa" secondAttribute="leading" id="Cyw-bq-qjT"/>
+                    <constraint firstItem="Ato-KM-YX4" firstAttribute="baseline" secondItem="zWf-mt-VDG" secondAttribute="baseline" id="Hfe-My-BCP"/>
+                    <constraint firstAttribute="bottom" secondItem="OrG-8t-BeO" secondAttribute="bottom" constant="25" id="JCy-QN-vZC"/>
+                    <constraint firstItem="eWO-Gc-9rk" firstAttribute="top" secondItem="6Tf-kW-k7e" secondAttribute="top" constant="33" id="O72-Po-TF4"/>
+                    <constraint firstItem="eXd-ad-KU4" firstAttribute="top" secondItem="YvW-6F-5Nz" secondAttribute="bottom" constant="14" id="UmT-43-gO2"/>
+                    <constraint firstItem="Ok4-I6-Kn9" firstAttribute="top" secondItem="6Tf-kW-k7e" secondAttribute="top" constant="8" id="Y1n-8s-Zct"/>
+                    <constraint firstItem="lhS-g1-bU8" firstAttribute="trailing" secondItem="OrG-8t-BeO" secondAttribute="trailing" id="YeV-uZ-Cyz"/>
+                    <constraint firstItem="eWO-Gc-9rk" firstAttribute="leading" secondItem="OrG-8t-BeO" secondAttribute="trailing" constant="12" id="Ypk-IP-DSs"/>
+                    <constraint firstItem="Ok4-I6-Kn9" firstAttribute="top" secondItem="lhS-g1-bU8" secondAttribute="top" id="aBt-dM-0tE"/>
+                    <constraint firstItem="eXd-ad-KU4" firstAttribute="trailing" secondItem="zWf-mt-VDG" secondAttribute="trailing" id="bM2-HL-Qc8"/>
+                    <constraint firstItem="lhS-g1-bU8" firstAttribute="leading" secondItem="Ok4-I6-Kn9" secondAttribute="trailing" constant="81" id="bsa-nS-bhP"/>
+                    <constraint firstItem="zWf-mt-VDG" firstAttribute="top" secondItem="eXd-ad-KU4" secondAttribute="bottom" constant="21" id="dNM-vl-Wov"/>
+                    <constraint firstItem="eWO-Gc-9rk" firstAttribute="leading" secondItem="dYY-XW-OH0" secondAttribute="leading" id="eLt-py-xH6"/>
+                    <constraint firstItem="OrG-8t-BeO" firstAttribute="leading" secondItem="6Tf-kW-k7e" secondAttribute="leading" constant="20" id="lfa-Ez-GJU"/>
+                    <constraint firstItem="OrG-8t-BeO" firstAttribute="top" secondItem="eWO-Gc-9rk" secondAttribute="top" id="lkE-v6-1zm"/>
+                    <constraint firstItem="zWf-mt-VDG" firstAttribute="leading" secondItem="YvW-6F-5Nz" secondAttribute="leading" id="lwe-Bw-QeQ"/>
+                    <constraint firstItem="eXd-ad-KU4" firstAttribute="centerX" secondItem="YvW-6F-5Nz" secondAttribute="centerX" id="nOL-Z6-OPp"/>
+                    <constraint firstItem="dYY-XW-OH0" firstAttribute="leading" secondItem="Ato-KM-YX4" secondAttribute="leading" id="omN-Ol-jZH"/>
+                    <constraint firstItem="OrG-8t-BeO" firstAttribute="centerX" secondItem="Ok4-I6-Kn9" secondAttribute="centerX" id="qi5-Xj-vzv"/>
+                    <constraint firstItem="YvW-6F-5Nz" firstAttribute="top" secondItem="eWO-Gc-9rk" secondAttribute="top" id="rpZ-DT-atW"/>
+                    <constraint firstItem="YvW-6F-5Nz" firstAttribute="leading" secondItem="eWO-Gc-9rk" secondAttribute="trailing" constant="24" id="s1E-ms-sap"/>
+                    <constraint firstItem="OrG-8t-BeO" firstAttribute="top" secondItem="Ok4-I6-Kn9" secondAttribute="bottom" constant="8" symbolic="YES" id="t8c-XM-8UE"/>
+                </constraints>
+                <animations/>
+            </view>
+        </tabViewItem>
+        <tabViewItem label="FTP" identifier="" id="jmV-LD-Cq3">
+            <view key="view" id="X47-uW-gLs">
+                <rect key="frame" x="10" y="33" width="814" height="364"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agL-q2-exQ" userLabel="Label">
+                        <rect key="frame" x="15" y="327" width="140" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="FTP地址:" id="9qB-gd-V51">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1dJ-VP-LO9" userLabel="Label">
+                        <rect key="frame" x="18" y="250" width="140" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="端口:" id="hPh-tu-F52">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bng-SO-ULl" userLabel="Label">
+                        <rect key="frame" x="18" y="208" width="140" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="FTP模式:" id="f6k-fv-aJZ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2r-HI-xZc" userLabel="Label">
+                        <rect key="frame" x="18" y="167" width="140" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="FTP用户名:" id="3PH-ME-sKn">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cai-xy-evM" userLabel="Label">
+                        <rect key="frame" x="18" y="101" width="140" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="AD3-E8-llL"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="FTP密码:" id="Tc6-ze-oHq">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Np9-EJ-crf" userLabel="FTP地址">
+                        <rect key="frame" x="164" y="324" width="256" height="22"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="ta5-Uq-bdb">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAL-9H-P9j" userLabel="Label">
+                        <rect key="frame" x="162" y="289" width="360" height="27"/>
+                        <animations/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="示例:ftp://192.168.1.103/dir 地址的组大长度为127，不支持符号&amp;=" id="aMJ-Nt-a5V">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-bY-BdD" userLabel="端口">
+                        <rect key="frame" x="164" y="247" width="256" height="22"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="bb7-61-cRT">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYy-f7-fWx" userLabel="FTP用户名">
+                        <rect key="frame" x="164" y="164" width="256" height="22"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="cqe-lt-9xs">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kGQ-9G-8zs">
+                        <rect key="frame" x="164" y="140" width="358" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="354" id="hIy-2e-rfH"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="用户的最大长度为63，支持数字、字母及符号_@$*-,.#!" id="O3r-MV-rJx">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yFd-uC-WOr" userLabel="FTP密码">
+                        <rect key="frame" x="164" y="98" width="254" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="254" id="9p2-Wz-51P"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="IAe-Xz-5gR">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKz-as-4Sp">
+                        <rect key="frame" x="166" y="75" width="417" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="413" id="C31-yw-BzX"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="密码的最大长度为63，支持数字及符号 ～！@＃$%^*()_+{}:&quot;|&lt;&gt;?`-;'\,./" id="SAR-Xu-WWd">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C97-Te-h0I">
+                        <rect key="frame" x="80" y="25" width="82" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="4On-mC-GIG"/>
+                        </constraints>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="测试" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aLn-ks-eQ7">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="testFtp:" target="-2" id="khK-I8-w7J"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fK7-w1-7x2">
+                        <rect key="frame" x="166" y="34" width="256" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="256" id="23j-16-Msc"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="border" id="6ca-PN-kDX">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <comboBox identifier="Ftp Mode" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rqw-ff-GS1">
+                        <rect key="frame" x="165" y="202" width="258" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="255" id="2vJ-x3-CY9"/>
+                        </constraints>
+                        <animations/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="Eji-YO-9l0">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </comboBoxCell>
+                        <connections>
+                            <outlet property="dataSource" destination="-2" id="Ab9-h1-Lj7"/>
+                            <outlet property="delegate" destination="-2" id="Mh3-oP-nny"/>
+                        </connections>
+                    </comboBox>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-IX-GJc" userLabel="FTP TIP">
+                        <rect key="frame" x="430" y="36" width="178" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="JYu-Mo-Tpq">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a2r-HI-xZc" firstAttribute="leading" secondItem="Bng-SO-ULl" secondAttribute="leading" id="0ED-qs-B8a"/>
+                    <constraint firstItem="C97-Te-h0I" firstAttribute="top" secondItem="Cai-xy-evM" secondAttribute="bottom" constant="44" id="0Jn-1v-0gS"/>
+                    <constraint firstItem="KYy-f7-fWx" firstAttribute="leading" secondItem="yFd-uC-WOr" secondAttribute="leading" id="2gP-sX-9Ji"/>
+                    <constraint firstItem="XAL-9H-P9j" firstAttribute="leading" secondItem="IBe-bY-BdD" secondAttribute="leading" id="2qR-0y-VEZ"/>
+                    <constraint firstItem="KYy-f7-fWx" firstAttribute="trailing" secondItem="Rqw-ff-GS1" secondAttribute="trailing" id="3W3-X9-6eK"/>
+                    <constraint firstItem="KYy-f7-fWx" firstAttribute="top" secondItem="Rqw-ff-GS1" secondAttribute="bottom" constant="20" id="4XJ-uF-wB2"/>
+                    <constraint firstItem="kGQ-9G-8zs" firstAttribute="trailing" secondItem="XAL-9H-P9j" secondAttribute="trailing" id="5K4-aI-F04"/>
+                    <constraint firstItem="fK7-w1-7x2" firstAttribute="centerY" secondItem="C97-Te-h0I" secondAttribute="centerY" id="5cs-0v-dnl"/>
+                    <constraint firstItem="Bng-SO-ULl" firstAttribute="leading" secondItem="1dJ-VP-LO9" secondAttribute="leading" id="73j-Z1-ydt"/>
+                    <constraint firstItem="Rqw-ff-GS1" firstAttribute="top" secondItem="IBe-bY-BdD" secondAttribute="bottom" constant="21" id="AJe-w8-0oC"/>
+                    <constraint firstItem="IBe-bY-BdD" firstAttribute="leading" secondItem="1dJ-VP-LO9" secondAttribute="trailing" constant="8" symbolic="YES" id="DVw-v4-fZu"/>
+                    <constraint firstItem="Cai-xy-evM" firstAttribute="trailing" secondItem="C97-Te-h0I" secondAttribute="trailing" id="Dfi-LY-WjE"/>
+                    <constraint firstItem="1dJ-VP-LO9" firstAttribute="top" secondItem="agL-q2-exQ" secondAttribute="bottom" constant="60" id="Gbw-wE-KGM"/>
+                    <constraint firstItem="MKz-as-4Sp" firstAttribute="top" secondItem="yFd-uC-WOr" secondAttribute="bottom" constant="8" symbolic="YES" id="IgL-eh-gso"/>
+                    <constraint firstItem="kGQ-9G-8zs" firstAttribute="top" secondItem="KYy-f7-fWx" secondAttribute="bottom" constant="8" symbolic="YES" id="Ivt-bN-TWc"/>
+                    <constraint firstItem="KYy-f7-fWx" firstAttribute="leading" secondItem="a2r-HI-xZc" secondAttribute="trailing" constant="8" symbolic="YES" id="KEq-3R-Ifp"/>
+                    <constraint firstItem="Cai-xy-evM" firstAttribute="top" secondItem="a2r-HI-xZc" secondAttribute="bottom" constant="50" id="KUp-pw-Mq6"/>
+                    <constraint firstItem="Np9-EJ-crf" firstAttribute="trailing" secondItem="IBe-bY-BdD" secondAttribute="trailing" id="OGv-vN-4Yd"/>
+                    <constraint firstItem="Rqw-ff-GS1" firstAttribute="centerX" secondItem="KYy-f7-fWx" secondAttribute="centerX" id="Qrb-mP-D9V"/>
+                    <constraint firstAttribute="bottom" secondItem="C97-Te-h0I" secondAttribute="bottom" constant="32" id="RkH-db-zpa"/>
+                    <constraint firstItem="MKz-as-4Sp" firstAttribute="leading" secondItem="X47-uW-gLs" secondAttribute="leading" constant="168" id="Rmq-Df-bvr"/>
+                    <constraint firstItem="yFd-uC-WOr" firstAttribute="top" secondItem="kGQ-9G-8zs" secondAttribute="bottom" constant="20" id="SEV-Fy-pck"/>
+                    <constraint firstItem="IBe-bY-BdD" firstAttribute="trailing" secondItem="Rqw-ff-GS1" secondAttribute="trailing" id="SMb-gh-3gl"/>
+                    <constraint firstItem="a2r-HI-xZc" firstAttribute="trailing" secondItem="Bng-SO-ULl" secondAttribute="trailing" id="Si1-MP-81z"/>
+                    <constraint firstItem="yFd-uC-WOr" firstAttribute="leading" secondItem="Cai-xy-evM" secondAttribute="trailing" constant="8" symbolic="YES" id="Tkn-MC-qcM"/>
+                    <constraint firstItem="1dJ-VP-LO9" firstAttribute="leading" secondItem="X47-uW-gLs" secondAttribute="leading" constant="20" id="YyH-KT-R6q"/>
+                    <constraint firstItem="Np9-EJ-crf" firstAttribute="baseline" secondItem="agL-q2-exQ" secondAttribute="baseline" id="aWR-Gx-oaS"/>
+                    <constraint firstItem="XAL-9H-P9j" firstAttribute="leading" secondItem="Np9-EJ-crf" secondAttribute="leading" id="aWj-ta-rQU"/>
+                    <constraint firstItem="Bng-SO-ULl" firstAttribute="centerY" secondItem="Rqw-ff-GS1" secondAttribute="centerY" id="amp-xm-4I1"/>
+                    <constraint firstItem="Np9-EJ-crf" firstAttribute="leading" secondItem="agL-q2-exQ" secondAttribute="trailing" constant="11" id="dUU-FV-7om"/>
+                    <constraint firstItem="Cai-xy-evM" firstAttribute="centerY" secondItem="yFd-uC-WOr" secondAttribute="centerY" id="g4w-Vz-kwq"/>
+                    <constraint firstItem="Np9-EJ-crf" firstAttribute="top" secondItem="X47-uW-gLs" secondAttribute="top" constant="18" id="gGl-Hk-y75"/>
+                    <constraint firstAttribute="bottom" secondItem="fK7-w1-7x2" secondAttribute="bottom" constant="34" id="ghP-a6-aS3"/>
+                    <constraint firstItem="agL-q2-exQ" firstAttribute="leading" secondItem="X47-uW-gLs" secondAttribute="leading" constant="17" id="iPL-y1-AMu"/>
+                    <constraint firstItem="fK7-w1-7x2" firstAttribute="leading" secondItem="C97-Te-h0I" secondAttribute="trailing" constant="10" id="jFW-UX-KjC"/>
+                    <constraint firstItem="fK7-w1-7x2" firstAttribute="top" secondItem="MKz-as-4Sp" secondAttribute="bottom" constant="20" id="mbm-dy-UnS"/>
+                    <constraint firstItem="C97-Te-h0I" firstAttribute="leading" secondItem="X47-uW-gLs" secondAttribute="leading" constant="86" id="npD-2w-jNt"/>
+                    <constraint firstItem="yFd-uC-WOr" firstAttribute="baseline" secondItem="Cai-xy-evM" secondAttribute="baseline" id="odj-hX-6vW"/>
+                    <constraint firstItem="IBe-bY-BdD" firstAttribute="centerY" secondItem="1dJ-VP-LO9" secondAttribute="centerY" id="r4r-91-sJN"/>
+                    <constraint firstItem="KYy-f7-fWx" firstAttribute="leading" secondItem="IBe-bY-BdD" secondAttribute="leading" id="smN-Xo-qjw"/>
+                    <constraint firstItem="a2r-HI-xZc" firstAttribute="leading" secondItem="Cai-xy-evM" secondAttribute="leading" id="tiB-bG-ECC"/>
+                    <constraint firstItem="fK7-w1-7x2" firstAttribute="leading" secondItem="kGQ-9G-8zs" secondAttribute="leading" id="vho-Nd-45C"/>
+                    <constraint firstItem="XAL-9H-P9j" firstAttribute="top" secondItem="Np9-EJ-crf" secondAttribute="bottom" constant="8" symbolic="YES" id="vpy-og-d3w"/>
+                    <constraint firstItem="KYy-f7-fWx" firstAttribute="baseline" secondItem="a2r-HI-xZc" secondAttribute="baseline" id="yKR-pt-fEU"/>
+                    <constraint firstItem="IBe-bY-BdD" firstAttribute="top" secondItem="XAL-9H-P9j" secondAttribute="bottom" constant="20" id="yb8-5d-d3V"/>
+                </constraints>
+                <animations/>
+            </view>
+        </tabViewItem>
+        <tabViewItem label="邮件" identifier="" id="1Vg-JI-H6i">
+            <view key="view" id="or5-bR-sNL">
+                <rect key="frame" x="10" y="33" width="814" height="364"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttN-6L-HkK">
+                        <rect key="frame" x="0.0" y="0.0" width="814" height="364"/>
+                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="W9W-9h-sT0">
+                            <rect key="frame" x="0.0" y="0.0" width="799" height="376"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bK-Rp-d6f" userLabel="Document View">
+                                    <rect key="frame" x="0.0" y="-360" width="799" height="736"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mSW-xV-Zgm" userLabel="Label ">
+                                            <rect key="frame" x="18" y="677" width="132" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SMTP服务器地址:" id="HLR-vR-TIc">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" ambiguous="YES" misplaced="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02v-xu-cqF" userLabel="Label">
+                                            <rect key="frame" x="154" y="632" width="360" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="356" id="Q72-op-P5v"/>
+                                            </constraints>
+                                            <animations/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="示例：smtp.sample.com/cn/com.cn  SMTP服务器地址支持英文、数字和@_.-" id="fiM-QJ-nsJ">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ked-po-4gf" userLabel="Label">
+                                            <rect key="frame" x="18" y="593" width="132" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SMTP端口:" id="nL1-2a-LUO">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gro-wM-EmW" userLabel="Label">
+                                            <rect key="frame" x="18" y="551" width="99" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="传输层安全协议:" id="rR1-4w-KKa">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" ambiguous="YES" misplaced="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXI-ev-MJS" userLabel="Label">
+                                            <rect key="frame" x="154" y="501" width="360" height="40"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Gmail只在465端口支持TLS,在25/587端口支持STARTTLS。Hotmail只在25/587端口支持STARTTLS" id="5dW-G5-SZs">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUr-Uy-rvH" userLabel="Label">
+                                            <rect key="frame" x="18" y="462" width="132" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="是否需要登录验证:" id="waN-Ue-iTu">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Zg-s0N" userLabel="Label">
+                                            <rect key="frame" x="24" y="421" width="128" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SMTP用户名:" id="A98-tm-3TY">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ME-Le-Cfl" userLabel="SMTP用户名">
+                                            <rect key="frame" x="156" y="418" width="256" height="22"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="bCa-BD-IMm">
+                                                <customFormatter key="formatter" id="Wpf-h4-oYC" customClass="XStringFomatter"/>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="JjR-RN-myc"/>
+                                            </connections>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" ambiguous="YES" misplaced="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lou-vc-HHx" userLabel="Label">
+                                            <rect key="frame" x="154" y="371" width="360" height="39"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="示例:someone@sample.com 用户名的最大长度为63，支持数字、字母及字符@_.$*-" id="3FQ-zh-1T4">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otv-ut-dql">
+                                            <rect key="frame" x="154" y="304" width="351" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="347" id="26J-Cd-6NI"/>
+                                            </constraints>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="密码的最大长度为16，支持数字、字母及符号~!@#*()_{}:&quot;|&lt;&gt;?`-;'\,./" id="3zf-RR-tYk">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRt-Kp-upf">
+                                            <rect key="frame" x="18" y="265" width="132" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="发件人:" id="stC-qm-WV0">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Q0-KE-IKx">
+                                            <rect key="frame" x="156" y="262" width="256" height="22"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="sU0-cA-jA1">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="yNa-d5-zJP"/>
+                                            </connections>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bgi-Ya-8Qf">
+                                            <rect key="frame" x="414" y="256" width="82" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="Y5B-Md-gNQ"/>
+                                            </constraints>
+                                            <animations/>
+                                            <buttonCell key="cell" type="push" title=" 测试" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gQF-do-9Iz">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="testSmtp:" target="-2" id="eXe-eX-oJw"/>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="Qdw-AH-agm"/>
+                                            </connections>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWX-zY-Cj5">
+                                            <rect key="frame" x="158" y="229" width="254" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="254" id="goU-LC-mjn"/>
+                                            </constraints>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="border" id="P5I-pg-qOi">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcb-t2-Opg">
+                                            <rect key="frame" x="18" y="202" width="132" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="收件人1:" id="jNd-7H-nam">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPU-lC-W6Y">
+                                            <rect key="frame" x="156" y="199" width="256" height="20"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="r7l-Bo-rEB">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="2fw-bR-G4Z"/>
+                                            </connections>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbS-PG-xSf">
+                                            <rect key="frame" x="154" y="157" width="321" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="317" id="bqa-FF-GoV"/>
+                                            </constraints>
+                                            <animations/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="示例：someone@sample.com 收件人的最大长度为63，支持数字、字母及符号@_.$*-" id="o9C-K8-sCa">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kA8-4g-iHX">
+                                            <rect key="frame" x="18" y="113" width="132" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="收件人2:" id="j7v-XS-QNN">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wwr-xP-m1Q">
+                                            <rect key="frame" x="156" y="110" width="256" height="22"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="Gzd-a5-bTP">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="5R3-Ae-DFe"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65j-Xv-gQV">
+                                            <rect key="frame" x="18" y="71" width="132" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="收件人3:" id="Xbc-jS-e4f">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pS0-P6-wMA">
+                                            <rect key="frame" x="156" y="68" width="256" height="22"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="AUd-e7-sRi">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="k0U-Kf-iRT"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yR6-2D-W6h">
+                                            <rect key="frame" x="18" y="29" width="132" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="收件人4:" id="IhM-CB-eHc">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="t0P-8V-E7e">
+                                            <rect key="frame" x="156" y="26" width="256" height="22"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="eZm-Je-j1N">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="PcG-Ox-GYa"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjQ-Mf-xlq">
+                                            <rect key="frame" x="18" y="332" width="132" height="17"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SMTP密码:" id="ksh-6W-Tht">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pgn-BI-9mW">
+                                            <rect key="frame" x="18" y="700" width="128" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="124" id="Q9b-2w-h3c"/>
+                                            </constraints>
+                                            <animations/>
+                                            <buttonCell key="cell" type="check" title="是否启用邮件功能" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="R6D-ON-xvw">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="self.smtpEnable" id="fvW-v9-k64"/>
+                                            </connections>
+                                        </button>
+                                        <comboBox identifier="Smtp Tls" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lxc-tQ-XD6">
+                                            <rect key="frame" x="156" y="546" width="259" height="26"/>
+                                            <animations/>
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="p70-4k-Lc8">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </comboBoxCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="Csb-yQ-CNQ"/>
+                                                <outlet property="dataSource" destination="-2" id="9hC-eV-8vj"/>
+                                                <outlet property="delegate" destination="-2" id="PLj-hh-fy0"/>
+                                            </connections>
+                                        </comboBox>
+                                        <comboBox identifier="Need Auth" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PPX-qd-ri5">
+                                            <rect key="frame" x="157" y="456" width="258" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="255" id="3F0-QE-8th"/>
+                                            </constraints>
+                                            <animations/>
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="fsD-8Y-Obh">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <objectValues>
+                                                    <string>否</string>
+                                                    <string>是</string>
+                                                </objectValues>
+                                            </comboBoxCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="I2C-F7-Ahd"/>
+                                            </connections>
+                                        </comboBox>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K6V-CB-Y6f" userLabel="Smpt Tip">
+                                            <rect key="frame" x="503" y="265" width="136" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="132" id="bJI-Qb-wDa"/>
+                                            </constraints>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="PYA-mt-5xF">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <secureTextField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-Aq-gNx">
+                                            <rect key="frame" x="156" y="329" width="256" height="31"/>
+                                            <animations/>
+                                            <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="BXo-oR-Q0h">
+                                                <customFormatter key="formatter" id="73a-nW-Lnc" customClass="XStringFomatter"/>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <allowedInputSourceLocales>
+                                                    <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                </allowedInputSourceLocales>
+                                            </secureTextFieldCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="Nbb-4k-ff8"/>
+                                            </connections>
+                                        </secureTextField>
+                                        <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-Cv-YGt">
+                                            <rect key="frame" x="156" y="674" width="256" height="22"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="eEX-54-U3U">
+                                                <customFormatter key="formatter" id="JcG-cx-5wW" customClass="XStringFomatter"/>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="E2M-ZB-07r"/>
+                                            </connections>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHI-zW-htW">
+                                            <rect key="frame" x="156" y="590" width="256" height="22"/>
+                                            <animations/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="sCL-8U-uLa">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="fVs-CE-BYK" customClass="OnlyNumberFormatter"/>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="-2" name="enabled" keyPath="self.smtpEnable" id="zbv-5C-ZZO"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xXI-ev-MJS" firstAttribute="leading" secondItem="2ME-Le-Cfl" secondAttribute="leading" id="0HJ-VH-kjZ"/>
+                                        <constraint firstItem="gro-wM-EmW" firstAttribute="baseline" secondItem="lxc-tQ-XD6" secondAttribute="baseline" id="1fT-OY-hrf"/>
+                                        <constraint firstItem="Bgi-Ya-8Qf" firstAttribute="leading" secondItem="7Q0-KE-IKx" secondAttribute="trailing" constant="8" symbolic="YES" id="1uJ-Ca-Q1P"/>
+                                        <constraint firstItem="vdD-Aq-gNx" firstAttribute="leading" secondItem="otv-ut-dql" secondAttribute="leading" id="3Za-ZG-ada"/>
+                                        <constraint firstItem="t0P-8V-E7e" firstAttribute="top" secondItem="pS0-P6-wMA" secondAttribute="bottom" constant="20" id="5fl-eL-XCx"/>
+                                        <constraint firstItem="Bgi-Ya-8Qf" firstAttribute="centerY" secondItem="K6V-CB-Y6f" secondAttribute="centerY" id="6I1-OL-Lqs"/>
+                                        <constraint firstItem="lxc-tQ-XD6" firstAttribute="trailing" secondItem="xHI-zW-htW" secondAttribute="trailing" id="7H7-10-57O"/>
+                                        <constraint firstItem="PPX-qd-ri5" firstAttribute="top" secondItem="xXI-ev-MJS" secondAttribute="bottom" constant="21" id="A2x-xm-CQQ"/>
+                                        <constraint firstItem="7Q0-KE-IKx" firstAttribute="trailing" secondItem="vdD-Aq-gNx" secondAttribute="trailing" id="A8f-io-doC"/>
+                                        <constraint firstItem="02v-xu-cqF" firstAttribute="leading" secondItem="rEK-Cv-YGt" secondAttribute="leading" id="Ajd-rz-iwy"/>
+                                        <constraint firstItem="xHI-zW-htW" firstAttribute="leading" secondItem="02v-xu-cqF" secondAttribute="leading" id="BDT-Hj-KMS"/>
+                                        <constraint firstItem="PPX-qd-ri5" firstAttribute="centerY" secondItem="oUr-Uy-rvH" secondAttribute="centerY" id="BJy-Gd-nPw"/>
+                                        <constraint firstItem="Wwr-xP-m1Q" firstAttribute="centerY" secondItem="kA8-4g-iHX" secondAttribute="centerY" id="BXc-pP-1Kx"/>
+                                        <constraint firstItem="7Q0-KE-IKx" firstAttribute="top" secondItem="Bgi-Ya-8Qf" secondAttribute="top" id="CVT-OD-2Dr"/>
+                                        <constraint firstItem="xHI-zW-htW" firstAttribute="top" secondItem="02v-xu-cqF" secondAttribute="bottom" constant="20" id="FoV-5C-9FV"/>
+                                        <constraint firstItem="2ME-Le-Cfl" firstAttribute="leading" secondItem="zN9-Zg-s0N" secondAttribute="trailing" constant="6" id="Fpt-tc-rvc"/>
+                                        <constraint firstAttribute="bottom" secondItem="t0P-8V-E7e" secondAttribute="bottom" constant="26" id="GME-eS-QwN"/>
+                                        <constraint firstItem="pS0-P6-wMA" firstAttribute="top" secondItem="Wwr-xP-m1Q" secondAttribute="bottom" constant="20" id="GyD-jq-p8L"/>
+                                        <constraint firstItem="Wwr-xP-m1Q" firstAttribute="leading" secondItem="pS0-P6-wMA" secondAttribute="leading" id="H4s-jx-srp"/>
+                                        <constraint firstItem="pS0-P6-wMA" firstAttribute="leading" secondItem="65j-Xv-gQV" secondAttribute="trailing" constant="8" symbolic="YES" id="Hlx-P8-D7Z"/>
+                                        <constraint firstItem="02v-xu-cqF" firstAttribute="trailing" secondItem="xXI-ev-MJS" secondAttribute="trailing" id="I0K-dY-d6Q"/>
+                                        <constraint firstItem="nRt-Kp-upf" firstAttribute="leading" secondItem="SjQ-Mf-xlq" secondAttribute="leading" id="Iy9-bQ-D9Q"/>
+                                        <constraint firstItem="mSW-xV-Zgm" firstAttribute="top" secondItem="Pgn-BI-9mW" secondAttribute="bottom" constant="8" symbolic="YES" id="JKc-Po-rVe"/>
+                                        <constraint firstItem="nRt-Kp-upf" firstAttribute="top" secondItem="SjQ-Mf-xlq" secondAttribute="bottom" constant="50" id="KI9-58-TwX"/>
+                                        <constraint firstItem="gro-wM-EmW" firstAttribute="leading" secondItem="Ked-po-4gf" secondAttribute="leading" id="Knc-bJ-i1E"/>
+                                        <constraint firstItem="65j-Xv-gQV" firstAttribute="leading" secondItem="kA8-4g-iHX" secondAttribute="leading" id="LEa-Kd-8yk"/>
+                                        <constraint firstItem="aPU-lC-W6Y" firstAttribute="top" secondItem="wWX-zY-Cj5" secondAttribute="bottom" constant="8" symbolic="YES" id="MW8-yV-ThG"/>
+                                        <constraint firstItem="aPU-lC-W6Y" firstAttribute="baseline" secondItem="jcb-t2-Opg" secondAttribute="baseline" id="Q23-CQ-VOc"/>
+                                        <constraint firstItem="lou-vc-HHx" firstAttribute="top" secondItem="2ME-Le-Cfl" secondAttribute="bottom" constant="8" symbolic="YES" id="Q2X-Ea-zcw"/>
+                                        <constraint firstItem="lou-vc-HHx" firstAttribute="leading" secondItem="vdD-Aq-gNx" secondAttribute="leading" id="QlJ-er-8xJ"/>
+                                        <constraint firstItem="2ME-Le-Cfl" firstAttribute="trailing" secondItem="PPX-qd-ri5" secondAttribute="trailing" id="RSr-JZ-0Wu"/>
+                                        <constraint firstItem="lxc-tQ-XD6" firstAttribute="leading" secondItem="xXI-ev-MJS" secondAttribute="leading" id="SxL-Fn-mmT"/>
+                                        <constraint firstItem="zN9-Zg-s0N" firstAttribute="leading" secondItem="2bK-Rp-d6f" secondAttribute="leading" constant="26" id="T8d-kU-Ccp"/>
+                                        <constraint firstItem="aPU-lC-W6Y" firstAttribute="leading" secondItem="jcb-t2-Opg" secondAttribute="trailing" constant="8" symbolic="YES" id="VLR-PP-iVQ"/>
+                                        <constraint firstItem="K6V-CB-Y6f" firstAttribute="leading" secondItem="Bgi-Ya-8Qf" secondAttribute="trailing" constant="15" id="Vfc-MG-D8B"/>
+                                        <constraint firstItem="oUr-Uy-rvH" firstAttribute="leading" secondItem="gro-wM-EmW" secondAttribute="leading" id="XGt-gi-kF1"/>
+                                        <constraint firstItem="SjQ-Mf-xlq" firstAttribute="baseline" secondItem="vdD-Aq-gNx" secondAttribute="baseline" id="YdX-yd-Fko"/>
+                                        <constraint firstItem="vdD-Aq-gNx" firstAttribute="top" secondItem="lou-vc-HHx" secondAttribute="bottom" constant="20" id="Yqy-sn-nHR"/>
+                                        <constraint firstItem="PbS-PG-xSf" firstAttribute="top" secondItem="aPU-lC-W6Y" secondAttribute="bottom" constant="8" symbolic="YES" id="Z7n-9M-HxE"/>
+                                        <constraint firstItem="xHI-zW-htW" firstAttribute="centerY" secondItem="Ked-po-4gf" secondAttribute="centerY" id="ZkJ-eR-PR5"/>
+                                        <constraint firstItem="lxc-tQ-XD6" firstAttribute="top" secondItem="xHI-zW-htW" secondAttribute="bottom" constant="20" id="ZzR-vJ-DU1"/>
+                                        <constraint firstItem="t0P-8V-E7e" firstAttribute="trailing" secondItem="pS0-P6-wMA" secondAttribute="trailing" id="aWu-SY-6w3"/>
+                                        <constraint firstItem="zN9-Zg-s0N" firstAttribute="baseline" secondItem="2ME-Le-Cfl" secondAttribute="baseline" id="bTR-sa-fUy"/>
+                                        <constraint firstItem="otv-ut-dql" firstAttribute="leading" secondItem="7Q0-KE-IKx" secondAttribute="leading" id="bX7-C1-fhJ"/>
+                                        <constraint firstItem="vdD-Aq-gNx" firstAttribute="trailing" secondItem="2ME-Le-Cfl" secondAttribute="trailing" id="biE-7k-S0K"/>
+                                        <constraint firstItem="Ked-po-4gf" firstAttribute="leading" secondItem="mSW-xV-Zgm" secondAttribute="leading" id="c5x-e3-gtx"/>
+                                        <constraint firstItem="Ked-po-4gf" firstAttribute="top" secondItem="mSW-xV-Zgm" secondAttribute="bottom" constant="67" id="ceO-Ue-6wn"/>
+                                        <constraint firstItem="t0P-8V-E7e" firstAttribute="leading" secondItem="yR6-2D-W6h" secondAttribute="trailing" constant="8" symbolic="YES" id="ci3-W9-qgi"/>
+                                        <constraint firstItem="lxc-tQ-XD6" firstAttribute="leading" secondItem="gro-wM-EmW" secondAttribute="trailing" constant="41" id="d9E-NM-GQa"/>
+                                        <constraint firstItem="xXI-ev-MJS" firstAttribute="top" secondItem="lxc-tQ-XD6" secondAttribute="bottom" constant="9" id="dFC-AS-qrx"/>
+                                        <constraint firstItem="wWX-zY-Cj5" firstAttribute="trailing" secondItem="aPU-lC-W6Y" secondAttribute="trailing" id="dGi-Re-FRd"/>
+                                        <constraint firstItem="Wwr-xP-m1Q" firstAttribute="trailing" secondItem="pS0-P6-wMA" secondAttribute="trailing" id="dkK-72-A2Y"/>
+                                        <constraint firstItem="PPX-qd-ri5" firstAttribute="trailing" secondItem="lxc-tQ-XD6" secondAttribute="trailing" id="eCc-SE-4lE"/>
+                                        <constraint firstItem="t0P-8V-E7e" firstAttribute="leading" secondItem="pS0-P6-wMA" secondAttribute="leading" id="eQS-k9-lne"/>
+                                        <constraint firstItem="Pgn-BI-9mW" firstAttribute="leading" secondItem="mSW-xV-Zgm" secondAttribute="leading" id="fI2-sf-gfF"/>
+                                        <constraint firstItem="pS0-P6-wMA" firstAttribute="baseline" secondItem="65j-Xv-gQV" secondAttribute="baseline" id="gA1-y3-nKv"/>
+                                        <constraint firstItem="PbS-PG-xSf" firstAttribute="leading" secondItem="Wwr-xP-m1Q" secondAttribute="leading" id="hsj-EU-wBr"/>
+                                        <constraint firstItem="oUr-Uy-rvH" firstAttribute="top" secondItem="gro-wM-EmW" secondAttribute="bottom" constant="72" id="hyZ-d0-gME"/>
+                                        <constraint firstItem="7Q0-KE-IKx" firstAttribute="trailing" secondItem="wWX-zY-Cj5" secondAttribute="trailing" id="iNp-H1-Hal"/>
+                                        <constraint firstItem="xHI-zW-htW" firstAttribute="leading" secondItem="Ked-po-4gf" secondAttribute="trailing" constant="8" symbolic="YES" id="iXP-kK-ji2"/>
+                                        <constraint firstItem="65j-Xv-gQV" firstAttribute="leading" secondItem="yR6-2D-W6h" secondAttribute="leading" id="isK-Cq-TNE"/>
+                                        <constraint firstItem="02v-xu-cqF" firstAttribute="top" secondItem="rEK-Cv-YGt" secondAttribute="bottom" constant="8" symbolic="YES" id="jde-rv-Naj"/>
+                                        <constraint firstItem="kA8-4g-iHX" firstAttribute="top" secondItem="jcb-t2-Opg" secondAttribute="bottom" constant="72" id="js5-NI-B7m"/>
+                                        <constraint firstItem="2ME-Le-Cfl" firstAttribute="leading" secondItem="lou-vc-HHx" secondAttribute="leading" id="kYa-uK-EPX"/>
+                                        <constraint firstItem="lou-vc-HHx" firstAttribute="trailing" secondItem="xXI-ev-MJS" secondAttribute="trailing" id="lU8-HK-Krk"/>
+                                        <constraint firstItem="jcb-t2-Opg" firstAttribute="top" secondItem="nRt-Kp-upf" secondAttribute="bottom" constant="46" id="nqo-lf-rdM"/>
+                                        <constraint firstItem="2ME-Le-Cfl" firstAttribute="centerX" secondItem="PPX-qd-ri5" secondAttribute="centerX" id="ntt-JS-T0q"/>
+                                        <constraint firstItem="7Q0-KE-IKx" firstAttribute="top" secondItem="otv-ut-dql" secondAttribute="bottom" constant="20" id="nwW-Xa-NBH"/>
+                                        <constraint firstItem="nRt-Kp-upf" firstAttribute="leading" secondItem="jcb-t2-Opg" secondAttribute="leading" id="pvr-oC-eL5"/>
+                                        <constraint firstItem="SjQ-Mf-xlq" firstAttribute="trailing" secondItem="oUr-Uy-rvH" secondAttribute="trailing" id="q1N-9e-c0J"/>
+                                        <constraint firstItem="aPU-lC-W6Y" firstAttribute="leading" secondItem="PbS-PG-xSf" secondAttribute="leading" id="qa3-yB-7Pa"/>
+                                        <constraint firstItem="jcb-t2-Opg" firstAttribute="centerY" secondItem="aPU-lC-W6Y" secondAttribute="centerY" id="qej-df-8uW"/>
+                                        <constraint firstItem="K6V-CB-Y6f" firstAttribute="top" secondItem="nRt-Kp-upf" secondAttribute="top" id="qpt-VM-wS1"/>
+                                        <constraint firstItem="wWX-zY-Cj5" firstAttribute="top" secondItem="7Q0-KE-IKx" secondAttribute="bottom" constant="8" symbolic="YES" id="roF-nV-AW7"/>
+                                        <constraint firstItem="2ME-Le-Cfl" firstAttribute="top" secondItem="PPX-qd-ri5" secondAttribute="bottom" constant="20" id="sep-Mi-3bT"/>
+                                        <constraint firstItem="7Q0-KE-IKx" firstAttribute="leading" secondItem="nRt-Kp-upf" secondAttribute="trailing" constant="8" symbolic="YES" id="siR-sE-2Sl"/>
+                                        <constraint firstItem="xHI-zW-htW" firstAttribute="trailing" secondItem="rEK-Cv-YGt" secondAttribute="trailing" id="tGV-5p-n88"/>
+                                        <constraint firstItem="yR6-2D-W6h" firstAttribute="baseline" secondItem="t0P-8V-E7e" secondAttribute="baseline" id="tOF-WF-foZ"/>
+                                        <constraint firstItem="SjQ-Mf-xlq" firstAttribute="top" secondItem="zN9-Zg-s0N" secondAttribute="bottom" constant="72" id="uT4-q1-pDP"/>
+                                        <constraint firstItem="Pgn-BI-9mW" firstAttribute="top" secondItem="2bK-Rp-d6f" secondAttribute="top" constant="20" symbolic="YES" id="ugU-KV-0RC"/>
+                                        <constraint firstItem="nRt-Kp-upf" firstAttribute="baseline" secondItem="7Q0-KE-IKx" secondAttribute="baseline" id="uiM-dq-2TN"/>
+                                        <constraint firstItem="Wwr-xP-m1Q" firstAttribute="trailing" secondItem="aPU-lC-W6Y" secondAttribute="trailing" id="vVD-dF-mQ4"/>
+                                        <constraint firstItem="otv-ut-dql" firstAttribute="top" secondItem="vdD-Aq-gNx" secondAttribute="bottom" constant="8" symbolic="YES" id="wdF-zy-pKc"/>
+                                        <constraint firstItem="xHI-zW-htW" firstAttribute="leading" secondItem="lxc-tQ-XD6" secondAttribute="leading" id="wn2-eV-SFF"/>
+                                        <constraint firstItem="vdD-Aq-gNx" firstAttribute="leading" secondItem="SjQ-Mf-xlq" secondAttribute="trailing" constant="8" symbolic="YES" id="xIo-uj-pxU"/>
+                                        <constraint firstItem="rEK-Cv-YGt" firstAttribute="leading" secondItem="mSW-xV-Zgm" secondAttribute="trailing" constant="8" symbolic="YES" id="xTm-hk-k8x"/>
+                                        <constraint firstItem="oUr-Uy-rvH" firstAttribute="leading" secondItem="SjQ-Mf-xlq" secondAttribute="leading" id="xTz-Iz-4An"/>
+                                        <constraint firstItem="Pgn-BI-9mW" firstAttribute="leading" secondItem="2bK-Rp-d6f" secondAttribute="leading" constant="20" symbolic="YES" id="xY4-aB-Q7k"/>
+                                        <constraint firstItem="Wwr-xP-m1Q" firstAttribute="top" secondItem="PbS-PG-xSf" secondAttribute="bottom" constant="25" id="y5i-W6-sfj"/>
+                                        <constraint firstItem="Wwr-xP-m1Q" firstAttribute="leading" secondItem="kA8-4g-iHX" secondAttribute="trailing" constant="8" symbolic="YES" id="yIR-zO-YGg"/>
+                                        <constraint firstItem="rEK-Cv-YGt" firstAttribute="baseline" secondItem="mSW-xV-Zgm" secondAttribute="baseline" id="yph-m7-wDn"/>
+                                        <constraint firstItem="7Q0-KE-IKx" firstAttribute="leading" secondItem="aPU-lC-W6Y" secondAttribute="leading" id="z1q-n0-JpZ"/>
+                                        <constraint firstItem="vdD-Aq-gNx" firstAttribute="centerY" secondItem="SjQ-Mf-xlq" secondAttribute="centerY" id="zMr-zZ-IYQ"/>
+                                        <constraint firstItem="kA8-4g-iHX" firstAttribute="leading" secondItem="jcb-t2-Opg" secondAttribute="leading" id="zxh-Yt-DgL"/>
+                                    </constraints>
+                                    <animations/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="2bK-Rp-d6f" firstAttribute="leading" secondItem="W9W-9h-sT0" secondAttribute="leading" id="NGw-Vj-Stv"/>
+                                <constraint firstItem="2bK-Rp-d6f" firstAttribute="top" secondItem="W9W-9h-sT0" secondAttribute="top" id="Ppe-xu-Y8s"/>
+                                <constraint firstAttribute="trailing" secondItem="2bK-Rp-d6f" secondAttribute="trailing" id="ft7-Ka-R2i"/>
+                            </constraints>
+                            <animations/>
+                        </clipView>
+                        <animations/>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="3gS-lm-Zc9">
+                            <rect key="frame" x="1" y="80" width="166" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="0.967741935483871" horizontal="NO" id="chZ-FQ-wle">
+                            <rect key="frame" x="167" y="1" width="15" height="79"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ttN-6L-HkK" firstAttribute="leading" secondItem="or5-bR-sNL" secondAttribute="leading" id="1Qk-KD-jEp"/>
+                    <constraint firstItem="ttN-6L-HkK" firstAttribute="top" secondItem="or5-bR-sNL" secondAttribute="top" id="aHi-vW-Dah"/>
+                    <constraint firstAttribute="bottom" secondItem="ttN-6L-HkK" secondAttribute="bottom" id="ia4-5Y-7vv"/>
+                    <constraint firstItem="ttN-6L-HkK" firstAttribute="centerX" secondItem="or5-bR-sNL" secondAttribute="centerX" id="qIG-bR-AHA"/>
+                </constraints>
+                <animations/>
+            </view>
+        </tabViewItem>
+        <tabViewItem label="UPnP" identifier="" id="jMv-5U-CZo">
+            <view key="view" id="FWQ-76-op0">
+                <rect key="frame" x="10" y="33" width="814" height="364"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y66-oM-YFH" userLabel="Label">
+                        <rect key="frame" x="18" y="325" width="132" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="128" id="cvp-eb-Efl"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="是否开启UPnP:" id="xve-Ii-8NY">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WTU-c9-lZJ">
+                        <rect key="frame" x="156" y="319" width="253" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="6Qi-PM-7Fy"/>
+                        </constraints>
+                        <animations/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="0fN-DU-hqS">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <objectValues>
+                                <string>是</string>
+                                <string>否</string>
+                            </objectValues>
+                        </comboBoxCell>
+                    </comboBox>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y66-oM-YFH" firstAttribute="centerY" secondItem="WTU-c9-lZJ" secondAttribute="centerY" id="Nq0-ZX-hFe"/>
+                    <constraint firstItem="WTU-c9-lZJ" firstAttribute="leading" secondItem="y66-oM-YFH" secondAttribute="trailing" constant="8" symbolic="YES" id="c90-UM-Yxg"/>
+                    <constraint firstItem="y66-oM-YFH" firstAttribute="leading" secondItem="FWQ-76-op0" secondAttribute="leading" constant="20" id="fBv-SD-eQv"/>
+                    <constraint firstItem="WTU-c9-lZJ" firstAttribute="top" secondItem="FWQ-76-op0" secondAttribute="top" constant="21" id="t4L-4i-gUX"/>
+                </constraints>
+                <animations/>
+            </view>
+        </tabViewItem>
+        <tabViewItem label="DDNS" identifier="" id="YGU-j5-f1a">
+            <view key="view" id="cCm-PW-QXK">
+                <rect key="frame" x="10" y="33" width="814" height="364"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="0Ww-qv-ShY">
+                        <rect key="frame" x="18" y="328" width="132" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="128" id="tAB-W7-lqG"/>
+                        </constraints>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="是否启用DDNS" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="yR0-va-yzj">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="self.ddnsEnable" id="9Ja-HK-aQ8"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8nL-h5-atv" userLabel="Label">
+                        <rect key="frame" x="18" y="305" width="132" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="制造商的DDNS:" id="8XW-XG-6Fz">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bqn-HK-GVE" userLabel="制造商的DDNS">
+                        <rect key="frame" x="156" y="301" width="256" height="22"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="foj-L2-DuJ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="self.ddnsEnable" id="LUu-32-xwp"/>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xQb-aM-x2g" userLabel="Label">
+                        <rect key="frame" x="18" y="263" width="132" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="DDNS服务器:" id="BpT-I5-eTD">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="o0y-lw-43A" userLabel="Label">
+                        <rect key="frame" x="18" y="222" width="132" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="域名:" id="2SQ-Fh-8hi">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c7R-GK-vuE" userLabel="域名">
+                        <rect key="frame" x="156" y="218" width="256" height="22"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="TOb-dt-DSC">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="self.ddnsEnable" id="sia-dR-gIa"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lQh-DW-uBI">
+                        <rect key="frame" x="414" y="294" width="131" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="恢复到出厂设置" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mSV-sY-lKX">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="self.ddnsEnable" id="xUs-nS-Yps"/>
+                        </connections>
+                    </button>
+                    <comboBox identifier="DDNS Server" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-wl-kH0">
+                        <rect key="frame" x="157" y="257" width="258" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="255" id="mrc-Ll-95p"/>
+                        </constraints>
+                        <animations/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="cv5-6U-hjG">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </comboBoxCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="self.ddnsEnable" id="jeP-CB-VKR"/>
+                            <outlet property="dataSource" destination="-2" id="iNu-xL-hvr"/>
+                            <outlet property="delegate" destination="-2" id="4Yb-WU-2oe"/>
+                        </connections>
+                    </comboBox>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c7R-GK-vuE" firstAttribute="leading" secondItem="o0y-lw-43A" secondAttribute="trailing" constant="8" symbolic="YES" id="1zO-hG-cBb"/>
+                    <constraint firstItem="xQb-aM-x2g" firstAttribute="leading" secondItem="o0y-lw-43A" secondAttribute="leading" id="29M-aM-2DG"/>
+                    <constraint firstItem="0Ww-qv-ShY" firstAttribute="trailing" secondItem="8nL-h5-atv" secondAttribute="trailing" id="37H-ZP-Bno"/>
+                    <constraint firstItem="c7R-GK-vuE" firstAttribute="top" secondItem="Tft-wl-kH0" secondAttribute="bottom" constant="21" id="5RL-eQ-BEA"/>
+                    <constraint firstItem="0Ww-qv-ShY" firstAttribute="leading" secondItem="cCm-PW-QXK" secondAttribute="leading" constant="20" id="7fI-w6-0Nn"/>
+                    <constraint firstItem="lQh-DW-uBI" firstAttribute="leading" secondItem="Bqn-HK-GVE" secondAttribute="trailing" constant="8" symbolic="YES" id="8OW-5t-hub"/>
+                    <constraint firstItem="8nL-h5-atv" firstAttribute="top" secondItem="0Ww-qv-ShY" secondAttribute="bottom" constant="8" symbolic="YES" id="MLN-U1-Kxa"/>
+                    <constraint firstItem="0Ww-qv-ShY" firstAttribute="leading" secondItem="8nL-h5-atv" secondAttribute="leading" id="NKA-AY-iqE"/>
+                    <constraint firstItem="8nL-h5-atv" firstAttribute="top" secondItem="lQh-DW-uBI" secondAttribute="top" id="NOn-eZ-xTs"/>
+                    <constraint firstItem="0Ww-qv-ShY" firstAttribute="top" secondItem="cCm-PW-QXK" secondAttribute="top" constant="20" id="OHP-VG-nja"/>
+                    <constraint firstItem="Tft-wl-kH0" firstAttribute="centerY" secondItem="xQb-aM-x2g" secondAttribute="centerY" id="Sr0-0u-oiq"/>
+                    <constraint firstItem="o0y-lw-43A" firstAttribute="top" secondItem="xQb-aM-x2g" secondAttribute="bottom" constant="24" id="ZTg-H8-sNV"/>
+                    <constraint firstItem="Bqn-HK-GVE" firstAttribute="leading" secondItem="8nL-h5-atv" secondAttribute="trailing" constant="8" symbolic="YES" id="dkC-rh-dmi"/>
+                    <constraint firstItem="Tft-wl-kH0" firstAttribute="trailing" secondItem="c7R-GK-vuE" secondAttribute="trailing" id="f0W-Xr-Znl"/>
+                    <constraint firstItem="c7R-GK-vuE" firstAttribute="leading" secondItem="Bqn-HK-GVE" secondAttribute="leading" id="fdg-ir-HJ1"/>
+                    <constraint firstItem="xQb-aM-x2g" firstAttribute="trailing" secondItem="o0y-lw-43A" secondAttribute="trailing" id="h32-mD-IIh"/>
+                    <constraint firstItem="Tft-wl-kH0" firstAttribute="centerX" secondItem="Bqn-HK-GVE" secondAttribute="centerX" id="h7s-3d-yjv"/>
+                    <constraint firstItem="Bqn-HK-GVE" firstAttribute="bottom" secondItem="lQh-DW-uBI" secondAttribute="bottom" id="miN-7b-Eyh"/>
+                    <constraint firstItem="xQb-aM-x2g" firstAttribute="leading" secondItem="8nL-h5-atv" secondAttribute="leading" id="nte-K7-Bdr"/>
+                    <constraint firstItem="Bqn-HK-GVE" firstAttribute="trailing" secondItem="Tft-wl-kH0" secondAttribute="trailing" id="wrz-bs-6oq"/>
+                    <constraint firstItem="Tft-wl-kH0" firstAttribute="top" secondItem="Bqn-HK-GVE" secondAttribute="bottom" constant="20" id="ywB-DK-SAG"/>
+                </constraints>
+                <animations/>
+            </view>
+        </tabViewItem>
+        <tabViewItem label="PPPoE" identifier="" id="VJs-7j-Sha" userLabel="PPPoE">
+            <view key="view" id="taG-zm-5PM">
+                <rect key="frame" x="10" y="33" width="814" height="364"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9xN-0C-ljP" userLabel="Label">
+                        <rect key="frame" x="18" y="305" width="132" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="128" id="qa1-gS-JPE"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="PPPoE账户:" id="MbH-Po-bPW">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zfh-6t-mSs" userLabel="Label">
+                        <rect key="frame" x="18" y="228" width="132" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="PPPoE密码:" id="Uip-0M-a9W">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="get-X4-I83" userLabel="Label">
+                        <rect key="frame" x="154" y="200" width="400" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="396" id="nx4-HW-gXA"/>
+                            <constraint firstAttribute="height" constant="17" id="qwC-qN-mBK"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="密码的最大长度为12，支持数字、字母及符号 ~!@#$%^*()_+{}:&quot;|&lt;&gt;?`-;'\,./" id="bmG-hd-SrY">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOd-zs-sxJ">
+                        <rect key="frame" x="154" y="255" width="449" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="445" id="q0o-M6-awU"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="用户名的最大长度为20，支持数字、字母及符号@.$*-_" id="kNZ-fH-m3h">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="MvG-su-AHV">
+                        <rect key="frame" x="18" y="328" width="117" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="113" id="bsZ-M4-94e"/>
+                        </constraints>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="是否使用PPPoE" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Q8l-Zc-jxn">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="self.pppoeEnable" id="guZ-9h-gnb"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7KE-6q-gNv">
+                        <rect key="frame" x="156" y="302" width="256" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="256" id="bN9-tB-cDD"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="Tlo-4v-Bea">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="self.pppoeEnable" id="qnP-WU-Hvp"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cAa-fn-Eyy">
+                        <rect key="frame" x="156" y="225" width="256" height="22"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="mg1-sT-KjN">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="self.pppoeEnable" id="nLo-Tr-eX2"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aOd-zs-sxJ" firstAttribute="leading" secondItem="taG-zm-5PM" secondAttribute="leading" constant="156" id="0et-4m-Wcc"/>
+                    <constraint firstItem="MvG-su-AHV" firstAttribute="leading" secondItem="taG-zm-5PM" secondAttribute="leading" constant="20" id="DBa-5e-mSl"/>
+                    <constraint firstItem="Zfh-6t-mSs" firstAttribute="leading" secondItem="9xN-0C-ljP" secondAttribute="leading" id="F5e-Ko-bYb"/>
+                    <constraint firstItem="7KE-6q-gNv" firstAttribute="leading" secondItem="9xN-0C-ljP" secondAttribute="trailing" constant="8" id="Htg-oQ-qc8"/>
+                    <constraint firstItem="7KE-6q-gNv" firstAttribute="leading" secondItem="cAa-fn-Eyy" secondAttribute="leading" id="NlA-eN-OPH"/>
+                    <constraint firstItem="Zfh-6t-mSs" firstAttribute="trailing" secondItem="9xN-0C-ljP" secondAttribute="trailing" id="Phl-JO-GYv"/>
+                    <constraint firstItem="cAa-fn-Eyy" firstAttribute="top" secondItem="aOd-zs-sxJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Vd5-aZ-JAr"/>
+                    <constraint firstItem="aOd-zs-sxJ" firstAttribute="leading" secondItem="get-X4-I83" secondAttribute="leading" id="XdR-fN-oPK"/>
+                    <constraint firstItem="9xN-0C-ljP" firstAttribute="top" secondItem="MvG-su-AHV" secondAttribute="bottom" constant="8" symbolic="YES" id="c01-Rc-eMf"/>
+                    <constraint firstItem="7KE-6q-gNv" firstAttribute="baseline" secondItem="9xN-0C-ljP" secondAttribute="baseline" id="dm0-KR-gwP"/>
+                    <constraint firstItem="MvG-su-AHV" firstAttribute="leading" secondItem="9xN-0C-ljP" secondAttribute="leading" id="hhr-HV-J8s"/>
+                    <constraint firstItem="aOd-zs-sxJ" firstAttribute="top" secondItem="7KE-6q-gNv" secondAttribute="bottom" constant="8" symbolic="YES" id="lR0-78-Pza"/>
+                    <constraint firstItem="Zfh-6t-mSs" firstAttribute="centerY" secondItem="cAa-fn-Eyy" secondAttribute="centerY" id="pFW-8p-o6H"/>
+                    <constraint firstItem="cAa-fn-Eyy" firstAttribute="trailing" secondItem="7KE-6q-gNv" secondAttribute="trailing" id="x9N-v5-5lU"/>
+                    <constraint firstItem="MvG-su-AHV" firstAttribute="top" secondItem="taG-zm-5PM" secondAttribute="top" constant="20" id="ynh-Gi-7zG"/>
+                    <constraint firstItem="Zfh-6t-mSs" firstAttribute="top" secondItem="9xN-0C-ljP" secondAttribute="bottom" constant="60" id="zNS-4a-Xyh"/>
+                    <constraint firstItem="get-X4-I83" firstAttribute="top" secondItem="cAa-fn-Eyy" secondAttribute="bottom" constant="8" symbolic="YES" id="zrm-r6-RX9"/>
+                </constraints>
+                <animations/>
+            </view>
+        </tabViewItem>
+    </objects>
+</document>

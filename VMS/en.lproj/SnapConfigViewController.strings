@@ -1,0 +1,42 @@
+
+/* Class = "NSButtonCell"; title = "设置文件名"; ObjectID = "2gG-kY-Fnk"; */
+"2gG-kY-Fnk.title" = "Enable Set Filename";
+
+/* Class = "NSTextFieldCell"; title = "抓拍间隔（单位:秒）"; ObjectID = "8kG-dt-jUa"; */
+"8kG-dt-jUa.title" = "Capture interval(s):";
+
+/* Class = "NSMenuItem"; title = "中"; ObjectID = "Eo3-iJ-0qb"; */
+"Eo3-iJ-0qb.title" = "Medium";
+
+/* Class = "NSButtonCell"; title = "是否启用定时抓拍"; ObjectID = "FSZ-SO-pou"; */
+"FSZ-SO-pou.title" = "Enable timing to capture";
+
+/* Class = "NSTextFieldCell"; title = "文件名"; ObjectID = "QGs-mO-zVN"; */
+"QGs-mO-zVN.title" = "Filename:";
+
+/* Class = "NSMenuItem"; title = "无"; ObjectID = "QU2-JP-sTK"; */
+"QU2-JP-sTK.title" = "None";
+
+/* Class = "NSTextFieldCell"; title = "(1-65535s)"; ObjectID = "UTI-JW-C9o"; */
+"UTI-JW-C9o.title" = "(1-65535s)";
+
+/* Class = "NSTextFieldCell"; title = "手动抓拍图像质量:"; ObjectID = "aOE-Fe-BjN"; */
+"aOE-Fe-BjN.title" = "Manual snap Quality:";
+
+/* Class = "NSMenuItem"; title = "低"; ObjectID = "kfT-Jp-Fhk"; */
+"kfT-Jp-Fhk.title" = "Low";
+
+/* Class = "NSMenuItem"; title = "高"; ObjectID = "kqC-T7-kKd"; */
+"kqC-T7-kKd.title" = "High";
+
+/* Class = "NSMenuItem"; title = "FTP"; ObjectID = "kvx-Zu-rjM"; */
+"kvx-Zu-rjM.title" = "FTP";
+
+/* Class = "NSTextFieldCell"; title = " 抓拍文件存放路径:"; ObjectID = "n8u-lQ-jt5"; */
+"n8u-lQ-jt5.title" = "Pictures Save To:";
+
+/* Class = "NSMenuItem"; title = "SD卡"; ObjectID = "oUB-VX-dtC"; */
+"oUB-VX-dtC.title" = "SD Card";
+
+/* Class = "NSTextFieldCell"; title = "定时抓拍时间编辑"; ObjectID = "zbT-s1-Tja"; */
+"zbT-s1-Tja.title" = "Schedule";

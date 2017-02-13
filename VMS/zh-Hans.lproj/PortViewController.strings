@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "HTTPS端口:"; ObjectID = "D99-QT-YC2"; */
+"D99-QT-YC2.title" = "HTTPS端口:";
+
+/* Class = "NSTextFieldCell"; title = "HTTP 端口:"; ObjectID = "Lmy-DJ-fRR"; */
+"Lmy-DJ-fRR.title" = "HTTP 端口:";
+
+/* Class = "NSTextFieldCell"; title = "ONVIF端口:"; ObjectID = "SSB-Ui-Y2H"; */
+"SSB-Ui-Y2H.title" = "ONVIF端口:";
+
+/* Class = "NSTextFieldCell"; title = "合法的端口号为1-65535"; ObjectID = "nPe-7C-QTC"; */
+"nPe-7C-QTC.title" = "合法的端口号为1-65535";

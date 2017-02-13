@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Device Management Items</key>
+	<array>
+		<dict>
+			<key>Group</key>
+			<string>Local Settings</string>
+			<key>Sub Items</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>NVRDeviceInfoViewController</string>
+					<key>Nib</key>
+					<string>DeviceInfoViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>NVRSystemTimeViewController</string>
+					<key>Nib</key>
+					<string>SystemTimeViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>NVRNetworkViewController</string>
+					<key>Nib</key>
+					<string>NVRNetworkViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>NVRSmtpViewController</string>
+					<key>Nib</key>
+					<string>SmtpViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>NVRFtpViewController</string>
+					<key>Nib</key>
+					<string>FtpViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>NVRDDNSViewController</string>
+					<key>Nib</key>
+					<string>DDNSViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>NVREncodingParamViewController</string>
+					<key>Nib</key>
+					<string>EncodingParamViewController</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Group</key>
+			<string>Device Management</string>
+			<key>Sub Items</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>IPCManageViewController</string>
+					<key>Nib</key>
+					<string>IPCManageViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>DiskInfoViewController</string>
+					<key>Nib</key>
+					<string>DiskInfoViewController</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Group</key>
+			<string>Service Configuration</string>
+			<key>Sub Items</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>NVRMotionDetectViewController</string>
+					<key>Nib</key>
+					<string>MotionDetectViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>NVRScheduleRecordViewController</string>
+					<key>Nib</key>
+					<string>ScheduleRecordViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>OtherAlarmViewController</string>
+					<key>Nib</key>
+					<string>OtherAlarmViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>NVROSDViewController</string>
+					<key>Nib</key>
+					<string>OSDViewController</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Group</key>
+			<string>System Management</string>
+			<key>Sub Items</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>NVRRestoreToFactoryViewController</string>
+					<key>Nib</key>
+					<string>RestoreToFactoryViewController</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>NVRDeviceRebootViewController</string>
+					<key>Nib</key>
+					<string>DeviceRebootViewController</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

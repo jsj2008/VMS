@@ -1,0 +1,75 @@
+
+/* Class = "NSMenuItem"; title = "无"; ObjectID = "0qF-NZ-wBh"; */
+"0qF-NZ-wBh.title" = "None";
+
+/* Class = "NSTextFieldCell"; title = "SMTP服务器地址:"; ObjectID = "CsA-Zw-OPM"; */
+"CsA-Zw-OPM.title" = "SMTP Server:";
+
+/* Class = "NSTextFieldCell"; title = "收件人2:"; ObjectID = "J6Z-ba-5bT"; */
+"J6Z-ba-5bT.title" = "Receiver2:";
+
+/* Class = "NSMenuItem"; title = "STARTTLS"; ObjectID = "OiG-cY-28p"; */
+"OiG-cY-28p.title" = "STARTTLS";
+
+/* Class = "NSTextFieldCell"; title = "Gmail只在465端口支持TLS,在25/587端口支持STARTTLS。Hotmail只在25/587端口支持STARTTLS"; ObjectID = "PLx-H2-GV2"; */
+"PLx-H2-GV2.title" = "G-Mail only supports TLS at Port 465 and STARTTLS at Port 587 or 25.Hotmail only supports STARTTLS at Port 587 or 25";
+
+/* Class = "NSButtonCell"; title = "是否启用邮件功能"; ObjectID = "PeV-6s-bv9"; */
+"PeV-6s-bv9.title" = "Enable";
+
+/* Class = "NSButtonCell"; title = " 测试"; ObjectID = "RJG-sI-onU"; */
+"RJG-sI-onU.title" = "Test";
+
+/* Class = "NSTextFieldCell"; title = "收件人3:"; ObjectID = "S0z-Ib-QyB"; */
+"S0z-Ib-QyB.title" = "Receiver3:";
+
+/* Class = "NSTextFieldCell"; title = "示例:someone@sample.com
+用户名的最大长度为63，支持数字、字母及字符@_.$*-"; ObjectID = "SNR-In-bh9"; */
+"SNR-In-bh9.title" = "Example:someone@sample.com \
+The maximum length of the user name is 63,support numbers,letters and symbols @_.$*-";
+
+/* Class = "NSTextFieldCell"; title = "发件人:"; ObjectID = "SxH-i8-7ic"; */
+"SxH-i8-7ic.title" = "Sender E-mail:";
+
+/* Class = "NSTextFieldCell"; title = "SMTP端口:"; ObjectID = "WFO-Xt-zkb"; */
+"WFO-Xt-zkb.title" = "SMTP Port:";
+
+/* Class = "NSTextFieldCell"; title = "密码的最大长度为16，支持数字、字母及符号~!@#*()_{}:\"|<>?`-;'\\,./"; ObjectID = "bs2-yb-Zp3"; */
+"bs2-yb-Zp3.title" = "The maximum password length is 16,including numbers,letters and symbols ~!@#*()_{}:\"|<>?`-;'\\,./";
+
+/* Class = "NSTextFieldCell"; title = "SMTP用户名:"; ObjectID = "cbK-2m-VLO"; */
+"cbK-2m-VLO.title" = "SMTP Username:";
+
+/* Class = "NSTextFieldCell"; title = "示例：someone@sample.com
+收件人的最大长度为63，支持数字、字母及符号@_.$*-"; ObjectID = "clb-aA-WZN"; */
+"clb-aA-WZN.title" = "Example:someone@sample.com \
+The maximum lenght of the receiver is 63,support numbers,letters and symbols @_.$*-";
+
+/* Class = "NSTextFieldCell"; title = "收件人4:"; ObjectID = "eQZ-Yz-cMq"; */
+"eQZ-Yz-cMq.title" = "Receiver4:";
+
+/* Class = "NSTextFieldCell"; title = "传输层安全协议:"; ObjectID = "fLK-VM-pcs"; */
+"fLK-VM-pcs.title" = "Transport Layer Security:";
+
+/* Class = "NSMenuItem"; title = "否"; ObjectID = "fU5-P4-36y"; */
+"fU5-P4-36y.title" = "NO";
+
+/* Class = "NSTextFieldCell"; title = "示例：smtp.sample.com/cn/com.cn 
+SMTP服务器地址支持英文、数字和@_.-"; ObjectID = "pPu-V0-Q38"; */
+"pPu-V0-Q38.title" = "Example:smtp.sample.com/cn/com.cn \
+SMTP server address supports English,numbers and @_.-";
+
+/* Class = "NSMenuItem"; title = "TLS"; ObjectID = "qep-U2-Kqo"; */
+"qep-U2-Kqo.title" = "TLS";
+
+/* Class = "NSTextFieldCell"; title = "收件人1:"; ObjectID = "uqG-pg-maI"; */
+"uqG-pg-maI.title" = "Receiver1:";
+
+/* Class = "NSTextFieldCell"; title = "是否需要登录验证:"; ObjectID = "waE-Yn-6qU"; */
+"waE-Yn-6qU.title" = "Need Authentication:";
+
+/* Class = "NSTextFieldCell"; title = "SMTP密码:"; ObjectID = "wzM-oe-cz4"; */
+"wzM-oe-cz4.title" = "SMTP Password:";
+
+/* Class = "NSMenuItem"; title = "是"; ObjectID = "zQi-51-8ox"; */
+"zQi-51-8ox.title" = "YES";

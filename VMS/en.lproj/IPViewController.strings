@@ -1,0 +1,18 @@
+
+/* Class = "NSTextFieldCell"; title = "主要DNS服务器:"; ObjectID = "7jI-oH-AyE"; */
+"7jI-oH-AyE.title" = "Primary DNS Server:";
+
+/* Class = "NSTextFieldCell"; title = "子网掩码:"; ObjectID = "8BY-9u-Qxv"; */
+"8BY-9u-Qxv.title" = "Subnet Mask:";
+
+/* Class = "NSTextFieldCell"; title = "ip地址:"; ObjectID = "V6H-gN-sy5"; */
+"V6H-gN-sy5.title" = "IP Address:";
+
+/* Class = "NSButtonCell"; title = "自动获取IP"; ObjectID = "bna-s5-Zgc"; */
+"bna-s5-Zgc.title" = "Obtain IP From DHCP:";
+
+/* Class = "NSTextFieldCell"; title = "次要DNS服务器:"; ObjectID = "hnK-OF-Zmg"; */
+"hnK-OF-Zmg.title" = "Secondary DNS Server:";
+
+/* Class = "NSTextFieldCell"; title = "网关:"; ObjectID = "yW6-EH-o5l"; */
+"yW6-EH-o5l.title" = "Gateway:";

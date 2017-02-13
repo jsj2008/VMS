@@ -1,0 +1,18 @@
+
+/* Class = "NSButtonCell"; title = "刷新"; ObjectID = "CJu-Qa-LVr"; */
+"CJu-Qa-LVr.title" = "刷新";
+
+/* Class = "NSWindow"; title = "设备参数设置"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "设备参数设置";
+
+/* Class = "NSButtonCell"; title = "保存"; ObjectID = "JdE-ow-rbp"; */
+"JdE-ow-rbp.title" = "保存";
+
+/* Class = "NSButtonCell"; title = "关闭"; ObjectID = "QjA-jx-veL"; */
+"QjA-jx-veL.title" = "关闭";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "TbI-gg-UpF"; */
+"TbI-gg-UpF.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "YBk-XU-3CZ"; */
+"YBk-XU-3CZ.title" = "Table View Cell";

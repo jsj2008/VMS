@@ -1,0 +1,123 @@
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "05u-WU-cLq"; */
+"05u-WU-cLq.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "月/日/年"; ObjectID = "7hJ-mq-Tre"; */
+"7hJ-mq-Tre.title" = "MM/DD/YYYY";
+
+/* Class = "NSMenuItem"; title = "24小时制"; ObjectID = "9BU-PA-5LI"; */
+"9BU-PA-5LI.title" = "24-hour";
+
+/* Class = "NSTextFieldCell"; title = "时间服务器:"; ObjectID = "AKH-lQ-jgN"; */
+"AKH-lQ-jgN.title" = "NTP Server:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "B4b-Yq-lm9"; */
+"B4b-Yq-lm9.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "AM"; ObjectID = "B9d-vW-jVo"; */
+"B9d-vW-jVo.title" = "AM";
+
+/* Class = "NSMenuItem"; title = "年-月-日"; ObjectID = "DTj-a5-bcZ"; */
+"DTj-a5-bcZ.title" = "YYYY-MM-DD";
+
+/* Class = "NSButtonCell"; title = "是否使用夏令时"; ObjectID = "E6s-mF-BDI"; */
+"E6s-mF-BDI.title" = "use DST";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "F0Z-EF-NYe"; */
+"F0Z-EF-NYe.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "FLS-U6-ZzQ"; */
+"FLS-U6-ZzQ.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "GMQ-n8-PST"; */
+"GMQ-n8-PST.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "30"; ObjectID = "H5R-Ao-STs"; */
+"H5R-Ao-STs.title" = "30";
+
+/* Class = "NSTextFieldCell"; title = "设备时间:"; ObjectID = "Hjy-sq-Bdw"; */
+"Hjy-sq-Bdw.title" = "Device Time:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "JXx-a8-lNY"; */
+"JXx-a8-lNY.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "LRX-Ky-eTs"; */
+"LRX-Ky-eTs.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "日期格式选择:"; ObjectID = "Oea-EK-L4g"; */
+"Oea-EK-L4g.title" = "Date Format:";
+
+/* Class = "NSTextFieldCell"; title = ":"; ObjectID = "Q3P-df-e4i"; */
+"Q3P-df-e4i.title" = ":";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "WVV-P2-1ds"; */
+"WVV-P2-1ds.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "时区:"; ObjectID = "aA0-nU-qme"; */
+"aA0-nU-qme.title" = "Time Zone:";
+
+/* Class = "NSTextFieldCell"; title = "提前时间:"; ObjectID = "ev1-pp-Tax"; */
+"ev1-pp-Tax.title" = "DST:";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "eyV-LH-K2J"; */
+"eyV-LH-K2J.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "fEN-1l-eXL"; */
+"fEN-1l-eXL.title" = "Item 1";
+
+/* Class = "NSButtonCell"; title = "从时间服务器同步"; ObjectID = "fKp-Gx-ZqA"; */
+"fKp-Gx-ZqA.title" = "Sync with NTP server";
+
+/* Class = "NSMenuItem"; title = "0"; ObjectID = "hQ1-yd-XaW"; */
+"hQ1-yd-XaW.title" = "0";
+
+/* Class = "NSButtonCell"; title = "同步时间到IPC"; ObjectID = "hk6-0P-9gy"; */
+"hk6-0P-9gy.title" = "Synchronize Time To Camera";
+
+/* Class = "NSMenuItem"; title = "12小时制"; ObjectID = "iSL-XC-Sob"; */
+"iSL-XC-Sob.title" = "12-hour";
+
+/* Class = "NSMenuItem"; title = "120"; ObjectID = "igD-Xp-df7"; */
+"igD-Xp-df7.title" = "120";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "kVy-0E-ZWk"; */
+"kVy-0E-ZWk.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "日/月/年"; ObjectID = "l7Q-Bv-1c0"; */
+"l7Q-Bv-1c0.title" = "DD/MM/YYYY";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "mUT-PD-Jy2"; */
+"mUT-PD-Jy2.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "分钟"; ObjectID = "mfW-7V-ijd"; */
+"mfW-7V-ijd.title" = "min";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "n7g-M7-bji"; */
+"n7g-M7-bji.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "时间格式选择:"; ObjectID = "na8-6a-HDa"; */
+"na8-6a-HDa.title" = "Time Format:";
+
+/* Class = "NSButtonCell"; title = "同步PC/终端时间"; ObjectID = "o3v-3H-Fe5"; */
+"o3v-3H-Fe5.title" = "Sync with PC/Terminal";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "os0-09-HaZ"; */
+"os0-09-HaZ.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "60"; ObjectID = "pBU-l7-XOI"; */
+"pBU-l7-XOI.title" = "60";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "re2-rd-Oj1"; */
+"re2-rd-Oj1.title" = "Item 1";
+
+/* Class = "NSButtonCell"; title = "Round Textured"; ObjectID = "seU-IK-hSB"; */
+"seU-IK-hSB.title" = "Round Textured";
+
+/* Class = "NSTextFieldCell"; title = ":"; ObjectID = "t4V-b1-9G9"; */
+"t4V-b1-9G9.title" = ":";
+
+/* Class = "NSMenuItem"; title = "90"; ObjectID = "vJk-7a-adn"; */
+"vJk-7a-adn.title" = "90";
+
+/* Class = "NSMenuItem"; title = "PM"; ObjectID = "vKe-Z9-fPX"; */
+"vKe-Z9-fPX.title" = "PM";

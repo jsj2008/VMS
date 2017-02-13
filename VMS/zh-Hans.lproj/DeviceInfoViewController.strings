@@ -1,0 +1,42 @@
+
+/* Class = "NSTextFieldCell"; title = "系统固件版本:"; ObjectID = "1nZ-2a-g54"; */
+"1nZ-2a-g54.title" = "系统固件版本:";
+
+/* Class = "NSTextFieldCell"; title = "应用固件版本:"; ObjectID = "2uV-bq-2eM"; */
+"2uV-bq-2eM.title" = "应用固件版本:";
+
+/* Class = "NSTextFieldCell"; title = "加载中..."; ObjectID = "4Tf-ez-2Jc"; */
+"4Tf-ez-2Jc.title" = "加载中...";
+
+/* Class = "NSTextFieldCell"; title = "加载中..."; ObjectID = "5QW-Ob-c53"; */
+"5QW-Ob-c53.title" = "加载中...";
+
+/* Class = "NSTextFieldCell"; title = "加载中..."; ObjectID = "8Xd-GI-Udo"; */
+"8Xd-GI-Udo.title" = "加载中...";
+
+/* Class = "NSTextFieldCell"; title = "UID:"; ObjectID = "AWU-WC-Fjo"; */
+"AWU-WC-Fjo.title" = "UID:";
+
+/* Class = "NSTextFieldCell"; title = "设备名称:"; ObjectID = "NYc-6D-bOW"; */
+"NYc-6D-bOW.title" = "设备名称:";
+
+/* Class = "NSTextFieldCell"; title = "加载中..."; ObjectID = "Vci-B5-3ic"; */
+"Vci-B5-3ic.title" = "加载中...";
+
+/* Class = "NSTextFieldCell"; title = "加载中..."; ObjectID = "d6j-4B-Z7t"; */
+"d6j-4B-Z7t.title" = "加载中...";
+
+/* Class = "NSTextFieldCell"; title = "加载中..."; ObjectID = "hZX-b6-hyN"; */
+"hZX-b6-hyN.title" = "加载中...";
+
+/* Class = "NSTextFieldCell"; title = "Mac地址:"; ObjectID = "iHg-Id-Cqo"; */
+"iHg-Id-Cqo.title" = "Mac地址:";
+
+/* Class = "NSTextFieldCell"; title = "设备时间:"; ObjectID = "jan-bw-QvL"; */
+"jan-bw-QvL.title" = "设备时间:";
+
+/* Class = "NSTextFieldCell"; title = "加载中..."; ObjectID = "maP-3O-s0w"; */
+"maP-3O-s0w.title" = "加载中...";
+
+/* Class = "NSTextFieldCell"; title = "机种名称:"; ObjectID = "qIg-1J-ub1"; */
+"qIg-1J-ub1.title" = "机种名称:";

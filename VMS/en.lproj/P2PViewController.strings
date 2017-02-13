@@ -1,0 +1,12 @@
+
+/* Class = "NSButtonCell"; title = "是否启用P2P端口"; ObjectID = "1Cv-JN-Meh"; */
+"1Cv-JN-Meh.title" = "Enable P2P";
+
+/* Class = "NSTextFieldCell"; title = "UID:"; ObjectID = "WXg-la-c4s"; */
+"WXg-la-c4s.title" = "UID:";
+
+/* Class = "NSTextFieldCell"; title = "合法的端口号范围是1～65533"; ObjectID = "WjN-OT-Do0"; */
+"WjN-OT-Do0.title" = "Valid port range is 1-65535";
+
+/* Class = "NSTextFieldCell"; title = "P2P端口:"; ObjectID = "vYQ-vP-krt"; */
+"vYQ-vP-krt.title" = "P2P Port:";

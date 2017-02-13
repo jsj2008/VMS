@@ -1,0 +1,36 @@
+
+/* Class = "NSButtonCell"; title = ">>"; ObjectID = "5IB-yz-0mo"; */
+"5IB-yz-0mo.title" = ">>";
+
+/* Class = "NSTextFieldCell"; title = "组名称："; ObjectID = "D7C-K7-1uE"; */
+"D7C-K7-1uE.title" = "组名称：";
+
+/* Class = "NSWindow"; title = "设备组"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "设备组";
+
+/* Class = "NSTableColumn"; headerCell.title = "设备名称"; ObjectID = "GSk-iC-TtL"; */
+"GSk-iC-TtL.headerCell.title" = "设备名称";
+
+/* Class = "NSTextFieldCell"; title = "组内设备列表"; ObjectID = "HhB-rF-UHe"; */
+"HhB-rF-UHe.title" = "组内设备列表";
+
+/* Class = "NSTableColumn"; headerCell.title = "设备名称"; ObjectID = "ONX-0Z-eUa"; */
+"ONX-0Z-eUa.headerCell.title" = "设备名称";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "VNZ-EB-GWC"; */
+"VNZ-EB-GWC.headerCell.title" = "编号";
+
+/* Class = "NSButtonCell"; title = "<<"; ObjectID = "d4u-fO-fZz"; */
+"d4u-fO-fZz.title" = "<<";
+
+/* Class = "NSTextFieldCell"; title = "组外设备列表"; ObjectID = "dDl-LF-vc5"; */
+"dDl-LF-vc5.title" = "组外设备列表";
+
+/* Class = "NSButtonCell"; title = "完成"; ObjectID = "jKt-MH-S7H"; */
+"jKt-MH-S7H.title" = "完成";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "qfw-AI-KUS"; */
+"qfw-AI-KUS.title" = "取消";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "yt3-iD-btw"; */
+"yt3-iD-btw.headerCell.title" = "编号";

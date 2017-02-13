@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LEDViewController">
+            <connections>
+                <outlet property="beginHour1Btn" destination="gWG-3q-pb9" id="RVZ-6b-CJJ"/>
+                <outlet property="beginHour2Btn" destination="Iv5-pX-nb8" id="ZaS-0F-vVZ"/>
+                <outlet property="beginHour3Btn" destination="99a-zN-Fv7" id="bvX-FE-MNm"/>
+                <outlet property="beginMin1Btn" destination="Gbe-ys-cR0" id="laB-M6-W0W"/>
+                <outlet property="beginMin2Btn" destination="DBR-NL-SbV" id="hdN-JI-E97"/>
+                <outlet property="beginMin3Btn" destination="YhA-QA-iAt" id="QLd-vi-zJJ"/>
+                <outlet property="endHour1Btn" destination="3eT-Ql-bzl" id="mst-Kg-SKb"/>
+                <outlet property="endHour2Btn" destination="EdS-Px-Exm" id="HmL-Cl-shS"/>
+                <outlet property="endHour3Btn" destination="Nfw-af-wPZ" id="Vby-Gj-gdu"/>
+                <outlet property="endMin1Btn" destination="0t1-Bn-8xc" id="IaT-n0-7d3"/>
+                <outlet property="endMin2Btn" destination="Yh8-MO-UuU" id="0PK-Re-kg8"/>
+                <outlet property="endMin3Btn" destination="UV3-dZ-DY6" id="F9B-9n-c8D"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="804" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box autoresizesSubviews="NO" fixedFrame="YES" borderType="none" title="红外灯定时设置" translatesAutoresizingMaskIntoConstraints="NO" id="ELe-Ex-ljE">
+                    <rect key="frame" x="17" y="196" width="780" height="144"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="IqG-33-bhv">
+                        <rect key="frame" x="0.0" y="0.0" width="780" height="126"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIQ-cR-sHL">
+                                <rect key="frame" x="9" y="104" width="170" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="设置关闭时间段：" id="cX6-RT-FKp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Kk-LI-iKy">
+                                <rect key="frame" x="420" y="104" width="38" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="-" id="mUr-1M-54B">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NK8-8U-oue">
+                                <rect key="frame" x="310" y="104" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="时" id="gVv-Pj-JR2">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Tc-z7-AyM">
+                                <rect key="frame" x="527" y="104" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="时" id="RBx-LG-sEZ">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaE-E5-q7H">
+                                <rect key="frame" x="421" y="63" width="38" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="-" id="szl-ew-lzM">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUH-Ao-9CU">
+                                <rect key="frame" x="311" y="63" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="时" id="8Py-Vm-WIL">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PK8-ff-Gtu">
+                                <rect key="frame" x="527" y="63" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="时" id="ypI-wJ-TyP">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIw-c0-N6w">
+                                <rect key="frame" x="423" y="19" width="38" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="-" id="pjy-l3-DOT">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ozl-tB-4As">
+                                <rect key="frame" x="313" y="19" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="时" id="QV7-PP-87R">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2d-3U-nv5">
+                                <rect key="frame" x="527" y="19" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="时" id="sfi-aM-laK">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BM2-UE-Hlq">
+                                <rect key="frame" x="183" y="103" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="计划1:" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="KmZ-9b-Ayc">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="-2" name="value" keyPath="self.isEnableSchedule1" id="4Mu-3A-U4J"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pOd-vf-mJd">
+                                <rect key="frame" x="184" y="18" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="计划3:" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="FCy-gV-Jk8">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="-2" name="value" keyPath="self.isEnableSchedule3" id="mWS-ph-gBY"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pk1-t5-n3B">
+                                <rect key="frame" x="622" y="104" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="分" id="Spd-9z-YCy">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CoA-gn-uAp">
+                                <rect key="frame" x="623" y="63" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="分" id="yte-lv-88C">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMV-L3-lAn">
+                                <rect key="frame" x="624" y="19" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="分" id="pob-I9-YGi">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Cp-RA-KNs">
+                                <rect key="frame" x="301" y="141" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="分" id="G0A-8y-d1p">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGC-hf-Vz7">
+                                <rect key="frame" x="405" y="104" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="分" id="3l9-cW-QlH">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d79-Gx-Qua">
+                                <rect key="frame" x="407" y="63" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="分" id="QlH-6S-05Z">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Upc-ut-0tY">
+                                <rect key="frame" x="408" y="19" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="分" id="0or-o5-9f3">
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n7x-7y-UqG">
+                                <rect key="frame" x="184" y="62" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="计划2:" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lUD-QU-pVs">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name="STHeitiSC-Light"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="-2" name="value" keyPath="self.isEnableSchedule2" id="AHl-2Z-nc2"/>
+                                </connections>
+                            </button>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWG-3q-pb9">
+                                <rect key="frame" x="245" y="99" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="jN6-TR-YC5" id="vkG-j2-Obv">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="mfJ-Zh-71d">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="jN6-TR-YC5"/>
+                                            <menuItem title="Item 2" id="SFh-UZ-Eoj"/>
+                                            <menuItem title="Item 3" id="N7t-UK-gI4"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule1" id="ZqS-dX-VQI"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iv5-pX-nb8">
+                                <rect key="frame" x="246" y="57" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="5m8-VC-waX" id="IS2-F4-1qV">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="iLI-qj-eLY">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="5m8-VC-waX"/>
+                                            <menuItem title="Item 2" id="Occ-5c-QBW"/>
+                                            <menuItem title="Item 3" id="Gm6-6x-hrU"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule2" id="a3Q-xf-76v"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99a-zN-Fv7">
+                                <rect key="frame" x="245" y="12" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="scD-Gz-m2l" id="iNH-ws-9LK">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="zSB-jK-K8K">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="scD-Gz-m2l"/>
+                                            <menuItem title="Item 2" id="wAZ-D3-hb6"/>
+                                            <menuItem title="Item 3" id="AtS-zA-D7T"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule3" id="mpF-XW-Ed9"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBR-NL-SbV">
+                                <rect key="frame" x="336" y="57" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="qHe-Gi-3Mt" id="ytN-PA-bxo">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="jLJ-xM-ZMe">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="qHe-Gi-3Mt"/>
+                                            <menuItem title="Item 2" id="bkN-NI-xvE"/>
+                                            <menuItem title="Item 3" id="ybO-dX-ssY"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule2" id="dyd-LH-mB1"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YhA-QA-iAt">
+                                <rect key="frame" x="336" y="12" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="RTw-TX-Ifz" id="UJf-Nm-cb7">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="0sa-8U-vD8">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="RTw-TX-Ifz"/>
+                                            <menuItem title="Item 2" id="q6x-Gr-ShE"/>
+                                            <menuItem title="Item 3" id="dKp-CO-ixW"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule3" id="eI9-Eo-aql"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3eT-Ql-bzl">
+                                <rect key="frame" x="456" y="98" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="1au-Zh-JTn">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="Qza-zJ-ztz">
+                                        <items>
+                                            <menuItem title="Item 1" id="l8p-EC-0G7"/>
+                                            <menuItem title="Item 2" id="1ad-7n-kMA"/>
+                                            <menuItem title="Item 3" id="2VX-im-OfA"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule1" id="tdT-2f-K48"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EdS-Px-Exm">
+                                <rect key="frame" x="456" y="57" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="WRC-4Z-8Ck" id="fBH-0B-JSD">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="81x-u5-FXX">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="WRC-4Z-8Ck"/>
+                                            <menuItem title="Item 2" id="Tdp-nf-6Bu"/>
+                                            <menuItem title="Item 3" id="Iz5-tW-e24"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule2" id="Yy6-YH-5zc"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nfw-af-wPZ">
+                                <rect key="frame" x="456" y="12" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="DKg-f3-dYy" id="bj2-Gr-1Yq">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="0kH-Mm-gDh">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="DKg-f3-dYy"/>
+                                            <menuItem title="Item 2" id="DeN-Lq-37o"/>
+                                            <menuItem title="Item 3" id="9EL-NQ-aOL"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule3" id="Xx2-36-OUT"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0t1-Bn-8xc">
+                                <rect key="frame" x="557" y="98" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="z1g-jp-hec" id="1ys-SN-F5n">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="ka7-g3-XZz">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="z1g-jp-hec"/>
+                                            <menuItem title="Item 2" id="EDO-b9-iO0"/>
+                                            <menuItem title="Item 3" id="8hK-c1-iqm"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule1" id="nro-Yg-iQL"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yh8-MO-UuU">
+                                <rect key="frame" x="557" y="57" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Zeu-fI-anB" id="YDE-X6-IFu">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="HNd-Zg-7AO">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="Zeu-fI-anB"/>
+                                            <menuItem title="Item 2" id="nUe-l4-hIZ"/>
+                                            <menuItem title="Item 3" id="7e8-mQ-puW"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule2" id="OYj-8b-PPd"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UV3-dZ-DY6">
+                                <rect key="frame" x="557" y="12" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="cO4-O4-a8u" id="JLY-K8-kPJ">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="PqK-rK-rwH">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="cO4-O4-a8u"/>
+                                            <menuItem title="Item 2" id="Buf-19-PVM"/>
+                                            <menuItem title="Item 3" id="pjS-5c-ZK3"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule3" id="zE6-6Z-K9N"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gbe-ys-cR0">
+                                <rect key="frame" x="336" y="99" width="65" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="KfZ-aU-xNp" id="jg2-6c-oIo">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="weY-Cl-qlA">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="KfZ-aU-xNp"/>
+                                            <menuItem title="Item 2" id="6dW-90-age"/>
+                                            <menuItem title="Item 3" id="RRc-xK-CXA"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isEnableSchedule1" id="Fsz-mI-lPv"/>
+                                </connections>
+                            </popUpButton>
+                        </subviews>
+                    </view>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+            </subviews>
+            <point key="canvasLocation" x="132" y="153.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="fnb-FS-Q1T"/>
+    </objects>
+</document>

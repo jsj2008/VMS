@@ -1,0 +1,45 @@
+
+/* Class = "NSButtonCell"; title = "移动侦测"; ObjectID = "BnC-E9-Mwi"; */
+"BnC-E9-Mwi.title" = "Motion Detection";
+
+/* Class = "NSBox"; title = "联动策略"; ObjectID = "KAq-Z6-UQZ"; */
+"KAq-Z6-UQZ.title" = "Action";
+
+/* Class = "NSTextFieldCell"; title = "设备列表"; ObjectID = "LPa-Zh-Lnx"; */
+"LPa-Zh-Lnx.title" = "Device List";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "NA1-Zj-4dM"; */
+"NA1-Zj-4dM.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "Ske-mx-7Jf"; */
+"Ske-mx-7Jf.headerCell.title" = "No";
+
+/* Class = "NSTableColumn"; headerCell.title = "设备名称"; ObjectID = "ULk-II-Gum"; */
+"ULk-II-Gum.headerCell.title" = "Device Name";
+
+/* Class = "NSBox"; title = "报警类型"; ObjectID = "Xry-Bt-Ssg"; */
+"Xry-Bt-Ssg.title" = "Alarm Type";
+
+/* Class = "NSButtonCell"; title = "保存至所有监控点"; ObjectID = "bEh-t9-CYc"; */
+"bEh-t9-CYc.title" = "Copy to all camera";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "cyz-cp-Aet"; */
+"cyz-cp-Aet.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "报警计划"; ObjectID = "fSa-bd-Ejs"; */
+"fSa-bd-Ejs.title" = "Schedule";
+
+/* Class = "NSButtonCell"; title = "Radio"; ObjectID = "gVX-ec-Euo"; */
+"gVX-ec-Euo.title" = "Radio";
+
+/* Class = "NSButtonCell"; title = "录像"; ObjectID = "q8q-k0-jej"; */
+"q8q-k0-jej.title" = "Record";
+
+/* Class = "NSButtonCell"; title = "抓拍图片"; ObjectID = "uVr-92-hI7"; */
+"uVr-92-hI7.title" = "Snapshot";
+
+/* Class = "NSButtonCell"; title = "保存"; ObjectID = "wyR-yw-EUo"; */
+"wyR-yw-EUo.title" = "Save";
+
+/* Class = "NSButtonCell"; title = "声音报警"; ObjectID = "xW2-9l-JQy"; */
+"xW2-9l-JQy.title" = "Sound";

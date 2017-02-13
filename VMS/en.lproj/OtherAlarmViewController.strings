@@ -1,0 +1,15 @@
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "GT7-hi-tM5"; */
+"GT7-hi-tM5.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Nrb-ug-D3n"; */
+"Nrb-ug-D3n.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "Q98-N1-H99"; */
+"Q98-N1-H99.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "报警类型："; ObjectID = "edI-Tf-fyw"; */
+"edI-Tf-fyw.title" = "Type:";
+
+/* Class = "NSButtonCell"; title = "蜂鸣器"; ObjectID = "nU4-wj-3cs"; */
+"nU4-wj-3cs.title" = "Buzzer";

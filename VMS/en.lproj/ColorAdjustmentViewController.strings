@@ -1,0 +1,57 @@
+
+/* Class = "NSMenuItem"; title = "50Hz"; ObjectID = "3qf-Wj-sH0"; */
+"3qf-Wj-sH0.title" = "50Hz";
+
+/* Class = "NSTextFieldCell"; title = "锐度:"; ObjectID = "5LI-kD-n2I"; */
+"5LI-kD-n2I.title" = "Sharpness:";
+
+/* Class = "NSTextFieldCell"; title = "色调:"; ObjectID = "5w7-7R-JvH"; */
+"5w7-7R-JvH.title" = "Hue:";
+
+/* Class = "NSTextFieldCell"; title = "50%"; ObjectID = "689-1T-8zK"; */
+"689-1T-8zK.title" = "50%";
+
+/* Class = "NSBox"; title = " 色彩"; ObjectID = "6Zz-La-hQb"; */
+"6Zz-La-hQb.title" = "Color";
+
+/* Class = "NSButtonCell"; title = "翻转"; ObjectID = "7Xd-Q4-LFO"; */
+"7Xd-Q4-LFO.title" = "Flip";
+
+/* Class = "NSTextFieldCell"; title = "50%"; ObjectID = "Bd4-iI-Zmd"; */
+"Bd4-iI-Zmd.title" = "50%";
+
+/* Class = "NSMenuItem"; title = "户外模式"; ObjectID = "Gcw-KQ-waS"; */
+"Gcw-KQ-waS.title" = "Outdoor Mode";
+
+/* Class = "NSTextFieldCell"; title = "50%"; ObjectID = "V6l-1L-WTw"; */
+"V6l-1L-WTw.title" = "50%";
+
+/* Class = "NSTextFieldCell"; title = "亮度:"; ObjectID = "Yun-9o-ItB"; */
+"Yun-9o-ItB.title" = "Brightness:";
+
+/* Class = "NSTextFieldCell"; title = "饱和度:"; ObjectID = "bdg-hM-oPq"; */
+"bdg-hM-oPq.title" = "Saturation:";
+
+/* Class = "NSTextFieldCell"; title = "50%"; ObjectID = "dmC-fo-Pxu"; */
+"dmC-fo-Pxu.title" = "50%";
+
+/* Class = "NSTextFieldCell"; title = "电源频率:"; ObjectID = "f31-27-Oir"; */
+"f31-27-Oir.title" = "Mode:";
+
+/* Class = "NSMenuItem"; title = "60Hz"; ObjectID = "gKJ-Xf-5Sl"; */
+"gKJ-Xf-5Sl.title" = "60Hz";
+
+/* Class = "NSButtonCell"; title = "默认值"; ObjectID = "mb4-Tu-3Kc"; */
+"mb4-Tu-3Kc.title" = "Default";
+
+/* Class = "NSTextFieldCell"; title = "50%"; ObjectID = "tMO-Rv-nDC"; */
+"tMO-Rv-nDC.title" = "50%";
+
+/* Class = "NSTextFieldCell"; title = "对比度:"; ObjectID = "ukv-ml-AIO"; */
+"ukv-ml-AIO.title" = "Contrast:";
+
+/* Class = "NSBox"; title = "其它"; ObjectID = "uuY-Io-mqn"; */
+"uuY-Io-mqn.title" = "Other";
+
+/* Class = "NSButtonCell"; title = "镜像"; ObjectID = "zTm-j3-O5B"; */
+"zTm-j3-O5B.title" = "Mirror";

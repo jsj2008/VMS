@@ -1,0 +1,153 @@
+
+/* Class = "NSTextFieldCell"; title = "密钥格式:"; ObjectID = "0MO-3M-Ug7"; */
+"0MO-3M-Ug7.title" = "Key Format:";
+
+/* Class = "NSMenuItem"; title = "64bits"; ObjectID = "1D9-La-1zL"; */
+"1D9-La-1zL.title" = "64bits";
+
+/* Class = "NSTextFieldCell"; title = "SSID:"; ObjectID = "4ja-Jy-TsD"; */
+"4ja-Jy-TsD.title" = "SSID:";
+
+/* Class = "NSTableColumn"; headerCell.title = "SSID"; ObjectID = "5Ro-Jg-g6H"; */
+"5Ro-Jg-g6H.headerCell.title" = "SSID";
+
+/* Class = "NSButtonCell"; title = "下一页"; ObjectID = "6II-Nl-XTF"; */
+"6II-Nl-XTF.title" = "Next";
+
+/* Class = "NSTextFieldCell"; title = "选择密钥:"; ObjectID = "7Ba-Ob-u3p"; */
+"7Ba-Ob-u3p.title" = "Key:";
+
+/* Class = "NSMenuItem"; title = "WPA2"; ObjectID = "7SQ-TA-v97"; */
+"7SQ-TA-v97.title" = "WPA2";
+
+/* Class = "NSMenuItem"; title = "64bits"; ObjectID = "7x5-qH-Msx"; */
+"7x5-qH-Msx.title" = "64bits";
+
+/* Class = "NSMenuItem"; title = "开放系统"; ObjectID = "8Dv-mT-DbH"; */
+"8Dv-mT-DbH.title" = "Open system";
+
+/* Class = "NSMenuItem"; title = "WEP"; ObjectID = "Clc-W4-Nug"; */
+"Clc-W4-Nug.title" = "WEP";
+
+/* Class = "NSTableColumn"; headerCell.title = "加密类型"; ObjectID = "EOF-kn-xBC"; */
+"EOF-kn-xBC.headerCell.title" = "Encryption";
+
+/* Class = "NSMenuItem"; title = "共享密钥"; ObjectID = "G7n-dh-42X"; */
+"G7n-dh-42X.title" = "Password";
+
+/* Class = "NSMenuItem"; title = "64bits"; ObjectID = "HMU-tJ-TAD"; */
+"HMU-tJ-TAD.title" = "64bits";
+
+/* Class = "NSTextFieldCell"; title = "验证模式:"; ObjectID = "IrP-yg-7Du"; */
+"IrP-yg-7Du.title" = "Authentication:";
+
+/* Class = "NSMenuItem"; title = "128bits"; ObjectID = "J76-q9-d80"; */
+"J76-q9-d80.title" = "128bits";
+
+/* Class = "NSMenuItem"; title = "128bits"; ObjectID = "Kgq-N0-AYo"; */
+"Kgq-N0-AYo.title" = "128bits";
+
+/* Class = "NSTextFieldCell"; title = "共享密钥:"; ObjectID = "Kgs-y8-LAO"; */
+"Kgs-y8-LAO.title" = "Password:";
+
+/* Class = "NSMenuItem"; title = "自动"; ObjectID = "MTp-aq-yF7"; */
+"MTp-aq-yF7.title" = "Automatic";
+
+/* Class = "NSTextFieldCell"; title = "密钥3:"; ObjectID = "Mfi-NK-o9e"; */
+"Mfi-NK-o9e.title" = "Key3:";
+
+/* Class = "NSTextFieldCell"; title = "当前页："; ObjectID = "Mqg-DW-qXe"; */
+"Mqg-DW-qXe.title" = "Current";
+
+/* Class = "NSMenuItem"; title = "1"; ObjectID = "ONv-vR-HcX"; */
+"ONv-vR-HcX.title" = "1";
+
+/* Class = "NSTextFieldCell"; title = "密码的最大长度为63,支持数字、字母及符号"; ObjectID = "S8A-iq-EFM"; */
+"S8A-iq-EFM.title" = "The maximum password length is 63,including numbers,letters and symbols";
+
+/* Class = "NSTextFieldCell"; title = "密钥1:"; ObjectID = "SNx-at-9dZ"; */
+"SNx-at-9dZ.title" = "Key1:";
+
+/* Class = "NSMenuItem"; title = "ASCII字符"; ObjectID = "TGG-hf-Typ"; */
+"TGG-hf-Typ.title" = "ASCII characters";
+
+/* Class = "NSMenuItem"; title = "3"; ObjectID = "U7f-Jt-aRU"; */
+"U7f-Jt-aRU.title" = "3";
+
+/* Class = "NSTextFieldCell"; title = "加密方式:"; ObjectID = "VtM-at-aR9"; */
+"VtM-at-aR9.title" = "Encryption:";
+
+/* Class = "NSMenuItem"; title = "128bits"; ObjectID = "WwE-nc-uX5"; */
+"WwE-nc-uX5.title" = "128bits";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "ZA2-H9-1KW"; */
+"ZA2-H9-1KW.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "ZHs-4c-3J9"; */
+"ZHs-4c-3J9.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "密钥2:"; ObjectID = "ZXR-P4-XMG"; */
+"ZXR-P4-XMG.title" = "Key2:";
+
+/* Class = "NSMenuItem"; title = "WPA"; ObjectID = "aTR-KK-iPY"; */
+"aTR-KK-iPY.title" = "WPA";
+
+/* Class = "NSTextFieldCell"; title = "0"; ObjectID = "b6K-D1-lsx"; */
+"b6K-D1-lsx.title" = "0";
+
+/* Class = "NSMenuItem"; title = "4"; ObjectID = "cKb-Qp-Olf"; */
+"cKb-Qp-Olf.title" = "4";
+
+/* Class = "NSButtonCell"; title = "扫描"; ObjectID = "ea4-KY-EcI"; */
+"ea4-KY-EcI.title" = "Scan";
+
+/* Class = "NSTextFieldCell"; title = "0"; ObjectID = "ebg-cw-lF5"; */
+"ebg-cw-lF5.title" = "0";
+
+/* Class = "NSButtonCell"; title = "上一页"; ObjectID = "ez2-N4-661"; */
+"ez2-N4-661.title" = "Previous";
+
+/* Class = "NSMenuItem"; title = "无"; ObjectID = "fM5-ol-FIs"; */
+"fM5-ol-FIs.title" = "None";
+
+/* Class = "NSButtonCell"; title = "跳转"; ObjectID = "gpO-UN-d8a"; */
+"gpO-UN-d8a.title" = "Go";
+
+/* Class = "NSTextFieldCell"; title = "总页数："; ObjectID = "k5J-EK-jeb"; */
+"k5J-EK-jeb.title" = "Total";
+
+/* Class = "NSMenuItem"; title = "64bits"; ObjectID = "kAk-be-1u8"; */
+"kAk-be-1u8.title" = "64bits";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "mQ8-6b-GmV"; */
+"mQ8-6b-GmV.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "oih-fH-46k"; */
+"oih-fH-46k.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "pv4-tp-dh3"; */
+"pv4-tp-dh3.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "WPA/WPA2"; ObjectID = "qXD-nQ-ihn"; */
+"qXD-nQ-ihn.title" = "WPA/WPA2";
+
+/* Class = "NSMenuItem"; title = "16进制数字"; ObjectID = "r2k-Rx-IIK"; */
+"r2k-Rx-IIK.title" = "Hexadecimal digits";
+
+/* Class = "NSMenuItem"; title = "128bits"; ObjectID = "reU-Vv-PRX"; */
+"reU-Vv-PRX.title" = "128bits";
+
+/* Class = "NSTextFieldCell"; title = "密码的最大长度为63,支持数字、字母及符号"; ObjectID = "tPs-0R-sNL"; */
+"tPs-0R-sNL.title" = "The maximum password length is 63,including numbers,letters and symbols";
+
+/* Class = "NSTextFieldCell"; title = "密钥4:"; ObjectID = "tyi-nh-YDi"; */
+"tyi-nh-YDi.title" = "Key4:";
+
+/* Class = "NSTextFieldCell"; title = "Wifi列表"; ObjectID = "wik-xX-qPg"; */
+"wik-xX-qPg.title" = "Wireless Network List";
+
+/* Class = "NSMenuItem"; title = "2"; ObjectID = "xQa-0G-V1H"; */
+"xQa-0G-V1H.title" = "2";
+
+/* Class = "NSTableColumn"; headerCell.title = "信号强度"; ObjectID = "ysD-At-PDC"; */
+"ysD-At-PDC.headerCell.title" = "Quality";

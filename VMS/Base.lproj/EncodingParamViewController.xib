@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="EncodingParamViewController">
+            <connections>
+                <outlet property="bitRate1Btn" destination="xbV-ag-wBv" id="7Sj-x1-7rW"/>
+                <outlet property="bitRate2Btn" destination="ak4-6o-dAK" id="r6Y-Po-XtJ"/>
+                <outlet property="chnBtn" destination="xRe-t4-yRZ" id="WE9-JY-56A"/>
+                <outlet property="chnLabel" destination="LX1-cN-zdl" id="4A5-19-Uqf"/>
+                <outlet property="frameRate1Btn" destination="maW-gH-htf" id="95H-jC-Anc"/>
+                <outlet property="frameRate2Btn" destination="Wt5-w7-yQZ" id="3gE-oC-coV"/>
+                <outlet property="gop1Btn" destination="Fog-Dd-zwh" id="Elj-UC-BDT"/>
+                <outlet property="gop2Btn" destination="ZiU-Cg-Hti" id="sqM-sB-lZn"/>
+                <outlet property="isVBR1Btn" destination="Dil-6Z-pdw" id="VV9-w8-RsX"/>
+                <outlet property="isVBR2Btn" destination="hlW-Q1-sSg" id="TmF-fp-zYV"/>
+                <outlet property="resolution1Btn" destination="2LM-lG-T3L" id="oFc-JC-Tjl"/>
+                <outlet property="resolution2Btn" destination="oi3-3C-1fX" id="PNg-Nf-VMp"/>
+                <outlet property="vbrTF1" destination="odq-EH-RvG" id="J4X-cq-Xez"/>
+                <outlet property="vbrTF2" destination="Sbe-te-ffm" id="IZO-YW-Sb3"/>
+                <outlet property="videoStreamType1Btn" destination="tqO-xa-3xq" id="S2F-4S-eJ9"/>
+                <outlet property="videoStreamType2Btn" destination="P9m-nB-tbb" id="yJB-Fz-bla"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="804" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box autoresizesSubviews="NO" fixedFrame="YES" borderType="none" title="主码流编码参数" translatesAutoresizingMaskIntoConstraints="NO" id="uYM-CM-ydb">
+                    <rect key="frame" x="11" y="162" width="780" height="159"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="ubd-ix-cYY">
+                        <rect key="frame" x="0.0" y="0.0" width="780" height="141"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-EK-FXi" userLabel="Label">
+                                <rect key="frame" x="8" y="117" width="100" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="视频流种类:" id="as7-y2-YeC">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59O-NW-sIy" userLabel="Label">
+                                <rect key="frame" x="8" y="76" width="100" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="分辨率:" id="m2D-6J-A7c">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="diD-ac-Kr1" userLabel="Label">
+                                <rect key="frame" x="8" y="35" width="100" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="码率:" id="gpW-WI-AKk">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQS-VR-EsT" userLabel="Label">
+                                <rect key="frame" x="391" y="76" width="117" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="主帧间隔:" id="Hqr-3e-eIF">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.gopEnable" id="uRt-MA-WKf">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odq-EH-RvG" userLabel="Label">
+                                <rect key="frame" x="412" y="35" width="96" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="是否可变码率:" id="Avc-qU-sV4">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.gopEnable" id="2Cf-3j-Jx8">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="133-Uh-wXU" userLabel="Label">
+                                <rect key="frame" x="407" y="119" width="100" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="帧率:" id="scw-NY-kTY">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqO-xa-3xq" userLabel="MainStreamType">
+                                <rect key="frame" x="112" y="112" width="260" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="lbM-yW-gft">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="f6w-lE-fQf">
+                                        <items>
+                                            <menuItem title="清晰模式" id="So7-q6-ZXf" userLabel="清晰模式">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="均衡模式" tag="1" id="Opp-vE-4ZT" userLabel="均衡模式">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="流畅模式" tag="2" id="Ddu-Rx-fob" userLabel="流畅模式">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="自定义" tag="3" id="d6d-Bp-hDw" userLabel="自定义">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="selectVideoStreamType:" target="-2" id="GLT-av-a3D"/>
+                                    <binding destination="-2" name="enabled" keyPath="self.videoStreamTypeEnable" id="GSs-08-Zd3"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2LM-lG-T3L" userLabel="MainStreamResolution">
+                                <rect key="frame" x="112" y="71" width="260" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="QVGA(320*180)" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="4" imageScaling="proportionallyDown" inset="2" selectedItem="ReR-Gf-0sn" id="Xe3-sh-ELZ">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="VfI-zC-CUC">
+                                        <items>
+                                            <menuItem title="720P" id="VVl-yN-yti" userLabel="720P"/>
+                                            <menuItem title="VGA(640*480)" tag="1" id="ane-oA-dDl" userLabel="VGA(640*480)"/>
+                                            <menuItem title="VGA(640*360)" tag="3" id="7CH-7b-aII"/>
+                                            <menuItem title="QVGA(320*240)" tag="2" id="euY-nN-yC7">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="QVGA(320*180)" state="on" tag="4" id="ReR-Gf-0sn" userLabel="QVGA(320*180)">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="resolutionChanged:" target="-2" id="TMT-yB-xV9"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbV-ag-wBv" userLabel="MainStreamBitRate">
+                                <rect key="frame" x="112" y="30" width="260" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="4M" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Qoq-dA-8oM" id="J4T-Pn-ybZ">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="mBr-xv-oMf">
+                                        <items>
+                                            <menuItem title="4M" state="on" id="Qoq-dA-8oM" userLabel="4M">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="2M" id="OPZ-3S-DVE" userLabel="2M">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="1M" id="nk6-RI-kIz" userLabel="1M">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="512K" id="Br7-Kk-XV3" userLabel="512K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="256K" id="EvQ-FA-5co" userLabel="256K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="200K" id="zR5-VC-nL1" userLabel="200K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="128K" id="Vfn-8Y-ctx" userLabel="128K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="100K" id="wlE-lu-WNe" userLabel="100K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="50K" id="BMW-Hm-CJV" userLabel="50K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="20K" id="L8i-wl-BEA" userLabel="20K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isLBR1" id="fja-e9-KUE">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="maW-gH-htf" userLabel="MainStreamFrameRate">
+                                <rect key="frame" x="512" y="114" width="258" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="9JQ-f5-T8l" id="KVJ-KT-qGA">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="R5c-Vs-Iqn">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="9JQ-f5-T8l"/>
+                                            <menuItem title="Item 2" id="dTj-yn-8y7"/>
+                                            <menuItem title="Item 3" id="Pkn-E9-pz7"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isLBR1" id="8Vb-OC-vdO">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fog-Dd-zwh" userLabel="MainStreamGop">
+                                <rect key="frame" x="512" y="71" width="259" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="vxv-YL-C88" id="Y8R-87-or9">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="axl-yC-FZx">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="vxv-YL-C88"/>
+                                            <menuItem title="Item 2" id="1bl-Ue-xop"/>
+                                            <menuItem title="Item 3" id="PLl-AF-LIc"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.gopEnable" previousBinding="Fif-OH-3ZG" id="OIk-N3-kTZ">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="-2" name="enabled" keyPath="self.isLBR1" id="Fif-OH-3ZG">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dil-6Z-pdw" userLabel="MainStreamIsVBR">
+                                <rect key="frame" x="512" y="30" width="258" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="GHb-2N-99z">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="1N7-2q-UjX">
+                                        <items>
+                                            <menuItem title="否" id="e2v-GQ-B76" userLabel="否">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="是" id="AaS-ea-gvt" userLabel="是">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="vbrChanged:" target="-2" id="dlW-0j-UDI"/>
+                                    <binding destination="-2" name="hidden" keyPath="self.gopEnable" id="nyD-PV-YN7">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </popUpButton>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxw-gp-YNL">
+                                <rect key="frame" x="511" y="8" width="197" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="50" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="ePz-Dz-gLI"/>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.isLBR1" id="oLK-Nc-AuM">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="-2" name="value" keyPath="self.lbr1" id="ME7-1x-hZB"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vcs-dT-HQy">
+                                <rect key="frame" x="714" y="9" width="30" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="50" id="wBs-LB-tUa">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.isLBR1" id="WHS-Ap-P6K">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="-2" name="value" keyPath="self.lbr1" id="1aF-HM-GnP"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGj-KF-tNd">
+                                <rect key="frame" x="740" y="9" width="29" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="%" id="Tyx-Jd-KSU">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.isLBR1" id="M5K-2q-z1k">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <box autoresizesSubviews="NO" fixedFrame="YES" borderType="none" title="子码流编码参数" translatesAutoresizingMaskIntoConstraints="NO" id="e29-80-brf">
+                    <rect key="frame" x="11" y="-4" width="780" height="169"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="CMY-ai-6ux">
+                        <rect key="frame" x="0.0" y="0.0" width="780" height="151"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7c-zB-Sgh" userLabel="Label">
+                                <rect key="frame" x="8" y="130" width="100" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="视频流种类:" id="UyR-aO-8Lb">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rk5-ZZ-mhW" userLabel="Label">
+                                <rect key="frame" x="8" y="89" width="100" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="分辨率:" id="OsI-aV-Wk2">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5G-RX-6Wi" userLabel="Label">
+                                <rect key="frame" x="8" y="48" width="100" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="码率:" id="qaw-g6-rfb">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rW5-9W-DDa" userLabel="Label">
+                                <rect key="frame" x="412" y="130" width="96" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="帧率:" id="gbH-ET-nrU">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zb-Ks-jz4" userLabel="Label">
+                                <rect key="frame" x="382" y="89" width="126" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="主帧间隔:" id="IBL-ey-plS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.gopEnable" id="HIv-ck-uBm">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="P9m-nB-tbb" userLabel="SubStreamType">
+                                <rect key="frame" x="112" y="125" width="260" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="IHN-9a-Lxy">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="IW5-2k-c0B">
+                                        <items>
+                                            <menuItem title="清晰模式" id="cnd-XQ-KBQ" userLabel="清晰模式">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="均衡模式" tag="1" id="gxs-yn-yGG" userLabel="均衡模式">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="流畅模式" tag="2" id="aeQ-7Z-aIp" userLabel="流畅模式">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="自定义" tag="3" id="wlJ-sc-j09" userLabel="自定义">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="selectVideoStreamType:" target="-2" id="mqp-5Y-3i2"/>
+                                    <binding destination="-2" name="enabled" keyPath="self.videoStreamTypeEnable" id="qKr-2V-QgC"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="oi3-3C-1fX" userLabel="SubStreamResolution">
+                                <rect key="frame" x="112" y="84" width="260" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="z5M-2Y-oI1">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="D8a-5f-zry">
+                                        <items>
+                                            <menuItem title="VGA(640*480)" tag="1" id="osO-8J-Qqd" userLabel="VGA(640*480)"/>
+                                            <menuItem title="VGA(640*360)" tag="3" id="l5T-GO-rJK" userLabel="VGA(640*360)"/>
+                                            <menuItem title="QVGA(320*240)" tag="2" id="uka-kF-HXv" userLabel="QVGA(320*240)">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="QVGA(320*180)" tag="4" id="6ta-eb-f68" userLabel="QVGA(320*180)">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="resolutionChanged:" target="-2" id="YIW-1V-Ipc"/>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-w7-yQZ" userLabel="SubStreamFrameRate">
+                                <rect key="frame" x="512" y="125" width="258" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="RXr-fK-PWa" id="X8M-qs-Vst">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="VR6-kU-AE4">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="RXr-fK-PWa"/>
+                                            <menuItem title="Item 2" id="JvT-a5-WSe"/>
+                                            <menuItem title="Item 3" id="SKp-Rf-5eT"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isLBR2" id="0Zo-J0-CXP">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZiU-Cg-Hti" userLabel="SubStreamGop">
+                                <rect key="frame" x="512" y="84" width="259" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="di7-AM-esg" id="8zf-V2-9qJ">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="nez-ij-v3s">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="di7-AM-esg"/>
+                                            <menuItem title="Item 2" id="DzS-PN-7qm"/>
+                                            <menuItem title="Item 3" id="9Bc-V2-1js"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.gopEnable" previousBinding="cLr-Ig-qqw" id="HqE-3n-0rM">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="-2" name="enabled" keyPath="self.isLBR2" id="cLr-Ig-qqw">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-6o-dAK" userLabel="SubStreamBitRate">
+                                <rect key="frame" x="112" y="43" width="260" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="20K" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="1K7-ED-5nh" id="IfC-tS-0Sb">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="dCf-hV-cpm">
+                                        <items>
+                                            <menuItem title="512K" id="yHa-cl-E3s" userLabel="512K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="256K" id="kuj-57-V7w" userLabel="256K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="200K" id="fLz-DX-Y0v" userLabel="200K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="128K" id="Pwq-sw-bve" userLabel="128K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="100K" id="d09-Ng-FlW" userLabel="100K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="50K" id="JRZ-3U-qzc" userLabel="50K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="20K" state="on" id="1K7-ED-5nh" userLabel="20K">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="-2" name="enabled" keyPath="self.isLBR2" id="bfO-Gz-oh7">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </popUpButton>
+                            <popUpButton hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="hlW-Q1-sSg">
+                                <rect key="frame" x="512" y="41" width="257" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="EzD-PO-ngq">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="LNY-Y5-VkG">
+                                        <items>
+                                            <menuItem title="Item 1" id="juC-k0-gti" userLabel="否"/>
+                                            <menuItem title="Item 2" id="GE1-iI-zIe" userLabel="是"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="vbrChanged:" target="-2" id="tgI-Nb-Kc2"/>
+                                </connections>
+                            </popUpButton>
+                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-te-ffm">
+                                <rect key="frame" x="412" y="48" width="96" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="是否可变码率:" id="Sxc-E0-U6i">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3G1-p5-NhJ">
+                                <rect key="frame" x="514" y="18" width="197" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="50" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="t0O-ua-1XN"/>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.isLBR2" id="rU0-R0-PyX">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="-2" name="value" keyPath="self.lbr2" id="dRF-0c-dut"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-qe-UJl">
+                                <rect key="frame" x="717" y="19" width="21" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="50" id="HQ0-18-OEp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.isLBR2" id="K5y-jp-qpw">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="-2" name="value" keyPath="self.lbr2" id="R3g-NB-BWN"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Doo-PK-pxX">
+                                <rect key="frame" x="741" y="19" width="29" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="%" id="cfV-wN-3XC">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="-2" name="hidden" keyPath="self.isLBR2" id="qdv-Ns-qgO">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LX1-cN-zdl">
+                    <rect key="frame" x="20" y="341" width="100" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="通道:" id="VZ0-TB-MYM">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xRe-t4-yRZ">
+                    <rect key="frame" x="124" y="336" width="260" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="qoC-l0-uaM" id="IiQ-cF-9nx">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="J62-uc-chw">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="qoC-l0-uaM"/>
+                                <menuItem title="Item 2" id="SL2-Ys-aHP"/>
+                                <menuItem title="Item 3" id="Ayr-bU-jOm"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="chnOption:" target="-2" id="Xqu-fX-iye"/>
+                        <binding destination="-2" name="selectedIndex" keyPath="self.chn" id="YZW-wf-tAa"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <point key="canvasLocation" x="132" y="168.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="j2k-dR-6sG"/>
+    </objects>
+</document>

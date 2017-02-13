@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="hXL-4j-51a" id="3is-9s-pN6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="hXL-4j-51a" customClass="AppDelegate">
+            <connections>
+                <outlet property="cpuUsageProgressBar" destination="scZ-sG-1yA" id="KLm-ae-jGP"/>
+                <outlet property="cpuUsageValue" destination="B5l-US-lhO" id="n5y-xx-It5"/>
+                <outlet property="diskUsageProgressBar" destination="r5H-bN-aKi" id="0Vg-fU-FQb"/>
+                <outlet property="diskUsageValue" destination="g3g-cY-dex" id="bts-dx-C94"/>
+                <outlet property="systemTime" destination="G8T-lZ-Plb" id="KUW-5z-LhD"/>
+                <outlet property="toolbarItemLog" destination="tsb-U6-uyp" id="6li-Dx-b6m"/>
+                <outlet property="toolbarItemMonitoring" destination="ACj-v2-ZvD" id="TQ1-mN-oDf"/>
+                <outlet property="toolbarItemNvrPlayback" destination="t8a-VQ-4W2" id="7vt-Vn-R9F"/>
+                <outlet property="toolbarItemPlayback" destination="EaT-Zt-PqX" id="OVV-rJ-W4j"/>
+                <outlet property="window" destination="CCD-Od-ca5" id="3E2-NP-8A9"/>
+            </connections>
+        </customObject>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="VMS" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="VMS" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About VMS" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                <connections>
+                                    <action selector="activePreferencePanel:" target="hXL-4j-51a" id="HFk-VB-gmE"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide VMS" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Lock VMS" id="6V6-Ph-4NP">
+                                <attributedString key="attributedTitle"/>
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="toggleLock:" target="hXL-4j-51a" id="bly-2A-PuB"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Quit VMS" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="exitAction:" target="hXL-4j-51a" id="Fkz-Fj-ZF6"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="dMs-cI-mzQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Edit" id="5QF-Oa-p0T">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Format" id="jxT-CU-nIS">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="View" id="H8h-7b-M4v">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Window" id="aUF-d1-5bR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="VwT-WD-YPe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="R4o-n2-Eq4">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="DIl-cC-cCs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="wpr-3q-Mcd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                        <items>
+                            <menuItem title="VMS Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="VMS" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="CCD-Od-ca5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenAuxiliary="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="321" y="99" width="1340" height="774"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <value key="minSize" type="size" width="1254" height="700"/>
+            <view key="contentView" id="BAM-Rd-Ghj">
+                <rect key="frame" x="0.0" y="0.0" width="1340" height="774"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="368AD43A-866C-4E08-B5AD-F2A819148660" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="xg8-e2-IKx">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="D43A4F9F-29A8-4E55-8C1B-527F24B9BCB6" label="Custom View" paletteLabel="Custom View" tag="-1" id="IGW-LE-Asg" userLabel="Title View Left">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="695" height="83"/>
+                        <size key="maxSize" width="695" height="96"/>
+                        <customView key="view" id="Tnz-Vi-9Xk">
+                            <rect key="frame" x="0.0" y="14" width="695" height="83"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="ACj-v2-ZvD" userLabel="视频监控">
+                                    <rect key="frame" x="8" y="0.0" width="86" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TB_MONITORING Off" imagePosition="overlaps" alignment="center" alternateImage="TB_MONITORING On" state="on" imageScaling="proportionallyDown" inset="2" id="HMf-gB-gb8">
+                                        <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="toggleViewAction:" target="hXL-4j-51a" id="mKp-c7-C8y"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="EaT-Zt-PqX" userLabel="录像回放">
+                                    <rect key="frame" x="94" y="0.0" width="86" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TB_PLAYBACK Off" imagePosition="overlaps" alignment="center" alternateImage="TB_PLAYBACK On" imageScaling="proportionallyDown" inset="2" id="I7c-Nb-PMs">
+                                        <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="toggleViewAction:" target="hXL-4j-51a" id="GMH-DZ-o8Z"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="t8a-VQ-4W2" userLabel="NVR回放">
+                                    <rect key="frame" x="180" y="0.0" width="86" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TB_NVR_PB Off" imagePosition="overlaps" alignment="center" alternateImage="TB_NVR_PB On" imageScaling="proportionallyDown" inset="2" id="qjy-Li-Mnc">
+                                        <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="toggleViewAction:" target="hXL-4j-51a" id="eub-8B-kt4"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ovz-VD-QVk" userLabel="添加设备">
+                                    <rect key="frame" x="338" y="0.0" width="86" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Add_Device On" imagePosition="only" alignment="center" alternateImage="Add_Device Off" state="on" imageScaling="proportionallyDown" inset="2" id="hzE-S0-90R">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="addDevice:" target="hXL-4j-51a" id="LRt-tQ-gLG"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMH-yZ-HRi" userLabel="系统设置">
+                                    <rect key="frame" x="424" y="0.0" width="86" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TB_SYS Off" imagePosition="overlaps" alignment="center" alternateImage="TB_SYS On" state="on" imageScaling="proportionallyDown" inset="2" id="7Qj-KA-e8O">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="activePreferencePanel:" target="hXL-4j-51a" id="VKb-MX-aFu"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="tsb-U6-uyp" userLabel="日志查询">
+                                    <rect key="frame" x="510" y="0.0" width="86" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TB_LOG Off" imagePosition="overlaps" alignment="center" alternateImage="TB_LOG On" state="on" imageScaling="proportionallyDown" inset="2" id="jPh-tH-7Z2">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="viewLogs:" target="hXL-4j-51a" id="BDB-gg-bUL"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="ojx-RZ-4Ou" userLabel="用户登录">
+                                    <rect key="frame" x="596" y="0.0" width="86" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TB_USER Off" imagePosition="overlaps" alignment="center" alternateImage="TB_USER On" state="on" imageScaling="proportionallyDown" inset="2" id="hGi-hC-8Vu">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="toggleUser:" target="hXL-4j-51a" id="0Ga-26-OMS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </customView>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="DAE8EAFE-5890-40EA-BBF7-42FBB97E3156" label="Custom View" paletteLabel="Custom View" tag="-1" id="Qqp-2V-ffL" userLabel="Title View Right">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="163" height="83"/>
+                        <size key="maxSize" width="455" height="96"/>
+                        <customView key="view" id="5vl-Hf-rRH">
+                            <rect key="frame" x="0.0" y="14" width="455" height="83"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDG-WI-qPJ" userLabel="logo">
+                                    <rect key="frame" x="280" y="0.0" width="170" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="TB_LOGO" id="1yO-L6-bUo"/>
+                                </imageView>
+                                <levelIndicator verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-bN-aKi" userLabel="Disk Indicator">
+                                    <rect key="frame" x="46" y="9" width="170" height="16"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <levelIndicatorCell key="cell" alignment="left" doubleValue="40" maxValue="100" warningValue="80" criticalValue="100" levelIndicatorStyle="continuousCapacity" id="m3L-om-Mvg"/>
+                                </levelIndicator>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ivp-Le-Q3n">
+                                    <rect key="frame" x="0.0" y="35" width="38" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="CPU:" id="cqF-BO-W2N">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RQ0-j8-zhr">
+                                    <rect key="frame" x="-2" y="11" width="38" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="磁盘:" id="ZHg-qn-cZs">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G8T-lZ-Plb" userLabel="系统时间">
+                                    <rect key="frame" x="46" y="62" width="216" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="2016年8月3日 22:08:01" id="4HG-Xv-dWl">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <levelIndicator verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="scZ-sG-1yA" userLabel="Cpu Indicator">
+                                    <rect key="frame" x="46" y="36" width="170" height="16"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <levelIndicatorCell key="cell" alignment="left" doubleValue="60" maxValue="100" warningValue="80" criticalValue="100" levelIndicatorStyle="continuousCapacity" id="Xg6-6e-mzi"/>
+                                </levelIndicator>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5l-US-lhO" userLabel="cpu usage value">
+                                    <rect key="frame" x="225" y="36" width="49" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="%100" id="P5m-aF-BQC">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g3g-cY-dex" userLabel="disk usage value">
+                                    <rect key="frame" x="225" y="8" width="49" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="%100" id="JUL-6e-CJv">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </customView>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ZFn-8H-jZx"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="IGW-LE-Asg"/>
+                    <toolbarItem reference="ZFn-8H-jZx"/>
+                    <toolbarItem reference="Qqp-2V-ffL"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="hXL-4j-51a" id="Sz8-Fo-nvy"/>
+            </connections>
+            <point key="canvasLocation" x="459" y="290"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Add_Device Off" width="86" height="83"/>
+        <image name="Add_Device On" width="86" height="83"/>
+        <image name="TB_LOG Off" width="86" height="83"/>
+        <image name="TB_LOG On" width="86" height="83"/>
+        <image name="TB_LOGO" width="230" height="84"/>
+        <image name="TB_MONITORING Off" width="86" height="83"/>
+        <image name="TB_MONITORING On" width="86" height="83"/>
+        <image name="TB_NVR_PB Off" width="86" height="83"/>
+        <image name="TB_NVR_PB On" width="86" height="83"/>
+        <image name="TB_PLAYBACK Off" width="86" height="83"/>
+        <image name="TB_PLAYBACK On" width="86" height="83"/>
+        <image name="TB_SYS Off" width="86" height="83"/>
+        <image name="TB_SYS On" width="86" height="83"/>
+        <image name="TB_USER Off" width="86" height="83"/>
+        <image name="TB_USER On" width="86" height="83"/>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+
+/* Class = "NSButtonCell"; title = "删除"; ObjectID = "7RC-5U-ESO"; */
+"7RC-5U-ESO.title" = "Delete";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "完成"; ObjectID = "d07-JW-ibK"; */
+"d07-JW-ibK.title" = "Done";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "rii-0E-aID"; */
+"rii-0E-aID.title" = "Cancel";

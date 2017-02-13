@@ -1,0 +1,75 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "录像类型"; ObjectID = "2Zp-eW-Pcl"; */
+"2Zp-eW-Pcl.headerCell.title" = "录像类型";
+
+/* Class = "NSTableColumn"; headerCell.title = "设备名称"; ObjectID = "537-gC-p3c"; */
+"537-gC-p3c.headerCell.title" = "设备名称";
+
+/* Class = "NSTableColumn"; headerCell.title = "结束时间"; ObjectID = "6ja-Gi-Luv"; */
+"6ja-Gi-Luv.headerCell.title" = "结束时间";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "8P8-3H-VNz"; */
+"8P8-3H-VNz.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "总页数："; ObjectID = "AUq-hH-nzY"; */
+"AUq-hH-nzY.title" = "总页数：";
+
+/* Class = "NSWindow"; title = "下载"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "下载";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "FCb-kG-2bJ"; */
+"FCb-kG-2bJ.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "下载"; ObjectID = "Gvn-0e-ARt"; */
+"Gvn-0e-ARt.title" = "下载";
+
+/* Class = "NSTableColumn"; headerCell.title = "开始时间"; ObjectID = "Kl9-ak-kaF"; */
+"Kl9-ak-kaF.headerCell.title" = "开始时间";
+
+/* Class = "NSTextFieldCell"; title = "当前页："; ObjectID = "Liv-Ls-few"; */
+"Liv-Ls-few.title" = "当前页：";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "NW7-OS-X0N"; */
+"NW7-OS-X0N.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "目的路径："; ObjectID = "WUE-H0-pSA"; */
+"WUE-H0-pSA.title" = "目的路径：";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Wpa-SW-paU"; */
+"Wpa-SW-paU.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "序号"; ObjectID = "Ycu-ni-Bxh"; */
+"Ycu-ni-Bxh.headerCell.title" = "序号";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "eAw-JL-fNf"; */
+"eAw-JL-fNf.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ecV-B0-Pca"; */
+"ecV-B0-Pca.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "上一页"; ObjectID = "f5J-2V-ouz"; */
+"f5J-2V-ouz.title" = "上一页";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "hXS-hm-gD5"; */
+"hXS-hm-gD5.title" = "Label";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "i5i-Bo-okc"; */
+"i5i-Bo-okc.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "下一页"; ObjectID = "n5N-lU-Olv"; */
+"n5N-lU-Olv.title" = "下一页";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "n6N-ja-xEW"; */
+"n6N-ja-xEW.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "通道"; ObjectID = "q6u-4e-7Rz"; */
+"q6u-4e-7Rz.headerCell.title" = "通道";
+
+/* Class = "NSTableColumn"; headerCell.title = "下载进度"; ObjectID = "rod-2u-Pop"; */
+"rod-2u-Pop.headerCell.title" = "下载进度";
+
+/* Class = "NSTableColumn"; headerCell.title = "文件大小"; ObjectID = "xUI-M8-mX9"; */
+"xUI-M8-mX9.headerCell.title" = "文件大小";
+
+/* Class = "NSButtonCell"; title = "跳转"; ObjectID = "zXo-vw-Nss"; */
+"zXo-vw-Nss.title" = "跳转";

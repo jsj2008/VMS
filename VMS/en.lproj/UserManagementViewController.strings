@@ -1,0 +1,24 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "用户组"; ObjectID = "Jbl-O8-5LT"; */
+"Jbl-O8-5LT.headerCell.title" = "User Group";
+
+/* Class = "NSTableColumn"; headerCell.title = "备注"; ObjectID = "L4D-i3-NoT"; */
+"L4D-i3-NoT.headerCell.title" = "Remark";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "PGb-L2-fDb"; */
+"PGb-L2-fDb.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "RbY-5n-jfp"; */
+"RbY-5n-jfp.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "U7Y-oE-bU5"; */
+"U7Y-oE-bU5.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "用户名"; ObjectID = "oYU-S8-Mmb"; */
+"oYU-S8-Mmb.headerCell.title" = "Username";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "p3b-F5-FSv"; */
+"p3b-F5-FSv.headerCell.title" = "No";
+
+/* Class = "NSTextFieldCell"; title = "Text"; ObjectID = "w65-dw-R4G"; */
+"w65-dw-R4G.title" = "Text";

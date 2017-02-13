@@ -1,0 +1,63 @@
+
+/* Class = "NSTextFieldCell"; title = "用户名:"; ObjectID = "44m-S1-I7I"; */
+"44m-S1-I7I.title" = "用户名:";
+
+/* Class = "NSTextFieldCell"; title = "当前局域网中的IPC列表"; ObjectID = "5M5-hi-Itc"; */
+"5M5-hi-Itc.title" = "当前局域网中的IPC列表";
+
+/* Class = "NSButtonCell"; title = "删除"; ObjectID = "C8Q-0C-0Cn"; */
+"C8Q-0C-0Cn.title" = "删除";
+
+/* Class = "NSTextFieldCell"; title = "IP地址:"; ObjectID = "Fzx-da-OqG"; */
+"Fzx-da-OqG.title" = "IP地址:";
+
+/* Class = "NSTextFieldCell"; title = "无"; ObjectID = "K7R-MM-QMz"; */
+"K7R-MM-QMz.title" = "无";
+
+/* Class = "NSTextFieldCell"; title = "协议:"; ObjectID = "LTS-Dt-CkT"; */
+"LTS-Dt-CkT.title" = "协议:";
+
+/* Class = "NSTextFieldCell"; title = "注：如果需要从internet访问设备，请确保输入的主机和端口是能从internet访问到的"; ObjectID = "Qab-Zu-ZkI"; */
+"Qab-Zu-ZkI.title" = "注：如果需要从internet访问设备，请确保输入的主机和端口是能从internet访问到的";
+
+/* Class = "NSButtonCell"; title = "添加"; ObjectID = "RVJ-CU-pZU"; */
+"RVJ-CU-pZU.title" = "添加";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Rmr-Py-h8f"; */
+"Rmr-Py-h8f.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "Sf6-pW-dLQ"; */
+"Sf6-pW-dLQ.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "设备名称:"; ObjectID = "UK2-Yk-dnN"; */
+"UK2-Yk-dnN.title" = "设备名称:";
+
+/* Class = "NSMenuItem"; title = "FOSCAM"; ObjectID = "UWQ-M6-QMw"; */
+"UWQ-M6-QMw.title" = "FOSCAM";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "YDB-zG-WT0"; */
+"YDB-zG-WT0.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "刷新"; ObjectID = "bR6-lV-kKe"; */
+"bR6-lV-kKe.title" = "刷新";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "bay-rz-rEx"; */
+"bay-rz-rEx.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "ONVIF"; ObjectID = "dbP-v9-0UI"; */
+"dbP-v9-0UI.title" = "ONVIF";
+
+/* Class = "NSMenuItem"; title = "MJ"; ObjectID = "k17-k1-QCr"; */
+"k17-k1-QCr.title" = "MJ";
+
+/* Class = "NSButtonCell"; title = "自动搜索并连接设备"; ObjectID = "k8F-mE-TOJ"; */
+"k8F-mE-TOJ.title" = "自动搜索并连接设备";
+
+/* Class = "NSTextFieldCell"; title = "网页端口:"; ObjectID = "m1x-Sc-hCP"; */
+"m1x-Sc-hCP.title" = "网页端口:";
+
+/* Class = "NSTextFieldCell"; title = "密码:"; ObjectID = "mdh-I7-OQy"; */
+"mdh-I7-OQy.title" = "密码:";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "ssv-k9-2B9"; */
+"ssv-k9-2B9.title" = "Table View Cell";

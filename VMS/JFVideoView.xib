@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VideoViewController">
+            <connections>
+                <outlet property="alarm" destination="8Xi-Fs-2ae" id="R4F-nB-VAg"/>
+                <outlet property="close" destination="UBT-me-ClV" id="GEJ-6C-NuM"/>
+                <outlet property="listen" destination="VNZ-d2-RJZ" id="OWf-vD-Oef"/>
+                <outlet property="record" destination="96t-Ce-Fun" id="EjF-pW-uSR"/>
+                <outlet property="recording" destination="Hnz-3G-YDH" id="4UC-hb-eEy"/>
+                <outlet property="snap" destination="6e7-74-Nqx" id="z6N-Wd-XX6"/>
+                <outlet property="talk" destination="PiE-eo-VRH" id="g74-Pe-H1Y"/>
+                <outlet property="videoInfoTF" destination="AKD-M8-crA" id="wVh-5g-MFk"/>
+                <outlet property="videoStateTextField" destination="C7z-fE-Mgg" id="99d-9B-23n"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="viewIdTF" destination="c09-Nn-utO" id="JgT-Ro-6jc"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="349"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="AKD-M8-crA" userLabel="channelNameTF">
+                    <rect key="frame" x="83" y="0.0" width="93" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Labelasdfdf" drawsBackground="YES" id="elX-9l-dug">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="0.20950158490000001" blue="0.34279171019999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="录像" verticalHuggingPriority="750" tag="4" id="96t-Ce-Fun" userLabel="record">
+                    <rect key="frame" x="451" y="0.0" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Record Off" imagePosition="only" alignment="center" alternateImage="Record On" controlSize="small" enabled="NO" imageScaling="proportionallyDown" inset="2" id="ah6-77-nF2">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toolbarButtonClicked:" target="-2" id="OwG-Ys-Loo"/>
+                    </connections>
+                </button>
+                <button identifier="VIDEO_WND_TOOLBAR_SNAP" toolTip="声音" verticalHuggingPriority="750" tag="2" id="VNZ-d2-RJZ" userLabel="listen">
+                    <rect key="frame" x="387" y="0.0" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Sound Off" imagePosition="overlaps" alignment="center" alternateImage="Sound On" controlSize="mini" enabled="NO" imageScaling="proportionallyDown" inset="2" id="F6k-Sz-QIF">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="miniSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toolbarButtonClicked:" target="-2" id="k9s-gR-9kn"/>
+                    </connections>
+                </button>
+                <button toolTip="快照" verticalHuggingPriority="750" tag="1" id="6e7-74-Nqx" userLabel="snap">
+                    <rect key="frame" x="362" y="0.0" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Snap" imagePosition="only" alignment="center" controlSize="small" enabled="NO" state="on" imageScaling="proportionallyDown" inset="2" id="oUE-c2-EhS">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toolbarButtonClicked:" target="-2" id="B6Q-TR-3OR"/>
+                    </connections>
+                </button>
+                <button toolTip="录像状态" tag="6" id="Hnz-3G-YDH" userLabel="recording">
+                    <rect key="frame" x="338" y="0.0" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Recording Off" imagePosition="only" alignment="center" alternateImage="Recording On" enabled="NO" state="on" imageScaling="axesIndependently" inset="2" id="hIs-4C-ZPN">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button toolTip="对讲" verticalHuggingPriority="750" tag="3" id="PiE-eo-VRH" userLabel="talk">
+                    <rect key="frame" x="417" y="1" width="16" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Talk Off" imagePosition="overlaps" alignment="center" alternateImage="Talk On" imageScaling="proportionallyDown" sound="Ping" inset="2" id="noH-J5-xof">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toolbarButtonClicked:" target="-2" id="wPV-Ds-4Um"/>
+                    </connections>
+                </button>
+                <button toolTip="关闭" verticalHuggingPriority="750" tag="5" id="UBT-me-ClV" userLabel="close">
+                    <rect key="frame" x="308" y="1" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Shut_Down On" imagePosition="overlaps" alignment="center" alternateImage="Shut_Down Off" state="on" imageScaling="proportionallyDown" inset="2" id="JWz-2X-wTZ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toolbarButtonClicked:" target="-2" id="sOD-lu-p45"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="C7z-fE-Mgg" userLabel="video_state" customClass="JFTextField">
+                    <rect key="frame" x="186" y="166" width="115" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" id="eYp-cu-Rzj">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="c09-Nn-utO" userLabel="viewIdTF">
+                    <rect key="frame" x="2" y="1" width="48" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="窗口64" drawsBackground="YES" id="6Gh-Tm-uFj">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="0.20950158490000001" blue="0.34279171019999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="报警" verticalHuggingPriority="750" tag="7" id="8Xi-Fs-2ae" userLabel="alarm">
+                    <rect key="frame" x="283" y="3" width="16" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Alarm_On" imagePosition="only" alignment="center" alternateImage="Alarm_On" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="ms2-sQ-3pG">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="287.5" y="405.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Alarm_On" width="16" height="16"/>
+        <image name="Record Off" width="96" height="96"/>
+        <image name="Record On" width="96" height="96"/>
+        <image name="Recording Off" width="96" height="96"/>
+        <image name="Recording On" width="96" height="96"/>
+        <image name="Shut_Down Off" width="16" height="16"/>
+        <image name="Shut_Down On" width="96" height="96"/>
+        <image name="Snap" width="96" height="96"/>
+        <image name="Sound Off" width="96" height="96"/>
+        <image name="Sound On" width="96" height="96"/>
+        <image name="Talk Off" width="96" height="96"/>
+        <image name="Talk On" width="96" height="96"/>
+        <sound name="Ping"/>
+    </resources>
+</document>

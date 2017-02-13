@@ -1,0 +1,322 @@
+/* 
+  Localizable.strings
+  VMS
+
+  Created by mac_dev on 2016/10/12.
+  Copyright © 2016年 mac_dev. All rights reserved.
+*/
+//警告-MESSAGE
+"failed to get the settings" = "获取设置失败";
+"failed to set the settings" = "保存设置失败";
+"scan wifi failed" = "扫描Wifi失败";
+"failed to remove" = "移除失败";
+"failed to save cruise track" = "保存巡航轨迹失败";
+"failed to add" = "添加失败";
+"failed to factory reset" = "恢复出厂设置失败";
+"are you sure to restore the factory settings?" = "您确定要恢复出厂设置?";
+"failed to reboot" = "重启设备失败";
+"are you sure reboot now?" = "您确定要重启吗?";
+"failed to format the disk" = "格式化磁盘失败";
+"are you sure to format the disk?" = "您确定要格式化磁盘吗?";
+"set successful,please wait......" = "设置成功，请稍等......";
+"re login....." = "重新登录.....";
+"device reconnected" = "设备重新连接";
+"device is disconnected,being re connected......" = "设备已断线，重新连接中......";
+"please stop video playback" = "请停止录像回放";
+"failed to add device" = "添加设备失败";
+"the connection is not available" = "连接不可用";
+"the connection is available" = "连接可用";
+"Preset name can not be empty! Please re-enter" = "预置点名称不能为空! 请重新输入";
+"Downloading video files" = "正在下载录像文件";
+"Please stop downloading the video" = "请停止下载录像";
+"No files have been selected" = "尚未选择任何文件";
+"Patrol time out of range" = "轮巡时间超出范围";
+"Saving the schedule failed" = "保存计划失败";
+"Add user failed" = "添加用户失败";
+"Update user failed" = "更新用户失败";
+"The root user can not be modified" = "根用户不能被修改";
+"Are you sure you want to delete this user?" = "您确定删除该用户吗?";
+"Are you sure you want to remove all devices?" = "确定要移除所有设备吗?";
+"Are you sure you want to remove the device?" = "确定要移除设备吗?";
+"Are you sure you want to cancel the group?" = "确定要移除该组吗?";
+"Failed to add group" = "添加组失败";
+"Please stop playback" = "请停止录像回放";
+"Maximum support 4 channel playback" = "最大支持4路通道回放";
+"Please select device" = "请选择设备";
+"Please select type" = "请选择类型";
+//警告-INFO
+"time out" = "超时";
+"success" = "成功";
+"ip format error" = "IP格式错误";
+"invalid port" = "不合法的端口";
+"same port" = "相同的端口";
+"server format error" = "服务器地址格式错误";
+"the user id is empty" = "用户名为空";
+"usrename format error" = "用户名格式错误";
+"the password is empty" = "密码为空";
+"the uid is empty" = "uid 为空";
+"the mac address is empty" = "mac地址为空";
+"password format error" = "密码格式错误";
+"sender format error" = "发件人格式错误";
+"receiver format error" = "收件人格式错误";
+"the channel did not add ipc or does not support privacy masking" = "该通道缺少IPC或者不支持隐私遮盖";
+"snap interval is out of range" = "抓拍间隔超出范围";
+"empty filename" = "文件名为空";
+"the end time must be greater than the start time" = "结束时间必须大于起始时间";
+"maximum number of cruise path points exceeded" = "超过最大巡航路径点数";
+"two consecutive preset points can not be the same" = "连续两个预置点不能相同";
+"Unchecked" = "未选中";
+"invalid loops" = "不合法的圈数";
+"invalid cruise time" = "不合法的巡航时间(小于7天)";
+"empty cruise track name" = "巡航路径名为空";
+"The number of preset points of cruise path is less than 2" = "巡航路径预置点个数少于2";
+"default cruise track cannot be removed" = "默认地巡航路径";
+"Restore factory settings will cause the machine to reboot and restore user configuration information" = "恢复出厂设置将导致机器重启，并还原用户配置信息";
+"the device name is empty" = "用户名为空";
+"ip address is empty" = "ip地址为空";
+"username is empty" = "用户名为空";
+"please select a disk" = "请选择一个磁盘";
+"you will irretrievably lose all of the files in your disk if you format it!" = "格式化将丢失所有录像，确定后无法撤消";
+"unknow error" = "未知错误";
+"no error" = "没有错误";
+"user name is empty" = "用户名为空";
+"user name or password is incorrect" = "用户名或密码错误";
+"login failed" = "登录失败";
+"failed to modify login password" = "修改登录密码失败";
+"maximum number of users exceeded" = "超出最大用户数";
+"no permition" = "未许可";
+"unsupport" = "不支持";
+"buffer full" = "buffer 已满";
+"parameter error" = "参数错误";
+"no login" = "未登录";
+"the device is offline" = "设备离线";
+"access deny" = "访问被拒绝";
+"data parser error" = "数据解析出错";
+"user not exist" = "用户不存在";
+"system busy" = "系统繁忙";
+"need set password" = "需要设置密码";
+"locked" = "被锁定";
+"api timeout" = "api 超时";
+"interface cacel by user" = "交互被用户取消";
+"handle error" = "句柄错误";
+"New password format error! Password should be 6-12 numbers, letters, symbols combination(support~ ! @ # % ^ * ( ) _ + { } : \"| < > ? ` - ; ' \\ , . /)" = "新密码格式错误! 密码应为6至12位的字母、数字和字符的组合(支持~ ! @ # % ^ * ( ) _ + { } : \"| < > ? ` - ; ' \\ , . /)";
+"Username format error! The username can not be null and has a maximum length of 20, supporting numbers, letters, and symbols(support_ - @ $ *)" = "用户名 格式错误! 用户名不能为空并且最大长度为20(支持数字、字母及符号 _ - @ $ *)";
+"Confirm password is not same with new password" = "两次输入密码不一致";
+"the group name is empty" = "组名称为空";
+"there is no channel in the patrol group" = "轮巡组内无通道";
+"waiting time out of range" = "等待时间超出范围";
+"username exist" = "用户名已存在";
+"preset point does not exist" = "预置点不存在";
+"has been set to boot preset point" = "已被设置为开机预置点";
+"preset point already exists in cruise path" = "预置点已经存在于巡航路径中";
+"persistent error" = "持久化失败";
+//SETTING_LABEL
+"Device Information" = "设备信息";
+"Device Status" = "设备状态";
+"Device Name" = "设备名称";
+"Device Time" = "设备时间";
+"IP" = "IP";
+"Wireless" = "无线";
+"DDNS" = "DDNS";
+"Port" = "端口";
+"SMTP" = "邮件";
+"FTP" = "FTP";
+"P2P" = "P2P";
+"Network" = "网络";
+"Video Encode" = "编码参数";
+"OSD" = "OSD(屏幕显示)";
+"Privacy Zone" = "隐私遮盖";
+"Snap" = "抓拍";
+"Led Schedule" = "红外灯计划";
+"Led Mode" = "红外灯模式";
+"Color Adjustment" = "色彩调节";
+"Motion Detection" = "移动侦测";
+"Pan & Tilt Speed" = "云台速度";
+"Cruise Settings" = "巡航设置";
+"Start-Up Options" = "启动选项";
+"Factory Reset" = "恢复出厂设置";
+"Reboot" = "重启设备";
+"Schedule Record" = "计划录像";
+"Other Alarm" = "其它报警";
+"IP Camera Setup" = "IPC管理";
+"Hard Disk Information" = "磁盘信息";
+"Status" = "状态";
+"Basic Settings" = "基本设置";
+"Network" = "网络";
+"Video" = "视频";
+"Detector" = "侦测";
+"PTZ" = "云台";
+"System" = "系统";
+"Local Settings" = "本地设置";
+"Device Management" = "设备管理";
+"Service Configuration" = "业务配置";
+"System Management" = "系统管理";
+"General" = "通用";
+"Record Settings" = "录像设置";
+"Alarm Settings" = "报警设置";
+"Recording Schedule" = "录像计划";
+"Users and Groups" = "用户与群组";
+"Preferences" = "偏好设置";
+//STATUS
+"not connected" = "未连接";
+"connected" = "已连接";
+"disable" = "禁用";
+"update failed" = "更新失败";
+"update success" = "更新成功";
+"on" = "打开";
+"off" = "关闭";
+"no sd card" = "没有挂载SD卡";
+"sd card" = "有SD卡";
+"sd card read only" = "SD卡只读";
+"not recording" = "未录像";
+"recording" = "录像中";
+"detect alarm" = "检测到报警信号";
+"no alarm" = "没有检测到报警信号";
+
+//TIME ZONE NAME
+"(GMT -12:00) International Date Line West" = "(GMT -12:00)国际日期变更线以西";
+"(GMT -11:00) Midway Islands, Samoa Islands" = "(GMT -11:00) 中途岛，萨摩亚群岛";
+"(GMT -10:00) Hawaii" = "(GMT -10:00) 夏威夷";
+"(GMT -09:00) Alaska Standard" = "(GMT -09:00) 阿拉斯加标准";
+"(GMT -08:00) Pacific Standard(US and Canada)" = "(GMT -08:00) 太平洋标准（美国和加拿大）";
+"(GMT -07:00) Mountain Standard(US and Canada)" = "(GMT -07:00) 山地标准（美国和加拿大）";
+"(GMT -06:00) Central Standard(US and Canada), Mexico City" = "(GMT -06:00) 中部时间（美国和加拿大），墨西哥城";
+"(GMT -05:00) Eastern Standard(US and Canada), Lima, Bogota" = "(GMT -05:00) 东部时间（美国和加拿大），波哥大，利马";
+"(GMT -04:00) Atlantic Standard (Canada), Santiago, La Paz" = "(GMT -04:00) 大西洋标准（加拿大），拉巴斯，圣地亚哥";
+"(GMT -03:30) Newfoundland" = "(GMT -03:30) 纽芬兰";
+"(GMT -03:00) Brasilia, Buenos Aires, Georgetown" = "(GMT -03:00) 巴西利亚，布宜诺斯艾利斯，乔治敦";
+"(GMT -02:00) South Georgia I." = "(GMT -02:00) 南乔治亚一";
+"(GMT -01:00) Reykjavik" = "(GMT -01:00) 雷克雅未克";
+"(GMT) Greenwich mean time; London, Lisbon, Casablanca" =  "(GMT) 格林威治标准时间，伦敦，里斯本，卡萨布兰卡";
+"(GMT +01:00) Brussels, Paris, Berlin, Rome, Madrid, Stockholm, Beograd" = "(GMT +01:00) 布鲁塞尔，巴黎，柏林，罗马，马德里，斯德哥尔摩，贝尔格莱德";
+"(GMT +02:00) Athens, Jerusalem, Cairo, Helsinki" = "(GMT +02:00) 雅典，耶路撒冷，开罗，赫尔辛基";
+"(GMT +03:00) Nairobi, Riyadh, Moscow" = "(GMT +03:00) 利雅得，莫斯科，内罗毕";
+"(GMT +03:30) Tehran" = "(GMT +03:30) 德黑兰";
+"(GMT +04:00) Baku, Tbilisi, Abu Dhabi, Muscat" = "(GMT +04:00) 巴库，第比利斯，阿布扎比，马斯喀特";
+"(GMT +04:30) Kabul" = "(GMT +04:30) 喀布尔";
+"(GMT +05:00) Islamabad, Karachi, Tashkent" = "(GMT +05:00) 伊斯兰堡，卡拉奇，塔什干";
+"(GMT +05:30) Bombay, Calcutta, Madras, New Delhi" = "(GMT +05:30) 孟买，加尔各答，马德拉斯，新德里";
+"(GMT +06:00) Astana, Almaty, Dhaka, Colombo" = "(GMT +06:00) 阿斯塔纳，阿拉木图，达卡，科伦坡";
+"(GMT +07:00) Bangkok, Hanoi, Jakarta" = "(GMT +07:00) 曼谷，河内，雅加达";
+"(GMT +08:00) Beijing, Singapore, Taipei" = "(GMT +08:00) 北京，新加坡，台北";
+"(GMT +09:00) Seoul, Yakutsk, Tokyo" = "(GMT +09:00) 首尔，雅库茨克，东京";
+"(GMT +09:30) Darwin" = "(GMT +09:30) 达尔文";
+"(GMT +10:00) Guam, Melbourne, Sydney, Port Moresby, Vladivostok" = "(GMT +10:00) 关岛，墨尔本，悉尼，符拉迪沃斯托克，莫尔兹比港";
+"(GMT +11:00) Magadan, Solomon Islands, New Caledonia" = "(GMT +11:00) 马加丹，所罗门群岛，新喀里多尼亚";
+"(GMT +12:00) Auckland, Wellington, Fiji Islands" = "(GMT +12:00) 奥克兰，惠灵顿，斐济群岛";
+
+//DDNS-SERVER
+"oray" = "花生壳";
+
+//FTP-MODE
+"PASV" = "被动";
+"PORT" = "主动";
+
+//NETWORK-TYPE
+"DHCP" = "动态分配";
+"Static IP" = "手动设置";
+
+
+//VIDEO-SETTINS
+"Unknow Resolution type" = "未知地分辨率类型";
+"Rate Control Mode" = "码率控制模式";
+"Variable bitrate" = "是否可变码率";
+
+//MOTION-DETECTION
+"PC Sound" = "PC声音报警";
+"Camera Sound" = "铃声报警";
+"Send E-mail" = "发送邮件";
+"Take Snapshot" = "抓拍图片";
+"Record" = "录像";
+"Push message to the phone" = "推送至手机";
+"Buzzer" = "蜂鸣器";
+"IPC Buzzer" = "IPC 声音报警";
+"ZONE" = "区域";
+
+//PTZ-SPEED
+"Very fast" = "非常快";
+"Fast" = "快";
+"Normal" = "正常";
+"Slow" = "慢";
+"Very Slow" = "非常慢";
+
+//CRUISE
+"Cruise time" = "巡航时间";
+"Cruise loops" = "巡航圈数";
+"15 Minute" = "15分钟";
+"30 Minute" = "30分钟";
+"1 Hour" = "1小时";
+"2 Hour" = "2小时";
+"Unlimited" = "无限制";
+"Customized(unit：minute)" = "自定义(单位：分钟)";
+
+//START-UP-OPTION
+"Disable Start-Up" = "不自检";
+"Go to home position" = "正常启动";
+"Go to preset position" = "启动后到预置点";
+//TIME PICKER
+"ALL" = "全部";
+
+//OTHER ALARM TYPE
+"HDD Loss" = "磁盘丢失";
+"HDD Full" = "磁盘饱和";
+"HDD Error" = "磁盘出错";
+"Video Loss" = "视频丢失";
+"Network Exception" = "网络故障";
+
+//DISK INFOMATION
+"Stop Recording" = "停止录像";
+"Cover The Earliest Record" = "循环覆盖";
+"Unformatted" = "未格式化";
+"Video Disk" = "录像盘";
+"Backup Disk" = "备份盘";
+"SATA Hard Drive" = "SATA硬盘";
+"ESATA Hard Drive" = "ESATA硬盘";
+"USB Drive" = "U盘";
+"Available space" = "可用空间";
+//Login
+"Login" = "登入";
+"Logout" = "登出";
+"Unlock" = "解锁";
+
+//Search Device
+"devices found" = "台设备被搜索到";
+
+"Normal Record" = "常规录像";
+"Alarm Record" = "报警录像";
+
+"Donwload" = "下载";
+
+//Group Settings
+"New Group" = "新建组";
+
+//Outline view
+"Video Input Device" = "视频输入设备";
+
+//Video View Controller
+"no video" = "无视频";
+"connecting......" = "正在连接......";
+"lost connection" = "失去连接";
+"connect failed" = "连接失败";
+"capture success" = "抓拍成功";
+"capture failed" = "抓拍失败";
+"open intercom function failure" = "开启对讲功能失败";
+"view" = "窗口";
+//Common
+"Channel" = "通道";
+"None" = "无";
+"Please wait......" = "请等待......";
+"Failed" = "失败";
+"Yes" = "是";
+"No" = "否";
+"OK" = "确定";
+"Done" = "完成";
+"Cancel" = "取消";
+"Days" = "天";
+"Hours" = "小时";
+"Minutes" = "分钟";
+
+
+"admin" = "admin";
+"operator" = "operator";
+"guest" = "guest";

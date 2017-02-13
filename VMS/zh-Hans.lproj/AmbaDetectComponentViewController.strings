@@ -1,0 +1,27 @@
+
+/* Class = "NSButtonCell"; title = "启用"; ObjectID = "Hzx-Qu-czN"; */
+"Hzx-Qu-czN.title" = "启用";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "K6e-Hx-imh"; */
+"K6e-Hx-imh.title" = "Label";
+
+/* Class = "NSTextFieldCell"; title = "灵敏度："; ObjectID = "ScC-bQ-d7j"; */
+"ScC-bQ-d7j.title" = "灵敏度：";
+
+/* Class = "NSMenuItem"; title = "很低"; ObjectID = "VMA-5q-aQV"; */
+"VMA-5q-aQV.title" = "很低";
+
+/* Class = "NSMenuItem"; title = "低"; ObjectID = "Xww-BS-sBc"; */
+"Xww-BS-sBc.title" = "低";
+
+/* Class = "NSMenuItem"; title = "高"; ObjectID = "kJb-43-wu8"; */
+"kJb-43-wu8.title" = "高";
+
+/* Class = "NSBox"; title = "Title"; ObjectID = "rsG-7L-Q76"; */
+"rsG-7L-Q76.title" = "Title";
+
+/* Class = "NSMenuItem"; title = "中"; ObjectID = "tA8-9s-bif"; */
+"tA8-9s-bif.title" = "中";
+
+/* Class = "NSMenuItem"; title = "较低"; ObjectID = "uWg-sc-fbc"; */
+"uWg-sc-fbc.title" = "较低";

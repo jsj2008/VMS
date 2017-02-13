@@ -1,0 +1,102 @@
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "0Es-Un-ea8"; */
+"0Es-Un-ea8.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "190-hC-QXT"; */
+"190-hC-QXT.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "预设点："; ObjectID = "3Mi-ha-gh8"; */
+"3Mi-ha-gh8.title" = "Preset point:";
+
+/* Class = "NSButtonCell"; title = "保存"; ObjectID = "3ox-d6-ww5"; */
+"3ox-d6-ww5.title" = "Save";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "4Ff-eV-8dx"; */
+"4Ff-eV-8dx.title" = "Item 1";
+
+/* Class = "NSButtonCell"; title = "确定"; ObjectID = "4lJ-fo-1WJ"; */
+"4lJ-fo-1WJ.title" = "OK";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "6hK-dY-NGU"; */
+"6hK-dY-NGU.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "圈"; ObjectID = "BTr-jY-xRD"; */
+"BTr-jY-xRD.title" = "loops";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "E2O-fn-QH0"; */
+"E2O-fn-QH0.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "GS0-g5-U3T"; */
+"GS0-g5-U3T.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "GhA-xk-2SC"; */
+"GhA-xk-2SC.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "JZR-BP-NKo"; */
+"JZR-BP-NKo.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "巡航路径："; ObjectID = "NNa-kv-Y62"; */
+"NNa-kv-Y62.title" = "Cruise Tracks:";
+
+/* Class = "NSTextFieldCell"; title = "巡航圈数："; ObjectID = "NSh-gT-5pb"; */
+"NSh-gT-5pb.title" = "Cruise Loops:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "OQa-b8-8wf"; */
+"OQa-b8-8wf.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = ">>"; ObjectID = "QIs-as-dqa"; */
+"QIs-as-dqa.title" = ">>";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "TG0-zj-Lau"; */
+"TG0-zj-Lau.title" = "Item 3";
+
+/* Class = "NSTableColumn"; headerCell.title = "名称"; ObjectID = "Upa-HN-09m"; */
+"Upa-HN-09m.headerCell.title" = "name";
+
+/* Class = "NSTextFieldCell"; title = "通道："; ObjectID = "YMM-bq-gJk"; */
+"YMM-bq-gJk.title" = "Channel:";
+
+/* Class = "NSTextFieldCell"; title = "巡航时间："; ObjectID = "air-B4-T5F"; */
+"air-B4-T5F.title" = "Cruise time:";
+
+/* Class = "NSTableColumn"; headerCell.title = "停留时间(s)"; ObjectID = "blE-lh-tcC"; */
+"blE-lh-tcC.headerCell.title" = "Dwell time(s)";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "fuj-au-6mS"; */
+"fuj-au-6mS.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "删除"; ObjectID = "hYs-J1-otr"; */
+"hYs-J1-otr.title" = "Delete";
+
+/* Class = "NSTextFieldCell"; title = "名字最大长度为20,支持英文、数字、字母及符号_-"; ObjectID = "kMx-Fm-3yR"; */
+"kMx-Fm-3yR.title" = "The maximum length of name is 20.supports English,numbers,letters and symbols _-";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "lZD-zh-hnT"; */
+"lZD-zh-hnT.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "okR-25-kfb"; */
+"okR-25-kfb.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "pmg-Ha-wDt"; */
+"pmg-Ha-wDt.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "增加"; ObjectID = "t2E-no-Kg1"; */
+"t2E-no-Kg1.title" = "Add";
+
+/* Class = "NSTextFieldCell"; title = "巡航模式："; ObjectID = "tif-yR-0tr"; */
+"tif-yR-0tr.title" = "Cruise Mode:";
+
+/* Class = "NSTableColumn"; headerCell.title = "预制点"; ObjectID = "uyh-v2-yge"; */
+"uyh-v2-yge.headerCell.title" = "Preset point";
+
+/* Class = "NSButtonCell"; title = "保存"; ObjectID = "vax-Le-4Ek"; */
+"vax-Le-4Ek.title" = "Save";
+
+/* Class = "NSTextFieldCell"; title = "巡航路径："; ObjectID = "wNx-SI-EzI"; */
+"wNx-SI-EzI.title" = "Cruise track:";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "zIn-RH-mfk"; */
+"zIn-RH-mfk.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "zS4-XH-2dZ"; */
+"zS4-XH-2dZ.title" = "Text Cell";

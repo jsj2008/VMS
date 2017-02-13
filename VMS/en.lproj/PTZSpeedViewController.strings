@@ -1,0 +1,24 @@
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "18d-Xt-RHg"; */
+"18d-Xt-RHg.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "通道："; ObjectID = "XPP-86-mzw"; */
+"XPP-86-mzw.title" = "Channel:";
+
+/* Class = "NSTextFieldCell"; title = "PTZ速度："; ObjectID = "ZJA-KC-bVK"; */
+"ZJA-KC-bVK.title" = "Pan & Tilt Speed:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "ZqJ-op-ZZb"; */
+"ZqJ-op-ZZb.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "cQr-Ru-QXB"; */
+"cQr-Ru-QXB.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "u0g-CV-nze"; */
+"u0g-CV-nze.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "vMN-70-5BN"; */
+"vMN-70-5BN.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "wMF-NI-sui"; */
+"wMF-NI-sui.title" = "Item 1";

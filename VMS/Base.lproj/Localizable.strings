@@ -1,0 +1,324 @@
+/*
+ Localizable.strings
+ VMS
+ 
+ Created by mac_dev on 2016/10/12.
+ Copyright © 2016年 mac_dev. All rights reserved.
+ */
+//警告-MESSAGE
+"failed to get the settings" = "failed to get the settings";
+"failed to set the settings" = "failed to set the settings";
+"scan wifi failed" = "scan wifi failed";
+"failed to remove" = "failed to remove";
+"failed to save cruise track" = "failed to save cruise track";
+"failed to add" = "failed to add";
+"failed to factory reset" = "failed to factory reset";
+"are you sure to restore the factory settings?" = "are you sure to restore the factory settings?";
+"failed to reboot" = "failed to reboot";
+"are you sure reboot now?" = "are you sure reboot now?";
+"failed to format the disk" = "failed to format the disk";
+"are you sure to format the disk?" = "are you sure to format the disk?";
+"set successful,please wait......" = "set successful,please wait......";
+"re login....." = "re login.....";
+"device reconnected" = "device reconnected";
+"device is disconnected,being re connected......" = "device is disconnected,being re connected......";
+"please stop video playback" = "please stop video playback";
+"failed to add device" = "failed to add device";
+"the connection is not available" = "the connection is not available";
+"the connection is available" = "the connection is available";
+"Preset name can not be empty! Please re-enter" = "Preset name can not be empty! Please re-enter";
+"Downloading video files" = "Downloading video files";
+"Please stop downloading the video" = "Please stop downloading the video";
+"No files have been selected" = "No files have been selected";
+"Patrol time out of range" = "Patrol time out of range";
+"Saving the schedule failed" = "Saving the schedule failed";
+"Add user failed" = "Add user failed";
+"Update user failed" = "Update user failed";
+"The root user can not be modified" = "The root user can not be modified";
+"Are you sure you want to delete this user?" = "Are you sure you want to delete this user?";
+"Are you sure you want to remove all devices?" = "Are you sure you want to remove all devices?";
+"Are you sure you want to remove the device?" = "Are you sure you want to remove the device?";
+"Are you sure you want to cancel the group?" = "Are you sure you want to cancel the group?";
+"Failed to add group" = "Failed to add group";
+"Please stop playback" = "Please stop playback";
+"Maximum support 4 channel playback" = "Maximum support 4 channel playback";
+"Please select device" = "Please select device";
+"Please select type" = "Please select type";
+//警告-INFO
+"time out" = "timeout";
+"success" = "success";
+"ip format error" = "ip format error";
+"invalid port" = "invalid port";
+"same port" = "same port";
+"server format error" = "server format error";
+"the user id is empty" = "the user id is empty";
+"usrename format error" = "usrename format error";
+"the password is empty" = "the password is empty";
+"the uid is empty" = "the uid is empty";
+"the mac address is empty" = "the mac address is empty";
+"password format error" = "password format error";
+"sender format error" = "sender format error";
+"receiver format error" = "receiver format error";
+"the channel did not add ipc or does not support privacy masking" = "the channel did not add ipc or does not support privacy masking";
+"snap interval is out of range" = "snap interval is out of range";
+"empty filename" = "empty filename";
+"the end time must be greater than the start time" = "the end time must be greater than the start time";
+"maximum number of cruise path points exceeded" = "maximum number of cruise path points exceeded";
+"two consecutive preset points can not be the same" = "two consecutive preset points can not be the same";
+"Unchecked" = "Unchecked";
+"invalid loops" = "invalid loops";
+"invalid cruise time" = "invalid cruise time(less than 7 days)";
+"empty cruise track name" = "empty cruise track name";
+"The number of preset points of cruise path is less than 2" = "The number of preset points of cruise path is less than 2";
+"default cruise track cannot be removed" = "default cruise track cannot be removed";
+"Restore factory settings will cause the machine to reboot and restore user configuration information" = "Restore factory settings will cause the machine to reboot and restore user configuration information";
+"the device name is empty" = "the device name is empty";
+"ip address is empty" = "ip address is empty";
+"username is empty" = "username is empty";
+"please select a disk" = "please select a disk";
+"you will irretrievably lose all of the files in your disk if you format it!" = "you will irretrievably lose all of the files in your disk if you format it!";
+"user name is empty" = "user name is empty";
+"user name or password is incorrect" = "user name or password is incorrect";
+"login failed" = "login failed";
+"failed to modify login password" = "failed to modify login password";
+"unknow error" = "unknow error";
+"no error" = "no error";
+"maximum number of users exceeded" = "maximum number of users exceeded";
+"no permition" = "no permition";
+"unsupport" = "unsupport";
+"buffer full" = "buffer full";
+"parameter error" = "parameter error";
+"no login" = "no login";
+"the device is offline" = "the device is offline";
+"access deny" = "access deny";
+"data parser error" = "data parser error";
+"user not exist" = "user not exist";
+"system busy" = "system busy";
+"need set password" = "need set password";
+"locked" = "locked";
+"api timeout" = "api timeout";
+"interface cacel by user" = "interface cacel by user";
+"handle error" = "handle error";
+"New password format error! Password should be 6-12 numbers, letters, symbols combination(support~ ! @ # % ^ * ( ) _ + { } : \"| < > ? ` - ; ' \\ , . /)" = "New password format error! Password should be 6-12 numbers, letters, symbols combination(support~ ! @ # % ^ * ( ) _ + { } : \"| < > ? ` - ; ' \\ , . /)";
+"Username format error! The username can not be null and has a maximum length of 20, supporting numbers, letters, and symbols(support_ - @ $ *)" = "Username format error! The username can not be null and has a maximum length of 20, supporting numbers, letters, and symbols(support_ - @ $ *)";
+"Confirm password is not same with new password" = "Confirm password is not same with new password";
+"the group name is empty" = "the group name is empty";
+"there is no channel in the patrol group" = "there is no channel in the patrol group";
+"waiting time out of range" = "waiting time out of range";
+"username exist" = "username exist";
+"preset point does not exist" = "preset point does not exist";
+"has been set to boot preset point" = "has been set to boot preset point";
+"preset point already exists in cruise path" = "preset point already exists in cruise path";
+"persistent error" = "persistent error";
+//SETTING_LABEL
+"Device Information" = "Device Information";
+"Device Status" = "Device Status";
+"Device Name" = "Device Name";
+"Device Time" = "Device Time";
+"IP" = "IP";
+"Wireless" = "Wireless";
+"DDNS" = "DDNS";
+"Port" = "Port";
+"SMTP" = "SMTP";
+"FTP" = "FTP";
+"P2P" = "P2P";
+"Network" = "Network";
+"Video Encode" = "Video Encode";
+"OSD" = "OSD";
+"Privacy Zone" = "Privacy Zone";
+"Snap" = "Snap";
+"Led Schedule" = "Led Schedule";
+"Led Mode" = "Led Mode";
+"Color Adjustment" = "Color Adjustment";
+"Motion Detection" = "Motion Detection";
+"Pan & Tilt Speed" = "Pan & Tilt Speed";
+"Cruise Settings" = "Cruise Settings";
+"Start-Up Options" = "Start-Up Options";
+"Factory Reset" = "Factory Reset";
+"Reboot" = "Reboot";
+"Schedule Record" = "Schedule Record";
+"Other Alarm" = "Other Alarm";
+"IP Camera Setup" = "IP Camera Setup";
+"Hard Disk Information" = "Hard Disk Information";
+"Status" = "Status";
+"Basic Settings" = "Basic Settings";
+"Network" = "Network";
+"Video" = "Video";
+"Detector" = "Detector";
+"PTZ" = "PTZ";
+"System" = "System";
+"Local Settings" = "Local Settings";
+"Device Management" = "Device Management";
+"Service Configuration" = "Service Configuration";
+"System Management" = "System Management";
+"General" = "General";
+"Record Settings" = "Record Settings";
+"Alarm Settings" = "Alarm Settings";
+"Recording Schedule" = "Recording Schedule";
+"Users and Groups" = "Users and Groups";
+"Preferences" = "Preferences";
+//STATUS
+"not connected" = "not connected";
+"connected" = "connected";
+"disable" = "disable";
+"update failed" = "update failed";
+"update success" = "update success";
+"on" = "on";
+"off" = "off";
+"no sd card" = "no sd card";
+"sd card" = "sd card";
+"sd card read only" = "sd card read only";
+"not recording" = "not recording";
+"recording" = "recording";
+"detect alarm" = "detect alarm";
+"no alarm" = "no alarm";
+
+//TIME ZONE NAME
+"(GMT -12:00) International Date Line West" = "(GMT -12:00) International Date Line West";
+"(GMT -11:00) Midway Islands, Samoa Islands" = "(GMT -11:00) Midway Islands, Samoa Islands";
+"(GMT -10:00) Hawaii" = "(GMT -10:00) Hawaii";
+"(GMT -09:00) Alaska Standard" = "(GMT -09:00) Alaska Standard";
+"(GMT -08:00) Pacific Standard(US and Canada)" = "(GMT -08:00) Pacific Standard(US and Canada)";
+"(GMT -07:00) Mountain Standard(US and Canada)" = "(GMT -07:00) Mountain Standard(US and Canada)";
+"(GMT -06:00) Central Standard(US and Canada), Mexico City" = "(GMT -06:00) Central Standard(US and Canada), Mexico City";
+"(GMT -05:00) Eastern Standard(US and Canada), Lima, Bogota" = "(GMT -05:00) Eastern Standard(US and Canada), Lima, Bogota";
+"(GMT -04:00) Atlantic Standard (Canada), Santiago, La Paz" = "(GMT -04:00) Atlantic Standard (Canada), Santiago, La Paz";
+"(GMT -03:30) Newfoundland" = "(GMT -03:30) Newfoundland";
+"(GMT -03:00) Brasilia, Buenos Aires, Georgetown" = "(GMT -03:00) Brasilia, Buenos Aires, Georgetown";
+"(GMT -02:00) South Georgia I." = "(GMT -02:00) South Georgia I.";
+"(GMT -01:00) Reykjavik" = "(GMT -01:00) Reykjavik";
+"(GMT) Greenwich mean time; London, Lisbon, Casablanca" =  "(GMT) Greenwich mean time; London, Lisbon, Casablanca";
+"(GMT +01:00) Brussels, Paris, Berlin, Rome, Madrid, Stockholm, Beograd" = "(GMT +01:00) Brussels, Paris, Berlin, Rome, Madrid, Stockholm, Beograd";
+"(GMT +02:00) Athens, Jerusalem, Cairo, Helsinki" = "(GMT +02:00) Athens, Jerusalem, Cairo, Helsinki";
+"(GMT +03:00) Nairobi, Riyadh, Moscow" = "(GMT +03:00) Nairobi, Riyadh, Moscow";
+"(GMT +03:30) Tehran" = "(GMT +03:30) Tehran";
+"(GMT +04:00) Baku, Tbilisi, Abu Dhabi, Muscat" = "(GMT +04:00) Baku, Tbilisi, Abu Dhabi, Muscat";
+"(GMT +04:30) Kabul" = "(GMT +04:30) Kabul";
+"(GMT +05:00) Islamabad, Karachi, Tashkent" = "(GMT +05:00) Islamabad, Karachi, Tashkent";
+"(GMT +05:30) Bombay, Calcutta, Madras, New Delhi" = "(GMT +05:30) Bombay, Calcutta, Madras, New Delhi";
+"(GMT +06:00) Astana, Almaty, Dhaka, Colombo" = "(GMT +06:00) Astana, Almaty, Dhaka, Colombo";
+"(GMT +07:00) Bangkok, Hanoi, Jakarta" = "(GMT +07:00) Bangkok, Hanoi, Jakarta";
+"(GMT +08:00) Beijing, Singapore, Taipei" = "(GMT +08:00) Beijing, Singapore, Taipei";
+"(GMT +09:00) Seoul, Yakutsk, Tokyo" = "(GMT +09:00) Seoul, Yakutsk, Tokyo";
+"(GMT +09:30) Darwin" = "(GMT +09:30) Darwin";
+"(GMT +10:00) Guam, Melbourne, Sydney, Port Moresby, Vladivostok" = "(GMT +10:00) Guam, Melbourne, Sydney, Port Moresby, Vladivostok";
+"(GMT +11:00) Magadan, Solomon Islands, New Caledonia" = "(GMT +11:00) Magadan, Solomon Islands, New Caledonia";
+"(GMT +12:00) Auckland, Wellington, Fiji Islands" = "(GMT +12:00) Auckland, Wellington, Fiji Islands";
+
+//DDNS-SERVER
+"oray" = "oray";
+
+//FTP-MODE
+"PASV" = "PASV";
+"PORT" = "PORT";
+
+//NETWORK-TYPE
+"DHCP" = "DHCP";
+"Static IP" = "Static IP";
+
+//RESOLUTION-TYPE
+"Unknow Resolution type" = "Unknow Resolution type";
+"Rate Control Mode" = "Rate Control Mode";
+"Variable bitrate" = "Variable bitrate";
+
+//MOTION-DETECTION
+"PC Sound" = "PC Sound";
+"Camera Sound" = "Camera Sound";
+"Send E-mail" = "Send E-mail";
+"Take Snapshot" = "Take Snapshot";
+"Record" = "Record";
+"Push message to the phone" = "Push message to the phone";
+"Buzzer" = "Buzzer";
+"IPC Buzzer" = "IPC Buzzer";
+"ZONE" = "Zone";
+
+//PTZ-SPEED
+"Very fast" = "Very fast";
+"Fast" = "Fast";
+"Normal" = "Normal";
+"Slow" = "Slow";
+"Very Slow" = "Very Slow";
+
+//CRUISE
+"Cruise time" = "Cruise time";
+"Cruise loops" = "Cruise loops";
+"15 Minute" = "15 Minute";
+"30 Minute" = "30 Minute";
+"1 Hour" = "1 Hour";
+"2 Hour" = "2 Hour";
+"Unlimited" = "Unlimited";
+"Customized(unit：minute)" = "Customized(unit：minute)";
+
+//START-UP-OPTION
+"Disable Start-Up" = "Disable Start-Up";
+"Go to home position" = "Go to home position";
+"Go to preset position" = "Go to preset position";
+
+//OTHER ALARM TYPE
+"HDD Loss" = "HDD Loss";
+"HDD Full" = "HDD Full";
+"HDD Error" = "HDD Error";
+"Video Loss" = "Video Loss";
+"Network Exception" = "Network Exception";
+
+
+//TIME PICKER
+"ALL" = "ALL";
+
+//DISK INFOMATION
+"Stop Recording" = "Stop Recording";
+"Cover The Earliest Record" = "Cover The Earliest Record";
+"Unformatted" = "Unformatted";
+"Recording" = "Recording";
+"Video Disk" = "Video Disk";
+"Backup Disk" = "Backup Disk";
+"SATA Hard Drive" = "SATA Hard Drive";
+"ESATA Hard Drive" = "ESATA Hard Drive";
+"USB Drive" = "USB Drive";
+"Available space" = "Available space";
+//Login
+"Login" = "Login";
+"Logout" = "Logout";
+"Unlock" = "Unlock";
+
+//Search Device
+"devices found" = "devices found";
+
+"Normal Record" = "Normal Record";
+"Alarm Record" = "Alarm Record";
+
+//Download
+"Donwload" = "Donwload";
+
+//Group Settings
+"New Group" = "New Group";
+
+//Outline view
+"Video Input Device" = "Video Input Device";
+
+//Video View Controller
+"no video" = "no video";
+"connecting......" = "connecting......";
+"lost connection" = "lost connection";
+"connect failed" = "connect failed";
+"capture success" = "capture success";
+"capture failed" = "capture failed";
+"open intercom function failure" = "open intercom function failure";
+"view" = "view";
+//Common
+"Channel" = "Channel";
+"None" = "None";
+"Please wait......" = "Please wait......";
+"Failed" = "Failed";
+"Yes" = "Yes";
+"No" = "No";
+"OK" = "OK";
+"Done" = "Done";
+"Cancel" = "Cancel";
+"Days" = "Days";
+"Hours" = "Hours";
+"Minutes" = "Minutes";
+
+"admin" = "admin";
+"operator" = "operator";
+"guest" = "guest";

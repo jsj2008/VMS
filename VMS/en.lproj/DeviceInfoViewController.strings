@@ -1,0 +1,42 @@
+
+/* Class = "NSTextFieldCell"; title = "系统固件版本:"; ObjectID = "1nZ-2a-g54"; */
+"1nZ-2a-g54.title" = "System Firmware Version:";
+
+/* Class = "NSTextFieldCell"; title = "应用固件版本:"; ObjectID = "2uV-bq-2eM"; */
+"2uV-bq-2eM.title" = "Application Firmware Version:";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "4Tf-ez-2Jc"; */
+"4Tf-ez-2Jc.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "5QW-Ob-c53"; */
+"5QW-Ob-c53.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "8Xd-GI-Udo"; */
+"8Xd-GI-Udo.title" = "";
+
+/* Class = "NSTextFieldCell"; title = "UID:"; ObjectID = "AWU-WC-Fjo"; */
+"AWU-WC-Fjo.title" = "UID:";
+
+/* Class = "NSTextFieldCell"; title = "设备名称:"; ObjectID = "NYc-6D-bOW"; */
+"NYc-6D-bOW.title" = "Device Name:";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "Vci-B5-3ic"; */
+"Vci-B5-3ic.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "d6j-4B-Z7t"; */
+"d6j-4B-Z7t.title" = "";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "hZX-b6-hyN"; */
+"hZX-b6-hyN.title" = "";
+
+/* Class = "NSTextFieldCell"; title = "Mac地址:"; ObjectID = "iHg-Id-Cqo"; */
+"iHg-Id-Cqo.title" = "Device ID:";
+
+/* Class = "NSTextFieldCell"; title = "设备时间:"; ObjectID = "jan-bw-QvL"; */
+"jan-bw-QvL.title" = "Device Time:";
+
+/* Class = "NSTextFieldCell"; title = ""; ObjectID = "maP-3O-s0w"; */
+"maP-3O-s0w.title" = "";
+
+/* Class = "NSTextFieldCell"; title = "机种名称:"; ObjectID = "qIg-1J-ub1"; */
+"qIg-1J-ub1.title" = "Device Modal:";

@@ -1,0 +1,57 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "设备名称"; ObjectID = "2jZ-5i-Zoo"; */
+"2jZ-5i-Zoo.headerCell.title" = "Device Name";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "530-fy-bLH"; */
+"530-fy-bLH.headerCell.title" = "No";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "7Ou-4B-lDe"; */
+"7Ou-4B-lDe.headerCell.title" = "No";
+
+/* Class = "NSTextFieldCell"; title = "轮巡设备列表"; ObjectID = "8L1-pa-lgM"; */
+"8L1-pa-lgM.title" = "Patrol List";
+
+/* Class = "NSButtonCell"; title = ">>"; ObjectID = "Ahu-3I-X2F"; */
+"Ahu-3I-X2F.title" = ">>";
+
+/* Class = "NSTextFieldCell"; title = "轮巡组名称："; ObjectID = "Au7-6F-Dea"; */
+"Au7-6F-Dea.title" = "Group Name:";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "C4o-1K-oob"; */
+"C4o-1K-oob.title" = "Cancel";
+
+/* Class = "NSWindow"; title = "新建轮巡组"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "New Patrol Group";
+
+/* Class = "NSTextFieldCell"; title = "设备列表"; ObjectID = "Hz1-ZB-fz6"; */
+"Hz1-ZB-fz6.title" = "Device List";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "LZT-Zv-7ii"; */
+"LZT-Zv-7ii.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "TWz-0u-bEJ"; */
+"TWz-0u-bEJ.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Vpf-LG-ZhB"; */
+"Vpf-LG-ZhB.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = " 等待时间"; ObjectID = "XiN-fq-M8b"; */
+"XiN-fq-M8b.headerCell.title" = "Wait time";
+
+/* Class = "NSTextFieldCell"; title = "合理的停留时间范围是5~3600s"; ObjectID = "abp-tk-1Gb"; */
+"abp-tk-1Gb.title" = "valid wait time range is 5~3600s";
+
+/* Class = "NSTableColumn"; headerCell.title = "设备名称"; ObjectID = "afX-Xa-Fdj"; */
+"afX-Xa-Fdj.headerCell.title" = "Device Name";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "h4R-ax-FP6"; */
+"h4R-ax-FP6.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "kUY-Sa-ncM"; */
+"kUY-Sa-ncM.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "<<"; ObjectID = "kvE-xn-R0D"; */
+"kvE-xn-R0D.title" = "<<";
+
+/* Class = "NSButtonCell"; title = "完成"; ObjectID = "sek-yw-gY5"; */
+"sek-yw-gY5.title" = "Done";

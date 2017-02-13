@@ -1,0 +1,171 @@
+
+/* Class = "NSTextFieldCell"; title = "分"; ObjectID = "0or-o5-9f3"; */
+"0or-o5-9f3.title" = "m";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "1ad-7n-kMA"; */
+"1ad-7n-kMA.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "2VX-im-OfA"; */
+"2VX-im-OfA.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "分"; ObjectID = "3l9-cW-QlH"; */
+"3l9-cW-QlH.title" = "m";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "5m8-VC-waX"; */
+"5m8-VC-waX.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "6dW-90-age"; */
+"6dW-90-age.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "7e8-mQ-puW"; */
+"7e8-mQ-puW.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "时"; ObjectID = "8Py-Vm-WIL"; */
+"8Py-Vm-WIL.title" = "h";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "8hK-c1-iqm"; */
+"8hK-c1-iqm.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "9EL-NQ-aOL"; */
+"9EL-NQ-aOL.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "AtS-zA-D7T"; */
+"AtS-zA-D7T.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Buf-19-PVM"; */
+"Buf-19-PVM.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "DKg-f3-dYy"; */
+"DKg-f3-dYy.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "DeN-Lq-37o"; */
+"DeN-Lq-37o.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "EDO-b9-iO0"; */
+"EDO-b9-iO0.title" = "Item 2";
+
+/* Class = "NSBox"; title = "红外灯定时设置"; ObjectID = "ELe-Ex-ljE"; */
+"ELe-Ex-ljE.title" = "IR LED Schedule";
+
+/* Class = "NSButtonCell"; title = "计划3:"; ObjectID = "FCy-gV-Jk8"; */
+"FCy-gV-Jk8.title" = "Schedule3:";
+
+/* Class = "NSTextFieldCell"; title = "分"; ObjectID = "G0A-8y-d1p"; */
+"G0A-8y-d1p.title" = "m";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Gm6-6x-hrU"; */
+"Gm6-6x-hrU.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Iz5-tW-e24"; */
+"Iz5-tW-e24.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "KfZ-aU-xNp"; */
+"KfZ-aU-xNp.title" = "Item 1";
+
+/* Class = "NSButtonCell"; title = "计划1:"; ObjectID = "KmZ-9b-Ayc"; */
+"KmZ-9b-Ayc.title" = "Schedule1:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "N7t-UK-gI4"; */
+"N7t-UK-gI4.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Occ-5c-QBW"; */
+"Occ-5c-QBW.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "时"; ObjectID = "QV7-PP-87R"; */
+"QV7-PP-87R.title" = "h";
+
+/* Class = "NSTextFieldCell"; title = "分"; ObjectID = "QlH-6S-05Z"; */
+"QlH-6S-05Z.title" = "m";
+
+/* Class = "NSTextFieldCell"; title = "时"; ObjectID = "RBx-LG-sEZ"; */
+"RBx-LG-sEZ.title" = "h";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "RRc-xK-CXA"; */
+"RRc-xK-CXA.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "RTw-TX-Ifz"; */
+"RTw-TX-Ifz.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "SFh-UZ-Eoj"; */
+"SFh-UZ-Eoj.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "分"; ObjectID = "Spd-9z-YCy"; */
+"Spd-9z-YCy.title" = "m";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Tdp-nf-6Bu"; */
+"Tdp-nf-6Bu.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "WRC-4Z-8Ck"; */
+"WRC-4Z-8Ck.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "Zeu-fI-anB"; */
+"Zeu-fI-anB.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "bkN-NI-xvE"; */
+"bkN-NI-xvE.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "cO4-O4-a8u"; */
+"cO4-O4-a8u.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "设置关闭时间段："; ObjectID = "cX6-RT-FKp"; */
+"cX6-RT-FKp.title" = "Turn the IR LED off:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "dKp-CO-ixW"; */
+"dKp-CO-ixW.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "时"; ObjectID = "gVv-Pj-JR2"; */
+"gVv-Pj-JR2.title" = "h";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "jN6-TR-YC5"; */
+"jN6-TR-YC5.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "l8p-EC-0G7"; */
+"l8p-EC-0G7.title" = "Item 1";
+
+/* Class = "NSButtonCell"; title = "计划2:"; ObjectID = "lUD-QU-pVs"; */
+"lUD-QU-pVs.title" = "Schedule2:";
+
+/* Class = "NSTextFieldCell"; title = "-"; ObjectID = "mUr-1M-54B"; */
+"mUr-1M-54B.title" = "-";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "nUe-l4-hIZ"; */
+"nUe-l4-hIZ.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "pjS-5c-ZK3"; */
+"pjS-5c-ZK3.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "-"; ObjectID = "pjy-l3-DOT"; */
+"pjy-l3-DOT.title" = "-";
+
+/* Class = "NSTextFieldCell"; title = "分"; ObjectID = "pob-I9-YGi"; */
+"pob-I9-YGi.title" = "m";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "q6x-Gr-ShE"; */
+"q6x-Gr-ShE.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "qHe-Gi-3Mt"; */
+"qHe-Gi-3Mt.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "scD-Gz-m2l"; */
+"scD-Gz-m2l.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "时"; ObjectID = "sfi-aM-laK"; */
+"sfi-aM-laK.title" = "h";
+
+/* Class = "NSTextFieldCell"; title = "-"; ObjectID = "szl-ew-lzM"; */
+"szl-ew-lzM.title" = "-";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "wAZ-D3-hb6"; */
+"wAZ-D3-hb6.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "ybO-dX-ssY"; */
+"ybO-dX-ssY.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "时"; ObjectID = "ypI-wJ-TyP"; */
+"ypI-wJ-TyP.title" = "h";
+
+/* Class = "NSTextFieldCell"; title = "分"; ObjectID = "yte-lv-88C"; */
+"yte-lv-88C.title" = "m";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "z1g-jp-hec"; */
+"z1g-jp-hec.title" = "Item 1";

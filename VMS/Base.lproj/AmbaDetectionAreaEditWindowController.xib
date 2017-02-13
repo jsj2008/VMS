@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AmbaDetectionAreaEditWindowController">
+            <connections>
+                <outlet property="placeHolder1" destination="nC0-sW-gf7" id="KPK-qC-FnN"/>
+                <outlet property="placeHolder2" destination="4Ls-Qo-kqL" id="EHe-QF-SWo"/>
+                <outlet property="placeHolder3" destination="O6Z-Yh-hC0" id="pMO-XZ-epj"/>
+                <outlet property="privacyCoverEditView" destination="z9L-af-nPu" id="gEM-YB-e8i"/>
+                <outlet property="renderView" destination="m0M-wX-ac0" id="ySF-cO-VjA"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="870" height="429"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="870" height="429"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m0M-wX-ac0" userLabel="Render View">
+                        <rect key="frame" x="0.0" y="0.0" width="670" height="429"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z9L-af-nPu" userLabel="Privacy Cover Edit View" customClass="PrivacyCoverEditView">
+                                <rect key="frame" x="0.0" y="0.0" width="670" height="429"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </customView>
+                        </subviews>
+                    </customView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6qu-PU-QAE">
+                        <rect key="frame" x="768" y="1" width="100" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="完成" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="d07-JW-ibK">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="done:" target="-2" id="0yR-C5-neg"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yah-0T-FP9">
+                        <rect key="frame" x="672" y="33" width="196" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="删除" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7RC-5U-ESO">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="delete:" target="-2" id="BW3-yd-FQd"/>
+                        </connections>
+                    </button>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nC0-sW-gf7" userLabel="PlaceHolder1">
+                        <rect key="frame" x="670" y="309" width="200" height="120"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ls-Qo-kqL" userLabel="PlaceHolder2">
+                        <rect key="frame" x="670" y="189" width="200" height="120"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6Z-Yh-hC0" userLabel="PlaceHolder3">
+                        <rect key="frame" x="670" y="69" width="200" height="120"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oov-vG-lK2">
+                        <rect key="frame" x="672" y="1" width="100" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rii-0E-aID">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancel:" target="-2" id="VGB-qt-KPl"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="504" y="298.5"/>
+        </window>
+    </objects>
+</document>

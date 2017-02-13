@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="JFPreferencePanelController">
+            <connections>
+                <outlet property="segmentedControl" destination="HZH-Dc-IgF" id="sIH-gv-jQb"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="450" height="300"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="99D7DEC5-8E4C-4741-9E3E-04DE3CE67A6D" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="5kL-BO-M8c">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="5PA-0H-wzj"/>
+                    <toolbarItem implicitItemIdentifier="79842B95-CA49-4E66-BB52-312217068F77" label="" paletteLabel="" id="7ef-5h-sqX">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="67" height="25"/>
+                        <size key="maxSize" width="100" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="HZH-Dc-IgF">
+                            <rect key="frame" x="0.0" y="14" width="67" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="momentary" id="k55-Vc-Gaz">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSGoLeftTemplate" width="32">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment image="NSGoRightTemplate" width="32" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <action selector="toggleScene:" target="-2" id="5lN-0H-3pA"/>
+                            </connections>
+                        </segmentedControl>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="AA16D9DC-8A13-4314-B1DF-6A453D2F6F7C" label="" paletteLabel="" image="NSHomeTemplate" id="Qms-90-KCk">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="32"/>
+                        <size key="maxSize" width="82" height="32"/>
+                        <button key="view" verticalHuggingPriority="750" id="Daa-vU-Yug">
+                            <rect key="frame" x="0.0" y="14" width="32" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSHomeTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wHf-8N-MlG">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="backToHome:" target="-2" id="atI-U3-lnn"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="7ef-5h-sqX"/>
+                    <toolbarItem reference="Qms-90-KCk"/>
+                    <toolbarItem reference="5PA-0H-wzj"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="157"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="NSGoLeftTemplate" width="9" height="12"/>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+        <image name="NSHomeTemplate" width="14" height="14"/>
+    </resources>
+</document>

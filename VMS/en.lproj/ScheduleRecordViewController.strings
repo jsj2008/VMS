@@ -1,0 +1,24 @@
+
+/* Class = "NSTextFieldCell"; title = "通道："; ObjectID = "158-nz-DNe"; */
+"158-nz-DNe.title" = "Channel:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "3NE-p6-xr7"; */
+"3NE-p6-xr7.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "7lW-wd-qP1"; */
+"7lW-wd-qP1.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "关闭"; ObjectID = "NHf-pB-SJ8"; */
+"NHf-pB-SJ8.title" = "Off";
+
+/* Class = "NSTextFieldCell"; title = "启用："; ObjectID = "Uwh-Df-E04"; */
+"Uwh-Df-E04.title" = "Enable:";
+
+/* Class = "NSMenuItem"; title = "开启"; ObjectID = "Yqd-Up-VN9"; */
+"Yqd-Up-VN9.title" = "On";
+
+/* Class = "NSTextFieldCell"; title = "录像计划时间编辑"; ObjectID = "ZdP-PO-kmu"; */
+"ZdP-PO-kmu.title" = "Schedule";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "aSY-F9-spp"; */
+"aSY-F9-spp.title" = "Item 2";

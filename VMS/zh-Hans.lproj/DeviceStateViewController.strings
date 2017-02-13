@@ -1,0 +1,30 @@
+
+/* Class = "NSTextFieldCell"; title = "红外灯状态:"; ObjectID = "0Jn-ax-gEd"; */
+"0Jn-ax-gEd.title" = "红外灯状态:";
+
+/* Class = "NSTextFieldCell"; title = "NTP状态:"; ObjectID = "3H2-HY-FEX"; */
+"3H2-HY-FEX.title" = "NTP状态:";
+
+/* Class = "NSTextFieldCell"; title = "SD卡总空间:"; ObjectID = "9Ax-vM-hov"; */
+"9Ax-vM-hov.title" = "SD卡总空间:";
+
+/* Class = "NSTextFieldCell"; title = "DDNS状态:"; ObjectID = "Nn9-Cw-fkK"; */
+"Nn9-Cw-fkK.title" = "DDNS状态:";
+
+/* Class = "NSTextFieldCell"; title = "SD卡可用空间:"; ObjectID = "j1G-Bp-iT4"; */
+"j1G-Bp-iT4.title" = "SD卡可用空间:";
+
+/* Class = "NSTextFieldCell"; title = "UpnP状态:"; ObjectID = "wA1-Uh-jG4"; */
+"wA1-Uh-jG4.title" = "UpnP状态:";
+
+/* Class = "NSTextFieldCell"; title = "Wi-Fi状态:"; ObjectID = "xWq-aP-vFx"; */
+"xWq-aP-vFx.title" = "Wi-Fi状态:";
+
+/* Class = "NSTextFieldCell"; title = "移动报警状态:"; ObjectID = "xYx-fe-tDI"; */
+"xYx-fe-tDI.title" = "移动报警状态:";
+
+/* Class = "NSTextFieldCell"; title = "录像状态:"; ObjectID = "yEi-uv-WgS"; */
+"yEi-uv-WgS.title" = "录像状态:";
+
+/* Class = "NSTextFieldCell"; title = "SD卡状态:"; ObjectID = "z7T-8E-1cK"; */
+"z7T-8E-1cK.title" = "SD卡状态:";

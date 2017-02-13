@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ScheduleRecordViewController">
+            <connections>
+                <outlet property="chnBtn" destination="nRe-sl-5Le" id="vYL-eq-QKt"/>
+                <outlet property="chnLabel" destination="6tQ-AS-KAB" id="R5K-sR-we6"/>
+                <outlet property="scheduleRecordBtn" destination="nRe-sl-5Le" id="lxP-O1-H0q"/>
+                <outlet property="timePickerView" destination="xvP-2g-4u0" id="RUA-Mt-z5g"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="804" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6tQ-AS-KAB">
+                    <rect key="frame" x="56" y="353" width="57" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="通道：" id="158-nz-DNe">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLH-rt-0pR">
+                    <rect key="frame" x="56" y="314" width="57" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="启用：" id="Uwh-Df-E04">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRe-sl-5Le">
+                    <rect key="frame" x="117" y="348" width="210" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="7lW-wd-qP1" id="jUE-Oy-aqb">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="4Z4-r7-ejC">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="7lW-wd-qP1"/>
+                                <menuItem title="Item 2" id="aSY-F9-spp"/>
+                                <menuItem title="Item 3" id="3NE-p6-xr7"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="chnOption:" target="-2" id="wG2-S9-FcF"/>
+                        <binding destination="-2" name="selectedIndex" keyPath="self.chn" id="jG7-pi-P2T"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvj-4e-o75">
+                    <rect key="frame" x="117" y="309" width="210" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="关闭" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="NHf-pB-SJ8" id="eLd-xg-Yzn">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="nF3-pK-Pam">
+                            <items>
+                                <menuItem title="关闭" state="on" id="NHf-pB-SJ8"/>
+                                <menuItem title="开启" id="Yqd-Up-VN9"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="-2" name="selectedIndex" keyPath="self.enableScheduleRecord" id="6KB-uu-8Ta"/>
+                    </connections>
+                </popUpButton>
+                <customView identifier="record schedules" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvP-2g-4u0" customClass="TimePickerView">
+                    <rect key="frame" x="58" y="44" width="688" height="231"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="self.enableScheduleRecord" id="dSm-PW-Ofq">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
+                        <outlet property="delegate" destination="-2" id="uSz-u3-ggd"/>
+                    </connections>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNK-Cu-h25">
+                    <rect key="frame" x="306" y="283" width="193" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="录像计划时间编辑" id="ZdP-PO-kmu">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="hidden" keyPath="self.enableScheduleRecord" id="Q3X-A8-oru">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="427" y="291.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="Wjm-Eu-vbm"/>
+    </objects>
+</document>

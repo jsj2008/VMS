@@ -1,0 +1,45 @@
+
+/* Class = "NSTextFieldCell"; title = "预览视频码流类型："; ObjectID = "3zk-zt-J2N"; */
+"3zk-zt-J2N.title" = "The stream type of the previewed video:";
+
+/* Class = "NSButtonCell"; title = "选择"; ObjectID = "4HZ-x7-chU"; */
+"4HZ-x7-chU.title" = "Select";
+
+/* Class = "NSButtonCell"; title = "Radio"; ObjectID = "AF2-dM-FNJ"; */
+"AF2-dM-FNJ.title" = "Radio";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "Cme-Gw-Lmd"; */
+"Cme-Gw-Lmd.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "轮巡时间（单位s）："; ObjectID = "KBn-5J-6ft"; */
+"KBn-5J-6ft.title" = "Patrol Time(s):";
+
+/* Class = "NSButtonCell"; title = "自动登录"; ObjectID = "KLe-0y-xYl"; */
+"KLe-0y-xYl.title" = "Auto Login";
+
+/* Class = "NSButtonCell"; title = "自动恢复上次布局"; ObjectID = "Obc-92-i8i"; */
+"Obc-92-i8i.title" = "Automatically return to the last layout";
+
+/* Class = "NSButtonCell"; title = "自动搜索"; ObjectID = "XAR-EP-uhI"; */
+"XAR-EP-uhI.title" = "Search Automatically";
+
+/* Class = "NSTextFieldCell"; title = "抓拍路径："; ObjectID = "ksp-eK-0MX"; */
+"ksp-eK-0MX.title" = "Capture path:";
+
+/* Class = "NSButtonCell"; title = "全主码流"; ObjectID = "lhP-fk-0cw"; */
+"lhP-fk-0cw.title" = "Main Stream";
+
+/* Class = "NSButtonCell"; title = "自适应"; ObjectID = "mgg-4r-dyG"; */
+"mgg-4r-dyG.title" = "Auto-Adaptation";
+
+/* Class = "NSButtonCell"; title = "全子码流"; ObjectID = "ngO-ci-ZVA"; */
+"ngO-ci-ZVA.title" = "Sub Stream";
+
+/* Class = "NSButtonCell"; title = "开机自动运行"; ObjectID = "uCb-mr-Z3U"; */
+"uCb-mr-Z3U.title" = "Automatically start up at boot";
+
+/* Class = "NSButtonCell"; title = "确定"; ObjectID = "vxc-Gk-xlY"; */
+"vxc-Gk-xlY.title" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "其它设置："; ObjectID = "wQN-vz-dux"; */
+"wQN-vz-dux.title" = "Other Settings:";

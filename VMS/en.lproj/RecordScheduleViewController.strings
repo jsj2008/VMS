@@ -1,0 +1,24 @@
+
+/* Class = "NSTextFieldCell"; title = "设备列表"; ObjectID = "6vS-2M-mey"; */
+"6vS-2M-mey.title" = "Device List";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "9Kh-LV-INj"; */
+"9Kh-LV-INj.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "设备名称"; ObjectID = "Ik1-LO-3OW"; */
+"Ik1-LO-3OW.headerCell.title" = "Device Name";
+
+/* Class = "NSTextFieldCell"; title = "录像计划"; ObjectID = "OEo-eC-Hdo"; */
+"OEo-eC-Hdo.title" = "Schedule";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "TZT-7E-K74"; */
+"TZT-7E-K74.headerCell.title" = "No";
+
+/* Class = "NSButtonCell"; title = "保存"; ObjectID = "YTF-vB-Ve4"; */
+"YTF-vB-Ve4.title" = "Save";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "a1O-fe-thX"; */
+"a1O-fe-thX.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "保存至所有监控点"; ObjectID = "lYW-G3-H4g"; */
+"lYW-G3-H4g.title" = "Copy to all camera";

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VideoPlaybackController">
+            <connections>
+                <outlet property="alarmRecordIndicator" destination="Qx3-Ys-hie" id="aWJ-hu-nwA"/>
+                <outlet property="alarmVideo" destination="ym9-fT-Hsq" id="uhp-tN-Ik6"/>
+                <outlet property="datePicker" destination="XNH-MN-iQl" id="jGf-ie-D6y"/>
+                <outlet property="findVideos" destination="76K-FE-UaA" id="gXP-hr-Fzb"/>
+                <outlet property="indicator" destination="KiS-DV-CqH" id="QXm-lb-Lf7"/>
+                <outlet property="manualRecordIndicator" destination="hWV-Q7-hPg" id="73W-Bk-Sdd"/>
+                <outlet property="manualVideo" destination="ZGx-u3-j5n" id="VmV-bf-aOH"/>
+                <outlet property="motionDetectingVideo" destination="Et1-Ag-aCg" id="dtx-Es-sid"/>
+                <outlet property="nextFrameButton" destination="e4N-xM-0pa" id="Mrm-ZW-wix"/>
+                <outlet property="placeHolder" destination="Bdu-1d-BFP" id="aF6-Ns-lbZ"/>
+                <outlet property="playButton" destination="XLw-WG-7Gs" id="hNV-co-nFU"/>
+                <outlet property="scheduleRecordIndicator" destination="tP0-4v-Ttc" id="R1x-cN-yeK"/>
+                <outlet property="scheduledVideo" destination="cmV-Kn-PxL" id="N6e-iG-Y4F"/>
+                <outlet property="scrollView" destination="ThR-Ge-Qch" id="E01-Pf-ru4"/>
+                <outlet property="seekVideos" destination="Ig5-TM-Th4" id="e1u-G8-rII"/>
+                <outlet property="seekVideosZone" destination="SS1-nK-fVw" id="hvm-Gm-m1z"/>
+                <outlet property="speedIndicator" destination="c0s-zc-s0y" id="EyI-cR-OOS"/>
+                <outlet property="tableView" destination="mw5-pi-WO7" id="z5r-dL-YyX"/>
+                <outlet property="timePicker" destination="6G8-nh-cUW" id="aYX-6V-QD0"/>
+                <outlet property="timeTableView" destination="xG5-tV-ptW" id="Yk4-9f-0Jc"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" userLabel="Playback View" customClass="VMSTabView">
+            <rect key="frame" x="0.0" y="0.0" width="1254" height="716"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Bdu-1d-BFP" userLabel="Place Holder">
+                    <rect key="frame" x="0.0" y="200" width="1054" height="516"/>
+                </customView>
+                <scrollView focusRingType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnM-sk-mTl">
+                    <rect key="frame" x="1054" y="420" width="200" height="296"/>
+                    <clipView key="contentView" drawsBackground="NO" id="moO-VC-zHj">
+                        <rect key="frame" x="1" y="0.0" width="198" height="280"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView identifier="playback tableview" focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="ysK-Zb-bfi" id="mw5-pi-WO7">
+                                <rect key="frame" x="0.0" y="0.0" width="201" height="257"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <size key="intercellSpacing" width="3" height="2"/>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <tableViewGridLines key="gridStyleMask" vertical="YES" horizontal="YES"/>
+                                <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <tableColumns>
+                                    <tableColumn identifier="state column" editable="NO" width="32" minWidth="32" maxWidth="40" id="SVz-Xt-Ris" userLabel="状态">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                        </tableHeaderCell>
+                                        <buttonCell key="dataCell" type="check" bezelStyle="regularSquare" imagePosition="left" identifier="checkbox cell" inset="2" id="hL0-Lp-S1V">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <action selector="tableviewCellAction:" target="-2" id="1YP-iv-hpU"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                    </tableColumn>
+                                    <tableColumn identifier="number column" width="48" minWidth="48" maxWidth="64" id="Sws-gE-P1x" userLabel="编号 ">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="编号">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" title="Text Cell" id="ez7-ZA-2L5">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                    </tableColumn>
+                                    <tableColumn identifier="device column" width="112" minWidth="112" maxWidth="1000" id="JeW-L3-nZj">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="设备">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" identifier="text cell" title="Text Cell" id="evJ-zQ-r82">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                    </tableColumn>
+                                </tableColumns>
+                                <connections>
+                                    <outlet property="dataSource" destination="-2" id="a6x-Rf-Coh"/>
+                                    <outlet property="delegate" destination="-2" id="gKJ-Y8-cP4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <nil key="backgroundColor"/>
+                    </clipView>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="fOx-vR-DXw"/>
+                    </constraints>
+                    <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="mPs-ds-5ik">
+                        <rect key="frame" x="1" y="280" width="198" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="Z9U-mS-T2b">
+                        <rect key="frame" x="224" y="17" width="15" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <tableHeaderView key="headerView" id="ysK-Zb-bfi">
+                        <rect key="frame" x="0.0" y="0.0" width="201" height="23"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tableHeaderView>
+                </scrollView>
+                <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="ThR-Ge-Qch">
+                    <rect key="frame" x="0.0" y="0.0" width="1054" height="160"/>
+                    <clipView key="contentView" id="GeF-ha-KCW" customClass="TimeTableClipView">
+                        <rect key="frame" x="1" y="1" width="1037" height="158"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView identifier="Time table view" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-tV-ptW" customClass="TimeTableView">
+                                <rect key="frame" x="0.0" y="15" width="734" height="119"/>
+                                <subviews>
+                                    <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="KiS-DV-CqH">
+                                        <rect key="frame" x="502" y="38" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </progressIndicator>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="734" id="5Kg-cS-Z9Z"/>
+                                    <constraint firstAttribute="height" constant="119" id="wNM-dC-Y0s"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="-2" id="L3M-4Z-VUB"/>
+                                    <outlet property="heightConstraint" destination="wNM-dC-Y0s" id="C0R-mx-4bG"/>
+                                    <outlet property="leadingConstraint" destination="07o-EV-PL6" id="n1c-Bl-iHQ"/>
+                                    <outlet property="topConstraint" destination="Yke-pJ-Hhf" id="vin-Mf-038"/>
+                                    <outlet property="widthConstraint" destination="5Kg-cS-Z9Z" id="VrK-8Z-INA"/>
+                                </connections>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xG5-tV-ptW" firstAttribute="leading" secondItem="GeF-ha-KCW" secondAttribute="leading" id="07o-EV-PL6"/>
+                            <constraint firstItem="xG5-tV-ptW" firstAttribute="top" secondItem="GeF-ha-KCW" secondAttribute="top" constant="24" id="Yke-pJ-Hhf"/>
+                        </constraints>
+                    </clipView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="kRA-5l-tk2"/>
+                    </constraints>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="efJ-9c-GUe">
+                        <rect key="frame" x="1" y="80" width="166" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="FPb-V3-8TC">
+                        <rect key="frame" x="1038" y="1" width="15" height="158"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="lmn-cr-LVh" userLabel="VideoControlBar">
+                    <rect key="frame" x="0.0" y="160" width="1054" height="40"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zRf-gj-6kp" userLabel="BackLayer">
+                            <rect key="frame" x="0.0" y="0.0" width="1054" height="40"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="topLeft" imageScaling="axesIndependently" image="Layer" id="OVg-XP-oWE"/>
+                        </imageView>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="oox-US-sCH" userLabel="ButtonZone">
+                            <rect key="frame" x="317" y="4" width="421" height="32"/>
+                            <subviews>
+                                <button toolTip="暂停" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xl1-uD-tOR" userLabel="Pause">
+                                    <rect key="frame" x="41" y="0.0" width="32" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Pause Off" imagePosition="only" alignment="center" alternateImage="Pause On" state="on" transparent="YES" imageScaling="axesIndependently" inset="2" id="rGq-zb-rTO">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="playbackControl:" target="-2" id="jdB-Jl-ecx"/>
+                                    </connections>
+                                </button>
+                                <button toolTip="播放／暂停" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="XLw-WG-7Gs" userLabel="Play" customClass="JFButton">
+                                    <rect key="frame" x="92" y="0.0" width="32" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Play Off" imagePosition="only" alignment="center" alternateImage="Play On" state="on" imageScaling="axesIndependently" inset="2" id="gME-O6-OCz">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="playbackControl:" target="-2" id="rH4-aI-pUT"/>
+                                    </connections>
+                                </button>
+                                <button toolTip="下一帧" fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="e4N-xM-0pa" userLabel="Frame" customClass="JFButton">
+                                    <rect key="frame" x="143" y="0.0" width="32" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NextFrame Off" imagePosition="only" alignment="center" alternateImage="NextFrame On" state="on" imageScaling="axesIndependently" inset="2" id="TIX-QQ-MMT">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="playbackControl:" target="-2" id="aKy-cU-dIh"/>
+                                    </connections>
+                                </button>
+                                <button toolTip="停止" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="9Zl-7A-hGe" userLabel="Stop" customClass="JFButton">
+                                    <rect key="frame" x="194" y="0.0" width="32" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Stop Off" imagePosition="only" alignment="center" alternateImage="Stop On" state="on" imageScaling="axesIndependently" inset="2" id="Fqx-Uy-NJW">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="playbackControl:" target="-2" id="Ggk-kL-GIZ"/>
+                                    </connections>
+                                </button>
+                                <button toolTip="快放" fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZnX-DD-xES" userLabel="Fast" customClass="JFButton">
+                                    <rect key="frame" x="296" y="0.0" width="32" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Fast Off" imagePosition="only" alignment="center" alternateImage="Fast On" state="on" imageScaling="axesIndependently" inset="2" id="rxU-hn-hRE">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="playbackControl:" target="-2" id="exP-bv-uIt"/>
+                                    </connections>
+                                </button>
+                                <button toolTip="打开文件" fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="AEU-ZP-2Pj" userLabel="FIle">
+                                    <rect key="frame" x="347" y="0.0" width="32" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="File Off" imagePosition="only" alignment="center" alternateImage="File On" state="on" imageScaling="axesIndependently" inset="2" id="Bv3-YT-i8c">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="playbackControl:" target="-2" id="Jtr-y1-L8n"/>
+                                    </connections>
+                                </button>
+                                <button toolTip="慢放" fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="LJZ-n4-SlU" userLabel="Slow" customClass="JFButton">
+                                    <rect key="frame" x="245" y="0.0" width="32" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Slow Off" imagePosition="only" alignment="center" alternateImage="Slow On" state="on" imageScaling="axesIndependently" inset="2" id="Qh8-pB-R1g">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="playbackControl:" target="-2" id="XhW-I2-NgC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="421" id="G8g-jv-HiD"/>
+                                <constraint firstAttribute="height" constant="32" id="r3t-WC-XIx"/>
+                            </constraints>
+                        </customView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c0s-zc-s0y">
+                            <rect key="frame" x="955" y="12" width="81" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="3eE-Ek-6gx"/>
+                                <constraint firstAttribute="width" constant="77" id="mTN-p0-CAo"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Label" id="JVu-yM-46N">
+                                <font key="font" size="14" name=".AppleSystemUIFont"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="zRf-gj-6kp" firstAttribute="leading" secondItem="lmn-cr-LVh" secondAttribute="leading" id="01P-ax-S3n"/>
+                        <constraint firstAttribute="height" constant="40" id="5NV-XA-R5a"/>
+                        <constraint firstAttribute="bottom" secondItem="c0s-zc-s0y" secondAttribute="bottom" constant="12" id="LeD-8F-1ls"/>
+                        <constraint firstAttribute="trailing" secondItem="c0s-zc-s0y" secondAttribute="trailing" constant="20" id="Utb-BU-jYn"/>
+                        <constraint firstAttribute="bottom" secondItem="zRf-gj-6kp" secondAttribute="bottom" id="fRL-Ea-6yf"/>
+                        <constraint firstItem="oox-US-sCH" firstAttribute="centerY" secondItem="lmn-cr-LVh" secondAttribute="centerY" id="oQJ-Kd-mtq"/>
+                        <constraint firstItem="zRf-gj-6kp" firstAttribute="top" secondItem="lmn-cr-LVh" secondAttribute="top" id="ph2-lj-50G"/>
+                        <constraint firstAttribute="trailing" secondItem="zRf-gj-6kp" secondAttribute="trailing" id="tww-Og-n3b"/>
+                        <constraint firstItem="oox-US-sCH" firstAttribute="centerX" secondItem="lmn-cr-LVh" secondAttribute="centerX" id="v3z-eI-Ktl"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="SS1-nK-fVw" userLabel="Video Lookup Zone" customClass="JFBackground">
+                    <rect key="frame" x="1054" y="0.0" width="200" height="420"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kpG-vC-fBm">
+                            <rect key="frame" x="36" y="226" width="59" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="录像日期" id="jdY-Kh-w4O">
+                                <font key="font" metaFont="system" size="14"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.36078431370000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76K-FE-UaA" userLabel="Query ">
+                            <rect key="frame" x="25" y="150" width="152" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="smallSquare" title="查找录像" bezelStyle="smallSquare" image="Find Videos" imagePosition="overlaps" alignment="center" state="on" imageScaling="axesIndependently" inset="2" id="Meq-Yf-Hh8">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" metaFont="system" size="14"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="findVideos:" target="-2" id="Xjy-8G-sIO"/>
+                            </connections>
+                        </button>
+                        <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XNH-MN-iQl" customClass="TFDatePicker">
+                            <rect key="frame" x="25" y="190" width="152" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <datePickerCell key="cell" alignment="left" datePickerStyle="textField" id="5tv-o3-BTz">
+                                <font key="font" metaFont="system"/>
+                                <calendarDate key="date" timeIntervalSinceReferenceDate="-595929600" calendarFormat="%Y-%m-%d %H:%M:%S %z">
+                                    <!--1982-02-12 08:00:00 -0800-->
+                                    <timeZone key="timeZone" name="US/Pacific"/>
+                                </calendarDate>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            </datePickerCell>
+                        </datePicker>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwh-hw-C87">
+                            <rect key="frame" x="36" y="95" width="59" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="定位时间" id="Se3-Py-dxN">
+                                <font key="font" metaFont="system" size="14"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.36078431370000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ig5-TM-Th4" userLabel="Seek">
+                            <rect key="frame" x="25" y="18" width="152" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="smallSquare" title="定位时间" bezelStyle="smallSquare" image="Find Videos" imagePosition="overlaps" alignment="center" state="on" imageScaling="axesIndependently" inset="2" id="zcs-om-sII">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" metaFont="system" size="14"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="seekDate:" target="-2" id="LhX-7V-xFx"/>
+                            </connections>
+                        </button>
+                        <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6G8-nh-cUW" userLabel="Time Picker">
+                            <rect key="frame" x="25" y="58" width="155" height="27"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <datePickerCell key="cell" alignment="left" id="4pO-4w-35h">
+                                <font key="font" metaFont="system"/>
+                                <calendarDate key="date" timeIntervalSinceReferenceDate="-595929600" calendarFormat="%Y-%m-%d %H:%M:%S %z">
+                                    <!--1982-02-12 08:00:00 -0800-->
+                                    <timeZone key="timeZone" name="US/Pacific"/>
+                                </calendarDate>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <datePickerElements key="datePickerElements" hour="YES" minute="YES" second="YES"/>
+                            </datePickerCell>
+                        </datePicker>
+                        <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="MIY-I2-PIq">
+                            <rect key="frame" x="0.0" y="261" width="200" height="5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </box>
+                        <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Kaq-WK-YMW">
+                            <rect key="frame" x="0.0" y="130" width="200" height="5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </box>
+                        <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-Ag-aCg">
+                            <rect key="frame" x="23" y="281" width="100" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="check" title="移动侦测录像" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xQY-y8-G6t">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ym9-fT-Hsq">
+                            <rect key="frame" x="23" y="305" width="82" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="check" title="报警录像" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="HZj-gn-9uM">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGx-u3-j5n">
+                            <rect key="frame" x="23" y="329" width="81" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="check" title="手工录像" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="n4c-ot-Kqg">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmV-Kn-PxL">
+                            <rect key="frame" x="23" y="353" width="82" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="check" title="计划录像" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gIV-3B-v6m">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-dB-WlZ">
+                            <rect key="frame" x="36" y="383" width="89" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="录像类型" id="Ng6-xd-9eb">
+                                <font key="font" metaFont="system" size="14"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.36078431372549019" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QyX-iV-q53" userLabel="Title1">
+                            <rect key="frame" x="25" y="383" width="5" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Title " id="fTB-U4-d66"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmi-La-bVS" userLabel="Title2">
+                            <rect key="frame" x="25" y="226" width="5" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Title " id="MX7-sL-k83"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpG-K6-XZV" userLabel="Title3">
+                            <rect key="frame" x="25" y="95" width="5" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Title " id="Mzs-XO-DgE"/>
+                        </imageView>
+                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWV-Q7-hPg" customClass="JFBackground">
+                            <rect key="frame" x="134" y="329" width="58" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </customView>
+                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qx3-Ys-hie" customClass="JFBackground">
+                            <rect key="frame" x="134" y="305" width="58" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </customView>
+                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tP0-4v-Ttc" customClass="JFBackground">
+                            <rect key="frame" x="134" y="353" width="58" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </customView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="420" id="DYU-9I-5me"/>
+                        <constraint firstAttribute="width" constant="200" id="rTK-bo-TVe"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ThR-Ge-Qch" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="25e-h8-HlS"/>
+                <constraint firstItem="Bdu-1d-BFP" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="68S-Ap-c9p"/>
+                <constraint firstItem="ThR-Ge-Qch" firstAttribute="top" secondItem="lmn-cr-LVh" secondAttribute="bottom" id="8jG-Bp-W6B"/>
+                <constraint firstItem="lmn-cr-LVh" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Ayc-Dk-Z62"/>
+                <constraint firstAttribute="bottom" secondItem="SS1-nK-fVw" secondAttribute="bottom" id="HYK-VO-YQc"/>
+                <constraint firstItem="SS1-nK-fVw" firstAttribute="top" secondItem="NnM-sk-mTl" secondAttribute="bottom" id="Nkt-Rf-Iu3"/>
+                <constraint firstItem="SS1-nK-fVw" firstAttribute="leading" secondItem="ThR-Ge-Qch" secondAttribute="trailing" id="Qdw-c3-un8"/>
+                <constraint firstItem="NnM-sk-mTl" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="RlD-uy-1hv"/>
+                <constraint firstItem="lmn-cr-LVh" firstAttribute="top" secondItem="Bdu-1d-BFP" secondAttribute="bottom" id="She-jV-3hj"/>
+                <constraint firstItem="Bdu-1d-BFP" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="ZqN-b6-Ryh"/>
+                <constraint firstAttribute="bottom" secondItem="ThR-Ge-Qch" secondAttribute="bottom" id="aSP-48-nn8"/>
+                <constraint firstAttribute="trailing" secondItem="SS1-nK-fVw" secondAttribute="trailing" id="blK-WU-NBx"/>
+                <constraint firstAttribute="trailing" secondItem="NnM-sk-mTl" secondAttribute="trailing" id="eHT-Mo-EPK"/>
+                <constraint firstItem="SS1-nK-fVw" firstAttribute="leading" secondItem="lmn-cr-LVh" secondAttribute="trailing" id="hHd-LC-1gw"/>
+                <constraint firstItem="SS1-nK-fVw" firstAttribute="leading" secondItem="Bdu-1d-BFP" secondAttribute="trailing" id="n3X-Oe-XQa"/>
+            </constraints>
+            <connections>
+                <outlet property="delegate" destination="-2" id="UC3-4c-Nva"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="254"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Fast Off" width="32" height="32"/>
+        <image name="Fast On" width="32" height="32"/>
+        <image name="File Off" width="32" height="32"/>
+        <image name="File On" width="32" height="32"/>
+        <image name="Find Videos" width="152" height="28"/>
+        <image name="Layer" width="200" height="40"/>
+        <image name="NextFrame Off" width="32" height="32"/>
+        <image name="NextFrame On" width="32" height="32"/>
+        <image name="Pause Off" width="32" height="32"/>
+        <image name="Pause On" width="32" height="32"/>
+        <image name="Play Off" width="32" height="32"/>
+        <image name="Play On" width="32" height="32"/>
+        <image name="Slow Off" width="32" height="32"/>
+        <image name="Slow On" width="32" height="32"/>
+        <image name="Stop Off" width="32" height="32"/>
+        <image name="Stop On" width="32" height="32"/>
+        <image name="Title " width="5" height="14"/>
+    </resources>
+</document>

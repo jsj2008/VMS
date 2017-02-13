@@ -1,0 +1,57 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "4vw-nU-L6N"; */
+"4vw-nU-L6N.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "5eH-UU-miD"; */
+"5eH-UU-miD.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "5yX-yo-yWT"; */
+"5yX-yo-yWT.title" = "Item 1";
+
+/* Class = "NSTableColumn"; headerCell.title = "状态"; ObjectID = "7MI-Vr-fGu"; */
+"7MI-Vr-fGu.headerCell.title" = "Status";
+
+/* Class = "NSTextFieldCell"; title = "硬盘饱和："; ObjectID = "DBX-G3-hba"; */
+"DBX-G3-hba.title" = "Disk Saturation:";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "DbA-GR-zTf"; */
+"DbA-GR-zTf.headerCell.title" = "NO";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "GWM-Gm-Y5X"; */
+"GWM-Gm-Y5X.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Ggv-t4-AGX"; */
+"Ggv-t4-AGX.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "总容量"; ObjectID = "HK0-07-hSy"; */
+"HK0-07-hSy.headerCell.title" = "Capacity";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "SWC-92-FuL"; */
+"SWC-92-FuL.title" = "Item 3";
+
+/* Class = "NSTableColumn"; headerCell.title = "类型"; ObjectID = "XVl-D9-5sA"; */
+"XVl-D9-5sA.headerCell.title" = "Type";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "ayE-xH-c6n"; */
+"ayE-xH-c6n.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "b49-OG-HQT"; */
+"b49-OG-HQT.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "预录时间："; ObjectID = "bxg-0r-iFD"; */
+"bxg-0r-iFD.title" = "Pre-record Time:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "dm4-Ar-D4L"; */
+"dm4-Ar-D4L.title" = "Item 2";
+
+/* Class = "NSTableColumn"; headerCell.title = "剩余容量"; ObjectID = "fnF-Yr-RPf"; */
+"fnF-Yr-RPf.headerCell.title" = "Available Space";
+
+/* Class = "NSButtonCell"; title = "初始化硬盘"; ObjectID = "rTz-qY-tqJ"; */
+"rTz-qY-tqJ.title" = "Format Disk";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "wBg-CV-EB9"; */
+"wBg-CV-EB9.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ymE-Hl-cWZ"; */
+"ymE-Hl-cWZ.title" = "Text Cell";

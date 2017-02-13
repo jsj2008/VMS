@@ -1,0 +1,33 @@
+
+/* Class = "NSTextFieldCell"; title = "首次登陆需要重新设置用户名和密码"; ObjectID = "9je-O4-rOE"; */
+"9je-O4-rOE.title" = "首次登陆需要重新设置用户名和密码";
+
+/* Class = "NSTextFieldCell"; title = "密码应为6至12位的字母、数字和字符的组合(支持~ ! @ # % ^ * ( ) _ + { } : \"| < > ? ` - ; ' \\ , . /)"; ObjectID = "A8n-4S-I46"; */
+"A8n-4S-I46.title" = "密码应为6至12位的字母、数字和字符的组合(支持~ ! @ # % ^ * ( ) _ + { } : \"| < > ? ` - ; ' \\ , . /)";
+
+/* Class = "NSTextFieldCell"; title = "用户名："; ObjectID = "CKn-P9-80B"; */
+"CKn-P9-80B.title" = "用户名：";
+
+/* Class = "NSWindow"; title = "帐号设置"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "帐号设置";
+
+/* Class = "NSTextFieldCell"; title = "安全等级："; ObjectID = "Mav-BH-eYN"; */
+"Mav-BH-eYN.title" = "安全等级：";
+
+/* Class = "NSTextFieldCell"; title = "admin"; ObjectID = "gmn-ON-PaJ"; */
+"gmn-ON-PaJ.title" = "admin";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "jel-4b-9jZ"; */
+"jel-4b-9jZ.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "新用户名："; ObjectID = "rPI-R5-mf4"; */
+"rPI-R5-mf4.title" = "新用户名：";
+
+/* Class = "NSButtonCell"; title = "完成"; ObjectID = "roZ-D4-3FO"; */
+"roZ-D4-3FO.title" = "完成";
+
+/* Class = "NSTextFieldCell"; title = "确认密码："; ObjectID = "s47-8i-19i"; */
+"s47-8i-19i.title" = "确认密码：";
+
+/* Class = "NSTextFieldCell"; title = "密码："; ObjectID = "sl0-wH-90Q"; */
+"sl0-wH-90Q.title" = "密码：";

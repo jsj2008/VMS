@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MasterWindowController"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="VMS" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="xKL-YI-qsT">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="321" y="189" width="1254" height="740"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="xOb-Ef-IbS">
+                <rect key="frame" x="0.0" y="0.0" width="1254" height="740"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="56763836-6840-4F88-8B3C-879E4C2F3AA3" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="AB2-2b-fpt">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="FhQ-1N-frT"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="F6K-rT-qFn"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="1hG-Sz-4wk"/>
+                    <toolbarItem implicitItemIdentifier="014D32A0-5858-4AF9-A758-379389F030FB" label="" paletteLabel="Custom View" id="20J-Tn-k7B" userLabel="page flip">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="51" height="25"/>
+                        <size key="maxSize" width="126" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="LTC-YF-RmJ">
+                            <rect key="frame" x="3" y="14" width="71" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedRounded" trackingMode="selectAny" id="EyM-0X-zDN">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="pageUp" width="32">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment image="pageDown" width="32" selected="YES" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="D192C327-B49E-427A-9E62-8C98E65061E7" explicitItemIdentifier="pageSizeControl" label="" paletteLabel="Custom View" id="U8G-wh-bNV">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="50" height="25"/>
+                        <size key="maxSize" width="336" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="QAd-zc-C06">
+                            <rect key="frame" x="0.0" y="14" width="335" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" identifier="abc" style="texturedRounded" trackingMode="selectOne" id="hPi-dk-hkh">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment label="1" width="32" selected="YES" tag="1"/>
+                                    <segment label="4" width="32" tag="4"/>
+                                    <segment label="6" width="32" tag="6"/>
+                                    <segment label="8" width="32" tag="8"/>
+                                    <segment label="9" width="32" tag="9"/>
+                                    <segment label="16" width="32" tag="16"/>
+                                    <segment label="25" width="32" tag="25"/>
+                                    <segment label="36" width="32" tag="36"/>
+                                    <segment label="49" width="32" tag="49"/>
+                                    <segment label="64" width="32" tag="64"/>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="F57E5396-9A32-4F3C-9FBD-A19DD639275A" label="" paletteLabel="Custom View" id="HWW-Nz-qM4" userLabel="page state">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="100" height="28"/>
+                        <size key="maxSize" width="104" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="sVN-ph-agt">
+                            <rect key="frame" x="0.0" y="14" width="104" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedRounded" trackingMode="selectAny" id="Q7k-kE-XOW">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="fullScreen" width="32">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment width="32" selected="YES" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment width="32">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="U8G-wh-bNV"/>
+                    <toolbarItem reference="F6K-rT-qFn"/>
+                    <toolbarItem reference="F6K-rT-qFn"/>
+                    <toolbarItem reference="20J-Tn-k7B"/>
+                    <toolbarItem reference="HWW-Nz-qM4"/>
+                </defaultToolbarItems>
+            </toolbar>
+        </window>
+        <drawer trailingOffset="15" id="hLY-gB-aSA">
+            <size key="contentSize" width="100" height="100"/>
+            <size key="maxContentSize" width="10000" height="10000"/>
+        </drawer>
+    </objects>
+    <resources>
+        <image name="fullScreen" width="32" height="32"/>
+        <image name="pageDown" width="32" height="32"/>
+        <image name="pageUp" width="32" height="32"/>
+    </resources>
+</document>

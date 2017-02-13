@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FtpViewController">
+            <connections>
+                <outlet property="ftpAddr" destination="Qs3-4K-Jte" id="e0b-zk-EP0"/>
+                <outlet property="ftpAddrFmt" destination="YOL-x2-Gil" id="SC2-KI-2Yo"/>
+                <outlet property="ftpMode" destination="jwu-zQ-ys7" id="xkl-kK-Q4T"/>
+                <outlet property="ftpPassword" destination="hPD-Ly-D4V" id="cbI-xx-4Dw"/>
+                <outlet property="ftpPort" destination="R4s-bw-6nu" id="tGc-53-Hh1"/>
+                <outlet property="ftpPortFmt" destination="Sra-Xl-VpX" id="Hv0-W0-A5S"/>
+                <outlet property="ftpPswFmt" destination="wSD-zC-fSD" id="0nU-Ar-ucS"/>
+                <outlet property="ftpTestResult" destination="3LZ-cn-ZP5" id="Ff8-o1-cNq"/>
+                <outlet property="ftpTip" destination="dXB-1m-sI0" id="mvR-fM-cem"/>
+                <outlet property="ftpUserFmt" destination="cCR-iX-3xb" id="xrC-8f-zhn"/>
+                <outlet property="ftpUserName" destination="1Y8-f4-KOk" id="e4f-Hd-snJ"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="804" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eX1-LU-SbS" userLabel="Label">
+                    <rect key="frame" x="21" y="167" width="140" height="17"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="FTP用户名:" id="mts-a4-Mvd">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDj-PV-8Ys" userLabel="Label">
+                    <rect key="frame" x="165" y="288" width="360" height="28"/>
+                    <animations/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="示例:ftp://192.168.1.103/dir 地址的组大长度为127，不支持符号&amp;=" id="LX0-g2-oZ9">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXB-1m-sI0" userLabel="FTP TIP">
+                    <rect key="frame" x="433" y="33" width="178" height="17"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="45W-bK-9QP">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3LZ-cn-ZP5">
+                    <rect key="frame" x="169" y="34" width="256" height="21"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="border" id="uw8-95-N81">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vCz-Ag-79l">
+                    <rect key="frame" x="169" y="75" width="417" height="15"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="密码的最大长度为63，支持数字及符号 ～！@＃$%^*()_+{}:&quot;|&lt;&gt;?`-;'\,./" id="BKp-it-ULT">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBW-Yo-DkO" userLabel="Label">
+                    <rect key="frame" x="21" y="208" width="140" height="17"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="FTP模式:" id="JJe-XK-PWR">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LpK-Jh-i5w" userLabel="Label">
+                    <rect key="frame" x="21" y="101" width="140" height="16"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="FTP密码:" id="K6H-kh-l3d">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZD-LM-CNd">
+                    <rect key="frame" x="83" y="25" width="82" height="32"/>
+                    <animations/>
+                    <buttonCell key="cell" type="push" title="测试" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uti-tU-7Ir">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="testFtp:" target="-2" id="SeI-C8-3dX"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="slt-bS-DLk" userLabel="Label">
+                    <rect key="frame" x="21" y="250" width="140" height="17"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="端口:" id="y7s-Qh-nIn">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4s-bw-6nu" userLabel="端口">
+                    <rect key="frame" x="167" y="247" width="256" height="22"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="3l5-VO-cQK">
+                        <customFormatter key="formatter" id="Sra-Xl-VpX" customClass="XStringFomatter"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5t5-nU-2y5" userLabel="Label">
+                    <rect key="frame" x="18" y="327" width="140" height="17"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="FTP地址:" id="pIE-XT-1eM">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qs3-4K-Jte" userLabel="FTP地址">
+                    <rect key="frame" x="167" y="324" width="256" height="22"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="3Fc-kZ-NPn">
+                        <customFormatter key="formatter" id="YOL-x2-Gil" customClass="XStringFomatter"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Y8-f4-KOk" userLabel="FTP用户名">
+                    <rect key="frame" x="167" y="164" width="256" height="22"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="RCG-c3-86Z">
+                        <customFormatter key="formatter" id="cCR-iX-3xb" customClass="XStringFomatter"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Sk-Wn-Tlt">
+                    <rect key="frame" x="167" y="140" width="358" height="16"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="用户的最大长度为63，支持数字、字母及符号_@$*-,.#!" id="bAh-zI-3gL">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jwu-zQ-ys7">
+                    <rect key="frame" x="165" y="203" width="261" height="26"/>
+                    <animations/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="ff4-vf-KJm">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="ZDT-KI-M8S">
+                            <items>
+                                <menuItem title="Item 1" id="lYl-y2-8dI"/>
+                                <menuItem title="Item 2" id="v2V-wo-keI"/>
+                                <menuItem title="Item 3" id="212-aP-bpK"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+                <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hPD-Ly-D4V">
+                    <rect key="frame" x="167" y="98" width="254" height="22"/>
+                    <animations/>
+                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="Yvt-53-ilA">
+                        <customFormatter key="formatter" id="wSD-zC-fSD" customClass="XStringFomatter"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </secureTextFieldCell>
+                </secureTextField>
+            </subviews>
+            <animations/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="682-Zu-uaE"/>
+    </objects>
+</document>

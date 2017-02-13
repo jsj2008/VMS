@@ -1,0 +1,6 @@
+
+/* Class = "NSTextFieldCell"; title = "单击此按钮将使设备的所有设置恢复到出厂时的默认状态。"; ObjectID = "5nZ-C9-BfN"; */
+"5nZ-C9-BfN.title" = "单击此按钮将使设备的所有设置恢复到出厂时的默认状态。";
+
+/* Class = "NSButtonCell"; title = "恢复出厂设置"; ObjectID = "xQd-b2-4J2"; */
+"xQd-b2-4J2.title" = "恢复出厂设置";

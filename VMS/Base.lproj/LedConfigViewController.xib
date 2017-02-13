@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LedConfigViewController">
+            <connections>
+                <outlet property="ledModeBtn" destination="isR-ju-lnR" id="5PI-P1-h0H"/>
+                <outlet property="manualZone" destination="wbE-D9-3nr" id="sBi-kD-2qu"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="804" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="svP-z4-SXH">
+                    <rect key="frame" x="18" y="333" width="128" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="红外灯:" id="1Gh-Up-aVZ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isR-ju-lnR">
+                    <rect key="frame" x="150" y="327" width="246" height="26"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="ItU-aK-Ukl">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="TsG-N2-rB3">
+                            <items>
+                                <menuItem title="自动控制" id="3xe-oU-cyt" userLabel="自动控制">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="手动控制" tag="1" id="ikj-ts-ORI" userLabel="手动控制">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="定时控制" tag="2" id="NRA-j5-271" userLabel="定时控制">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="ledModeSelected:" target="-2" id="sCa-vN-L4C"/>
+                    </connections>
+                </popUpButton>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wbE-D9-3nr">
+                    <rect key="frame" x="103" y="223" width="290" height="96"/>
+                    <subviews>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ByS-qN-M8s">
+                            <rect key="frame" x="47" y="65" width="57" height="18"/>
+                            <buttonCell key="cell" type="radio" title="打开" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="WpC-ba-p3i">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="ledStateSelected:" target="-2" id="4vo-3i-Abc"/>
+                            </connections>
+                        </button>
+                        <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="p8a-68-60u">
+                            <rect key="frame" x="139" y="65" width="57" height="18"/>
+                            <buttonCell key="cell" type="radio" title="关闭" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="ok4-o8-lFD">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="ledStateSelected:" target="-2" id="Do4-u4-XLF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </customView>
+            </subviews>
+            <point key="canvasLocation" x="316" y="258.5"/>
+        </customView>
+    </objects>
+</document>

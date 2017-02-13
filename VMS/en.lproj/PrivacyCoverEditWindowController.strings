@@ -1,0 +1,12 @@
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "可以编辑4个遮蔽区域"; ObjectID = "Vy4-E1-4Se"; */
+"Vy4-E1-4Se.title" = "......";
+
+/* Class = "NSButtonCell"; title = "完成"; ObjectID = "gXV-81-i0y"; */
+"gXV-81-i0y.title" = "......";
+
+/* Class = "NSButtonCell"; title = "删除"; ObjectID = "xyl-iA-jX3"; */
+"xyl-iA-jX3.title" = "......";

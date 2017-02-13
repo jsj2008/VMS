@@ -1,0 +1,18 @@
+
+/* Class = "NSTextFieldCell"; title = "红外灯:"; ObjectID = "1Gh-Up-aVZ"; */
+"1Gh-Up-aVZ.title" = "红外灯:";
+
+/* Class = "NSMenuItem"; title = "自动控制"; ObjectID = "3xe-oU-cyt"; */
+"3xe-oU-cyt.title" = "自动控制";
+
+/* Class = "NSMenuItem"; title = "定时控制"; ObjectID = "NRA-j5-271"; */
+"NRA-j5-271.title" = "定时控制";
+
+/* Class = "NSButtonCell"; title = "打开"; ObjectID = "WpC-ba-p3i"; */
+"WpC-ba-p3i.title" = "打开";
+
+/* Class = "NSMenuItem"; title = "手动控制"; ObjectID = "ikj-ts-ORI"; */
+"ikj-ts-ORI.title" = "手动控制";
+
+/* Class = "NSButtonCell"; title = "关闭"; ObjectID = "ok4-o8-lFD"; */
+"ok4-o8-lFD.title" = "关闭";

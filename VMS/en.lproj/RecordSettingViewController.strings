@@ -1,0 +1,18 @@
+
+/* Class = "NSButtonCell"; title = "循环录像"; ObjectID = "0eX-XA-QcT"; */
+"0eX-XA-QcT.title" = "Loop Recording";
+
+/* Class = "NSButtonCell"; title = "本地录像"; ObjectID = "FLk-Jj-Ty4"; */
+"FLk-Jj-Ty4.title" = "Local Recording";
+
+/* Class = "NSButtonCell"; title = "取消"; ObjectID = "LXM-Nh-RjE"; */
+"LXM-Nh-RjE.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "录像保存路径："; ObjectID = "MCw-2y-ffb"; */
+"MCw-2y-ffb.title" = "Path:";
+
+/* Class = "NSButtonCell"; title = "确定"; ObjectID = "ggS-YD-xhY"; */
+"ggS-YD-xhY.title" = "Ok";
+
+/* Class = "NSTextFieldCell"; title = "可用空间:"; ObjectID = "yJq-ca-ml7"; */
+"yJq-ca-ml7.title" = "Available space:";

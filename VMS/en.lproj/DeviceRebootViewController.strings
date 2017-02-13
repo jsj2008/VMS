@@ -1,0 +1,6 @@
+
+/* Class = "NSTextFieldCell"; title = "单击此按钮将使设备重新启动。"; ObjectID = "Ufe-wg-thb"; */
+"Ufe-wg-thb.title" = "Click this button to reboot your device";
+
+/* Class = "NSButtonCell"; title = "重启设备"; ObjectID = "cr3-vQ-WAQ"; */
+"cr3-vQ-WAQ.title" = "Reboot";

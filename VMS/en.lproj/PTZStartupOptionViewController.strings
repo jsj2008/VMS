@@ -1,0 +1,27 @@
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "1AI-4B-Be2"; */
+"1AI-4B-Be2.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "GCz-9P-WGh"; */
+"GCz-9P-WGh.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "LdO-PK-f7w"; */
+"LdO-PK-f7w.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "预制点选择："; ObjectID = "MQP-aL-vcJ"; */
+"MQP-aL-vcJ.title" = "Preset Selection:";
+
+/* Class = "NSTextFieldCell"; title = "注意：如果IPC启动时不进行自检,则无法使用巡航和预制点功能"; ObjectID = "WQ7-av-tHa"; */
+"WQ7-av-tHa.title" = "Note:The cruise and preset function will be not available in case starts without self-test";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "WdL-up-lLD"; */
+"WdL-up-lLD.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "dGL-lJ-Zoj"; */
+"dGL-lJ-Zoj.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "eOR-sE-ytI"; */
+"eOR-sE-ytI.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "云台启动模式："; ObjectID = "faN-Km-kM8"; */
+"faN-Km-kM8.title" = "Start-Up Option:";

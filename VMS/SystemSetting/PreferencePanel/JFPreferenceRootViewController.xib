@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="JFPreferenceRootViewController">
+            <connections>
+                <outlet property="collectionView" destination="u1W-n3-HPP" id="XrA-Oi-mB7"/>
+                <outlet property="view" destination="043-LP-bl9" id="2Hs-VW-9Sy"/>
+            </connections>
+        </customObject>
+        <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="043-LP-bl9" userLabel="Collection View">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <clipView key="contentView" drawsBackground="NO" id="ODw-Ed-7yK">
+                <rect key="frame" x="1" y="1" width="448" height="268"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <collectionView selectable="YES" id="u1W-n3-HPP">
+                        <rect key="frame" x="0.0" y="0.0" width="448" height="268"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="LsR-8F-1ag"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+            </clipView>
+            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Rr5-tI-6BZ">
+                <rect key="frame" x="1" y="144" width="233" height="15"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </scroller>
+            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="aYd-1C-1AE">
+                <rect key="frame" x="234" y="1" width="15" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </scroller>
+            <point key="canvasLocation" x="77" y="213"/>
+        </scrollView>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+    </objects>
+</document>

@@ -1,0 +1,18 @@
+
+/* Class = "NSTextFieldCell"; title = "视频集中管理系统"; ObjectID = "0Ri-N2-52C"; */
+"0Ri-N2-52C.title" = "视频集中管理系统";
+
+/* Class = "NSButtonCell"; title = "保存密码"; ObjectID = "6x7-yC-qG2"; */
+"6x7-yC-qG2.title" = "保存密码";
+
+/* Class = "NSButtonCell"; title = "自动登录"; ObjectID = "VjW-jc-VBr"; */
+"VjW-jc-VBr.title" = "自动登录";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "密码"; ObjectID = "ipH-bF-JAD"; */
+"ipH-bF-JAD.placeholderString" = "密码";
+
+/* Class = "NSButtonCell"; title = "确定"; ObjectID = "qHG-2S-RW1"; */
+"qHG-2S-RW1.title" = "确定";
+
+/* Class = "NSTextFieldCell"; placeholderString = "用户名"; ObjectID = "xpC-U4-Wmj"; */
+"xpC-U4-Wmj.placeholderString" = "用户名";

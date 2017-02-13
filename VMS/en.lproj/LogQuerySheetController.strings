@@ -1,0 +1,39 @@
+
+/* Class = "NSButtonCell"; title = "查询"; ObjectID = "2db-bZ-khN"; */
+"2db-bZ-khN.title" = "Query";
+
+/* Class = "NSTableColumn"; headerCell.title = "内容"; ObjectID = "68g-LK-f38"; */
+"68g-LK-f38.headerCell.title" = "Content";
+
+/* Class = "NSTextFieldCell"; title = "2015-05-06 52:56:23"; ObjectID = "6MQ-7X-YE7"; */
+"6MQ-7X-YE7.title" = "2015-05-06 52:56:23";
+
+/* Class = "NSTableColumn"; headerCell.title = "时间"; ObjectID = "8xF-JK-bC4"; */
+"8xF-JK-bC4.headerCell.title" = "Date";
+
+/* Class = "NSWindow"; title = "日志查询"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Log Query";
+
+/* Class = "NSTableColumn"; headerCell.title = "类型"; ObjectID = "H6a-3N-XTc"; */
+"H6a-3N-XTc.headerCell.title" = "Type";
+
+/* Class = "NSTableColumn"; headerCell.title = "操作员"; ObjectID = "S4L-BT-gpK"; */
+"S4L-BT-gpK.headerCell.title" = "Operator";
+
+/* Class = "NSTextFieldCell"; title = "终止时间："; ObjectID = "gkm-f0-crH"; */
+"gkm-f0-crH.title" = "End Time";
+
+/* Class = "NSTextFieldCell"; title = "登入"; ObjectID = "gtz-fc-cIi"; */
+"gtz-fc-cIi.title" = "Login";
+
+/* Class = "NSTextFieldCell"; title = "起始时间："; ObjectID = "mtS-oe-4tb"; */
+"mtS-oe-4tb.title" = "Start Time";
+
+/* Class = "NSTableColumn"; headerCell.title = "编号"; ObjectID = "o4g-ze-OlK"; */
+"o4g-ze-OlK.headerCell.title" = "No";
+
+/* Class = "NSTextFieldCell"; title = "1"; ObjectID = "qKv-v9-h4H"; */
+"qKv-v9-h4H.title" = "1";
+
+/* Class = "NSTextFieldCell"; title = "Amy"; ObjectID = "vCX-QU-mxp"; */
+"vCX-QU-mxp.title" = "Amy";
