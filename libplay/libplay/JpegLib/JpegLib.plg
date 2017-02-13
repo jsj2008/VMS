@@ -1,0 +1,174 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: JpegLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC61.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/JpegLib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcapimin.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcapistd.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jccoefct.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jccolor.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcdctmgr.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jchuff.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcinit.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcmainct.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcmarker.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcmaster.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcomapi.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcparam.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcphuff.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcprepct.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcsample.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jctrans.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdapimin.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdapistd.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdatadst.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdatasrc.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdcoefct.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdcolor.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jddctmgr.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdhuff.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdinput.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdmainct.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdmarker.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdmaster.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdmerge.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdphuff.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdpostct.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdsample.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jdtrans.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jerror.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jfdctflt.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jfdctfst.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jfdctint.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jidctflt.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jidctfst.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jidctint.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jidctred.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jmemmgr.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jmemnobs.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jpegtran.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jquant1.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jquant2.c"
+"D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jutils.c"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC61.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC62.tmp" with contents
+[
+/nologo /out:"Release\JpegLib.lib" 
+".\Release\Jcapimin.obj"
+".\Release\Jcapistd.obj"
+".\Release\Jccoefct.obj"
+".\Release\Jccolor.obj"
+".\Release\Jcdctmgr.obj"
+".\Release\Jchuff.obj"
+".\Release\Jcinit.obj"
+".\Release\Jcmainct.obj"
+".\Release\Jcmarker.obj"
+".\Release\Jcmaster.obj"
+".\Release\Jcomapi.obj"
+".\Release\Jcparam.obj"
+".\Release\Jcphuff.obj"
+".\Release\Jcprepct.obj"
+".\Release\Jcsample.obj"
+".\Release\Jctrans.obj"
+".\Release\Jdapimin.obj"
+".\Release\Jdapistd.obj"
+".\Release\Jdatadst.obj"
+".\Release\Jdatasrc.obj"
+".\Release\Jdcoefct.obj"
+".\Release\Jdcolor.obj"
+".\Release\Jddctmgr.obj"
+".\Release\Jdhuff.obj"
+".\Release\Jdinput.obj"
+".\Release\Jdmainct.obj"
+".\Release\Jdmarker.obj"
+".\Release\Jdmaster.obj"
+".\Release\Jdmerge.obj"
+".\Release\Jdphuff.obj"
+".\Release\Jdpostct.obj"
+".\Release\Jdsample.obj"
+".\Release\Jdtrans.obj"
+".\Release\Jerror.obj"
+".\Release\Jfdctflt.obj"
+".\Release\Jfdctfst.obj"
+".\Release\Jfdctint.obj"
+".\Release\Jidctflt.obj"
+".\Release\Jidctfst.obj"
+".\Release\Jidctint.obj"
+".\Release\Jidctred.obj"
+".\Release\Jmemmgr.obj"
+".\Release\Jmemnobs.obj"
+".\Release\Jpegtran.obj"
+".\Release\Jquant1.obj"
+".\Release\Jquant2.obj"
+".\Release\Jutils.obj"
+]
+Creating command line "link.exe -lib @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC62.tmp"
+<h3>Output Window</h3>
+Compiling...
+Jcapimin.c
+Jcapistd.c
+Jccoefct.c
+Jccolor.c
+Jcdctmgr.c
+Jchuff.c
+Jcinit.c
+Jcmainct.c
+D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\Jcinit.c(79) : warning C4761: integral size mismatch in argument; conversion supplied
+Jcmarker.c
+Jcmaster.c
+Jcomapi.c
+Jcparam.c
+Jcphuff.c
+Jcprepct.c
+Jcsample.c
+Jctrans.c
+Jdapimin.c
+Jdapistd.c
+Jdatadst.c
+Jdatasrc.c
+Jdcoefct.c
+Jdcolor.c
+Jddctmgr.c
+Jdhuff.c
+Jdinput.c
+Jdmainct.c
+Jdmarker.c
+Jdmaster.c
+Jdmerge.c
+Jdphuff.c
+Jdpostct.c
+Jdsample.c
+Jdtrans.c
+Jerror.c
+D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\jmorecfg.h(161) : warning C4142: benign redefinition of type
+D:\WorkDir\2011\°¢¿á\jpeg\MfcApp\JpegLib\jmorecfg.h(215) : warning C4005: 'FAR' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(135) : see previous definition of 'FAR'
+Jfdctflt.c
+Jfdctfst.c
+Jfdctint.c
+Jidctflt.c
+Jidctfst.c
+Jidctint.c
+Jidctred.c
+Jmemmgr.c
+Jmemnobs.c
+Jpegtran.c
+Jquant1.c
+Jquant2.c
+Jutils.c
+Creating library...
+
+
+
+<h3>Results</h3>
+JpegLib.lib - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>
