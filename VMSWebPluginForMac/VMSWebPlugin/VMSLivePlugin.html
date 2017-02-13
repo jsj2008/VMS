@@ -1,0 +1,113 @@
+<HTML>
+<HEAD>
+    <TITLE>ATL 8.0 test page for object VMSPluginLive</TITLE>
+</HEAD>
+
+<BODY>
+<!-style="background:red;"->
+    <embed type="application/np-vms-live" width=720 height=480 id="VMSLivePlugin">
+    
+    <script language="javascript" type="text/javascript">
+        function OnLoginCompleted(result) {
+            alert("login result:" + result);
+        }
+
+        function OnNetDisconnect() {
+            alert("OnNetDisconnect");
+        }
+        
+        function OnOpenVideo(xml) {
+            alert("OnOpenVideo:" + xml);
+        }
+
+        function OnOpenAudio(xml) {
+            alert("OnOpenAudio:" + xml);
+        }
+
+        function OnViewSelected(selectIndex) {
+            alert(document.getElementById("VMSLivePlugin").GetCurViewInfo());
+        }
+
+        var ctrl = document.getElementById("VMSLivePlugin");
+        ctrl.OnLoginCompleted = OnLoginCompleted;
+        ctrl.OnNetDisconnect = OnNetDisconnect;
+        ctrl.OnOpenVideo = OnOpenVideo;
+        ctrl.OnOpenAudio = OnOpenAudio;
+        ctrl.OnViewSelected = OnViewSelected;
+        
+        function login() {
+             ctrl.Login("127.0.0.1", 8080, "", "");
+		}
+
+		function relayout(){
+		    ctrl.Relayout(2, 2);
+		}
+        
+        function full_screen(){
+		    ctrl.FullScreen();
+		}
+
+		function open_video() {
+		    var xml = "<vms_plugin><vid>" + document.getElementById("video_id").value + "</vid></vms_plugin>";
+		    var result = ctrl.OpenVideo(xml);
+		    alert(result);
+		}
+
+		function open_cur_video() {
+		    var result = ctrl.OpenVideo("");
+		}
+		function close_cur_video() {
+		    var result = ctrl.CloseVideo();
+		}
+		
+		function close_video() {
+		    ctrl.CloseAllVideo();
+		}
+
+		function snapshot() {
+		    var xml = "<vms_plugin><path>c:\\a.bmp</path></vms_plugin>";
+		    var result = ctrl.Snapshot(xml);
+		    alert(result);
+		}
+
+		function open_audio() {
+		    var result = ctrl.OpenAudio();
+		    alert(result);
+		}
+
+		function close_audio() {
+		    var result = ctrl.CloseAudio();
+		    alert(result);
+		}
+
+		function ptz() {
+		    var xml = "<vms_plugin><type>1</type><param1>1</param1><param2>2</param2><param3>3</param3><param4>4</param4><param5>test5</param5></vms_plugin>";
+		    ctrl.PtzControll(xml);
+		}
+
+    </script>
+    
+    <br/><br/>
+    video id:<input type="text" id="video_id" name="video_id" value="123" style="width:80px" />
+    <br/><br/>      
+
+    <input type="button" id="btn_login" name="btn_login" value="login" title="login" onclick="login()"></input>
+    <input type="button" id="btn_relayout" name="btn_relayout" value="relayout" title="relayout" onclick="relayout()"></input>
+    <input type="button" id="btn_full_screen" name="btn_full_screen" value="full screen" title="full screen" onclick="full_screen()"></input>
+    
+    <br/><br/>
+    
+    <input type="button" id="btn_open_video" name="btn_open_video" value="open video" title="open video" onclick="open_video()"></input>
+    <input type="button" id="btn_close_video" name="btn_close_video" value="close video" title="close video" onclick="close_video()"></input>
+    <input type="button" id="btn_snapshot" name="btn_snapshot" value="snapshot" title="snapshot" onclick="snapshot()"></input>
+    <input type="button" id="btn_open_cur_video" name="btn_open_cur_video" value="open current video" title="open current video" onclick="open_cur_video()"></input>
+    <input type="button" id="btn_close_cur_video" name="btn_close_cur_video" value="close current video" title="close current video" onclick="close_cur_video()"></input>
+    <br/><br/>
+    
+    <input type="button" id="btn_open_audio" name="btn_open_audio" value="open audio" title="open audio" onclick="open_audio()"></input>
+    <input type="button" id="btn_close_audio" name="btn_close_audio" value="close audio" title="close audio" onclick="close_audio()"></input>
+
+    <input type="button" id="btn_ptz" name="btn_ptz" value="ptz" title="ptz" onclick="ptz()"></input>
+
+</BODY>
+</HTML>

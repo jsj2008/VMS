@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+    <TITLE>ATL 8.0 test page for object VMSBackPlugin</TITLE>
+</HEAD>
+<BODY>
+    <embed type="application/np-vms-back" width=1080 height=720 id="VMSBackPlugin">
+    
+    <script language="javascript" type="text/javascript">
+        function OnLoginCompleted(result) {
+            alert("login result:" + result);
+        }
+
+        function OnNetDisconnect() {
+            alert("OnNetDisconnect");
+        }
+
+        function OnPlayProgress(t) {
+            alert("OnPlayProgress:" + t);
+        }
+
+        var ctrl = document.getElementById("VMSBackPlugin");
+
+        ctrl.OnLoginCompleted = OnLoginCompleted;
+        ctrl.OnNetDisconnect = OnNetDisconnect;
+        ctrl.OnPlayProgress = OnPlayProgress;
+        
+        function login() {
+             ctrl.Login("127.0.0.1", 8080, "", "");
+         }
+         function full_screen() {
+             ctrl.FullScreen();
+         }
+         function open_video() {
+             var xml = "<vms_plugin><types><type>0</type><type>1</type></types><begin_time>2015-11-16 00:00:00</begin_time><end_time>2015-11-16 23:59:59</end_time><videos><video><vid>5</vid></video></videos></vms_plugin>";
+             var result = ctrl.OpenVideo(xml);
+             alert(result);
+         }
+
+         function close_video() {
+             var result = ctrl.CloseVideo();
+             alert(result);
+         }
+
+         function snapshot() {
+             var xml = "<vms_plugin><path>c:\\a.jpg</path></vms_plugin>";
+             var result = ctrl.Snapshot(xml);
+             alert(result);
+         }
+
+         function open_audio() {
+             var result = ctrl.OpenAudio();
+             alert(result);
+         }
+
+         function close_audio() {
+             var result = ctrl.CloseAudio();
+             alert(result);
+         }
+
+         function set_speed() {
+             ctrl.SetPlaySpeed(2.0);
+         }
+
+         function set_play_time() {
+             ctrl.SetPlayBeginTime(5, "2015-11-16 11:07:30");
+         }
+	</script>
+	
+   <br/><br/>
+   <input type="button" id="btn_login" name="btn_login" value="login" title="login" onclick="login()"></input>
+   <input type="button" id="btn_full_screen" name="btn_full_screen" value="full screen" title="full screen" onclick="full_screen()"></input>
+    
+    <br/><br/>
+    
+    <input type="button" id="btn_open_video" name="btn_open_video" value="open video" title="open video" onclick="open_video()"></input>
+    <input type="button" id="btn_close_video" name="btn_close_video" value="close video" title="close video" onclick="close_video()"></input>
+    <input type="button" id="btn_snapshot" name="btn_snapshot" value="snapshot" title="snapshot" onclick="snapshot()"></input>
+    
+    <br/><br/>
+    
+    <input type="button" id="btn_open_audio" name="btn_open_audio" value="open audio" title="open audio" onclick="open_audio()"></input>
+    <input type="button" id="btn_close_audio" name="btn_close_audio" value="close audio" title="close audio" onclick="close_audio()"></input>
+
+    <br/><br/>
+    
+    <input type="button" id="set_speed" name="btn_set_speed" value="set speed" title="set speed" onclick="set_speed()"></input>
+    <input type="button" id="set_play_time" name="btn_play_time" value="set play time" title="set play time" onclick="set_play_time()"></input>
+
+    <br/><br/>
+</BODY>
+</HTML>

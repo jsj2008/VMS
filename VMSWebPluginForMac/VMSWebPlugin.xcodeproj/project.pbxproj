@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F61114B01BECB93E008CC764 /* libplay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114AF1BECB93E008CC764 /* libplay.a */; };
+		F61114B21BECB982008CC764 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114B11BECB982008CC764 /* AudioToolbox.framework */; };
+		F61114B41BECB98E008CC764 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114B31BECB98E008CC764 /* AudioUnit.framework */; };
+		F61114B61BECB99F008CC764 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114B51BECB99F008CC764 /* CoreAudio.framework */; };
+		F61114B81BECB9A9008CC764 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114B71BECB9A9008CC764 /* IOKit.framework */; };
+		F61114BA1BECB9BC008CC764 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114B91BECB9BC008CC764 /* Carbon.framework */; };
+		F61114BC1BECB9C9008CC764 /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114BB1BECB9C9008CC764 /* ForceFeedback.framework */; };
+		F61114BE1BECB9DF008CC764 /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114BD1BECB9DF008CC764 /* VideoDecodeAcceleration.framework */; };
+		F61114C01BECB9EC008CC764 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114BF1BECB9EC008CC764 /* VideoToolbox.framework */; };
+		F61114C21BECBA0D008CC764 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114C11BECBA0D008CC764 /* CoreMedia.framework */; };
+		F61114C41BECBA5C008CC764 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114C31BECBA5C008CC764 /* libstdc++.dylib */; };
+		F61114C61BECBA6B008CC764 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114C51BECBA6B008CC764 /* libz.dylib */; };
+		F61114C81BECBA7E008CC764 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114C71BECBA7E008CC764 /* libiconv.2.dylib */; };
+		F61114CA1BECBA8C008CC764 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F61114C91BECBA8C008CC764 /* libbz2.dylib */; };
+		F611616E1BFB1BDC0091B20F /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F611616C1BFB1BDC0091B20F /* libboost_system.a */; };
+		F611616F1BFB1BDC0091B20F /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F611616D1BFB1BDC0091B20F /* libboost_thread.a */; };
+		F61167EB1BECD1A4008CC764 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61167EA1BECD1A4008CC764 /* Cocoa.framework */; };
+		F61167F61BECD6AB008CC764 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61167EE1BECD2A2008CC764 /* CoreVideo.framework */; };
+		F61167F71BECD6BA008CC764 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61167F01BECD2CB008CC764 /* Quartz.framework */; };
+		F61167F81BECD6D0008CC764 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61167F41BECD322008CC764 /* Security.framework */; };
+		F62294931BF43E19003513B9 /* libWebPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F62294921BF43E19003513B9 /* libWebPlugin.a */; };
+		F67905071C20216F0025483B /* libVidGridLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F67905061C20216F0025483B /* libVidGridLayer.a */; };
+		F6D01F891BEC88750086E2FA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D01F881BEC88750086E2FA /* OpenGL.framework */; };
+		F6F5B4241C2919970087B1E8 /* VMSWebPlugin in Resources */ = {isa = PBXBuildFile; fileRef = F6F5B4231C2919970087B1E8 /* VMSWebPlugin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F61114AF1BECB93E008CC764 /* libplay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libplay.a; path = "../../../Library/Developer/Xcode/DerivedData/VMS-drcnhslbpfcdifcqgjctespmymog/Build/Products/Debug/libplay.a"; sourceTree = "<group>"; };
+		F61114B11BECB982008CC764 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F61114B31BECB98E008CC764 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		F61114B51BECB99F008CC764 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F61114B71BECB9A9008CC764 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F61114B91BECB9BC008CC764 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		F61114BB1BECB9C9008CC764 /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
+		F61114BD1BECB9DF008CC764 /* VideoDecodeAcceleration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoDecodeAcceleration.framework; path = System/Library/Frameworks/VideoDecodeAcceleration.framework; sourceTree = SDKROOT; };
+		F61114BF1BECB9EC008CC764 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		F61114C11BECBA0D008CC764 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F61114C31BECBA5C008CC764 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		F61114C51BECBA6B008CC764 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F61114C71BECBA7E008CC764 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = usr/lib/libiconv.2.dylib; sourceTree = SDKROOT; };
+		F61114C91BECBA8C008CC764 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		F611616C1BFB1BDC0091B20F /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../boost_1_50_0/lib/libboost_system.a; sourceTree = "<group>"; };
+		F611616D1BFB1BDC0091B20F /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = ../boost_1_50_0/lib/libboost_thread.a; sourceTree = "<group>"; };
+		F61167EA1BECD1A4008CC764 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F61167EC1BECD1D7008CC764 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F61167EE1BECD2A2008CC764 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F61167F01BECD2CB008CC764 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		F61167F21BECD317008CC764 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		F61167F41BECD322008CC764 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F62294921BF43E19003513B9 /* libWebPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWebPlugin.a; path = "../../../Library/Developer/Xcode/DerivedData/VMS-drcnhslbpfcdifcqgjctespmymog/Build/Products/Debug/libWebPlugin.a"; sourceTree = "<group>"; };
+		F62294941BF43E22003513B9 /* libVidGridLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVidGridLayer.a; path = "../../../Library/Developer/Xcode/DerivedData/VMS-drcnhslbpfcdifcqgjctespmymog/Build/Products/Debug/libVidGridLayer.a"; sourceTree = "<group>"; };
+		F67905061C20216F0025483B /* libVidGridLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVidGridLayer.a; path = "../../../../Library/Developer/Xcode/DerivedData/VMS-auiaensfdlbzlphhhtblfdfzjmba/Build/Products/Debug/libVidGridLayer.a"; sourceTree = "<group>"; };
+		F69FFE051BCFB38F00ECA4FA /* VMSWebPlugin.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMSWebPlugin.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D01F881BEC88750086E2FA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F6D01F901BEC895F0086E2FA /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = "../../../Library/Developer/Xcode/DerivedData/VMS-drcnhslbpfcdifcqgjctespmymog/Build/Products/Debug/SDL2.framework"; sourceTree = "<group>"; };
+		F6F5B4231C2919970087B1E8 /* VMSWebPlugin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VMSWebPlugin; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F69FFE021BCFB38F00ECA4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67905071C20216F0025483B /* libVidGridLayer.a in Frameworks */,
+				F611616E1BFB1BDC0091B20F /* libboost_system.a in Frameworks */,
+				F611616F1BFB1BDC0091B20F /* libboost_thread.a in Frameworks */,
+				F61114B01BECB93E008CC764 /* libplay.a in Frameworks */,
+				F62294931BF43E19003513B9 /* libWebPlugin.a in Frameworks */,
+				F61114CA1BECBA8C008CC764 /* libbz2.dylib in Frameworks */,
+				F61114C81BECBA7E008CC764 /* libiconv.2.dylib in Frameworks */,
+				F61114C61BECBA6B008CC764 /* libz.dylib in Frameworks */,
+				F61114C41BECBA5C008CC764 /* libstdc++.dylib in Frameworks */,
+				F61167F71BECD6BA008CC764 /* Quartz.framework in Frameworks */,
+				F61167F61BECD6AB008CC764 /* CoreVideo.framework in Frameworks */,
+				F61167F81BECD6D0008CC764 /* Security.framework in Frameworks */,
+				F61167EB1BECD1A4008CC764 /* Cocoa.framework in Frameworks */,
+				F61114C21BECBA0D008CC764 /* CoreMedia.framework in Frameworks */,
+				F61114C01BECB9EC008CC764 /* VideoToolbox.framework in Frameworks */,
+				F61114BE1BECB9DF008CC764 /* VideoDecodeAcceleration.framework in Frameworks */,
+				F61114BC1BECB9C9008CC764 /* ForceFeedback.framework in Frameworks */,
+				F61114BA1BECB9BC008CC764 /* Carbon.framework in Frameworks */,
+				F6D01F891BEC88750086E2FA /* OpenGL.framework in Frameworks */,
+				F61114B81BECB9A9008CC764 /* IOKit.framework in Frameworks */,
+				F61114B61BECB99F008CC764 /* CoreAudio.framework in Frameworks */,
+				F61114B41BECB98E008CC764 /* AudioUnit.framework in Frameworks */,
+				F61114B21BECB982008CC764 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F61167DF1BECC526008CC764 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F61114AF1BECB93E008CC764 /* libplay.a */,
+				F61114C91BECBA8C008CC764 /* libbz2.dylib */,
+				F61114C71BECBA7E008CC764 /* libiconv.2.dylib */,
+				F61114C51BECBA6B008CC764 /* libz.dylib */,
+				F61114C31BECBA5C008CC764 /* libstdc++.dylib */,
+				F61167F41BECD322008CC764 /* Security.framework */,
+				F61167F21BECD317008CC764 /* GLKit.framework */,
+				F61167F01BECD2CB008CC764 /* Quartz.framework */,
+				F61167EE1BECD2A2008CC764 /* CoreVideo.framework */,
+				F61167EC1BECD1D7008CC764 /* AVFoundation.framework */,
+				F61167EA1BECD1A4008CC764 /* Cocoa.framework */,
+				F61114C11BECBA0D008CC764 /* CoreMedia.framework */,
+				F61114BF1BECB9EC008CC764 /* VideoToolbox.framework */,
+				F61114BD1BECB9DF008CC764 /* VideoDecodeAcceleration.framework */,
+				F61114BB1BECB9C9008CC764 /* ForceFeedback.framework */,
+				F61114B91BECB9BC008CC764 /* Carbon.framework */,
+				F61114B71BECB9A9008CC764 /* IOKit.framework */,
+				F61114B51BECB99F008CC764 /* CoreAudio.framework */,
+				F61114B31BECB98E008CC764 /* AudioUnit.framework */,
+				F61114B11BECB982008CC764 /* AudioToolbox.framework */,
+				F6D01F901BEC895F0086E2FA /* SDL2.framework */,
+				F6D01F881BEC88750086E2FA /* OpenGL.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		F69FFDFC1BCFB38F00ECA4FA = {
+			isa = PBXGroup;
+			children = (
+				F6F5B4231C2919970087B1E8 /* VMSWebPlugin */,
+				F67905061C20216F0025483B /* libVidGridLayer.a */,
+				F611616C1BFB1BDC0091B20F /* libboost_system.a */,
+				F611616D1BFB1BDC0091B20F /* libboost_thread.a */,
+				F62294941BF43E22003513B9 /* libVidGridLayer.a */,
+				F62294921BF43E19003513B9 /* libWebPlugin.a */,
+				F61167DF1BECC526008CC764 /* Framework */,
+				F69FFE061BCFB38F00ECA4FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F69FFE061BCFB38F00ECA4FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F69FFE051BCFB38F00ECA4FA /* VMSWebPlugin.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F69FFE041BCFB38F00ECA4FA /* VMSWebPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F69FFE0C1BCFB38F00ECA4FA /* Build configuration list for PBXNativeTarget "VMSWebPlugin" */;
+			buildPhases = (
+				F69FFE011BCFB38F00ECA4FA /* Sources */,
+				F69FFE021BCFB38F00ECA4FA /* Frameworks */,
+				F69FFE031BCFB38F00ECA4FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VMSWebPlugin;
+			productName = VMSWebPlugin;
+			productReference = F69FFE051BCFB38F00ECA4FA /* VMSWebPlugin.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F69FFDFD1BCFB38F00ECA4FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = mac_dev;
+				TargetAttributes = {
+					F69FFE041BCFB38F00ECA4FA = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F69FFE001BCFB38F00ECA4FA /* Build configuration list for PBXProject "VMSWebPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F69FFDFC1BCFB38F00ECA4FA;
+			productRefGroup = F69FFE061BCFB38F00ECA4FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F69FFE041BCFB38F00ECA4FA /* VMSWebPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F69FFE031BCFB38F00ECA4FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F5B4241C2919970087B1E8 /* VMSWebPlugin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F69FFE011BCFB38F00ECA4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F69FFE0A1BCFB38F00ECA4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F69FFE0B1BCFB38F00ECA4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F69FFE0D1BCFB38F00ECA4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VMS-drcnhslbpfcdifcqgjctespmymog/Build/Products/Debug",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = VMSWebPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VMS-drcnhslbpfcdifcqgjctespmymog/Build/Products/Debug",
+					../boost_1_50_0/lib,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VMS-auiaensfdlbzlphhhtblfdfzjmba/Build/Products/Debug",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		F69FFE0E1BCFB38F00ECA4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VMS-drcnhslbpfcdifcqgjctespmymog/Build/Products/Debug",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = VMSWebPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VMS-drcnhslbpfcdifcqgjctespmymog/Build/Products/Debug",
+					../boost_1_50_0/lib,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VMS-auiaensfdlbzlphhhtblfdfzjmba/Build/Products/Debug",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F69FFE001BCFB38F00ECA4FA /* Build configuration list for PBXProject "VMSWebPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69FFE0A1BCFB38F00ECA4FA /* Debug */,
+				F69FFE0B1BCFB38F00ECA4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F69FFE0C1BCFB38F00ECA4FA /* Build configuration list for PBXNativeTarget "VMSWebPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69FFE0D1BCFB38F00ECA4FA /* Debug */,
+				F69FFE0E1BCFB38F00ECA4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F69FFDFD1BCFB38F00ECA4FA /* Project object */;
+}
